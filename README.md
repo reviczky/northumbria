@@ -12,7 +12,7 @@ This module will provide students in-depth knowledge of the processes used in as
 ## Module 3 (Network Security)
 The main objective of this module is to provide an in-depth coverage of the fundamental concepts, principles and technologies for network security. This module will provide students with a theoretical and practical understanding on two important aspects related to security, namely: data security and network security. The module will cover a number of topics including cryptography, classical systems, IP protocol security, private and public-key cryptography, cryptographic protocols, hash functions, authentication, signature schemes, email and web security, viruses and firewalls. Students will also explore the wider impact of security via a consideration of related legal, ethical and social issues.
 
-# Module 4 (Ethical Hacking for Computer Security)
+## Module 4 (Ethical Hacking for Computer Security)
 This module will enable learners to develop a deep understanding of both theoretical and practical aspects of ethical hacking. An essential part of a modern organisation’s e-security includes rigorous testing and analysis to determine vulnerabilities. Carrying out such work requires a special skill set which crosses legal issues, psychology, computer networks along with detailed understanding of system vulnerabilities and exploits. Additionally, you will be exposed to a collection of industry standard hacking tools and will learn how to apply these in an ethical manner to determine system vulnerabilities.
 
 ## Module 5 (Research and Project Management)
