@@ -32,7 +32,7 @@
 * The documentation provided should clearly set out your risk processes.
 
 # Report
-* Accompanying the inventory, risk assessment, risk evaluation and risk treatment plan, there must be a *formal report* (not more than *2-2,500 words*), with the module tutor as the intended audience
+* Accompanying the inventory, risk assessment, risk evaluation and risk treatment plan, there must be a __formal report__ (not more than __2-2,500 words__), with the module tutor as the intended audience
 - Explain the context of the importance of information governance within the context of your ISMS scope
 - Justify your overall risk approach and resource investment in the risk treatment plan.
 - It should make recommendations for delivering the risk treatment plan including the structures for managing the process, progressing the risk treatments proposed, reporting risks, and reviewing the system.
@@ -78,8 +78,8 @@
 # Originality
 * You must observe copyright law when submitting your assignment
 * You must cite all sources and references appropriately.
-* *Formal inquiry proceedings will be instigated if there is any suspicion of misconduct or plagiarism in the preparation of answers.*
-* *Misconduct includes instances of collaboration.*
+* __Formal inquiry proceedings will be instigated if there is any suspicion of misconduct or plagiarism in the preparation of answers.__
+* __Misconduct includes instances of collaboration.__
 * Refer to the University's regulations on assessment if you are unclear as to the meaning of these terms (available on the NU web site).
 
 # Marking structure
@@ -95,34 +95,34 @@
 - presentation including appropriate language/clarity of expression, style, format and length
 
 # Comments on a distinction paper
-* *Development of an inventory of assets            20%*
-* *Completeness*
+* __Development of an inventory of assets            20%__
+* __Completeness__
 * There was a very detailed approach in respect of the development of the inventory.
 * The inventory included records, systems and personnel and the nature and location of each was clearly identified.
-* *Fitness for purpose*
+* __Fitness for purpose__
 * In the context of the scoped assignment the detail was appropriate given the significance of the minutes within the organizational setting.
 * Each asset was clearly labeled, numbered and an information asset owner was assigned.
 * The layout in the Excel spreadsheet was really clearly presented
-* *Development of a risk framework          50%*
+* __Development of a risk framework          50%__
 * Development of a risk assessment, risk evaluation, proposed risk treatment plan and impact assessment including extent, accuracy, fitness for purpose and delivery.
 * X had thought through all the risks very carefully and really strongly developed the narrative descriptions within the analysis sections.
 * They had modified existing risk matrices to ensure that within the organisational context the risk evaluation was fit for purpose.
 * The scoring system was complicated but the wide ranging scores did enable priorities to be clearly listed.
 * In addition the process for treatment or acceptance was clearly set out.
 * In summary this was an excellently thought through and executed presentation of the risks, which could be transferred straight into practice without any alterations.
-* *Accompanying report                      30%*
-* *justification of the importance of information governance*
+* __Accompanying report                      30%__
+* __justification of the importance of information governance__
 * X presented the importance of information governance within the context. The key drivers for, and the current state of information governance within the organisation and wider legislative context were articulated very clearly.
-* *critical evaluation of the risk approach and rationale for the risk treatment design based on an understanding of the organisation and reference to best practice*
+* __critical evaluation of the risk approach and rationale for the risk treatment design based on an understanding of the organisation and reference to best practice__
 * The approach to risk was clearly defined and well thought out. It was structured and scoped within an ISO 27000 context and it was developed from a records manager's perspective, which would be an important consideration if it was subsequently reviewed. The Change Management diagram was a helpful inclusion. Further diagrams or supporting appendices could have further aided the deliver of the risk approach.
-* *critical analysis and evaluation of the resource requirements and recommendations for the approach in order to implement the risk treatment plan*
+* __critical analysis and evaluation of the resource requirements and recommendations for the approach in order to implement the risk treatment plan__
 * Careful thought had been given to the structures and resources required to implement the risk treatment plan.
-* *Presentation including appropriate language/ clarity of expression, style, format and length*
+* __Presentation including appropriate language/ clarity of expression, style, format and length__
 * The report clearly set out its scope, approach and stated aims
 * X clearly structured and presented the report. The tables within the body of the report aided the overall clarity of the presentation.
 * The inclusion of an executive summary was helpful in delivering the work as a whole but it would have been further strengthened by the inclusion of the overarching recommendations within this summary.
 * Additional formatting could have helped deliver key points. In regards to the executive summary this did not really deliver a clear overview of the report as a whole.
-* *An executive summary should encapsulate all of the key points and be capable of being read by a senior manager in isolation.*
+* __An executive summary should encapsulate all of the key points and be capable of being read by a senior manager in isolation.__
 * The report was an excellent summary of a complex subject. It was presented with a real clarity which met the brief for developing a business focused report.
 
 # Questions ?
