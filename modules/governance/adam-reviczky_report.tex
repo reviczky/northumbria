@@ -9,6 +9,22 @@
         format=markdown,
     ]
 
+\setuppagenumbering[location=footer]
+\setupbodyfont[pagella]
+
+\setupinteraction[state=start]
+\placebookmarks[chapter,section,subsection][chapter,section]
+\setupinteractionscreen[option=bookmark]
+
+\setupinteraction
+    [
+        state=start,
+        title={Information Governance and Security},
+        author={Adam Reviczky},
+        subtitle={Report},
+        keyword={northumbria},
+    ]
+
 \starttext
     \processpandocfile{report.md}
 \stoptext
