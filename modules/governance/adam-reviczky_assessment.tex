@@ -1,3 +1,14 @@
+\usemodule[filter]
+
+\defineexternalfilter
+    [pandoc]
+    [
+        filter={pandoc --no-wrap
+            -f \externalfilterparameter{format} -t context
+            -o \externalfilteroutputfile},
+        format=markdown,
+    ]
+
 \starttext
-assessment.md
+    \processpandocfile{assessment.md}
 \stoptext
