@@ -13,15 +13,7 @@
     ]
 
 \setuppagenumbering[location=footer]
-
-\usemodule[database]
-
-\defineseparatedlist
-    [CSV]
-    [
-        left={\startxcell},right={\stopxcell},
-        first={\startxrow},last={\stopxrow},
-    ]
+\setupbodyfont[heros,10pt]
 
 \showframe
 
@@ -30,10 +22,43 @@
 \starttitle Information Asset Inventory \stoptitle
 
 \startxtable
-\startxtablehead \startxcellgroup[background=color,backgroundcolor=lightgray] \startCSV
-,"Organisation & relevant process",,,"Information Asset Details",,,,,,,,,,,"Current Level of Protection",
-Nr,"Operating Unit / Function ","Process name","Process owner","Name of Asset","Description of Asset","Type of Information Asset [Hard copy, Electronic File (specify type), removable media/device (specify type)]","Personal Data (Y/N)","Personal Sensitive Data (Y/N)","Sensitive Customer Data (Y/N)",Classification,Integrity,Availability,"Asset Custodian (if NOT Functional Owner)","Data Retention Period","At Origin (description)","If Information is Moved (description)"
-\stopCSV \stopxcellgroup \stopxtablehead
-\startxtablebody \processseparatedfile[CSV][inventory.csv] \stopxtablebody
+\startluacode
+local mycsvsplitter = utilities.parsers.csvsplitter{
+     separator = ",",
+     quote = '"',
+}
+
+local crap = io.loaddata("inventory.csv")
+
+local tablerows = mycsvsplitter(crap)
+
+context.startxtablehead()
+context.startxcellgroup({background="color",backgroundcolor="lightgray"})
+for i=1,2 do
+    context.startxrow()
+    local l = tablerows[i]
+    for j=1,#l do
+        context.startxcell()
+        context(l[j])
+        context.stopxcell()
+    end
+    context.stopxrow()
+end
+context.stopxcellgroup()
+context.stopxtablehead()
+
+context.startxtablebody()
+for i=3,#tablerows do
+    context.startxrow()
+    local l = tablerows[i]
+    for j=1,#l do
+        context.startxcell()
+        context(l[j])
+        context.stopxcell()
+    end
+    context.stopxrow()
+end
+context.stopxtablebody()
+\stopluacode
 \stopxtable
 \stoptext
