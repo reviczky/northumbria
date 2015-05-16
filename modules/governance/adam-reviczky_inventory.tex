@@ -1,5 +1,39 @@
 % engine=luajittex
 
+\setuppapersize[A3,landscape][A3,landscape]
+
+\setuplayout
+    [
+        backspace=10mm,
+        width=400mm,
+        topspace=10mm,
+        header=10mm,
+        footer=10mm,
+        height=277mm
+    ]
+
+\setuppagenumbering[location=footer]
+
+\usemodule[database]
+
+\defineseparatedlist
+    [CSV]
+    [
+        left={\startxcell},right={\stopxcell},
+        first={\startxrow},last={\stopxrow},
+    ]
+
+\showframe
+
 \starttext
-    % \processseparatedfile[CSV][inventory.csv]
+
+\starttitle Information Asset Inventory \stoptitle
+
+\startxtable
+\startxtablehead \startxcellgroup[background=color,backgroundcolor=lightgray] \startCSV
+,"Organisation & relevant process",,,"Information Asset Details",,,,,,,,,,,"Current Level of Protection",
+Nr,"Operating Unit / Function ","Process name","Process owner","Name of Asset","Description of Asset","Type of Information Asset [Hard copy, Electronic File (specify type), removable media/device (specify type)]","Personal Data (Y/N)","Personal Sensitive Data (Y/N)","Sensitive Customer Data (Y/N)",Classification,Integrity,Availability,"Asset Custodian (if NOT Functional Owner)","Data Retention Period","At Origin (description)","If Information is Moved (description)"
+\stopCSV \stopxcellgroup \stopxtablehead
+\startxtablebody \processseparatedfile[CSV][inventory.csv] \stopxtablebody
+\stopxtable
 \stoptext
