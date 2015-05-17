@@ -1,5 +1,20 @@
 % engine=luajittex
 
+\setupinteraction[state=start]
+
+\setuppapersize[A4,portrait][A4,portrait]
+
+\setuplayout
+    [
+        backspace=10mm,
+        cutspace=10mm,
+        width=190mm,
+        topspace=10mm,
+        header=10mm,
+        footer=10mm,
+        height=277mm,
+    ]
+
 \usemodule[filter]
 
 \defineexternalfilter
@@ -12,7 +27,7 @@
     ]
 
 \setuppagenumbering[location=footer]
-\setupbodyfont[pagella]
+\setupbodyfont[pagella,10pt]
 
 \setupinteraction[state=start]
 \placebookmarks[chapter,section,subsection][chapter,section]
@@ -27,8 +42,43 @@
         keyword={northumbria},
     ]
 
+\setupspellchecking[state=start,method=2]
+\ctxlua{languages.words.threshold=1}
+
+\setupbibtex[database={report},sort=author]
+
 \showframe
 
 \starttext
     \processpandocfile{report.md}
+
+    \startsection[title={Format}]
+    \startsubject[title={Word count}]
+    \startcolor[darkgray] \tfx
+        Total number of words (with a theshold of 1 character): {\bf \ctxlua{local data = dofile"\jobname.words"; context(data.total)}} \\
+        Maximum number of words allowed: {\bf 2,500}
+    \stopcolor
+    \stopsubject
+    \startsubject[title={Citation}]
+    \startcolor[darkgray] \tfx
+        References: {\bf American Psychological Association (APA) style} \\
+        Bibiliography: {\bf American Psychological Association (APA) style}
+    \stopcolor
+    \stopsubject
+    \startsubject[title={Layout}]
+    \startcolor[darkgray] \tfx
+        Paper Size: {\bf A4, Portrait} \\
+        Font Family: {\bf TeX Gyre Pagella, 10pt} \\
+        Margins: \\
+        \startxtable
+            \startxrow \startxcellgroup[background=color,backgroundcolor=lightgray,foregroundcolor=black] \startxcell \WORD{Setup} \stopxcell \startxcell \WORD{Dimension} \stopxcell \startxcell \WORD{Description} \stopxcell \stopxcellgroup \stopxrow
+            \startxrow \startxcell Backspace \stopxcell \startxcell[align={middle}] {\bf \startluacode local layout = tex.dimen.backspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode} \stopxcell \startxcell Space from the left rim of the paper to the left rim of the main text area. \stopxcell \stopxrow
+            \startxrow \startxcell Cutspace \stopxcell \startxcell[align={middle}] {\bf \startluacode local layout = tex.dimen.cutspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode} \stopxcell \startxcell Space from the right rim of the paper to the right rim of the main text area. \stopxcell \stopxrow
+            \startxrow \startxcell Topspace \stopxcell \startxcell[align={middle}] {\bf \startluacode local layout = tex.dimen.topspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode} \stopxcell \startxcell Space above the header from the top rim of the paper to the top rim of the header. \stopxcell \stopxrow
+            \startxrow \startxcell Header \stopxcell \startxcell[align={middle}] {\bf \startluacode local layout = tex.dimen.headerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode} \stopxcell \startxcell The height of the header area. \stopxcell \stopxrow
+            \startxrow \startxcell Footer \stopxcell \startxcell[align={middle}] {\bf \startluacode local layout = tex.dimen.footerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode} \stopxcell \startxcell The height of the footer area. \stopxcell \stopxrow
+        \stopxtable \\
+    \stopcolor
+    \stopsubject
+    \stopsection
 \stoptext

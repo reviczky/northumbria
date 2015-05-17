@@ -51,26 +51,26 @@ local crap = io.loaddata("inventory.csv")
 local tablerows = mycsvsplitter(crap)
 
 context.startxtablehead()
-context.startxcellgroup({background="color",backgroundcolor="darkgray",foregroundcolor="white"})
 context.startxrow()
+context.startxcellgroup({background="color",backgroundcolor="darkgray",foregroundcolor="white"})
 context.startxcell() context.stopxcell()
 context.startxcell({nx=3}) context.WORD("Organisation & relevant process") context.stopxcell()
 context.startxcell({nx=11}) context.WORD("Information Asset Details") context.stopxcell()
 context.startxcell({nx=2}) context.WORD("Current Level of Protection") context.stopxcell()
-context.stopxrow()
 context.stopxcellgroup()
-context.startxcellgroup({background="color",backgroundcolor="lightgray"})
+context.stopxrow()
 for i=1,1 do
     context.startxrow()
+    context.startxcellgroup({background="color",backgroundcolor="lightgray"})
     local l = tablerows[i]
     for j=1,#l do
         context.startxcell()
         context(l[j])
         context.stopxcell()
     end
+    context.stopxcellgroup()
     context.stopxrow()
 end
-context.stopxcellgroup()
 context.stopxtablehead()
 
 context.startxtablebody()
