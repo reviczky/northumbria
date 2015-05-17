@@ -12,7 +12,21 @@
         height=277mm
     ]
 
-\setuppagenumbering[location=footer]
+\define\studentname{Adam Reviczky}
+\define\studentnumber{14044980}
+\define\modulename{Information Governance and Security}
+\define\documentname{Asset Inventory}
+
+\startsetups[headertext]
+    \startframed[frame=off,align=middle,width=fit]\bf\WORD
+        Student Name: {\studentname} {\|} Student Number: {\studentnumber} \\
+        Module: {\modulename} ({\documentname})
+    \stopframed
+\stopsetups
+
+\setupheadertexts[\directsetup{headertext}]
+
+\setuppagenumbering[location=footer,left={\endash\ },right={\ \endash}]
 \setupbodyfont[heros,10pt]
 
 \showframe
@@ -36,9 +50,9 @@ context.startxtablehead()
 context.startxcellgroup({background="color",backgroundcolor="darkgray",foregroundcolor="white"})
 context.startxrow()
 context.startxcell() context.stopxcell()
-context.startxcell({nx=3}) context("Organisation & relevant process") context.stopxcell()
-context.startxcell({nx=11}) context("Information Asset Details") context.stopxcell()
-context.startxcell({nx=2}) context("Current Level of Protection") context.stopxcell()
+context.startxcell({nx=3}) context.WORD("Organisation & relevant process") context.stopxcell()
+context.startxcell({nx=11}) context.WORD("Information Asset Details") context.stopxcell()
+context.startxcell({nx=2}) context.WORD("Current Level of Protection") context.stopxcell()
 context.stopxrow()
 context.stopxcellgroup()
 context.startxcellgroup({background="color",backgroundcolor="lightgray"})
