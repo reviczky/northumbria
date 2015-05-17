@@ -19,7 +19,7 @@
 
 \starttext
 
-\starttitle Information Asset Inventory \stoptitle
+\starttitle[title={Information Asset Inventory}]
 
 \startxtable
 \startluacode
@@ -33,8 +33,16 @@ local crap = io.loaddata("inventory.csv")
 local tablerows = mycsvsplitter(crap)
 
 context.startxtablehead()
+context.startxcellgroup({background="color",backgroundcolor="darkgray",foregroundcolor="white"})
+context.startxrow()
+context.startxcell() context.stopxcell()
+context.startxcell({nx=3}) context("Organisation & relevant process") context.stopxcell()
+context.startxcell({nx=11}) context("Information Asset Details") context.stopxcell()
+context.startxcell({nx=2}) context("Current Level of Protection") context.stopxcell()
+context.stopxrow()
+context.stopxcellgroup()
 context.startxcellgroup({background="color",backgroundcolor="lightgray"})
-for i=1,2 do
+for i=1,1 do
     context.startxrow()
     local l = tablerows[i]
     for j=1,#l do
@@ -48,7 +56,7 @@ context.stopxcellgroup()
 context.stopxtablehead()
 
 context.startxtablebody()
-for i=3,#tablerows do
+for i=2,#tablerows do
     context.startxrow()
     local l = tablerows[i]
     for j=1,#l do
@@ -61,4 +69,6 @@ end
 context.stopxtablebody()
 \stopluacode
 \stopxtable
+
+\stoptitle
 \stoptext
