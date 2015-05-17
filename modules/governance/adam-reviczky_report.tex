@@ -29,6 +29,9 @@
 
 \setupheadertexts[\directsetup{headertext}]
 
+\setuphead[section][style=\bfb]
+\setuphead[subject][style=\tf]
+
 \usemodule[filter]
 
 \defineexternalfilter
@@ -68,19 +71,19 @@
 
     \startsection[title={Format}]
     \startsubject[title={Word count}]
-    \startcolor[darkgray] \tfx
+    \startcolor[black] \tfx
         Total number of words (with a theshold of 1 character): {\bf \ctxlua{local data = dofile"\jobname.words"; context(data.total)}} \\
         Maximum number of words allowed: {\bf 2,500}
     \stopcolor
     \stopsubject
     \startsubject[title={Citation}]
-    \startcolor[darkgray] \tfx
+    \startcolor[black] \tfx
         References: {\bf American Psychological Association (APA) style} \\
         Bibiliography: {\bf American Psychological Association (APA) style}
     \stopcolor
     \stopsubject
     \startsubject[title={Layout}]
-    \startcolor[darkgray] \tfx
+    \startcolor[black] \tfx
         Paper Size: {\bf A4, Portrait} \\
         Font Family: {\bf TeX Gyre Pagella, 10pt} \\
         Margins: \\
