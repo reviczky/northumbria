@@ -1,5 +1,7 @@
 % engine=luajittex
 
+\setupinteraction[state=start]
+
 \setuppapersize[A3,landscape][A3,landscape]
 
 \setuplayout
@@ -26,6 +28,8 @@
 
 \setupheadertexts[\directsetup{headertext}]
 
+\setupfootnotes[textcolor=blue]
+
 \setuppagenumbering[location=footer,left={\endash\ },right={\ \endash}]
 \setupbodyfont[heros,10pt]
 
@@ -33,7 +37,7 @@
 
 \starttext
 
-\starttitle[title={Information Asset Inventory}]
+\starttitle[title={Information Asset Inventory \footnote{Based on the \startcolor[blue]\goto{ISO/IEC 27001:2013}[url(http://www.iso.org/iso/catalogue_detail?csnumber=54534)]\stopcolor\ standard providing the requirements for an Information Security Management System (ISMS).}}]
 
 \startxtable
 \startluacode
