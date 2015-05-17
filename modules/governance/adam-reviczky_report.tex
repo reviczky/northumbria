@@ -15,6 +15,20 @@
         height=277mm,
     ]
 
+\define\studentname{Adam Reviczky}
+\define\studentnumber{14044980}
+\define\modulename{Information Governance and Security}
+\define\documentname{Report}
+
+\startsetups[headertext]
+    \startframed[frame=off,align=middle,width=fit]\bf\WORD
+        Student Name: {\studentname} {\|} Student Number: {\studentnumber} \\
+        Module: {\modulename} ({\documentname})
+    \stopframed
+\stopsetups
+
+\setupheadertexts[\directsetup{headertext}]
+
 \usemodule[filter]
 
 \defineexternalfilter
@@ -26,7 +40,7 @@
         format=markdown,
     ]
 
-\setuppagenumbering[location=footer]
+\setuppagenumbering[location=footer,left={\endash\ },right={\ \endash}]
 \setupbodyfont[pagella,10pt]
 
 \setupinteraction[state=start]
