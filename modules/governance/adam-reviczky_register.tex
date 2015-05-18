@@ -1,5 +1,32 @@
 % engine=luajittex
 
+\setuppapersize[A4,portrait][A4,portrait]
+
+\setuplayout
+    [
+        backspace=10mm,
+        cutspace=10mm,
+        width=190mm,
+        topspace=10mm,
+        header=10mm,
+        footer=10mm,
+        height=277mm,
+    ]
+
+\define\studentname{Adam Reviczky}
+\define\studentnumber{14044980}
+\define\modulename{Information Governance and Security}
+\define\documentname{Register}
+
+\startsetups[headertext]
+    \startframed[frame=off,align=middle,width=fit]\bf\WORD
+        Student Name: {\studentname} {\|} Student Number: {\studentnumber} \\
+        Module: {\modulename} ({\documentname})
+    \stopframed
+\stopsetups
+
+\setupheadertexts[\directsetup{headertext}]
+
 \usemodule[filter]
 
 \defineexternalfilter
@@ -11,10 +38,9 @@
         format=markdown,
     ]
 
-\setuppagenumbering[location=footer]
-\setupbodyfont[pagella]
+\setuppagenumbering[location=footer,left={\endash\ },right={\ \endash}]
+\setupbodyfont[pagella,10pt]
 
-\setupinteraction[state=start]
 \placebookmarks[chapter,section,subsection][chapter,section]
 \setupinteractionscreen[option=bookmark]
 
@@ -31,4 +57,13 @@
 
 \starttext
     \processpandocfile{register.md}
+
+    \startxtable
+        \startxrow \startxcell Likelihood \stopxcell \startxcell[nx=5] Level of Impact \stopxcell \stopxrow
+        \startxrow \startxcell Very High \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \startxcell Very High \stopxcell \stopxrow
+        \startxrow \startxcell High \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \startxcell Very High \stopxcell \stopxrow
+        \startxrow \startxcell Moderate \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \stopxrow
+        \startxrow \startxcell Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \stopxrow
+        \startxrow \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \stopxrow
+    \stopxtable
 \stoptext
