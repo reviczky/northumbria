@@ -30,7 +30,6 @@
 \setupheadertexts[\directsetup{headertext}]
 
 \setuphead[section][style=\bfb]
-\setuphead[subject][style=\tf]
 
 \usemodule[filter]
 
@@ -69,33 +68,31 @@
 \starttext
     \processpandocfile{report.md}
 
-    \startsection[title={Format}]
-    \startsubject[title={Word count}]
+    \page \strut
+    \startalignment[middle]
     \startcolor[black] \tfx
+        \blank[line]
+        \midaligned{\startMPcode \input northumbria \stopMPcode}
+        \blank[line]
+        University of Northumbria at Newcastle. \\
+        \blank[line]
+        International House, 1 St Katharines Way, London E1W 1UN \\
+        United Kingdom \\
+        \blank[2*line]
+        © 2015 Adam Reviczky \\
+        All rights are reserved. \\
+        \blank[2*line]
+        Typesetted in Great Britain by \\
+        \ConTeXt\ version \contextversion \\
+        \texenginename\ version \texengineversion \\
+        \blank[2*line] \vfill
         Total number of words (with a theshold of 1 character): {\bf \ctxlua{local data = dofile"\jobname.words"; context(data.total)}} \\
-        Maximum number of words allowed: {\bf 2,500}
-    \stopcolor
-    \stopsubject
-    \startsubject[title={Citation}]
-    \startcolor[black] \tfx
-        References: {\bf American Psychological Association (APA) style} \\
-        Bibiliography: {\bf American Psychological Association (APA) style}
-    \stopcolor
-    \stopsubject
-    \startsubject[title={Layout}]
-    \startcolor[black] \tfx
+        Maximum number of words allowed: {\bf 2,500} \\
+        Bibliography: {\bf American Psychological Association (APA) style} \\
         Paper Size: {\bf A4, Portrait} \\
         Font Family: {\bf TeX Gyre Pagella, 10pt} \\
-        Margins: \\
-        \startxtable
-            \startxrow \startxcellgroup[background=color,backgroundcolor=lightgray,foregroundcolor=black] \startxcell \WORD{Setup} \stopxcell \startxcell \WORD{Dimension} \stopxcell \startxcell \WORD{Description} \stopxcell \stopxcellgroup \stopxrow
-            \startxrow \startxcell Backspace \stopxcell \startxcell[align={middle}] {\bf \startluacode local layout = tex.dimen.backspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode} \stopxcell \startxcell Space from the left rim of the paper to the left rim of the main text area. \stopxcell \stopxrow
-            \startxrow \startxcell Cutspace \stopxcell \startxcell[align={middle}] {\bf \startluacode local layout = tex.dimen.cutspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode} \stopxcell \startxcell Space from the right rim of the paper to the right rim of the main text area. \stopxcell \stopxrow
-            \startxrow \startxcell Topspace \stopxcell \startxcell[align={middle}] {\bf \startluacode local layout = tex.dimen.topspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode} \stopxcell \startxcell Space above the header from the top rim of the paper to the top rim of the header. \stopxcell \stopxrow
-            \startxrow \startxcell Header \stopxcell \startxcell[align={middle}] {\bf \startluacode local layout = tex.dimen.headerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode} \stopxcell \startxcell The height of the header area. \stopxcell \stopxrow
-            \startxrow \startxcell Footer \stopxcell \startxcell[align={middle}] {\bf \startluacode local layout = tex.dimen.footerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode} \stopxcell \startxcell The height of the footer area. \stopxcell \stopxrow
-        \stopxtable \\
+        Margins: Backspace ({\bf \startluacode local layout = tex.dimen.backspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Cutspace ({\bf \startluacode local layout = tex.dimen.cutspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Topspace ({\bf \startluacode local layout = tex.dimen.topspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Header ({\bf \startluacode local layout = tex.dimen.headerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Footer ({\bf \startluacode local layout = tex.dimen.footerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}) \\
+        \blank[2*line]
     \stopcolor
-    \stopsubject
-    \stopsection
+    \stopalignment
 \stoptext
