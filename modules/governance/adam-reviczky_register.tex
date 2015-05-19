@@ -56,6 +56,22 @@
 \showframe
 
 \starttext
+    \startstandardmakeup
+    \startalignment[middle]
+        \switchtobodyfont[adventor,12pt] \tfd
+        \blank[25mm]
+        \WORD{Module 1 \blank[2*line] Information Governance \\ and \\ Security} \\
+        \blank[2*line]
+        {\bf\documentname} \\
+        \blank[90mm]
+        {\startcolor[darkblue] \bfc \studentname \\ (\studentnumber) \stopcolor} \\
+        \blank[35mm]
+        {\startcolor[black] \bfb MSc in Cyber Security 2015/2016 \stopcolor}
+    \stopalignment
+    \stopstandardmakeup
+
+    \page
+
     \processpandocfile{register.md}
 
     \startxtable
