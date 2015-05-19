@@ -74,12 +74,29 @@
 
     \processpandocfile{register.md}
 
+    NIST \footnote{\goto{SP 800-30 Rev1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]} \\
+    \placetable[here][tab:sample]{ASSESSMENT SCALE – LEVEL OF RISK (COMBINATION OF LIKELIHOOD AND IMPACT)}{
     \startxtable
-        \startxrow \startxcell Likelihood \stopxcell \startxcell[nx=5] Level of Impact \stopxcell \stopxrow
-        \startxrow \startxcell Very High \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \startxcell Very High \stopxcell \stopxrow
-        \startxrow \startxcell High \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \startxcell Very High \stopxcell \stopxrow
-        \startxrow \startxcell Moderate \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \stopxrow
-        \startxrow \startxcell Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \stopxrow
-        \startxrow \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \stopxrow
-    \stopxtable
+        \startxrow \startxcell[ny=2] Likelihood (Threat Event Occurs and Results in Adverse Impact) \stopxcell \startxcell[nx=5] Level of Impact \stopxcell \stopxrow
+        \startxrow \startxcell[background=color,backgroundcolor=lightgreen] Very Low \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Low \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate \stopxcell \startxcell[background=color,backgroundcolor=red] High \stopxcell \startxcell[background=color,backgroundcolor=darkred] Very High \stopxcell \stopxrow
+        \startxrow \startxcell[background=color,backgroundcolor=darkred] Very High \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \startxcell Very High \stopxcell \stopxrow
+        \startxrow \startxcell[background=color,backgroundcolor=red] High \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \startxcell Very High \stopxcell \stopxrow
+        \startxrow \startxcell[background=color,backgroundcolor=orange] Moderate \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \stopxrow
+        \startxrow \startxcell[background=color,backgroundcolor=darkgreen] Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \stopxrow
+        \startxrow \startxcell[background=color,backgroundcolor=lightgreen] Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \stopxrow
+    \stopxtable}
+
+    \blank[2*line]
+
+    \placetable[here][tab:sample]{ASSESSMENT SCALE – LEVEL OF RISK}{
+    \startxtable
+        \startxrow \startxcell Qualitative Values \stopxcell \startxcell[nx=2] Semi-Quantitative Values \stopxcell \startxcell Description \stopxcell \stopxrow
+        \startxrow \startxcell Very High \stopxcell \startxcell 96-100 \stopxcell \startxcell 10 \stopxcell \startxcell Very high risk means that a threat event could be expected to have multiple severe or catastrophic adverse effects on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+        \startxrow \startxcell High \stopxcell \startxcell 80-95 \stopxcell \startxcell 8 \stopxcell \startxcell High risk means that a threat event could be expected to have a severe or catastrophic adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+        \startxrow \startxcell Moderate \stopxcell \startxcell 21-79 \stopxcell \startxcell 5 \stopxcell \startxcell Moderate risk means that a threat event could be expected to have a serious adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+        \startxrow \startxcell Low \stopxcell \startxcell 5-20 \stopxcell \startxcell 2 \stopxcell \startxcell Low risk means that a threat event could be expected to have a limited adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+        \startxrow \startxcell Very Low \stopxcell \startxcell 0-4 \stopxcell \startxcell 0 \stopxcell \startxcell Very low risk means that a threat event could be expected to have a negligible adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+    \stopxtable}
+
+    Regulatory, Reputational, Financial. \\
 \stoptext
