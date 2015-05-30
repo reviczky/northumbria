@@ -25,6 +25,17 @@
     \stopframed
 \stopsetups
 
+\startuseMPgraphic{watermark}{mpcolor}
+fill (446.535004,57.265598)--(446.457001,57.175800)--(455.496002,57.175800)..controls (475.371002,81.132797) and (494.976990,91.765602)..(510.152008,75.734398)..controls (510.257996,75.625000) and (510.457001,75.546898)..(510.281006,75.925797)..controls (508.273010,80.308601) and (490.750000,109.188004)..(446.535004,57.265598)--cycle withcolor \MPvar{mpcolor};
+\stopuseMPgraphic
+
+\startsetups[watermark:background]
+\scale[width=\textwidth]{\useMPgraphic{watermark}{mpcolor=gray}}
+\stopsetups
+
+\definelayer[watermark]
+\setlayer[watermark][x=\dimexpr\paperwidth/2-\textwidth/2\relax,y=175.4mm]{\setup{watermark:background}}
+
 \setupheadertexts[\directsetup{headertext}]
 
 \setuphead[section][style=\bfb]
@@ -63,25 +74,28 @@
 \showframe
 
 \starttext
+    \setupbackgrounds[page][background=watermark]
     \startstandardmakeup
+    \switchtobodyfont[adventor,12pt] \tfd
     \startalignment[middle]
-        \switchtobodyfont[adventor,12pt] \tfd
         \blank[25mm]
         \WORD{Module 1 \blank[2*line] Information Governance \\ and \\ Security} \\
         \blank[2*line]
-        {\bf\documentname} \\
-        \blank[90mm]
-        {\startcolor[darkblue] \tfc \studentname \\ (\studentnumber) \stopcolor} \\
-        \blank[35mm]
-        {\startcolor[black] \bfb MSc in Cyber Security 2015/2016 \stopcolor}
+        \bf\documentname \\
+        \blank[125mm]
+    \stopalignment
+    \startalignment[flushright]
+        \definehspace[arch][3em]
+        \tfb \studentname, \studentnumber \hspace[arch]\ \blank[line] \bfb MSc in Cyber Security 2015/2016 \hspace[arch]\
     \stopalignment
     \stopstandardmakeup
 
+    \setupbackgrounds[page][background=]
     \page
 
     \processpandocfile{report.md}
 
-    \page \strut
+    \page \strut \setuppagenumbering[location=]
     \startalignment[middle]
     \startcolor[black] \tfx
         \blank[line]
@@ -103,7 +117,7 @@
         Maximum number of words allowed: {\bf 2,500} \\
         Bibliography: {\bf American Psychological Association (APA) style} \\
         Paper Size: {\bf A4, Portrait} \\
-        Font Family: {\bf TeX Gyre Pagella, 10pt} \\
+        Font Family: {\bf TeX Gyre Adventor, TeX Gyre Pagella (10pt)} \\
         Margins: Backspace ({\bf \startluacode local layout = tex.dimen.backspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Cutspace ({\bf \startluacode local layout = tex.dimen.cutspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Topspace ({\bf \startluacode local layout = tex.dimen.topspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Header ({\bf \startluacode local layout = tex.dimen.headerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Footer ({\bf \startluacode local layout = tex.dimen.footerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}) \\
         \blank[2*line]
     \stopcolor
