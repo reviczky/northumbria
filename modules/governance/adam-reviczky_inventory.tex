@@ -39,7 +39,7 @@
 
 \starttitle[title={Information Asset Inventory \footnote{Based on the \startcolor[blue]\goto{ISO/IEC 27001:2013}[url(http://www.iso.org/iso/catalogue_detail?csnumber=54534)]\stopcolor\ standard providing the requirements for an Information Security Management System (ISMS).}}]
 
-\startxtable
+\startxtable[option=stretch]
 \startluacode
 local mycsvsplitter = utilities.parsers.csvsplitter{
      separator = ",",
@@ -54,9 +54,9 @@ context.startxtablehead()
 context.startxrow()
 context.startxcellgroup({background="color",backgroundcolor="darkgray",foregroundcolor="white"})
 context.startxcell() context.stopxcell()
-context.startxcell({nx=3}) context.WORD("Organisation & relevant process") context.stopxcell()
-context.startxcell({nx=11}) context.WORD("Information Asset Details") context.stopxcell()
-context.startxcell({nx=2}) context.WORD("Current Level of Protection") context.stopxcell()
+context.startxcell({nx="3"}) context.WORD("Organisation & relevant process") context.stopxcell()
+context.startxcell({nx="11"}) context.WORD("Information Asset Details") context.stopxcell()
+context.startxcell({nx="2"}) context.WORD("Current Level of Protection") context.stopxcell()
 context.stopxcellgroup()
 context.stopxrow()
 for i=1,1 do
@@ -64,7 +64,7 @@ for i=1,1 do
     context.startxcellgroup({background="color",backgroundcolor="lightgray"})
     local l = tablerows[i]
     for j=1,#l do
-        context.startxcell()
+        context.startxcell({align="middle"})
         context(l[j])
         context.stopxcell()
     end
@@ -77,10 +77,13 @@ context.startxtablebody()
 for i=2,#tablerows do
     context.startxrow()
     local l = tablerows[i]
+    local cellwidth = {7, 19, 19, 19, 19, 20, 19, 11, 11, 11, 15, 15, 15, 11, 11, 21, 21}
     for j=1,#l do
-        context.startxcell()
+        context.startxcellgroup({'width=' .. '"' .. cellwidth[j] .. 'mm' .. '"'})
+        context.startxcell({align="middle"})
         context(l[j])
         context.stopxcell()
+        context.stopxcellgroup()
     end
     context.stopxrow()
 end
