@@ -6,7 +6,8 @@
 
 # Tables
 \startalignment
-\switchtobodyfont[heros,small]\placetable[here][table:risklevel]{\WORD{Assessment Scale – Level of Risk}\footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}{
+\switchtobodyfont[heros,small]
+\placetable[here][table:risklevel]{\WORD{Assessment Scale – Level of Risk}\footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}{
 \startxtable[option=width,background=color,backgroundcolor=gray]
     \startxrow \startxcellgroup[align={middle,lohi},background=color,backgroundcolor=darkgray] \startxcell {\bf Qualitative Values} \stopxcell \startxcell[nx=2] {\bf Semi-Quantitative Values} \stopxcell \startxcell {\bf Description} \stopxcell \stopxcellgroup \stopxrow
     \startxrow \startxcellgroup[align={middle,lohi}] \startxcell[width=20mm] Very High \stopxcell \startxcell[width=15mm] 96-100 \stopxcell \startxcell[width=15mm] 10 \stopxcell \stopxcellgroup \startxcell[width=100mm] {\bf Very high risk} means that a threat event could be expected to have {\bf multiple severe or catastrophic} adverse effects on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
