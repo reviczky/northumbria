@@ -47,9 +47,9 @@ Risk appetite, ISF page 53. \\
 \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=30mm]
     \startxrow[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Risk category} \stopxcell \startxcell[nx=4] {\bf Acceptable risk rating} \stopxcell \stopxrow
     \startxrow[background=color,backgroundcolor=darkgray] \startxcell {\bf Negligible} \stopxcell \startxcell {\bf Low} \stopxcell \startxcell {\bf Moderate} \stopxcell \startxcell {\bf High} \stopxcell \stopxrow
-    \startxrow \startxcell Financial \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell X \stopxcell \startxcell \stopxcell \stopxrow
-    \startxrow \startxcell Reputational \stopxcell \startxcell \stopxcell \startxcell X \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
-    \startxrow \startxcell Legal and Regulatory Compliance \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell X \stopxcell \startxcell \stopxcell \stopxrow
-    \startxrow \startxcell Health and Safety \stopxcell \startxcell \stopxcell \startxcell X \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
+    \startxrow \startxcell Financial \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \stopxrow
+    \startxrow \startxcell Reputational \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
+    \startxrow \startxcell Legal and Regulatory Compliance \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \stopxrow
+    \startxrow \startxcell Health and Safety \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
 \stopxtable}
 \stopalignment
