@@ -22,6 +22,14 @@
 
 \startalignment
 \switchtobodyfont[heros,small]
+\placetable[here][table:integrity]{\WORD{Intergrity Classification}}{
+\startxtable[frame=on,option=width,align={flushleft,lohi}]
+\startxrow[background=color,backgroundcolor=steelblue,foregroundcolor=white,width=30mm] \startxcell {\bf Integrity Class} \stopxcell \startxcell[width=60mm] {\bf Impact Description} \stopxcell \startxcell[width=60mm] {\bf Minimum Protection Summary} \stopxcell \stopxrow
+    \startxrow \startxcell \WORD{Basic} (default) \stopxcell \startxcell Non-critical data: insignificant damage if data is altered or destroyed. \stopxcell \startxcell[width=60mm] \startitemize[joinedup,nowhite] \sym{\scale[scale=1250]{•}} IT inherent completeness and accuracy assurance mechanisms. \sym{\scale[scale=1250]{•}} Apply appropriate access control mechanisms designed to achieve the 'need to know \endash need to do' principle \sym{\scale[scale=1250]{•}} Prevent unauthorized changes. \stopitemize \stopxcell \stopxrow
+    \startxrow \startxcell \WORD{Trusted} \stopxcell \startxcell Critical data: consistency, accuracy and completeness of data must be ensured in order to be a reliable business partner. \stopxcell \startxcell[width=60mm] Additional to \WORD{Basic}: \startitemize[joinedup,nowhite] \sym{\scale[scale=1250]{•}} Additional / specific traceable completeness and accuracy assurance or validation functionality. \sym{\scale[scale=1250]{•}} Traceability of authorized data moditications. \sym{\scale[scale=1250]{•}} Enhanced access control security measures, including restricted and periodically reviewed access rights. \stopitemize \stopxcell \stopxrow
+    \startxrow \startxcell \WORD{Guaranteed} \stopxcell \startxcell[width=60mm] Critical data: consistency, accuracy and completeness of data or non-repudiation of an activity must be provable. \startitemize[joinedup,nowhite] \sym{\scale[scale=1250]{•}} Non-repudiation reflects the need that an action must be verifyable, i.e. an action cannot be denied. \stopitemize \stopxcell \startxcell[width=60mm] Additional to \WORD{Trusted}: \startitemize[joinedup,nowhite] \sym{\scale[scale=1250]{•}} Provide traceability with tamper proof evidence \stopitemize \stopxcell \stopxrow
+\stopxtable}
+
 \placetable[here][table:availability]{\WORD{Availability}}{
 \startxtable[frame=off,option=width,align={flushleft,lohi}]
 \startxrow[background=color,backgroundcolor=darkblue,foregroundcolor=white,width=20mm] \startxcell[width=30mm] {\bf Availability Classification} \stopxcell \startxcell {\bf Impact} \stopxcell \startxcell[width=100mm] {\bf Description} \stopxcell \stopxrow
