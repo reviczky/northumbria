@@ -8,7 +8,7 @@
 
 # Contents
 
-\input knuth \par
+\input knuth \cite[alexander2013information] \par
 
 # References
 
@@ -19,3 +19,8 @@
 \placepublications[criterium=all] \par
 
 # Appendix
+
+\placetable[here][table:appetite]{Risk Appetite}{
+\startxtable
+\startxrow \startxcell Table \stopxcell \stopxrow
+\stopxtable}

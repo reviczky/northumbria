@@ -34,7 +34,7 @@ fill (446.535004,57.265598)--(446.457001,57.175800)--(455.496002,57.175800)..con
 \stopsetups
 
 \definelayer[watermark]
-\setlayer[watermark][x=\dimexpr\paperwidth/2-\textwidth/2\relax,y=175.4mm]{\setup{watermark:background}}
+\setlayer[watermark][x=\dimexpr\paperwidth/2-\textwidth/2\relax,y=174mm]{\setup{watermark:background}}
 
 \setupheadertexts[\directsetup{headertext}]
 
@@ -118,7 +118,7 @@ fill (446.535004,57.265598)--(446.457001,57.175800)--(455.496002,57.175800)..con
         Bibliography: {\bf American Psychological Association (APA) style} \\
         Paper Size: {\bf A4, Portrait} \\
         Font Family: {\bf TeX Gyre Adventor, TeX Gyre Pagella (10pt)} \\
-        Margins: Backspace ({\bf \startluacode local layout = tex.dimen.backspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Cutspace ({\bf \startluacode local layout = tex.dimen.cutspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Topspace ({\bf \startluacode local layout = tex.dimen.topspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Header ({\bf \startluacode local layout = tex.dimen.headerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}), Footer ({\bf \startluacode local layout = tex.dimen.footerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode}) \\
+        Margins: {\bf Backspace (\startluacode local layout = tex.dimen.backspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Cutspace (\startluacode local layout = tex.dimen.cutspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Topspace (\startluacode local layout = tex.dimen.topspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Header (\startluacode local layout = tex.dimen.headerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Footer (\startluacode local layout = tex.dimen.footerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)} \\
         \blank[2*line]
     \stopcolor
     \stopalignment
