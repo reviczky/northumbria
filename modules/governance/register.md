@@ -1,3 +1,11 @@
+# Asset Inventory
+
+Loan Warehousgin System
+
+-Mortagage Processing System
+-Financial Services HR department
+CIO consulting for assetts and I-SAC inventory system.
+
 # Risk Assessment
 
 # Risk Evaluation

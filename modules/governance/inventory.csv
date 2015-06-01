@@ -1,19 +1,19 @@
-Nr,"Operating Unit / Function ","Process name","Process owner","Name of Asset","Description of Asset","Type of Information Asset","Personal Data (Y/N)","Personal Sensitive Data (Y/N)","Sensitive Customer Data (Y/N)",Classification,Integrity,Availability,"Asset Custodian","Data Retention Period","At Origin (description)","If Information is Moved (description)"
-0,"UNIT A","New starter process",Luca Butler,"New starter form","Form used to initiate the new starter process and sent to UNIT B via email.","Electronic .xls template file",Y,Y,N,Confidential,Medium,Low,"UNIT B","0.5 Years","On PC of line manager, stored on network. For some line managers, they store these files on their laptop. Unlikely to be password protected.","Form is emailed to UNIT B using internal email system. It is then held on System A and System B by UNIT B."
-1,"UNIT A","New starter process",Rhys Jones,"New starter form","Form used to initiate the new starter process and sent to UNIT B via email.","Electronic .xls template file",Y,Y,N,Confidential,Medium,Low,"UNIT B","0.5 Years","On PC of line manager, stored on network. For some line managers they store these files on laptop. Unlikely to be password.","Form is emailed to UNIT B using internal email system. It is then held on System A and System B by UNIT B."
-2,"UNIT A","New starter process",Kai Middleton,"New starter form","Form","Electronic .xls template file",Y,Y,N,Confidential,Medium,Low,"UNIT B","0.5 Years","On","Form"
-3,Unit,Process,Leo Akhtar,Asset,Description,Type,Y,Y,Y,Confidential,Low,Low,Custodian,1 Year,"Origin more more more more more more more more lines lines lines.","Information more more more lines lines lines."
-4,Software,,Max Gibbons,,,,,,,,,,,,,
-5,Hardware,,Jayden Mason,,,,,,,,,,,,,
-6,People,,Abby Lyons,,,,,,,,,,,,,
-7,Records,,Lola Barnes,,,,,,,,,,,,,
-8,Places,,Alfie Woods,,,,,,,,,,,,,
-9,,,Demi Barlow,,,,,,,,,,,,,
-10,,,Jessica Hall,,,,,,,,,,,,,
-11,,,Charles Parker,,,,,,,,,,,,,
-12,,,Freddie Potts,,,,,,,,,,,,,
-13,,,Jordan Gould,,,,,,,,,,,,,
-14,,,Amber Russell,,,,,,,,,,,,,
-15,,,Declan Rogers,,,,,,,,,,,,,
-16,,,Gracie Moran,,,,,,,,,,,,,
-17,,,Kieran Mann,,,,,,,,,,,,,
+Nr,"Operating Unit / Function ","Process name","Process owner","Name of Asset","Description of Asset","Type of Information Asset","Personal Data (Y/N)","Personal Sensitive Data (Y/N)","Sensitive Customer Data (Y/N)",Classification,Integrity,Availability,Location / Place,"Data Retention Period","At Origin (description)","If Information is Moved (description)"
+1,"UNIT A","New starter process",Luca Butler,"New starter form","Form used to initiate the new starter process.","Electronic .xls template file",Y,Y,N,Confidential,Medium,Low,"UNIT B","0.5 Years","On PC of line manager, stored on network. Unlikely to be password protected.","Form is emailed to UNIT B using internal email system."
+2,"UNIT A","New",Rhys Jones,"New","Form.","Electronic",Y,Y,N,Confidential,Medium,Low,"UNIT B","0.5 Years","On PC.","Form emailed."
+3,"UNIT A","New",Kai Middleton,"New","Form","Electronic",Y,Y,N,Confidential,Medium,Low,"UNIT B","0.5 Years","On","Form"
+4,Unit,Process,Leo Akhtar,Asset,Description,Type,Y,Y,Y,Confidential,Low,Low,Custodian,1 Year,"Origin.","Information."
+5,,,Lola Barnes,Lawyers,,People,,,,,,,,,,
+6,,,Alfie Woods,Branch,,Places,,,,,,,,,,
+7,,,Amber Russell,Underwriter,,People,,,,,,,,,,
+8,CISO Divison,Cyber Crime,Max Gibbons,Data Leakage Prevention,Retention of Sensitive Data,Software,Y,N,N,Strictly Confidential,High,High,Client / Endpoint,1 year,Encryption for Database Storage,CA based Encryption
+9,Vendor Management,Messaging Services,Jordan Gould,Email / IM,Electronic Communication,Software,Y,N,Y,Strictly Confidential,High,High,Private Cloud,10 years,Secure Data Vault Encryption,"S/MIME, Two Factor Authentication"
+10,Vendor Management,Off-The-Shelf Software,Gracie Moran,Warehousing System,System-Of-Record Platform (SAAS),Software,Y,Y,Y,Strictly Confidential,High,Medium,Public Cloud,5 years,Software Encryption at the Provider,Two Factor Authentication
+11,CISO Divison,Authentication / Authorisation,Charles Parker,Smartcard / RSA Token,Two Factor Authentication,Hardware,Y,Y,N,Business use only,High,Low,With the Owner,1 year,Certificates are Password Protected,Master Key Protection
+12,Voice Team,Voice Communication,Jessica Hall,IP Phone / BlackBerry,Device for Client Communication,Hardware,Y,N,N,Business use only,Medium,Medium,Office / Owner,30 days,Password Login and Server Encryption,On-Premise Encryption
+13,Hardware Supply Divison,Desktop Allocation,Freddie Potts,Workstation / Laptop / DoD,Desktop for Internal Access,Hardware,Y,N,N,Business use only,Low,Medium,Office Premises,30 days,Data is not Stored Locally,Endpoint Protection on the Client Side
+14,Hardware Supply Divison,Server Allocation,Kieran Mann,Mainframe,"Blade Server, Rack (CPU/MEM/HDD)",Hardware,Y,N,Y,Strictly Confidential,High,High,Data Centre,5 years,Physical Lockdown and Encryption,Software Encryption
+15,Audit Divison,Compliance Checks,Jayden Mason,Internal Audit,Identifying Compliance Issues,People,N,N,N,Business use only,Low,Low,On Premise,N/A,N/A,N/A
+16,Storage Team,Information Storage,Abby Lyons,Client Data,Records on Client Details,Records,N,N,Y,Strictly Confidential,High,Medium,Internal Database,5 years,Encryption for Database Storage,Strictly Confidential Classification
+17,Finance Divison,Credit Checks,Demi Barlow,Credit Ratings,Lending Criteria Records,Records,Y,N,Y,Strictly Confidential,High,Medium,Rating Company,5 years,"Security at Provider, IP Whitelisting",Encryption for Database Storage
+18,Legal Divison,Contracts,Declan Rogers,Loan Agreements,Electronic Contract from Clients,Records,Y,Y,Y,Strictly Confidential,High,High,Secure Storage,10 years,Electronic Vault with Encryption,Password Encryption for Files
