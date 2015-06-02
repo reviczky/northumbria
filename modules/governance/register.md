@@ -1,16 +1,58 @@
 # Asset Inventory
 
-Loan Warehousgin System
+Context of the ISMS scope: Loan Warehousing System
 
--Mortagage Processing System
--Financial Services HR department
+The following assets have been identified:
+Warehousing System,
+Credit Rating System,
+Bloomberg System,
+Mainframe,
+Workstation,
+Internet Connection,
+Smartcard,
+Lending Trader,
+Underwriter,
+Internal Audit,
+Lawyer,
+Client Contract,
+Regulatory Documents,
+Banking Licence,
+Company Policy,
+Client Data Records,
+Data Centre
+
 CIO consulting for assetts and I-SAC inventory system.
 
 # Risk Assessment
 
+In order to conduct a Risk Assessment we have to develop the risk levels.
+
+Development of Appetite
+
+RA for each Asset
+Followed by Risk Register Table
+
+There is a risk
+Most prevelent risk
+
+Risk Description
+Likelihood
+Impact
+Risk Score
+Risk Class
+Control Measures
+Risk Owner
+Risk Response
+
+Operational Risk
+Financial Risk
+Reputational Risk
+
 # Risk Evaluation
 
-# Risk Treatment Plan
+# (Proposed) Risk Treatment Plan
+
+# Impact Assessment
 
 # Tables
 \startalignment
