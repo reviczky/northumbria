@@ -3,6 +3,7 @@
 \setupinteraction[state=start]
 
 \setuppapersize[A3,landscape][A3,landscape]
+\mainlanguage[uk]
 
 \setuplayout
     [
@@ -31,6 +32,9 @@
 \setupfootnotes[textcolor=blue]
 
 \setuppagenumbering[location=footer,left={\endash\ },right={\ \endash}]
+
+\definefontfeature[default][default][protrusion=quality,expansion=quality]
+\setupalign[hz,hanging]
 \setupbodyfont[heros,10pt]
 
 % \showframe
