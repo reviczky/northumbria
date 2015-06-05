@@ -7,7 +7,7 @@ Consulting the respective CIO stakeholders, the following business critical asse
 \crlf{\it Warehousing System, Credit Rating System, Bloomberg System, Mainframe, Workstation, Internet Connection, Smartcard, Lending Trader, Underwriter, Internal Audit, Lawyer, Client Contract, Regulatory Documents, Banking Licence, Company Policy, Client Data Records, Data Centre.}
 \blank[line]
 
-Evaluating the above assets for data classification as seen in the tables below results in a collective classification of:
+Evaluating the above assets for data classification, as seen in the tables below for a proposed classification scheme agreed with the CIO's for this financial institute by aligning to the NIST Framework, results in a collective classification of:
 
 * Confidentiality: Internal
 * Integrity: Trusted
@@ -35,8 +35,8 @@ Evaluating the above assets for data classification as seen in the tables below 
 \stopxtable}
 \stopalignment
 
-An overall \color[red]{[PLACEHOLDER]} risk rating has been assessed for this \infull{ISMS} (\ISMS\), due primarily to \color[red]{[PLACEHOLDER]} in the area of \color[red]{[PLACEHOLDER]}.
-Below is the list of findings grouped in \WORD{High}, \WORD{Medium} and \WORD{Low} risk rating order, based on the \infull{ORF} (\ORF\) scale:
+The scope of this risk assessment is the Loan Warehousing System and an overall \color[red]{[PLACEHOLDER]} risk rating has been assessed for this \infull{ISMS} (\ISMS\), due primarily to \color[red]{[PLACEHOLDER]} in the area of \color[red]{[PLACEHOLDER]}. The root cause of the risk rating is \color[red]{[PLACEHOLDER]}. \blank[line]
+Below is the list of findings grouped in \WORD{High}, \WORD{Medium} and \WORD{Low} risk rating order, based on the \infull{ORF} (\ORF\) scale, page \at[table:orf]:
 
 \blank[line]
 
@@ -49,11 +49,36 @@ Minor: \crlf
 
 * Bloomberg System
 
-Root cause of the risk rating is \color[red]{[PLACEHOLDER]}.
+The risk ratings in this risk assessment identifies risk levels that requires containment, management and attention to reduce it. As a result, a set of mitigation action plans to reduce the reported risks have been highlighted within the following risk register: \blank[line]
 
-The risk rating identifies a risk level that requires containment, management and attention to reduce it. As a result, a set of actions to reduce the reported risk issue should be put in place in an agreed timescale with your ORM (Operational Risk Manager). As next steps, you are being asked to:
-a) Acknowledge the report with your respective ORM on the identified risk issues and
-b) Provide a mitigation action plan with timescales and action plan ownership.
+\startalignment
+\switchtobodyfont[heros,small]
+\placetable[here,split][table:riskregister]{\WORD{Risk Register}}{
+\startxtable[option=width,split=yes,header=repeat]
+    \startxtablehead \startxrow \startxcellgroup[align={middle,lohi},background=color,backgroundcolor=gray] \startxcell {\bf ID} \stopxcell \startxcell {\bf Asset} \stopxcell \startxcell[width=45mm] {\bf Risk Description} \stopxcell \startxcell {\bf Priority} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Financial} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Operational} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Regulatory} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Impact} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Likelihood} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Overall} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Tracking} \stopxcell \startxcell[width=45mm] {\bf Mitigation Actions} \stopxcell \stopxcellgroup \stopxrow \stopxtablehead
+    \startxtablebody
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 1 \stopxcell \startxcell Warehousing System \stopxcell \stopxcellgroup \startxcell There is a risk that the R are susceptible for X that would result in Y. \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 2 \stopxcell \startxcell 3 \stopxcell \startxcell[background=color,backgroundcolor=orange] 6 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS long text. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 2 \stopxcell \startxcell Credit Rating System \stopxcell \stopxcellgroup \startxcell no approvals due to lack of data \stopxcell \startxcell[background=color,backgroundcolor=lightgray] Longer Term \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 4 \stopxcell \startxcell 4 \stopxcell \startxcell[background=color,backgroundcolor=red] 16 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 3 \stopxcell \startxcell Bloomberg System \stopxcell \stopxcellgroup \startxcell current market info \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 4 \stopxcell \startxcell Mainframe \stopxcell \stopxcellgroup \startxcell accessing data \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 5 \stopxcell \startxcell Workstation \stopxcell \stopxcellgroup \startxcell broken system \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 6 \stopxcell \startxcell Internet Connection \stopxcell \stopxcellgroup \startxcell cut off and prohibiting trading \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 7 \stopxcell \startxcell Smartcard \stopxcell \stopxcellgroup \startxcell stolen or lost or compromised \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 8 \stopxcell \startxcell Lending Trader \stopxcell \stopxcellgroup \startxcell costs \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 9 \stopxcell \startxcell Underwriter \stopxcell \stopxcellgroup \startxcell skills \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 10 \stopxcell \startxcell Internal Audit \stopxcell \stopxcellgroup \startxcell inefficient \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 11 \stopxcell \startxcell Lawyer \stopxcell \stopxcellgroup \startxcell resource problems \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 12 \stopxcell \startxcell Client Contract \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 13 \stopxcell \startxcell Regulatory Documents \stopxcell \stopxcellgroup \startxcell not followed or not the latest \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 14 \stopxcell \startxcell Banking Licence \stopxcell \stopxcellgroup \startxcell could be revoked and prohibiting trading \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 15 \stopxcell \startxcell Company Policy \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 16 \stopxcell \startxcell Client Data Records \stopxcell \stopxcellgroup \startxcell There is a risk that CID information could be leaked and made public by a malicious intent. \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 17 \stopxcell \startxcell Data Centre \stopxcell \stopxcellgroup \startxcell There is a risk that a natural disaster could damage the data centre so that it would not be able to operate. \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell redundant data centers around the globe \stopxcell \stopxrow
+    \stopxtablebody
+\stopxtable}
+\stopalignment
+
+in an agreed timescale with your ORM (Operational Risk Manager).
 
 * Availability: \infull{RTO} (\RTO\) time of 6 \endash 12 hours
 * \infull{BCM} (\BCM\): Tier 1
@@ -61,19 +86,18 @@ Link to table at appendix!
 
 risk appetite!
 
-
-SCOPE
-In scope of this risk assessment is the Loan Warehousing System. Physical boundaries of the assessment are limited to the infrastructure on which the system will be hosted, whereas logical boundaries are defined by all functionalities provided to the end users, support, and maintenance, as well as the operating model of the solution.
+looking at industry standards
+following was developed from this
 
 ---
 
 Issue Status: Open
 Issue Owner:
 
-Security Risk Rating *: Moderate (3)
-Security Category & Classification †: Integrity
-Risk Impact *: Moderate (3)
-Likelihood of occurence ††: Likely
+Security Risk Rating: Moderate (3)
+Security Category & Classification: Integrity
+Risk Impact: Moderate (3)
+Likelihood of occurence: Likely
 
 Description Impact:
 *Financial
@@ -98,7 +122,7 @@ Target Close Date:
 In order to conduct a Risk Assessment we have to develop the risk levels.
 Development of Appetite
 
-There is a risk / Most prevelent risk
+Most prevelent risk
 
 Risk Score,
 Risk Class,
@@ -106,34 +130,11 @@ Control Measures,
 Risk Owner,
 Risk Response
 
-\startalignment
-\switchtobodyfont[heros,small]
-\placetable[here][table:riskregister]{\WORD{Risk Register}}{
-\startxtable[option=width]
-    \startxrow \startxcellgroup[align={middle,lohi},background=color,backgroundcolor=gray] \startxcell {\bf ID} \stopxcell \startxcell {\bf Asset} \stopxcell \startxcell {\bf Risk Description} \stopxcell \startxcell {\bf Priority} \stopxcell \startxcell {\bf Likelihood} \stopxcell \startxcell {\bf Impact} \stopxcell \startxcell {\bf Overall} \stopxcell \startxcell {\bf Tracking} \stopxcell \startxcell {\bf Mitigation Actions} \stopxcell \stopxcellgroup \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 1 \stopxcell \startxcell Warehousing System \stopxcell \stopxcellgroup \startxcell DESCRIPTION long text. \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 2 \stopxcell \startxcell 3 \stopxcell \startxcell[background=color,backgroundcolor=orange] 6 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS long text. \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 2 \stopxcell \startxcell Credit Rating System \stopxcell \stopxcellgroup \startxcell Fire! \stopxcell \startxcell[background=color,backgroundcolor=lightgray] Longer Term \stopxcell \startxcell 4 \stopxcell \startxcell 4 \stopxcell \startxcell[background=color,backgroundcolor=red] 16 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 3 \stopxcell \startxcell Bloomberg System \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 4 \stopxcell \startxcell Mainframe \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 5 \stopxcell \startxcell Workstation \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 6 \stopxcell \startxcell Internet Connection \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 7 \stopxcell \startxcell Smartcard \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 8 \stopxcell \startxcell Lending Trader \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 9 \stopxcell \startxcell Underwriter \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 10 \stopxcell \startxcell Internal Audit \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 11 \stopxcell \startxcell Lawyer \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 12 \stopxcell \startxcell Client Contract \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 13 \stopxcell \startxcell Regulatory Documents \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 14 \stopxcell \startxcell Banking Licence \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 15 \stopxcell \startxcell Company Policy \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 16 \stopxcell \startxcell Client Data Records \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 17 \stopxcell \startxcell Data Centre \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-\stopxtable}
-\stopalignment
-
 \page
 
 # Risk Evaluation
+
+The following was used in the risk register for risk evaluation. \blank[line]
 
 Consequence Matrix
 \startalignment
@@ -165,6 +166,8 @@ Likelihood Matrix
 \stopalignment
 
 level of risk = consequence x likelihood
+
+(consequence = financial + regulatory + operational / 3)
 
 Risk rating table example
 
@@ -246,6 +249,7 @@ MULTIPLY!!!
 # Risk Processes
 
 The process is aligning to the NIST Framework as outlined above \blank[line]
+NIST as a base
 
 \startalignment
 \switchtobodyfont[heros,small]
