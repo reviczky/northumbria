@@ -7,10 +7,10 @@ Consulting the respective CIO stakeholders, the following business critical asse
 \crlf{\it Warehousing System, Credit Rating System, Bloomberg System, Mainframe, Workstation, Internet Connection, Smartcard, Lending Trader, Underwriter, Internal Audit, Lawyer, Client Contract, Regulatory Documents, Banking Licence, Company Policy, Client Data Records, Data Centre.}
 \blank[line]
 
-Evaluating the above assets for data classification, as seen in the tables below for a proposed classification scheme agreed with the CIO's for this financial institute by aligning to the NIST Framework, results in a collective classification of:
+Evaluating the above assets for data classification, as seen in the tables below for a proposed classification scheme agreed with the CIO's for this financial institute by aligning to the NIST Framework, results in a collective classification of the assets:
 
-* Confidentiality: Internal
-* Integrity: Trusted
+* Confidentiality: \bf Internal \tf
+* Integrity: \bf Trusted \tf
 
 \startalignment
 \switchtobodyfont[heros,small]
@@ -29,62 +29,98 @@ Evaluating the above assets for data classification, as seen in the tables below
 \placetable[here][table:integrity]{\WORD{Intergrity Classification}}{
 \startxtable[frame=on,option=width,align={flushleft,lohi},loffset=2mm]
 \startxrow[background=color,backgroundcolor=steelblue,foregroundcolor=white,width=30mm] \startxcell {\bf Integrity Class} \stopxcell \startxcell[width=60mm] {\bf Impact Description} \stopxcell \startxcell[width=60mm] {\bf Minimum Protection Summary} \stopxcell \stopxrow
-    \startxrow \startxcell \WORD{Basic} \stopxcell \startxcell Non-critical data: insignificant damage if data is altered or destroyed. \stopxcell \startxcell[width=60mm] \startitemize[joinedup,nowhite] \sym{\scale[scale=1250]{•}} Inherent completeness and accuracy assurance mechanism \sym{\scale[scale=1250]{•}} Appropriate access control mechanism \sym{\scale[scale=1250]{•}} Prevention of unauthorized changes \stopitemize \stopxcell \stopxrow
-    \startxrow \startxcell \WORD{Trusted} \stopxcell \startxcell Critical data: consistency, accuracy and completeness of data must be ensured. \stopxcell \startxcell[width=60mm] \startitemize[joinedup,nowhite] \sym{\scale[scale=1250]{•}} Traceability of authorized data moditication \sym{\scale[scale=1250]{•}} Restricted and periodically reviewed access rights \stopitemize \stopxcell \stopxrow
-    \startxrow \startxcell \WORD{Guaranteed} \stopxcell \startxcell[width=60mm] Critical data: consistency, accuracy and completeness of data and non-repudiation of activities must be ensured. \stopxcell \startxcell[width=60mm] \startitemize[joinedup,nowhite] \sym{\scale[scale=1250]{•}} Provide traceability with tamper proof evidence \stopitemize \stopxcell \stopxrow
+    \startxrow \startxcell {\bf \WORD{Basic}} \stopxcell \startxcell Non-critical data: insignificant damage if data is altered or destroyed. \stopxcell \startxcell[width=60mm] \startitemize[joinedup,nowhite] \sym{\scale[scale=1250]{•}} Inherent completeness and accuracy assurance mechanism \sym{\scale[scale=1250]{•}} Appropriate access control mechanism \sym{\scale[scale=1250]{•}} Prevention of unauthorized changes \stopitemize \stopxcell \stopxrow
+    \startxrow \startxcell {\bf \WORD{Trusted}} \stopxcell \startxcell Critical data: consistency, accuracy and completeness of data must be ensured. \stopxcell \startxcell[width=60mm] \startitemize[joinedup,nowhite] \sym{\scale[scale=1250]{•}} Traceability of authorized data moditication \sym{\scale[scale=1250]{•}} Restricted and periodically reviewed access rights \stopitemize \stopxcell \stopxrow
+    \startxrow \startxcell {\bf \WORD{Guaranteed}} \stopxcell \startxcell[width=60mm] Critical data: consistency, accuracy and completeness of data and non-repudiation of activities must be ensured. \stopxcell \startxcell[width=60mm] \startitemize[joinedup,nowhite] \sym{\scale[scale=1250]{•}} Provide traceability with tamper proof evidence \stopitemize \stopxcell \stopxrow
 \stopxtable}
 \stopalignment
 
-The scope of this risk assessment is the Loan Warehousing System and an overall \color[red]{[PLACEHOLDER]} risk rating has been assessed for this \infull{ISMS} (\ISMS\), due primarily to \color[red]{[PLACEHOLDER]} in the area of \color[red]{[PLACEHOLDER]}. The root cause of the risk rating is \color[red]{[PLACEHOLDER]}. \blank[line]
+Before a Risk Assessment can be conducted, the company's posture towards the risk appetite has to be defined and agreed upon by all of the stakeholders. For that it has been proposed to to set the following acceptance ratings for this financial services company, which takes the suggestions from the \infull{ISF} (\ISF\) towards defining a risk appetite into account: \blank[line]
+
+\startalignment
+\switchtobodyfont[heros,small]
+\placetable[here][table:iram2]{\WORD{Risk appetite}\footnote[isf]{\goto{ISF - IRAM2, The next generation of assessing information risk}[url(https://www.isflive.org/servlet/JiveServlet/downloadBody/15974-102-6-28208/ISF_Information_Risk_Assessment_Methodology_2_Report.pdf)]}}{
+\startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=30mm]
+    \startxrow[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Risk category} \stopxcell \startxcell[nx=4] {\bf Acceptable risk rating} \stopxcell \stopxrow
+    \startxrow[background=color,backgroundcolor=darkgray] \startxcell {\bf Negligible} \stopxcell \startxcell {\bf Low} \stopxcell \startxcell {\bf Moderate} \stopxcell \startxcell {\bf High} \stopxcell \stopxrow
+    \startxrow \startxcell Financial \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \stopxrow
+    \startxrow \startxcell Reputational \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
+    \startxrow \startxcell Legal and Regulatory Compliance \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \stopxrow
+    \startxrow \startxcell Health and Safety \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
+\stopxtable}
+\stopalignment
+
+\blank[line]
+
+The scope of this risk assessment is the Loan Warehousing System of this tier one financial services company in order to conduct business in the lending market and an overall \color[red]{[PLACEHOLDER]} risk rating has been assessed for this \infull{ISMS} (\ISMS\), due primarily to \color[red]{[PLACEHOLDER]} in the area of \color[red]{[PLACEHOLDER]}. The root cause of the risk rating is \color[red]{[PLACEHOLDER]}. \blank[line]
 Below is the list of findings grouped in \WORD{High}, \WORD{Medium} and \WORD{Low} risk rating order, based on the \infull{ORF} (\ORF\) scale, page \at[table:orf]:
 
 \blank[line]
 
-Moderate: \crlf
+\bf Moderate: \tf \crlf
 
-* Warehousing System
-* Credit Rating System
+* \color[red]{Warehousing System}
+* \color[red]{Credit Rating System}
+* \color[red]{Credit Rating System}
+* \color[red]{Credit Rating System}
 
-Minor: \crlf
+\bf Minor: \tf \crlf
 
-* Bloomberg System
+* \color[red]{Bloomberg System}
+* \color[red]{Bloomberg System}
+* \color[red]{Bloomberg System}
+* \color[red]{Bloomberg System}
 
-The risk ratings in this risk assessment identifies risk levels that requires containment, management and attention to reduce it. As a result, a set of mitigation action plans to reduce the reported risks have been highlighted within the following risk register: \blank[line]
+In order to conclude with a risk register, having all the critical assets defined, the following steps are required: \blank[line]
+
+1. Assess prevalent risks
+
+2. Conduct a risk evaluation on risk impact / likelihood
+
+3. Proposing mitigation actions
+
+For each asset the main or prevalent risks for the business attached to it will be determined. Additionally, each asset will be classified with a priority rating, that has been agreed with senior management.
+Then, a formal risk evaluation has to be conducted, of which the methodology is described and shown in much detail in section 2 on page \at[riskeval]. The outcome of these risk evaluations, each one for a financial, operational and regulatory risk (see table \in[table:birt] \about[table:birt] and table \in[table:isa] \about[table:isa]), an overall risk impact together with an assessment for the likelihood (see table \in[table:likelihood] \about[table:likelihood]) of the risk occuring for each asset, has been incorporated into the risk register.
+Finally, with the combination of the overall impact and likelihood an overall risk rating will be given (see table \in[table:risklevel] \about[table:risklevel] and table \in[table:orf] \about[table:orf]), based on the impact assessment methodology as seen in section 4 on page \at[riskimpact]. This will then be complemented with a proposal for risk mitigation, that is described in detail in section 3 on page \at[risktreatment] with the proposal for a risk treatment plan.
+
+The following table shows the risk register for each and every asset indentified in this information management system: \blank[line]
 
 \startalignment
 \switchtobodyfont[heros,small]
 \placetable[here,split][table:riskregister]{\WORD{Risk Register}}{
-\startxtable[option=width,split=yes,header=repeat]
+\startxtable[option=max,split=yes,header=repeat]
     \startxtablehead \startxrow \startxcellgroup[align={middle,lohi},background=color,backgroundcolor=gray] \startxcell {\bf ID} \stopxcell \startxcell {\bf Asset} \stopxcell \startxcell[width=45mm] {\bf Risk Description} \stopxcell \startxcell {\bf Priority} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Financial} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Operational} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Regulatory} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Impact} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Likelihood} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Overall} \stopxcell \startxcell \framed[frame=off,orientation=90]{\bf Tracking} \stopxcell \startxcell[width=45mm] {\bf Mitigation Actions} \stopxcell \stopxcellgroup \stopxrow \stopxtablehead
     \startxtablebody
     \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 1 \stopxcell \startxcell Warehousing System \stopxcell \stopxcellgroup \startxcell There is a risk that the R are susceptible for X that would result in Y. \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 2 \stopxcell \startxcell 3 \stopxcell \startxcell[background=color,backgroundcolor=orange] 6 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS long text. \stopxcell \stopxrow
     \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 2 \stopxcell \startxcell Credit Rating System \stopxcell \stopxcellgroup \startxcell no approvals due to lack of data \stopxcell \startxcell[background=color,backgroundcolor=lightgray] Longer Term \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 4 \stopxcell \startxcell 4 \stopxcell \startxcell[background=color,backgroundcolor=red] 16 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 3 \stopxcell \startxcell Bloomberg System \stopxcell \stopxcellgroup \startxcell current market info \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 4 \stopxcell \startxcell Mainframe \stopxcell \stopxcellgroup \startxcell accessing data \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 5 \stopxcell \startxcell Workstation \stopxcell \stopxcellgroup \startxcell broken system \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 6 \stopxcell \startxcell Internet Connection \stopxcell \stopxcellgroup \startxcell cut off and prohibiting trading \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 7 \stopxcell \startxcell Smartcard \stopxcell \stopxcellgroup \startxcell stolen or lost or compromised \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 8 \stopxcell \startxcell Lending Trader \stopxcell \stopxcellgroup \startxcell costs \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 9 \stopxcell \startxcell Underwriter \stopxcell \stopxcellgroup \startxcell skills \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 10 \stopxcell \startxcell Internal Audit \stopxcell \stopxcellgroup \startxcell inefficient \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 11 \stopxcell \startxcell Lawyer \stopxcell \stopxcellgroup \startxcell resource problems \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 12 \stopxcell \startxcell Client Contract \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 13 \stopxcell \startxcell Regulatory Documents \stopxcell \stopxcellgroup \startxcell not followed or not the latest \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 14 \stopxcell \startxcell Banking Licence \stopxcell \stopxcellgroup \startxcell could be revoked and prohibiting trading \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 15 \stopxcell \startxcell Company Policy \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 16 \stopxcell \startxcell Client Data Records \stopxcell \stopxcellgroup \startxcell There is a risk that CID information could be leaked and made public by a malicious intent. \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 17 \stopxcell \startxcell Data Centre \stopxcell \stopxcellgroup \startxcell There is a risk that a natural disaster could damage the data centre so that it would not be able to operate. \stopxcell \startxcell[background=color,backgroundcolor=yellow] 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell redundant data centers around the globe \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 3 \stopxcell \startxcell Bloomberg System \stopxcell \stopxcellgroup \startxcell current market info \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 4 \stopxcell \startxcell Mainframe \stopxcell \stopxcellgroup \startxcell accessing data \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 5 \stopxcell \startxcell Workstation \stopxcell \stopxcellgroup \startxcell broken system \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 6 \stopxcell \startxcell Internet Connection \stopxcell \stopxcellgroup \startxcell cut off and prohibiting trading \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 7 \stopxcell \startxcell Smartcard \stopxcell \stopxcellgroup \startxcell stolen or lost or compromised \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 8 \stopxcell \startxcell Lending Trader \stopxcell \stopxcellgroup \startxcell costs \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 9 \stopxcell \startxcell Underwriter \stopxcell \stopxcellgroup \startxcell skills \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 10 \stopxcell \startxcell Internal Audit \stopxcell \stopxcellgroup \startxcell inefficient \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 11 \stopxcell \startxcell Lawyer \stopxcell \stopxcellgroup \startxcell resource problems \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 12 \stopxcell \startxcell Client Contract \stopxcell \stopxcellgroup \startxcell DESCRIPTION \stopxcell \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell[background=color,backgroundcolor=red] 1 \stopxcell \startxcell 1 \stopxcell \startxcell ACTIONS \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 13 \stopxcell \startxcell Regulatory Documents \stopxcell \stopxcellgroup \startxcell Regulatory {\bf requirements are not followed} or not using the latest regulatory documents for compliance. \stopxcell \startxcellgroup[align={middle,lohi}] \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 4 \stopxcell \startxcell 3 \stopxcell \startxcell 5 \stopxcell \startxcell {\bf 4} \stopxcell \startxcell {\bf 4} \stopxcell \startxcell[background=color,backgroundcolor=red] {\bf 16} \stopxcell \startxcell 1 \stopxcell \stopxcellgroup \startxcell Monitor all regulatory changes and work closely together with the Internal Audit team. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 14 \stopxcell \startxcell Banking Licence \stopxcell \stopxcellgroup \startxcell The banking {\bf licence could be revoked} and prohibiting trading due to fraudulent activity. \stopxcell \startxcellgroup[align={middle,lohi}] \startxcell[background=color,backgroundcolor=lightgray] Longer Term \stopxcell \startxcell 5 \stopxcell \startxcell 5 \stopxcell \startxcell 5 \stopxcell \startxcell {\bf 5} \stopxcell \startxcell {\bf 1} \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] {\bf 5} \stopxcell \startxcell No \stopxcell \stopxcellgroup \startxcell Minotoring trading activities and setting up an approval system and redundacy checks for all high impact tradings. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 15 \stopxcell \startxcell Company Policy \stopxcell \stopxcellgroup \startxcell Company {\bf policy is outdated} and doesn't follow industry standards or minimal enterprise requirements. \stopxcell \startxcellgroup[align={middle,lohi}] \startxcell[background=color,backgroundcolor=yellow] Imminent \stopxcell \startxcell 3 \stopxcell \startxcell 2 \stopxcell \startxcell 4 \stopxcell \startxcell {\bf 3} \stopxcell \startxcell {\bf 3} \stopxcell \startxcell[background=color,backgroundcolor=orange] {\bf 9} \stopxcell \startxcell Yes \stopxcell \stopxcellgroup \startxcell Periodic review of all company polcies in accordance with industry best practices. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 16 \stopxcell \startxcell Client Data Records \stopxcell \stopxcellgroup \startxcell There is a risk that CID {\bf information could be leaked} and made public by a malicious intent. \stopxcell \startxcellgroup[align={middle,lohi}] \startxcell[background=color,backgroundcolor=lightgray] Longer Term \stopxcell \startxcell 2 \stopxcell \startxcell 1 \stopxcell \startxcell 2 \stopxcell \startxcell {\bf 2} \stopxcell \startxcell {\bf 3} \stopxcell \startxcell[background=color,backgroundcolor=orange] {\bf 6} \stopxcell \startxcell Yes \stopxcell \stopxcellgroup \startxcell Implement strong access controls and monitor access to all CID data. \\ Have all CID data on a seperate network in case of a compromise. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 17 \stopxcell \startxcell Data Centre \stopxcell \stopxcellgroup \startxcell There is a risk that a {\bf natural disaster} could damage the data centre so that it would not be able to operate. \stopxcell \startxcellgroup[align={middle,lohi}] \startxcell[background=color,backgroundcolor=lightgray] Longer Term \stopxcell \startxcell 5 \stopxcell \startxcell 5 \stopxcell \startxcell 5 \stopxcell \startxcell {\bf 5} \stopxcell \startxcell {\bf 1} \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] {\bf 5} \stopxcell \startxcell Yes \stopxcell \stopxcellgroup \startxcell Building redundant data centers around the globe for BCM. \\ Assessing geographical locations for natural and political landscape. \stopxcell \stopxrow
     \stopxtablebody
 \stopxtable}
 \stopalignment
+
+As seen, the risk ratings in this risk assessment identifies risk levels that requires containment, management and attention to reduce it. As a result, a set of mitigation action plans to reduce the reported risks have been highlighted in a seperate section on page \at[riskeval] that lays out the proposed treatment plan. \blank[line]
+
+The entire overview of the risk assessment process, which is the base for this proposed risk assessment framework, is shown in section 5 on page \at[riskprocess].
 
 in an agreed timescale with your ORM (Operational Risk Manager).
 
 * Availability: \infull{RTO} (\RTO\) time of 6 \endash 12 hours
 * \infull{BCM} (\BCM\): Tier 1
 Link to table at appendix!
-
-risk appetite!
 
 looking at industry standards
 following was developed from this
@@ -122,8 +158,6 @@ Target Close Date:
 In order to conduct a Risk Assessment we have to develop the risk levels.
 Development of Appetite
 
-Most prevelent risk
-
 Risk Score,
 Risk Class,
 Control Measures,
@@ -134,6 +168,8 @@ Risk Response
 
 # Risk Evaluation
 
+\reference[riskeval]
+
 The following was used in the risk register for risk evaluation. \blank[line]
 
 Consequence Matrix
@@ -141,7 +177,7 @@ Consequence Matrix
 \switchtobodyfont[heros,small]
 Business impact reference table (BIRT), ISF page 22/63. \\
 
-\placetable[here][table:iram2]{\WORD{Business impact reference table (BIRT)}\footnote[isf]{\goto{ISF - IRAM2, The next generation of assessing information risk}[url(https://www.isflive.org/servlet/JiveServlet/downloadBody/15974-102-6-28208/ISF_Information_Risk_Assessment_Methodology_2_Report.pdf)]}}{
+\placetable[here][table:birt]{\WORD{Business impact reference table (BIRT)}\footnote[isf]{\goto{ISF - IRAM2, The next generation of assessing information risk}[url(https://www.isflive.org/servlet/JiveServlet/downloadBody/15974-102-6-28208/ISF_Information_Risk_Assessment_Methodology_2_Report.pdf)]}}{
 \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=30mm]
     \startxrow[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Impact category} \stopxcell \startxcell[nx=4] {\bf Impact rating} \stopxcell \stopxrow
     \startxrow[background=color,backgroundcolor=darkgray] \startxcell {\bf Negligible} \stopxcell \startxcell {\bf Low} \stopxcell \startxcell {\bf Moderate} \stopxcell \startxcell {\bf High} \stopxcell \stopxrow
@@ -164,6 +200,49 @@ Likelihood Matrix
     \startxrow \startxcell[background=color,backgroundcolor=darkgray] Financial \stopxcell \startxcell 0 \endash 1m £ (GBP) \\ 1 \stopxcell \startxcell 1 \endash 5m £ (GBP) \\ 2 \stopxcell \startxcell 5 \endash 15m £ (GBP) \\ 3 \stopxcell \startxcell 25 \endash 100m £ (GBP) \\ 4 \stopxcell \startxcell > 100m £ (GBP) \\ 5 \stopxcell \stopxrow
 \stopxtable}
 \stopalignment
+
+\startalignment
+\switchtobodyfont[heros,small]
+\placetable[here][table:likelihood]{\WORD{Likelihood}}{
+\startxtable[frame=off,option=width,align={flushleft,lohi}]
+\startxrow[background=color,backgroundcolor=darkblue,foregroundcolor=white,width=20mm] \startxcell {\bf Likelihood} \stopxcell \startxcell[width=100mm] {\bf Definition} \stopxcell \startxcell[width=30mm] {\bf Frequency} \stopxcell \stopxrow
+    \startxrow \startxcell Very Low \stopxcell \startxcell The event is extremely unlikely to occur. An attack that is almost impossible to carry out successfully, as the attack scenario is extremely difficult to exploit. It requires either involvement of administrative staff, or a very proficient attacker over a prolonged period of time. \stopxcell \startxcell Once between 5 and 10 years \stopxcell \stopxrow
+    \startxrow \startxcell Low \stopxcell \startxcell The exploit method is difficult as it requires a high level of technical expertise combined with either involvement of trusted bank staff or a prolonged period of time. Given enough motivation and opportunity, the attack can be successful. \stopxcell \startxcell Once between 2 and 5 years \stopxcell \stopxrow
+    \startxrow \startxcell Medium \stopxcell \startxcell An attack could be accomplished given either a long period of time or over a shorter period with sufficient skills and tools. The exploit is likely to be known about publicly, has advertised attack methods and may be achievable without involvement of bank staff. \stopxcell \startxcell Once between 1 and 2 years \stopxcell \stopxrow
+    \startxrow \startxcell High \stopxcell \startxcell The occurrence of the incident is near to occur at least once a year. It could be an attack that is easy to accomplish without involvement of bank staff, or by semi skilled attackers. It should be assumed that such an attack will happen because of available access, general knowledge or simplicity of the exploit. \stopxcell \startxcell 1 to 4 times a year \stopxcell \stopxrow
+    \startxrow \startxcell Very High \stopxcell \startxcell An incident that is almost certain of striking. It could be an attack which targets a very obvious weakness or one that may occur through misuse. \stopxcell \startxcell 4 to 12 times a year \stopxcell \stopxrow
+\stopxtable}
+\stopalignment
+
+\page
+
+# (Proposed) Risk Treatment Plan
+
+\reference[risktreatment]
+
+positive & negative
+
+1) Knowingly accept the risk as it falls within the organisation's "risk appetite", in other words management deem the risk acceptable, compared to the cost of improving controls to mitigate it;
+2) Implement a suitable control or combination of controls to reduce (mitigate) the risk to a more acceptable level. Controls may be selected from the best practices defined in ISO 17799 and/or from other sources;
+3) Avoid the risk i.e. do not undertake the associated business activity;
+4) Transfer the risk to another organisation (e.g. through insurance or by contractual arrangements with a business partner).
+
+\startalignment
+\switchtobodyfont[heros,small]
+\placetable[here][table:risktreatment]{\WORD{Risk Treatment}}{
+\startxtable[option=width]
+    \startxrow \startxcellgroup[align={middle,lohi},background=color,backgroundcolor=gray] \startxcell {\bf ID} \stopxcell \startxcell {\bf Risk Description} \stopxcell \startxcell {\bf Proposed Treatment} \stopxcell \startxcell {\bf Preference} \stopxcell \startxcell {\bf Risk Rating Before Treatment} \stopxcell \startxcell {\bf Risk Rating After Treatment} \stopxcell \startxcell {\bf Cost/Benefit Analysis} \stopxcell \startxcell {\bf Responsible for Implementation} \stopxcell \startxcell {\bf Timetable} \stopxcell \startxcell {\bf Monitoring} \stopxcell \stopxcellgroup \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 1 \stopxcell \startxcell Fire! \stopxcell \stopxcellgroup \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell Medium \stopxcell \startxcell Low \stopxcell \startxcell Accept \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 2 \stopxcell \startxcell RISK \stopxcell \stopxcellgroup \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell Reject \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 3 \stopxcell \startxcell RISK \stopxcell \stopxcellgroup \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \stopxrow
+\stopxtable}
+\stopalignment
+
+\page
+
+# Impact Assessment
+
+\reference[riskimpact]
 
 level of risk = consequence x likelihood
 
@@ -189,31 +268,6 @@ Risk rating 	Description 	Action
 8-12 	High 	Needs corrective action within 1 month
 4-8 	Moderate 	Needs corrective action within 3 months
 1-4 	Low 	Does not currently require corrective action
-
-\page
-
-# (Proposed) Risk Treatment Plan
-positive & negative
-
-1) Knowingly accept the risk as it falls within the organisation's "risk appetite", in other words management deem the risk acceptable, compared to the cost of improving controls to mitigate it;
-2) Implement a suitable control or combination of controls to reduce (mitigate) the risk to a more acceptable level. Controls may be selected from the best practices defined in ISO 17799 and/or from other sources;
-3) Avoid the risk i.e. do not undertake the associated business activity;
-4) Transfer the risk to another organisation (e.g. through insurance or by contractual arrangements with a business partner).
-
-\startalignment
-\switchtobodyfont[heros,small]
-\placetable[here][table:risktreatment]{\WORD{Risk Treatment}}{
-\startxtable[option=width]
-    \startxrow \startxcellgroup[align={middle,lohi},background=color,backgroundcolor=gray] \startxcell {\bf ID} \stopxcell \startxcell {\bf Risk Description} \stopxcell \startxcell {\bf Proposed Treatment} \stopxcell \startxcell {\bf Preference} \stopxcell \startxcell {\bf Risk Rating Before Treatment} \stopxcell \startxcell {\bf Risk Rating After Treatment} \stopxcell \startxcell {\bf Cost/Benefit Analysis} \stopxcell \startxcell {\bf Responsible for Implementation} \stopxcell \startxcell {\bf Timetable} \stopxcell \startxcell {\bf Monitoring} \stopxcell \stopxcellgroup \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 1 \stopxcell \startxcell Fire! \stopxcell \stopxcellgroup \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell Medium \stopxcell \startxcell Low \stopxcell \startxcell Accept \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 2 \stopxcell \startxcell RISK \stopxcell \stopxcellgroup \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell Reject \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell 3 \stopxcell \startxcell RISK \stopxcell \stopxcellgroup \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \startxcell 1 \stopxcell \stopxrow
-\stopxtable}
-\stopalignment
-
-\page
-
-# Impact Assessment
 
 \startalignment
 \switchtobodyfont[heros,small]
@@ -244,9 +298,24 @@ MULTIPLY!!!
 \stopxtable}
 \stopalignment
 
+\startalignment
+\switchtobodyfont[heros,small]
+\placetable[here][table:availability]{\WORD{Availability}}{
+\startxtable[frame=off,option=width,align={flushleft,lohi}]
+\startxrow[background=color,backgroundcolor=darkblue,foregroundcolor=white,width=20mm] \startxcell[width=30mm] {\bf Availability Classification} \stopxcell \startxcell {\bf Impact} \stopxcell \startxcell[width=100mm] {\bf Description} \stopxcell \stopxrow
+    \startxrow \startxcell Non-critical \stopxcell \startxcell Very Low \stopxcell \startxcell This information is desirable, but not crucial to the business. Negligible impact if information were to become unavailable. Unavailability duration can exceed 24 hours without impact on the bank's ability to function. \stopxcell \stopxrow
+    \startxrow \startxcell Next Day \stopxcell \startxcell Low \stopxcell \startxcell This information is crucial, but not critical. Unavailability may cause minor embarrassment to the Bank, but will not cause material damage to the Bank's image or profitability. Services must be restored within 24 hours. \stopxcell \stopxrow
+    \startxrow \startxcell Same Day \stopxcell \startxcell Medium \stopxcell \startxcell This information is critical and must be obtainable within one working day maximum. Failure could cause embarrassment to the Bank, reduced market shared, loss of revenue, and/or inability to meet legal or regulatory obligations. Services must be restored within 4 hours i.e. same day. \stopxcell \stopxrow
+    \startxrow \startxcell Business continuity \stopxcell \startxcell High \stopxcell \startxcell This information is absolutely critical to the business and must be at hand within a very short period of time. Unavailability would likely result in major embarrassment to the Bank, reduced market share, significant loss of revenue, and/or inability to meet legal or regulatory obligations. A priority response is warranted to ensure services are restored within 60 minutes. \stopxcell \stopxrow
+    \startxrow \startxcell Business survival \stopxcell \startxcell Very High \stopxcell \startxcell This information is survival critical and must always be available at any time. Unavailability would result in substantial and possibly irrevocable damage to the Bank in legal, financial, business or technical form. Violations of law, or legal actions against the Bank could damage client confidences, effect the Bank's reputation and cause loss of business opportunities and competitive advantage. 100\% availability is required. \stopxcell \stopxrow
+\stopxtable}
+\stopalignment
+
 \page
 
 # Risk Processes
+
+\reference[riskprocess]
 
 The process is aligning to the NIST Framework as outlined above \blank[line]
 NIST as a base
@@ -294,51 +363,3 @@ NIST as a base
 \stopalignment
 
 Deliver Information Assurance \blank[line]
-
-\page
-
-# Tables
-
-Risk Appetite is at Risk Evaluation! \\
-
-Availability leave as appendix? \\
-
-Likelihood maybe at Risk Evaluation?! \\
-
-\startalignment
-\switchtobodyfont[heros,small]
-Risk appetite, ISF page 53. \\
-
-\placetable[here][table:iram2]{\WORD{Risk appetite}\note[isf]}{
-\startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=30mm]
-    \startxrow[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Risk category} \stopxcell \startxcell[nx=4] {\bf Acceptable risk rating} \stopxcell \stopxrow
-    \startxrow[background=color,backgroundcolor=darkgray] \startxcell {\bf Negligible} \stopxcell \startxcell {\bf Low} \stopxcell \startxcell {\bf Moderate} \stopxcell \startxcell {\bf High} \stopxcell \stopxrow
-    \startxrow \startxcell Financial \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \stopxrow
-    \startxrow \startxcell Reputational \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
-    \startxrow \startxcell Legal and Regulatory Compliance \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \stopxrow
-    \startxrow \startxcell Health and Safety \stopxcell \startxcell \stopxcell \startxcell × \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
-\stopxtable}
-\stopalignment
-
-\startalignment
-\switchtobodyfont[heros,small]
-\placetable[here][table:availability]{\WORD{Availability}}{
-\startxtable[frame=off,option=width,align={flushleft,lohi}]
-\startxrow[background=color,backgroundcolor=darkblue,foregroundcolor=white,width=20mm] \startxcell[width=30mm] {\bf Availability Classification} \stopxcell \startxcell {\bf Impact} \stopxcell \startxcell[width=100mm] {\bf Description} \stopxcell \stopxrow
-    \startxrow \startxcell Non-critical \stopxcell \startxcell Very Low \stopxcell \startxcell This information is desirable, but not crucial to the business. Negligible impact if information were to become unavailable. Unavailability duration can exceed 24 hours without impact on the bank's ability to function. \stopxcell \stopxrow
-    \startxrow \startxcell Next Day \stopxcell \startxcell Low \stopxcell \startxcell This information is crucial, but not critical. Unavailability may cause minor embarrassment to the Bank, but will not cause material damage to the Bank's image or profitability. Services must be restored within 24 hours. \stopxcell \stopxrow
-    \startxrow \startxcell Same Day \stopxcell \startxcell Medium \stopxcell \startxcell This information is critical and must be obtainable within one working day maximum. Failure could cause embarrassment to the Bank, reduced market shared, loss of revenue, and/or inability to meet legal or regulatory obligations. Services must be restored within 4 hours i.e. same day. \stopxcell \stopxrow
-    \startxrow \startxcell Business continuity \stopxcell \startxcell High \stopxcell \startxcell This information is absolutely critical to the business and must be at hand within a very short period of time. Unavailability would likely result in major embarrassment to the Bank, reduced market share, significant loss of revenue, and/or inability to meet legal or regulatory obligations. A priority response is warranted to ensure services are restored within 60 minutes. \stopxcell \stopxrow
-    \startxrow \startxcell Business survival \stopxcell \startxcell Very High \stopxcell \startxcell This information is survival critical and must always be available at any time. Unavailability would result in substantial and possibly irrevocable damage to the Bank in legal, financial, business or technical form. Violations of law, or legal actions against the Bank could damage client confidences, effect the Bank's reputation and cause loss of business opportunities and competitive advantage. 100\% availability is required. \stopxcell \stopxrow
-\stopxtable}
-
-\placetable[here][table:likelihood]{\WORD{Likelihood}}{
-\startxtable[frame=off,option=width,align={flushleft,lohi}]
-\startxrow[background=color,backgroundcolor=darkblue,foregroundcolor=white,width=20mm] \startxcell {\bf Likelihood} \stopxcell \startxcell[width=100mm] {\bf Definition} \stopxcell \startxcell[width=30mm] {\bf Frequency} \stopxcell \stopxrow
-    \startxrow \startxcell Very Low \stopxcell \startxcell The event is extremely unlikely to occur. An attack that is almost impossible to carry out successfully, as the attack scenario is extremely difficult to exploit. It requires either involvement of administrative staff, or a very proficient attacker over a prolonged period of time. \stopxcell \startxcell Once between 5 and 10 years \stopxcell \stopxrow
-    \startxrow \startxcell Low \stopxcell \startxcell The exploit method is difficult as it requires a high level of technical expertise combined with either involvement of trusted bank staff or a prolonged period of time. Given enough motivation and opportunity, the attack can be successful. \stopxcell \startxcell Once between 2 and 5 years \stopxcell \stopxrow
-    \startxrow \startxcell Medium \stopxcell \startxcell An attack could be accomplished given either a long period of time or over a shorter period with sufficient skills and tools. The exploit is likely to be known about publicly, has advertised attack methods and may be achievable without involvement of bank staff. \stopxcell \startxcell Once between 1 and 2 years \stopxcell \stopxrow
-    \startxrow \startxcell High \stopxcell \startxcell The occurrence of the incident is near to occur at least once a year. It could be an attack that is easy to accomplish without involvement of bank staff, or by semi skilled attackers. It should be assumed that such an attack will happen because of available access, general knowledge or simplicity of the exploit. \stopxcell \startxcell 1 to 4 times a year \stopxcell \stopxrow
-    \startxrow \startxcell Very High \stopxcell \startxcell An incident that is almost certain of striking. It could be an attack which targets a very obvious weakness or one that may occur through misuse. \stopxcell \startxcell 4 to 12 times a year \stopxcell \stopxrow
-\stopxtable}
-\stopalignment
