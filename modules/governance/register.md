@@ -229,13 +229,15 @@ For each risk the business and stakeholders will determine the response to those
 \stopxtable}
 \stopalignment
 
-(positive impact) If implemented the proposed treatment plan would reduce the risk to the bank
-cost of implementation per benefit
-reduce risk, but looking at risk level
+For each treatment of a risk the timescale has to be discussed and agreed upon with the respective \infull{ORM} (\ORM\). \crlf
 
-(negative impact) If not implemented, the risk levels are higher, depending on organisations appetite
+\blank[line]
 
-The agreed timescale with the appropriate \infull{ORM} (\ORM\). \blank[line]
+If implemented, the proposed treatment plan would reduce drastically the risk the bank is exposed to. Given the investment for the mitigation actions, the cost benefit analysis will determine on the grounds of the organisations risk appetite, how much it is willing to invest to reduce the risk levels. The risk treatment plan shows the treatment options for each identified risk and preference options for mitigating actions. It is up to the board to decide for which mitigation action to go for, depending on the investment willingness, or which risks to address at all. \crlf
+
+\blank[line]
+
+If not implemented, the risk levels are higher. Depending on the organisations risk appetite, this could lead to serious business disruptions, which will either be accepted or ignored. Strategic decisions could reduce the risk level, but not to the extent as with the risk treatment plan. As risk asessments is a point in time snapshot, the plan and along with it the decisions have to be periodically re-assessed, especially on management, stakeholder or risk appetite changes. \crlf
 
 \page
 
