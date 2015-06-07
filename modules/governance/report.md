@@ -1,25 +1,15 @@
 # Abstract
 
 Looking at the current implementation of information governance at a tier one financial services organisation, deficiencies have been identified and a proposed new governance framework needs to be introduced.
-The "Lending Warehousing System" has been chosen as an information system to show the methodology of the proposed information governance and information assurance.
+To present these as part of a methodology of information governance and information assurance the framework will be applied to a scope of a specific information management system and the processes around it.
 Industry standards have been evaluated and the proposed framework consisting of classification of assets, risk assessment and treatment plan to address the risks. Detailed processes around risk evaluation and various aspects of impact and likelihood have been suggested. The main output is a risk treatment plan.
-If implemented, the governance proposal would greatly benefit the business in terms of operation and financial revenue. \par
-
-about the content, to read or not?
+If implemented, the governance proposal would enhance information security, compliance and safeguarding of information and assets and hence, on a whole, benefit the business in terms of operation and financial revenue. \par
 
 # Executive Summary
 
-Formal description of risk appetite
-classification of assets based on confidentiality, integrity, priority on business criticality
-risk assessment through frameworks of
-risk evaluation and risk impact with likelihood
-development risk treatment plan
-suggested mitigation action plans
-business benefits, cost/benefit
-recommendation to implement all high and very high findings in the risk treatment plan for being competitive in the market. \par
-
-all summary of content
-shorter as abstract
+The "Lending Warehousing System" was used as an example for proposing a new, improved information governance within the financial services organisation.
+Based on existing frameworks from \NIST\ and the \ISF\, formal descriptions of the organisations risk appetite, the classification of data, risk assessments and a risk treatment plan have been developed.
+Suggested mitigation plans and cost benefit analysis recommends to look at all high and very high findings in the treatment plan and take course of action to minimise the security posture of the bank and with that the financial implications to be competitive in the market. \par
 
 # Contents
 
@@ -28,7 +18,7 @@ It is utmost important for financial institutes to have the right information go
 
 \blank[line]
 
-Further to the data classification, which holds information that is deemed as \infull{CID} (\CID\), the nature of the business is multicultural, being represented around the globe with clients from \infull{APAC} (\APAC\), \infull{EMEA} (\EMEA\) or the \infull{AMER} (\AMER\), each with their own legislations, laws, culture and customs of business. Ethics and reputation has to considered when considering whether doing business in certain countries or not, for example women doing business or countries at war.
+Further to the data classification, which holds information that is deemed as \infull{CID} (\CID\), the nature of the business is multicultural, being represented around the globe with clients from \infull{APAC} (\APAC\), \infull{EMEA} (\EMEA\) or the \infull{AMER} (\AMER\), each with their own legislations, laws, culture and customs of business. Ethics and reputation has to considered when determining whether doing business in certain countries or not, for example women doing business or countries at war.
 Specific laws have to be obeyed when data is in transit or being exchanged (U.S.-EU & U.S.-Swiss Safe Harbor Frameworks). Some countries like Switzerland or Germany (Works Council, Trade Unions) impose strict restrictions on where data can be stored and how it can be accessed and by whom, that results in an additional challenge for each decision that has to be made.
 After the financial crisis, regulations for financial services has tightened and many regulatory bodies (\infull{MAS}, \infull{SOX}, \infull{RBI}, \infull{FRBNY}, \infull{FINMA}, \infull{BAFIN}, \infull{FCA} and \infull{BoE})\cite[mallin2013corporate] oversee the business with wide-ranging implications. Not conforming to these regulatory requirement will lead to a revocation of business in the respective countries. One of the biggest regulatory framework that all financial institutes have to comply with is Basel III. \par
 
@@ -47,18 +37,18 @@ It is now clear that governance around information is not just required but the 
 
 \blank[line]
 
-To develop an appropriate information governance tailored to the organisational needs it is required to look at the current landscape of governance within the company in order to see the gaps and waht improvements has to be done. Historically these institutions are doing business for a long time over decades of years and the reluctancy for changes resulted being way behind the curve for adapting new and modern methodologies and frameworks. For a long time there was no information governance framework per se in place, nonetheless, with the growing need of information assurance the trend is going towards the implementation of the \infull{COBIT} (\COBIT\) framework. Therefore, that will be taken as the current baseline for information governance. \par
+To develop an appropriate information governance tailored to the organisational needs it is required to look at the current landscape of governance within the company in order to see the gaps and what improvements have to be done. Historically, these institutions are doing business for a long time over decades of years and the reluctancy for changes resulted being way behind the curve for adapting new and modern methodologies and frameworks. For a long time there was no information governance framework per se in place, nonetheless, with the growing need of information assurance the trend is going towards the implementation of the \infull{COBIT} (\COBIT\) framework. Therefore, that will be taken as the current baseline for information governance. \par
 
 \blank[line]
 
 As a first step, it is inevitable to look at the Records Management around the records and assets that the company is holding \cite[alexander2013information], the process around the life-cycle of each record. As with most financial institutes, the majority of records are digital by now and the business critical assets are client data and algorithms. The ISO 27001 standard has been used for making an inventory list.
 Before a classification of each asset can be made and the resulting process around its life-cycle, there is a dependency on the organisations risk appetite, which will determine these metrics. As with most major investment banks, there is a tendency to have a greater risk appetite towards financial risk, even though that is now contained strongly with the regulations mentioned above.
-As an example the \infull{ISF} \(ISF\) shows a risk appetite matrix how to define the high level risk appetite, see table \in[table:iram2]. \par
+As an example, the \infull{ISF} \(ISF\) shows a risk appetite matrix how to define the high level risk appetite, see table \in[table:iram2]. \par
 
 \blank[line]
 
-Every business is different, its board a different direction for doing business and this organisations appetite has been defined as taking higher stakes on Financial and Legal risk but less on Reputational, Operational and Health and Safety risks.
-The more risk is accepted the greater the profits can be and on the counterside the losses as well. \par
+Every business is different, its board with a different direction for doing business and this organisations appetite has been defined in taking higher stakes on financial and legal risk but less on reputational, operational and health and safety risks.
+The more risk is accepted the greater the profits can be, but on the counterside, the losses as well. \par
 
 Generally, in order to look at the different approaches for data classification, risk assessment, risk evaluation and risk impact and the output of a risk treatment plan in order to assure information assurance, it has to be looked at what methodologies, frameworks and industry standards are available alongside with the organisations current implementation.
 For that, the research focused on the \infull{NIST} and \infull{ISF} with elements of the currently implemented \infull{COBIT} framework. From this a specific methodology was developed, modifying and adjusting the found tools and techniques to suit and align to the enterprise's needs. \par
@@ -87,14 +77,14 @@ Now that the attached risks have been identified the next step is to develop a r
 
 \blank[line]
 
-There are four ways to treat a risk, each can be either mitigated by actions, transferred to other parties, accepted as they are or avoided by specific actions. \par
+There are four ways to treat a risk, each can be either mitigated by actions, transferred to other parties, accepted as they are or avoided by specific actions. A process diagramm can be seen at the table \in[table:riskprocess]. \par
 
 \blank[line]
 
 All of the high and very high risks will be looked at to mitigate and through that downgrade to moderate or lower risk levels. As the final risk rating already takes the financial aspects into account, the question of the implementation of the risk treatment plan and the options for mitigating actions will be decided by senior management rather than the risk team.
 Success criteria and action plans are important to define in order to close the risk findings. \par
 
-The process for risk treatments is tracked via a risk index system, and operational risk managers \cite[sherwood2005enterprise] are assigned to each stream within the bank to track the agreed time-scale and to assess the justification over time and the controls in place that will have an effect on the identified risks. Change Management systems are used for the improvement steps that need to be implemented.
+The process for risk treatments is tracked via a risk index system, and operational risk managers are assigned to each stream within the bank to track the agreed time-scale and to assess the justification over time and the controls in place that will have an effect on the identified risks \cite[sherwood2005enterprise]. Change Management systems are used for the improvement steps that need to be implemented.
 The tendency is towards risks that are identified as regulatory findings and there is little room for strategic decisions to close those risks. \par
 
 \blank[line]
@@ -114,7 +104,7 @@ The key drivers in this business in a challenging environment are always profit,
 
 \startalignment
 \switchtobodyfont[heros,small]
-\placetable[here][table:iram2]{\WORD{Risk appetite}\footnote[isf]{\goto{ISF - IRAM2, The next generation of assessing information risk}[url(https://www.isflive.org/servlet/JiveServlet/downloadBody/15974-102-6-28208/ISF_Information_Risk_Assessment_Methodology_2_Report.pdf)]}}{
+\placetable[here][table:iram2]{\WORD{Risk appetite}}{
 \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=30mm]
     \startxrow[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Risk category} \stopxcell \startxcell[nx=4] {\bf Acceptable risk rating} \stopxcell \stopxrow
     \startxrow[background=color,backgroundcolor=darkgray] \startxcell {\bf Negligible} \stopxcell \startxcell {\bf Low} \stopxcell \startxcell {\bf Moderate} \stopxcell \startxcell {\bf High} \stopxcell \stopxrow
@@ -145,7 +135,7 @@ The key drivers in this business in a challenging environment are always profit,
 
 \startalignment
 \switchtobodyfont[heros,small]
-\placetable[here][table:riskprocess]{\WORD{Risk Assessment Process}\footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}{
+\placetable[here][table:riskprocess]{\WORD{Risk Assessment Process}}{
 \midaligned{\startframed[width=110mm,height=10mm,background=color,backgroundcolor=white,align={middle,lohi}]
 \bfa Step 1: Prepare for Assessment \\
 \tfx\it Derived from Organizational Risk Frame \\
