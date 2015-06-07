@@ -245,30 +245,32 @@ If not implemented, the risk levels are higher. Depending on the organisations r
 
 \reference[riskimpact]
 
-level of risk = consequence x likelihood
+The following formula has been defined for the risk impact of this financial services organisation. It has been modified from the general risk impact measurements in order to facilitate this business and being competitive with other peer banks. \crlf
 
-(consequence = financial + regulatory + operational / 3)
+\blank[line]
 
-Risk rating table example
+\placeformula[eq:risklevel]{\startformula level of risk = consequence \times likelihood \stopformula}
+
+As the organisation deals with financial, operational and regulatory risks and the impact is different on each on those scales, the "consequence" variable is a mean of those scales combined:
+
+\placeformula[eq:risklevel]{\startformula consequence = \frac{(financial + regulatory + operational)}{3} \stopformula}
+
+Risk rating table: \crlf
+
+\blank[line]
 
 \startalignment
 \switchtobodyfont[heros,small]
 \placetable[here][table:risklevel]{\WORD{Assessment Scale – Level of Risk}\footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}{
 \startxtable[option=width,background=color,backgroundcolor=gray]
     \startxrow \startxcellgroup[align={middle,lohi},background=color,backgroundcolor=darkgray] \startxcell {\bf Qualitative Values} \stopxcell \startxcell[nx=2] {\bf Semi-Quantitative Values} \stopxcell \startxcell {\bf Description} \stopxcell \stopxcellgroup \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell[width=20mm] Very High \stopxcell \startxcell[width=15mm] 96-100 \stopxcell \startxcell[width=15mm] 10 \stopxcell \stopxcellgroup \startxcell[width=100mm] {\bf Very high risk} means that a threat event could be expected to have {\bf multiple severe or catastrophic} adverse effects on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell High \stopxcell \startxcell 80-95 \stopxcell \startxcell 8 \stopxcell \stopxcellgroup \startxcell {\bf High risk} means that a threat event could be expected to have a {\bf severe or catastrophic} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell Moderate \stopxcell \startxcell 21-79 \stopxcell \startxcell 5 \stopxcell \stopxcellgroup \startxcell {\bf Moderate risk} means that a threat event could be expected to have a {\bf serious} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell Low \stopxcell \startxcell 5-20 \stopxcell \startxcell 2 \stopxcell \stopxcellgroup \startxcell {\bf Low risk} means that a threat event could be expected to have a {\bf limited} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell[width=20mm] Very High \stopxcell \startxcell[width=15mm] 96-100 \stopxcell \startxcell[width=15mm] 25 \stopxcell \stopxcellgroup \startxcell[width=100mm] {\bf Very high risk} means that a threat event could be expected to have {\bf multiple severe or catastrophic} adverse effects on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell High \stopxcell \startxcell 80-95 \stopxcell \startxcell 20 \stopxcell \stopxcellgroup \startxcell {\bf High risk} means that a threat event could be expected to have a {\bf severe or catastrophic} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell Moderate \stopxcell \startxcell 21-79 \stopxcell \startxcell 10 \stopxcell \stopxcellgroup \startxcell {\bf Moderate risk} means that a threat event could be expected to have a {\bf serious} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell Low \stopxcell \startxcell 5-20 \stopxcell \startxcell 5 \stopxcell \stopxcellgroup \startxcell {\bf Low risk} means that a threat event could be expected to have a {\bf limited} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
     \startxrow \startxcellgroup[align={middle,lohi}] \startxcell Very Low \stopxcell \startxcell 0-4 \stopxcell \startxcell 0 \stopxcell \stopxcellgroup \startxcell {\bf Very low risk} means that a threat event could be expected to have a {\bf negligible} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
 \stopxtable}
 \stopalignment
-
-Risk rating 	Description 	Action
-12-16 	Severe 	Needs immediate corrective action
-8-12 	High 	Needs corrective action within 1 month
-4-8 	Moderate 	Needs corrective action within 3 months
-1-4 	Low 	Does not currently require corrective action
 
 \startalignment
 \switchtobodyfont[heros,small]
@@ -284,17 +286,16 @@ Risk rating 	Description 	Action
 \stopxtable}
 \stopalignment
 
-MULTIPLY!!!
 \startalignment
 \switchtobodyfont[heros,small]
 \placetable[here][table:orf]{\WORD{Operational Risk Framework}}{
 \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=25mm]
     \startxrow \startxcellgroup[background=color,backgroundcolor=darkgray] \startxcell {\bf Likelihood} \stopxcell \startxcell[nx=5,background=color,backgroundcolor=lightyellow] {\bf Overall ORF Rating} \stopxcell \stopxcellgroup \stopxrow
-    \startxrow[height=15mm] \startxcell Almost Certain (more than once per year) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (2) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (3) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (4) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (5) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (5) \stopxcell \stopxrow
-    \startxrow[height=15mm] \startxcell Likely (at least once per year) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (2) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (3) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (4) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (5) \stopxcell \stopxrow
-    \startxrow[height=15mm] \startxcell Possbile (at least once in 5 years) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (2) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (2) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (3) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (4) \stopxcell \stopxrow
-    \startxrow[height=15mm] \startxcell Unlikely (at least once in 5-10 years) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (2) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (2) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (3) \stopxcell \stopxrow
-    \startxrow[height=15mm] \startxcell Rare (less than once every 10 years) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (2) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (2) \stopxcell \stopxrow
+    \startxrow[height=15mm] \startxcell Almost Certain (more than once per year) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (5) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (10) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (15) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (20) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (25) \stopxcell \stopxrow
+    \startxrow[height=15mm] \startxcell Likely (at least once per year) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (8) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (12) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (16) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (20) \stopxcell \stopxrow
+    \startxrow[height=15mm] \startxcell Possbile (at least once in 5 years) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (3) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (6) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (9) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (12) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (15) \stopxcell \stopxrow
+    \startxrow[height=15mm] \startxcell Unlikely (at least once in 5-10 years) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (6) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (8) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (10) \stopxcell \stopxrow
+    \startxrow[height=15mm] \startxcell Rare (less than once every 10 years) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (3) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (5) \stopxcell \stopxrow
     \startxrow[background=color,backgroundcolor=salmon] \startxcell ORF Impact \stopxcell \startxcell Non Significant (1) \stopxcell \startxcell Minor (2) \stopxcell \startxcell Moderate (3) \stopxcell \startxcell Major (4) \stopxcell \startxcell Critical (5) \stopxcell \stopxrow
 \stopxtable}
 \stopalignment
