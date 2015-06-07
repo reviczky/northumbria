@@ -1,9 +1,11 @@
 # Abstract
 
-Looking at the current implemetation of information governance at a tier one financial services organisation, deficiencies have been identified and a proposed new governance framework needs to be introduced.
+Looking at the current implementation of information governance at a tier one financial services organisation, deficiencies have been identified and a proposed new governance framework needs to be introduced.
 The "Lending Warehousing System" has been chosen as an information system to show the methodology of the proposed information governance and information assurance.
-Industry standards have been evaluated and the proposed framework consisting of classification of assets, risk asessment and treatment plan to address the risks. Detailed processes around risk evaluation and various aspects of impact and likelihood have been suggested. The main output is a risk treatment plan.
+Industry standards have been evaluated and the proposed framework consisting of classification of assets, risk assessment and treatment plan to address the risks. Detailed processes around risk evaluation and various aspects of impact and likelihood have been suggested. The main output is a risk treatment plan.
 If implemented, the governance proposal would greatly benefit the business in terms of operation and financial revenue. \par
+
+about the content, to read or not?
 
 # Executive Summary
 
@@ -16,6 +18,9 @@ suggested mitigation action plans
 business benefits, cost/benefit
 recommendation to implement all high and very high findings in the risk treatment plan for being competitive in the market. \par
 
+all summary of content
+shorter as abstract
+
 # Contents
 
 The scope of this \infull{ISMS} (\ISMS\) has been set as the "Lending Warehousing System" of a global tier one financial services organisation. A lending warehousing system is a system for granting lines of credit in order to fund a mortgage and it is identified as a crucial part of the business. The data being processed within this system is classified as sensitive information that needs to be protected and dealt with accordingly.
@@ -23,7 +28,7 @@ It is utmost important for financial institutes to have the right information go
 
 \blank[line]
 
-Further to the data classification, which holds information that is deemed as \infull{CID} (\CID\), the nature of the business is multicultural, being represented around the globe with clients from \infull{APAC} (\APAC\), \infull{EMEA} (\EMEA\) or the \infull{AMER} (\AMER\), each with their own legislations, laws, culture and customs of business. Ethics and reputation has to considered when considering whether doing business in certain countried or not, for example women doing business or countries at war.
+Further to the data classification, which holds information that is deemed as \infull{CID} (\CID\), the nature of the business is multicultural, being represented around the globe with clients from \infull{APAC} (\APAC\), \infull{EMEA} (\EMEA\) or the \infull{AMER} (\AMER\), each with their own legislations, laws, culture and customs of business. Ethics and reputation has to considered when considering whether doing business in certain countries or not, for example women doing business or countries at war.
 Specific laws have to be obeyed when data is in transit or being exchanged (U.S.-EU & U.S.-Swiss Safe Harbor Frameworks). Some countries like Switzerland or Germany (Works Council, Trade Unions) impose strict restrictions on where data can be stored and how it can be accessed and by whom, that results in an additional challenge for each decision that has to be made.
 After the financial crisis, regulations for financial services has tightened and many regulatory bodies (\infull{MAS}, \infull{SOX}, \infull{RBI}, \infull{FRBNY}, \infull{FINMA}, \infull{BAFIN}, \infull{FCA} and \infull{BoE})\cite[mallin2013corporate] oversee the business with wide-ranging implications. Not conforming to these regulatory requirement will lead to a revocation of business in the respective countries. One of the biggest regulatory framework that all financial institutes have to comply with is Basel III. \par
 
@@ -42,7 +47,7 @@ It is now clear that governance around information is not just required but the 
 
 \blank[line]
 
-To develop an appropriate information governance tailored to the organisational needs it is required to look at the current landscape of governance within the company in order to see the gaps and waht improvements has to be done. Historically these institutions are doing business for a long time over decades of years and the reluctancy for changes resulted being way behind the curve for adapting new and modern methodologies and frameworks. For a long time there was no information governance framework per se in place, nonetheless, with the growing need of information assurance the trend is going towards the implemention of the \infull{COBIT} (\COBIT\) framework. Therefore, that will be taken as the current baseline for information governance. \par
+To develop an appropriate information governance tailored to the organisational needs it is required to look at the current landscape of governance within the company in order to see the gaps and waht improvements has to be done. Historically these institutions are doing business for a long time over decades of years and the reluctancy for changes resulted being way behind the curve for adapting new and modern methodologies and frameworks. For a long time there was no information governance framework per se in place, nonetheless, with the growing need of information assurance the trend is going towards the implementation of the \infull{COBIT} (\COBIT\) framework. Therefore, that will be taken as the current baseline for information governance. \par
 
 \blank[line]
 
@@ -55,7 +60,7 @@ As an example the \infull{ISF} \(ISF\) shows a risk appetite matrix how to defin
 Every business is different, its board a different direction for doing business and this organisations appetite has been defined as taking higher stakes on Financial and Legal risk but less on Reputational, Operational and Health and Safety risks.
 The more risk is accepted the greater the profits can be and on the counterside the losses as well. \par
 
-Generally, in order to look at the different approaches for data classification, risk assessment, risk evaluation and risk impact and the output of a risk treatment plan in order to assure information assurance, it has to be looked at what methotologies, frameworks and industry standards are available alongside with the organisations current implementation.
+Generally, in order to look at the different approaches for data classification, risk assessment, risk evaluation and risk impact and the output of a risk treatment plan in order to assure information assurance, it has to be looked at what methodologies, frameworks and industry standards are available alongside with the organisations current implementation.
 For that, the research focused on the \infull{NIST} and \infull{ISF} with elements of the currently implemented \infull{COBIT} framework. From this a specific methodology was developed, modifying and adjusting the found tools and techniques to suit and align to the enterprise's needs. \par
 
 \blank[line]
@@ -64,13 +69,13 @@ The following information governance approach is proposed: \par
 
 \blank[line]
 
-Classification of assets are divided into confidenciality and integrity classes and each asset has to be classified with those scales.
+Classification of assets are divided into confidentiality and integrity classes and each asset has to be classified with those scales.
 Knowing the assets and the risk appetite together with the classification of each asset a Risk Assessment or Risk Opinion will conclude with attached risks and highlight the implications of those risks. For this financial services organisation it is also crucial to introduce business continuity scales that can prioritise assets based on business criticality. \par
 
 \blank[line]
 
 The formal risk assessment follows the evaluation of impact risk based on financial, operational, regulatory and reputational risks. It has been agreed with senior management to have levels from 1 to 5 for each risk category and monetary ranges for the financial risk depending on the current market value of the organisation.
-To conclude with a final risk rating a likelihood scale, which is most often left out in implementations of risk frameworks in current organsations, from Low to High has been defined based on historical data of occurence. \par
+To conclude with a final risk rating a likelihood scale, which is most often left out in implementations of risk frameworks in current organisations, from Low to High has been defined based on historical data of occurrence. \par
 
 \blank[line]
 
@@ -87,7 +92,7 @@ There are four ways to treat a risk, each can be either mitigated by actions, tr
 \blank[line]
 
 All of the high and very high risks will be looked at to mitigate and through that downgrade to moderate or lower risk levels. As the final risk rating already takes the financial aspects into account, the question of the implementation of the risk treatment plan and the options for mitigating actions will be decided by senior management rather than the risk team.
-Success criteria and action plans are imoportant to define in order to close the risk findings. \par
+Success criteria and action plans are important to define in order to close the risk findings. \par
 
 The process for risk treatments is tracked via a risk index system, and operational risk managers \cite[sherwood2005enterprise] are assigned to each stream within the bank to track the agreed time-scale and to assess the justification over time and the controls in place that will have an effect on the identified risks. Change Management systems are used for the improvement steps that need to be implemented.
 The tendency is towards risks that are identified as regulatory findings and there is little room for strategic decisions to close those risks. \par
