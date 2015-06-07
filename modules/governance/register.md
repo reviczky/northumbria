@@ -247,34 +247,44 @@ If not implemented, the risk levels are higher. Depending on the organisations r
 
 The following formula has been defined for the risk impact of this financial services organisation. It has been modified from the general risk impact measurements in order to facilitate this business and being competitive with other peer banks. \crlf
 
-\blank[line]
+\blank[2*line]
 
 \placeformula[eq:risklevel]{\startformula level of risk = consequence \times likelihood \stopformula}
 
-As the organisation deals with financial, operational and regulatory risks and the impact is different on each on those scales, the "consequence" variable is a mean of those scales combined:
+\blank[2*line]
+
+As the organisation deals with financial, operational and regulatory risks and the impact is different on each on those scales, the "consequence" variable is a mean of those scales combined: \crlf
+
+\blank[2*line]
 
 \placeformula[eq:risklevel]{\startformula consequence = \frac{(financial + regulatory + operational)}{3} \stopformula}
 
-Risk rating table: \crlf
+\blank[2*line]
 
-\blank[line]
+Derived from this formula we can define the scale for the risk ratings in the following table, the category descriptions are equivalent to the NIST standard: \crlf
+
+\blank[2*line]
 
 \startalignment
 \switchtobodyfont[heros,small]
 \placetable[here][table:risklevel]{\WORD{Assessment Scale – Level of Risk}\footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}{
 \startxtable[option=width,background=color,backgroundcolor=gray]
     \startxrow \startxcellgroup[align={middle,lohi},background=color,backgroundcolor=darkgray] \startxcell {\bf Qualitative Values} \stopxcell \startxcell[nx=2] {\bf Semi-Quantitative Values} \stopxcell \startxcell {\bf Description} \stopxcell \stopxcellgroup \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell[width=20mm] Very High \stopxcell \startxcell[width=15mm] 96-100 \stopxcell \startxcell[width=15mm] 25 \stopxcell \stopxcellgroup \startxcell[width=100mm] {\bf Very high risk} means that a threat event could be expected to have {\bf multiple severe or catastrophic} adverse effects on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
-    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell High \stopxcell \startxcell 80-95 \stopxcell \startxcell 20 \stopxcell \stopxcellgroup \startxcell {\bf High risk} means that a threat event could be expected to have a {\bf severe or catastrophic} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell[width=20mm] Very High \stopxcell \startxcell[width=15mm] 96-100 \stopxcell \startxcell[width=15mm] 20 \stopxcell \stopxcellgroup \startxcell[width=100mm] {\bf Very high risk} means that a threat event could be expected to have {\bf multiple severe or catastrophic} adverse effects on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
+    \startxrow \startxcellgroup[align={middle,lohi}] \startxcell High \stopxcell \startxcell 80-95 \stopxcell \startxcell 15 \stopxcell \stopxcellgroup \startxcell {\bf High risk} means that a threat event could be expected to have a {\bf severe or catastrophic} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
     \startxrow \startxcellgroup[align={middle,lohi}] \startxcell Moderate \stopxcell \startxcell 21-79 \stopxcell \startxcell 10 \stopxcell \stopxcellgroup \startxcell {\bf Moderate risk} means that a threat event could be expected to have a {\bf serious} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
     \startxrow \startxcellgroup[align={middle,lohi}] \startxcell Low \stopxcell \startxcell 5-20 \stopxcell \startxcell 5 \stopxcell \stopxcellgroup \startxcell {\bf Low risk} means that a threat event could be expected to have a {\bf limited} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
     \startxrow \startxcellgroup[align={middle,lohi}] \startxcell Very Low \stopxcell \startxcell 0-4 \stopxcell \startxcell 0 \stopxcell \stopxcellgroup \startxcell {\bf Very low risk} means that a threat event could be expected to have a {\bf negligible} adverse effect on organizational operations, organizational assets, individuals, other organizations, or the Nation. \stopxcell \stopxrow
 \stopxtable}
 \stopalignment
 
+Further, taking a look at the likelihood and level of impact rating of the NIST standard as follows, the impact level matrix for this organisation will be based upon and enhanced. \crlf
+
+\blank[line]
+
 \startalignment
 \switchtobodyfont[heros,small]
-\placetable[here][table:impactlevel]{\WORD{Assessment Scale – Level of Risk (Combination of Likelihood and Impact)\note[nist]}}{
+\placetable[here][table:impactlevel]{\WORD{Assessment Scale – Level of Risk (Combination of Likelihood and Impact)\footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}}{
 \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=25mm]
     \startxrow[height=15mm] \startxcellgroup[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Likelihood (Threat Event Occurs and Results in Adverse Impact)} \stopxcell \startxcell[nx=5] {\bf Level of Impact} \stopxcell \stopxcellgroup \stopxrow
     \startxrow[height=10mm] \startxcell[background=color,backgroundcolor=lightgreen] Very Low \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Low \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate \stopxcell \startxcell[background=color,backgroundcolor=red] High \stopxcell \startxcell[background=color,backgroundcolor=darkred] Very High \stopxcell \stopxrow
@@ -285,6 +295,10 @@ Risk rating table: \crlf
     \startxrow \startxcell[background=color,backgroundcolor=lightgreen] Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \stopxrow
 \stopxtable}
 \stopalignment
+
+The final matrix as shown below is the risk level of impact scale that was used in the risk asessment and risk evaluation sections. This is used as the official risk framework for this tier one financial services organisation. \crlf
+
+\blank[line]
 
 \startalignment
 \switchtobodyfont[heros,small]
@@ -299,6 +313,10 @@ Risk rating table: \crlf
     \startxrow[background=color,backgroundcolor=salmon] \startxcell ORF Impact \stopxcell \startxcell Non Significant (1) \stopxcell \startxcell Minor (2) \stopxcell \startxcell Moderate (3) \stopxcell \startxcell Major (4) \stopxcell \startxcell Critical (5) \stopxcell \stopxrow
 \stopxtable}
 \stopalignment
+
+Finally, an availability classification with the following scale is used to determine priorities for risks attached to assets. \crlf
+
+\blank[line]
 
 \startalignment
 \switchtobodyfont[heros,small]
@@ -319,12 +337,13 @@ Risk rating table: \crlf
 
 \reference[riskprocess]
 
-The process is aligning to the NIST Framework as outlined above \blank[line]
-NIST as a base
+The risk process this organisation is using and hence was used as a base for this risk register is aligned to the NIST Framework as outlined below: \crlf
+
+\blank[2*line]
 
 \startalignment
 \switchtobodyfont[heros,small]
-\placetable[here][table:riskprocess]{\WORD{Risk Assessment Process}\note[nist]}{
+\placetable[here][table:riskprocess]{\WORD{Risk Assessment Process}\footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}{
 \midaligned{\startframed[width=110mm,height=10mm,background=color,backgroundcolor=white,align={middle,lohi}]
 \bfa Step 1: Prepare for Assessment \\
 \tfx\it Derived from Organizational Risk Frame \\
@@ -364,4 +383,6 @@ NIST as a base
 \stopxtable}}
 \stopalignment
 
-Deliver Information Assurance \blank[line]
+\blank[2*line]
+
+This process is followed throughout the enterprise to deliver information assurance. \crlf
