@@ -51,7 +51,8 @@ Every business is different, its board with a different direction for doing busi
 The more risk is accepted the greater the profits can be, but on the counterside, the losses as well. \par
 
 Generally, in order to look at the different approaches for data classification, risk assessment, risk evaluation and risk impact and the output of a risk treatment plan in order to assure information assurance, it has to be looked at what methodologies, frameworks and industry standards are available alongside with the organisations current implementation.
-For that, the research focused on the \infull{NIST} and \infull{ISF} with elements of the currently implemented \infull{COBIT} framework. From this a specific methodology was developed, modifying and adjusting the found tools and techniques to suit and align to the enterprise's needs. \par
+For that, the research focused on the \infull{NIST} and \infull{ISF} with elements of the currently implemented \infull{COBIT} framework. From this a specific methodology was developed, modifying and adjusting the found tools and techniques to suit and align to the enterprise's needs.
+Information security and enterprise architecture are playing a big role in the implementation fo these frameworks. \par
 
 \blank[line]
 
@@ -77,12 +78,15 @@ Now that the attached risks have been identified the next step is to develop a r
 
 \blank[line]
 
-There are four ways to treat a risk, each can be either mitigated by actions, transferred to other parties, accepted as they are or avoided by specific actions. A process diagramm can be seen at the table \in[table:riskprocess]. \par
+There are four ways to treat a risk, each can be either mitigated by actions, transferred to other parties, accepted as they are or avoided by specific actions. A process diagramm can be seen in table \in[table:riskprocess]. \par
 
 \blank[line]
 
-All of the high and very high risks will be looked at to mitigate and through that downgrade to moderate or lower risk levels. As the final risk rating already takes the financial aspects into account, the question of the implementation of the risk treatment plan and the options for mitigating actions will be decided by senior management rather than the risk team.
-Success criteria and action plans are important to define in order to close the risk findings. \par
+All of the high and very high risks will be looked at to mitigate and through that downgrading to moderate or lower risk levels. As the final risk rating already takes the financial aspects into account, the question of the implementation of the risk treatment plan and the options for mitigating actions will be decided by senior management rather than the risk team.
+Success criteria and action plans are important to define in order to close the risk findings.
+There needs to be governance around the implementation of the risk treatment plan in order to action the suggested mitigation plans. Resources are needed in the risk department in a consulting role and management systems need to be in place in order to go through a life-cycle process from start to finish from risk identification until closure. \par
+
+\blank[line]
 
 The process for risk treatments is tracked via a risk index system, and operational risk managers are assigned to each stream within the bank to track the agreed time-scale and to assess the justification over time and the controls in place that will have an effect on the identified risks \cite[sherwood2005enterprise]. Change Management systems are used for the improvement steps that need to be implemented.
 The tendency is towards risks that are identified as regulatory findings and there is little room for strategic decisions to close those risks. \par
