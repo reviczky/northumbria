@@ -78,7 +78,7 @@ Now that the attached risks have been identified the next step is to develop a r
 
 \blank[line]
 
-There are four ways to treat a risk, each can be either mitigated by actions, transferred to other parties, accepted as they are or avoided by specific actions. A process diagramm can be seen in table \in[table:riskprocess]. \par
+There are four ways to treat a risk, each can be either mitigated by actions, transferred to other parties, accepted as they are or avoided by specific actions. A process diagram can be seen in table \in[table:riskprocess]. \par
 
 \blank[line]
 
