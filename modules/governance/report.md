@@ -1,12 +1,20 @@
 # Abstract
 
-Proposal for an information governance for a financial services organisation to a specific ISMS. \par
+Looking at the current implemetation of information governance at a tier one financial services organisation, deficiencies have been identified and a proposed new governance framework needs to be introduced.
+The "Lending Warehousing System" has been chosen as an information system to show the methodology of the proposed information governance and information assurance.
+Industry standards have been evaluated and the proposed framework consisting of classification of assets, risk asessment and treatment plan to address the risks. Detailed processes around risk evaluation and various aspects of impact and likelihood have been suggested. The main output is a risk treatment plan.
+If implemented, the governance proposal would greatly benefit the business in terms of operation and financial revenue. \par
 
 # Executive Summary
 
-all key points in isolation
-by senior management
-including recommendations \par
+Formal description of risk appetite
+classification of assets based on confidentiality, integrity, priority on business criticality
+risk assessment through frameworks of
+risk evaluation and risk impact with likelihood
+development risk treatment plan
+suggested mitigation action plans
+business benefits, cost/benefit
+recommendation to implement all high and very high findings in the risk treatment plan for being competitive in the market. \par
 
 # Contents
 
