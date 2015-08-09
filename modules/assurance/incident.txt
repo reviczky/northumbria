@@ -1,0 +1,198 @@
+<START>
+
+Incident Log for: 12345678
+
+DAY ONE
+
+08:30 (IS Service Desk > ITSM (Incident Manager)): 
+The manager from the main branch at Sunderland has just called to say there had been a flood overnight at the branch. Although, the leak has now been fixed and power restored, the staff who have arrived are unable to login. Task to ITSM Incident Management. Severity 3.
+
+08:35 (ITSM (Incident Manager) > IS Service Desk):
+Why are you tasking a Severity 3 incident? Task declined.
+
+08:40 (IS Service Desk > ITSM (Incident Manager)):
+Sorry, I will upgrade it to a Severity 1 (Major Incident) and re-task.
+
+08:45 (ITSM (Incident Manager) > IS Service Desk):
+What is the impact? How many staff are affected? Some, all? 
+
+08:50 (IS Service Desk > ITSM (Incident Manager)):
+Sorry, I'll find out.
+
+08:55 (Branch Manager > IS Service Desk):
+Please could you provide an update. None of our staff can login. We are meant to be opening in 5 minutes!
+
+09:00 (Service Desk > ITSM (Incident Manager)):
+Update: No staff can login.
+
+09:00 (ITSM (Incident Manager) > IS Service Desk):
+OK - call accepted. Find out as much as you can and I will arrange a major incident conference call for 09:15.
+
+09:05 (Branch Manager > IS Service Desk):
+Please could you provide an update. We are now open and have customers waiting!
+
+09:10 (Business Operations Management > ITSM (Incident Manager)):
+Do you know what is happening at the Sunderland branch? 
+
+09:15 (ITSM (Incident Manager) > Business Operations Management):
+A Severity 1 (major incident) has been declared as no staff can login. The IS Service Desk is liasing with the branch to try and obtain more information e.g., error messages etc. I have set up a conference call is underway.
+
+<<<CONFERENCE CALL>>>
+
+09:30 (ITSM (Incident Manager) > Business Operations Management):
+It has been identified that there is a major network and/or branch server issue. I have been informed that there was a flood at the branch overnight. Although, the desktops and printers are powering up we need an on-site engineer to make a better technical assessment of the issue. My current view is that water has damaged the branch server and/or some key component of the network.
+
+09:35 (Business Operations Management > ITSM (Incident Manager)): 
+OK - we will invoke BCP and close the branch and send some of the staff and customers to the sub-branch in Sunderland, and as there are only a couple of tills, I will ask the branch manager to send the remaining staff home.
+
+09:40 (ITSM (Incident Manager) > Business Operations Management): 
+OK - we need a couple of staff to remain on-site at the main Sunderland branch. The engineer will be coming from Newcastle and should arrive in around 30 minutes.
+
+09:45 (ITSM (Incident Manager) > IS Service Desk):
+BCP invoked. Branch closed. Please task on-site engineer to undertake full assessment. 
+
+09:50 (IS Service Desk > IS Support):
+BCP invoked. Branch closed. Please send on-site engineer to undertake full assessment at Sunderland ASAP.
+
+09:55 (IS Support > IS Service Desk):
+Call accepted. Engineer on the way to Sunderland branch.  
+
+10:00 (Service Desk > ITSM (Incident Manager)):
+Update: On-site engineer on the way.
+
+11:00 (IS Support > IS Service Desk)
+Engineer: I cannot see any evidence of water having leaked into the server room which is lucky as the staff kitchen is immediately above. However, the branch server was off on arrival. I guess this was when they powered down the whole branch overnight while fixing the flood. I tried 'booting-up' but would not start. The network cabinets seem unaffected as all the router/switch lights are active. 
+
+11:30 (Service Desk > ITSM (Incident Manager)):
+Update: The on-site engineer believes that the server has failed. The Uninterruptable Power Supply (UPS) is one of the 'old' ones so would have probably lasted only 30 minutes or so.
+
+11:45 (ITSM (Incident Manager) > IS Service Desk):
+OK - DRP invoked. Please ask the on-site engineer to remain on site as we send a replacement server. Please request a replacement from IS Operations.
+
+11:50 (Service Desk > IS Operations):
+Please send a replacement branch server from stock to the main Sunderland branch. There has been a server failure and an engineer is on site.
+
+11:55 (IS Operations > Service Desk):
+Another server failure!!! We haven't any currently built after the issue with Hexham's server yesterday. I only have John in today who knows how to build a branch server from scratch. John has just gone on lunch. I will ask him to start building a new server as soon as he returns from lunch. However, it may take a few hours!
+
+12.00 (Service Desk > IS Operations):
+OK.
+
+13:00 (ITSM (Incident Manager) > IS Service Desk):
+Have we any update on the new server for Sunderland?
+
+13:05 (IS Service Desk > ITSM (Incident Manager)):
+It is with John at IS Operations...
+
+13:10 (ITSM (Incident Manager) > IS Service Desk):
+OK - John is the most experienced member of the team, so it should be at the Sunderland branch soon.
+
+13:30 (IS Support > IS Service Desk):
+Have we any update on that new server for Sunderland? The engineer has been waiting for nearly 3 hours!
+
+14:00 (IS Service Desk > IS Support):
+Sorry - just got back from lunch. I will check with John in IS Operations.
+
+14.05 (IS Service Desk > IS Operations):
+John - any update on the new server for Sunderland?
+
+14.10 (IS Operations > IS Service Desk):
+Still building, operating system has been successfully installed but still installing all the Windows updates. Once that has finished, I will start installing and configuring all the branch software. Should be ready in an hour or so. I'll do the best I can!
+
+14.15 (Business Operations Management > ITSM (Incident Manager)):
+Any update - are we expecting to be operational today?
+
+14.20 (ITSM (Incident Manager) > Business Operations Management):
+We are still working on it...the server will be ready in an hour or so...and we will deliver it and restore from the backup tape. Therefore, sorry but I do not think you will be operational at the main branch today but definitely ready for opening time tomorrow.
+
+14.25 (Business Operations Management > ITSM (Incident Manager)):
+OK - there are long queues at the sub-branch as it only has 2 tills rather than 10 at the main branch therefore the customers are quite angry!
+
+14.30 (ITSM (Incident Manager) > Business Operations Management):
+I appreciate that. I will get a status update from the 'tech' guys in an hour and pass on to you ASAP.
+
+15:30 (ITSM (Incident Manager) > IS Service Desk):
+Has John updated the incident log re: the Sunderland server?
+
+15:35 (IS Service Desk > ITSM (Incident Manager)):
+No not yet...guess he is busy.
+
+15:40 (ITSM (Incident Manager) > IS Service Desk):
+Please find out ASAP from his manager within IS Operations the current status. We need this server down in Sunderland today and data recovered for opening tomorrow!
+
+15:45 (Service Desk > IS Operations):
+Please could you provide an update for the Sunderland branch server rebuild...
+
+16:05 (IS Operations > IS Service Desk):
+Sorry just got back from a meeting...I find out from John.
+
+16:10 (IS Service Desk > IS Operations):
+OK
+
+16:15 (IS Operations > IS Service Desk):
+Good news the server is ready to ship to Sunderland.
+
+16:20 (IS Service Desk > IS Operations):
+Good. 
+
+16:25 (IS Service Desk > IS Support):
+Please can you pick up the new Sunderland server from John in IS Operations and ship down to the engineer at Sunderland.
+
+16:30 (IS Support > IS Service Desk):
+He is no longer there (at Sunderland). We have a many oustanding support calls in the queue so the engineer has been assigned to another job at the Darlington branch. He had been waiting around for nearly 5 hours (with no news) by the time he left! I'll have to try and find another engineer still here at Head Office to see if he can pick up the job.
+
+16:35 (IS Service Desk > IS Support):
+OK - please try.
+
+16:40 (IS Support > IS Service Desk):
+I've managed to persuade Bob to take the server down tonight.
+
+16:45 (IS Service Desk > IS Support):
+Thanks.
+
+16:50 (IS Service Desk > ITSM (Incident Manager)):
+The server is ready and is currently on it's way to Sunderland.
+
+16:55 (ITSM (Incident Manager) > IS Service Desk):
+Good - at last - I will let the business know.
+
+17.00 (ITSM (Incident Manager) > Business Operations Management):
+The replacement branch server is on it's way to Sunderland with an engineer, who will restore from the tape backup, and you will be operational by opening time tomorrow.
+
+<overnight>
+
+DAY TWO
+
+08:30 (Branch > IS Service Desk): 
+Do you know what is happening? We still cannot log in!!!
+
+08:35 (IS Service Desk > IS Support):
+Please could you provide an update on Sunderland, they should be back up-and-running?
+
+08:40 (IS Support > IS Service Desk):
+I doubt it. The engineer turned up at about 17:30 and there was no-one left at the branch therefore he took the server home with him (as he lives nearby) and is going arrive first thing to restore from the back-up tape.
+
+08:45 (IS Service Desk > IS Support):
+Really? I need to advise ITSM (Incident Manager) as soon as possible! Please let me know as soon as you have any updates!!!
+
+08:50 (IS Service Desk > ITSM (Incident Manager)
+Please pick up the incident log ASAP, this is still unresolved.
+
+08:55 (ITSM (Incident Manager > ALL)
+Due to the extended recovery time of IS operations at the main Sunderland branch, I am raising to a 'crisis-level' incident. I will be setting up a conference call shortly and leaving the call 'open' and ALL involved IS staff and business operations teams are to dial-in. An executive director (Head of Business Operations) will also be on the call due to the seriousness of the incident, i.e. reputational damage. For information: the Sunderland branch still remains closed and customers are being directed to the smaller sub-branch which struggled to cope with the queues yesterday. The customer service call-line was flooded with complaints from angry customers from the Sunderland area.    
+
+<<<CONFERENCE CALL>>>
+
+09:00 (IS Support > ALL)
+Engineer: I now have the back-up tape from branch manager. It looks pretty straightforward as there is no encryption / password, so should be back up-and-running in an hour.
+
+10:00 (IS Support > ALL)
+Engineer: Recovery now complete but the staff are saying they can login but not access the customer accounts system!
+
+11:00 (IS Support > ALL)
+Engineer: I found the issue and it is a big one! The backup log from the previous night reports an error "Critical error: unable to back up customer.db as the file is exclusively locked". The customer system's local database isn't being backed up...in fact hasn't been for the last 18 months since the new customer accounts system was implemented!!! Fortunately, due to the timings last night, the batch update to head office had been completed so we can rebuild the local database from the central database at head office. Please task to the IS Application Support team to create a copy of Sunderland's data from the central database.
+
+12:00 (IS Application Support > ALL)
+We have created a 'local' copy of the database of all of Sunderland's customers' accounts. We have just transferred the file down to the branch server and the engineer there has confirmed that the staff can now access the customer accounts system. The branch manager has re-opened the main Sunderland branch and has sent a couple of staff to the sub-branch to redirect customers, waiting in the long queues, back to the main branch.
+
+<END>
