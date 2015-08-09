@@ -1,7 +1,6 @@
 # Abstract
 
 \input knuth \par
-500 words \par
 
 # Executive Summary
 

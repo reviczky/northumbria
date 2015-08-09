@@ -1,3 +1,7 @@
+# Report
+
+Your report should consist of two key elements, an executive summary for the Head of IS and the CEO, and the main report which contains the technical detail for IS Service Management and other IS operational teams. The SIP would normally be a 'separate' document, but for the assignment, please just commence the SIP on a new page rather than submitting two documents to Blackboard/ELP. The executive summary __should__ be no more than **500 words** and the total length of the report (incl. draft SIP) should be approximately **3000 words**.
+
 # Marking Scheme
 
 | Feature                                                                | Mark | Notes                                                                   |
