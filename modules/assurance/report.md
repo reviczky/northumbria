@@ -135,13 +135,43 @@ delays.
 
 ## Service Improvement Plan Actions
 
-\startxtable
-\startxrow \startxcell Document: \stopxcell \startxcell Service Improvement Plan \stopxcell \startxcell From: \stopxcell \startxcell 10/11/2015 \stopxcell \stopxrow
-\startxrow \startxcell Organisation: \stopxcell \startxcell Northumbria Bank plc \stopxcell \startxcell To: \stopxcell \startxcell 28/01/2017 \stopxcell \stopxrow
-\startxrow \startxcell Responsible: \stopxcell \startxcell Service Level Manager \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,background=color,backgroundcolor=lightblue] \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] 2.1 Objective I: Increase Service Availability by Means of Web Access \stopxcell \stopxrow
+The following draft of a \infull{SIP} (SIP) is proposed: \par
+
+\startplacetable[location={here,none}]
+\startxtable[split=yes]
+\startxrow \startxcell[width=30mm] {\bf Document:} \stopxcell \startxcell[width=100mm] {\bf Service Improvement Plan} \stopxcell \startxcell[width=20mm] {\bf From:} \stopxcell \startxcell[width=20mm] {\bf 10/11/2015} \stopxcell \stopxrow
+\startxrow \startxcell {\bf Organisation:} \stopxcell \startxcell {\bf Northumbria Bank plc} \stopxcell \startxcell {\bf To:} \stopxcell \startxcell {\bf 28/01/2017} \stopxcell \stopxrow
+\startxrow \startxcell {\bf Responsible:} \stopxcell \startxcell {\bf Service Level Manager} \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective I: Increase Service Availability by Means of Web Access} \stopxcell \stopxrow
+\startxrow
+    \startxcell[nx=4,option=tight,strut=no,offset=0mm]
+    \startxtable[option=stretch,bottomframe=off,topframe=off,offset=1mm]
+        \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Monitor availability \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Monitor availability \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+    \stopxtable
+    \stopxcell
+\stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Measurement: Availability \%} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective II: Increase Service Availability by Means of Web Access} \stopxcell \stopxrow
+\startxrow
+    \startxcell[nx=4,option=tight,strut=no,offset=0mm]
+    \startxtable[option=stretch,bottomframe=off,topframe=off,offset=1mm]
+        \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Technical solutions \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Suppliers \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+    \stopxtable
+    \stopxcell
+\stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Measurement: Availability \%} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
 \stopxtable
+\stopplacetable
 
 ## Monitoring and Reporting
 
