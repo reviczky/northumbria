@@ -1,8 +1,8 @@
 # Executive Summary
 
+\startnarrower
+\it
 It has been shown that given the Risk Appetite of Northumbria Bank plc the identified issued following the Incident 0123456789 revealed deficiencies on the Technical and Non-Technical aspects for the BCP. The proposed SIP showing improvements for the business. \par
-
-\input knuth \par
 
 for Head of IS and CEO!
 hints:
@@ -13,6 +13,8 @@ best outcomes
 (similar to an abstract)
 guides reader to determine whether report is worth reading!
 "Sells the report"
+\tf
+\stopnarrower
 
 # Contents, Report / Presentation
 
@@ -85,8 +87,7 @@ Risk Matrix for appendix?
 Heat matrix with graph (this is the main?)
 
 hint: rationale for the rating, where is it coming from? (reference, support)
-Ref: ISF/NIST
-% \footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}
+Ref: ISF/NIST \footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}
 
 http://www.carnacgroup.com/risk-management/
 http://www.rcmp-grc.gc.ca/dpr-rmr/2009-2010/crp-pro-eng.htm
@@ -94,31 +95,40 @@ http://forum.chandoo.org/threads/how-can-i-build-this-5-attribute-2d-risk-map-in
 
 ## Identification Of Issues
 
-* ticketing: assignment, root cause, severity, impact
-* incident call, ASAP (minutes per loss)
-* sev1 incident BCP plan, execute
-* old UPS, no BCP compliant?
-* server in stock?! - build from scratch
-* onsite engineer updated?!
-* Lunch interruption
-* ticketing updates instead of calls
-* prebuild systems with updates and software?
-* ETA restore, hours or days
-* BCP: more recovery branches for volume
-* ongoing incident call!!! - until resolved
-* no updates after 5pm!
-* plan execution, staff went home?!
-* crisis level? why? reasons - now open call..
-* reputational risks?
-* records of impact? customer calls?
-* no encryption/password (security)
-* other security aspects, verification of enineer, onsite access?
-* non monitored critical error for backup - for 18 month!
-* testing of new customer system
-* transfer security for customer accounts?
-* verification of problem solved?
-* sending stuff? decision of openin branch and signs on backup branch instead
-* incident closed???
+The following list identifies the main issues that are business critical in a cronological order through the incident report: \par
+They are ordered based on severity of the issues. \par
+
+\startcolumns[n=2]
+\startitemize[joinedup,nowhite][distance=3mm]
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} ticketing: assignment, root cause, severity, impact \at[Appendix]
+\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV2}} incident call, ASAP (minutes per loss)
+\sym{\framed[strut=no,background=color,backgroundcolor=darkgreen,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV3}}sev1 incident BCP plan, execute
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} old UPS, no BCP compliant?
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} server in stock?! - build from scratch
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} onsite engineer updated?!
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} Lunch interruption
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} ticketing updates instead of calls
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} prebuild systems with updates and software?
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} ETA restore, hours or days
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} BCP: more recovery branches for volume
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} ongoing incident call!!! - until resolved
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} no updates after 5pm!
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} plan execution, staff went home?!
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} crisis level? why? reasons - now open call..
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} reputational risks?
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} records of impact? customer calls?
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} no encryption/password (security)
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} other security aspects, verification of enineer, onsite access?
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} non monitored critical error for backup - for 18 month!
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} testing of new customer system
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} transfer security for customer accounts?
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} verification of problem solved?
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} sending stuff? decision of openin branch and signs on backup branch instead
+\sym{\startcolor[red]\bfxx\ss SEV1\stopcolor} incident closed???
+\stopitemize
+\stopcolumns
+
+Legend: SEV1, SEV2, SEV3
 
 hint: detail, read through!
 
@@ -177,11 +187,14 @@ Checklist "CSI Register" from the ITIL Process Map. \par
 As part of the ITIL Continual Service Improvement (reference!), the SIP has been produced. \par
 The following draft of a \infull{SIP} (SIP) is proposed: \par
 
-\startplacetable[location={here,none}]
+\startplacetable[location={here},title={\infull{SIP}}]
+\switchtobodyfont[heros,10pt]
+
 \startxtable[split=yes]
 \startxrow \startxcell[width=30mm] {\bf Document:} \stopxcell \startxcell[width=100mm] {\bf Service Improvement Plan} \stopxcell \startxcell[width=20mm] {\bf From:} \stopxcell \startxcell[width=20mm] {\bf 10/11/2015} \stopxcell \stopxrow
 \startxrow \startxcell {\bf Organisation:} \stopxcell \startxcell {\bf Northumbria Bank plc} \stopxcell \startxcell {\bf To:} \stopxcell \startxcell {\bf 28/01/2017} \stopxcell \stopxrow
 \startxrow \startxcell {\bf Responsible:} \stopxcell \startxcell {\bf Service Level Manager} \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
+
 \startxrow \startxcell[nx=4,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective I: Increase Service Availability by Means of Web Access (Service Area)} \stopxcell \stopxrow
 \startxrow
@@ -197,6 +210,7 @@ The following draft of a \infull{SIP} (SIP) is proposed: \par
 \startxrow \startxcell[nx=4,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Availability \%} \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
+
 \startxrow \startxcell[nx=4,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective II: Increase Service Availability by Means of Web Access (Service Area)} \stopxcell \stopxrow
 \startxrow
@@ -212,7 +226,24 @@ The following draft of a \infull{SIP} (SIP) is proposed: \par
 \startxrow \startxcell[nx=4,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Availability \%} \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
+
+\startxrow \startxcell[nx=4,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective III: Increase Service Availability by Means of Web Access (Service Area)} \stopxcell \stopxrow
+\startxrow
+    \startxcell[nx=4,option=tight,strut=no,offset=0mm]
+    \startxtable[option=stretch,bottomframe=off,topframe=off,offset=1mm]
+        \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Technical solutions \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Suppliers \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+    \stopxtable
+    \stopxcell
+\stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Resource Requirements: Staff and Time} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Availability \%} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
 \stopxtable
+
 \stopplacetable
 
 Objective
@@ -226,7 +257,6 @@ Reports
 An important part of ensuring the success of the Plan is to define how each objective of the Improvement Initiative shall be measured and reported. The selection of the proper Key Performance Indicators (KPI), metrics and measurements is done as part of the Initiative Assessment. Put here those selected along with the schedule to be applied.
 
 ## Annex
-
 http://www.nihe.gov.uk/sample_service_improvement_plan.pdf
 http://www.projectmanagementdocs.com/template/Service-Improvement-Plan.doc
 http://www.mpa.gov.tt/diamond/sites/default/files/Service%20Improvement%20Plan%20Template_0.pdf
@@ -241,6 +271,22 @@ https://tomjsmyth.files.wordpress.com/2015/04/itilv3sd-itil-v3-service-design.pd
 \placepublications[criterium=all] \par
 
 # Appendix
+
+## Incident Log
+\definetextbackground[log][
+        location=paragraph,
+        background=color,backgroundcolor=lightgray,
+        leftoffset=.5\bodyfontsize,rightoffset=.5\bodyfontsize,
+        topoffset=.5\bodyfontsize,bottomoffset=.5\bodyfontsize,
+        before={\startnarrower\switchtobodyfont[small]},
+        after={\stopnarrower},
+        frame=off,
+	align=right]
+\setuptyping[numbering=line,escape=yes]
+\setuplinenumbering[location=text,style=\ss]
+\startlog
+    \typefile[][]{incident.txt}
+\stoplog
 
 hint: not wordcount! (sample report lookup - incident reports, investigation reports, templates)
 
