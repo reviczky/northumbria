@@ -73,6 +73,7 @@ Where do we want to be?
 How do we get there?
 
 ## Risk Table
+\reference[rep:risktable]{Risk Table}
 
 Change to likelihood/impact!
 
@@ -95,44 +96,62 @@ http://forum.chandoo.org/threads/how-can-i-build-this-5-attribute-2d-risk-map-in
 
 ## Identification Of Issues
 
-The following list identifies the main issues that are business critical in a cronological order through the incident report: \par
-They are ordered based on severity of the issues. \par
+As part of the detailed anlysis of the incident number 12345678 (see the full log in the appendix section \color[black]{\in{6.1}[ap:log]} on \color[black]{\at{page}[ap:log]}) the following list is showing the key issues that have been identified to have impacted the \infull{DR} (DR) and \infull{BCP} (BCP) of Northumbria Bank plc coupled with their security implications as outlined in section \color[black]{\in{2.1}[rep:risktable]} that will pose a risk to the business. \par
+\blank[line]
+The findings are based on the ITIL Service Operation Incident Management framework which \quotation{describes best practice for managing services in supported environments} in order to achieve \quotation{effectiveness and efficiency in the delivery and support of services to ensure value for the customer, the users and the service provider.} \cite[great2011itilso]
+\blank[line]
+Each issue is tagged with a preliminary Severity Level which will give an indication of the potential impact to the business operation. These are the identified issues with their line references to the incident log in a chronological order that have delayed the recovery: \par
+\blank[line]
 
 \startcolumns[n=2]
 \startitemize[joinedup,nowhite][distance=3mm]
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} ticketing: assignment, root cause, severity, impact \at[Appendix]
-\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV2}} incident call, ASAP (minutes per loss)
-\sym{\framed[strut=no,background=color,backgroundcolor=darkgreen,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV3}}sev1 incident BCP plan, execute
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} old UPS, no BCP compliant?
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} server in stock?! - build from scratch
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} onsite engineer updated?!
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} Lunch interruption
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} ticketing updates instead of calls
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} prebuild systems with updates and software?
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} ETA restore, hours or days
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} BCP: more recovery branches for volume
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} ongoing incident call!!! - until resolved
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} no updates after 5pm!
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} plan execution, staff went home?!
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} crisis level? why? reasons - now open call..
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} reputational risks?
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} records of impact? customer calls?
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} no encryption/password (security)
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} other security aspects, verification of enineer, onsite access?
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} non monitored critical error for backup - for 18 month!
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} testing of new customer system
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} transfer security for customer accounts?
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} verification of problem solved?
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=off]{\bfxx\ss SEV1}} sending stuff? decision of openin branch and signs on backup branch instead
-\sym{\startcolor[red]\bfxx\ss SEV1\stopcolor} incident closed???
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 1:} \crlf Incident Ticket is not following ITIL processes: \crlf \setupitemize[right=),stopper=] \startitemize[a] \item Incorrect Incident Escalation \item Missing the Investigation and Diagnosis \item Incident Prioritization has to be based on Urgency and Impact -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 8}\stopcolor} \stopitemize
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 2:} \crlf Raising a Severity Level 1 implies an instant 'open' Incident Conference Call (every minute is a loss to business), the call has to be on-going and cannot be closed until the incident is resolved (even at close of business at 5pm) -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 14}\stopcolor} \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 160}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 3:} \crlf Missing Incident Tracking: Ticket needs to show Updates and current Status to ensure no manual update requests are needed and every stakeholder is onformed -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 23}\stopcolor} \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 82}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 4:} \crlf Business has to decide whether to leave the branch closed and invoke \infull{BCP} (BCP) before business starts, execution has to be instantaneous -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 32}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue 5:} \crlf Hardware is not BCP compliant, old \infull{UPS} (UPS), no redundancy/recovery, violating financial services regulatory requirements -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 67}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 6:} \crlf Lack of redundant and ready to use server (company built) on stock, new build should be kicked in right after the last one is used, usage of automatic pre-builds would reduce build time -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 76}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 7:} \crlf No external communication with onsite engineer, execution of plan for replacement engineer fails, no one expects him and no communication channel when going home -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 91}\stopcolor} \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 142}\stopcolor} \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 173}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue 8:} \crlf Key staff needs to be reached out immediately, interruption of lunch etc. -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 94}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue 9:} \crlf ETA for builds/restore should be known and expectations communicated (hours or days) -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 100}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue 10:} \crlf BCP not adequate for volume of customers, more recovery sites needed -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 109}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 11:} \crlf No updates after 5pm, follow the sun if needed -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 162}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue 12:} \crlf No crisis-level, no reasons for that, reputational risks questionable, records of impact, customer calls -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 182}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 13:} \crlf Back-up tape has no encryption/password, security issues, regulations -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 187}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 14:} \crlf Physical security aspects, verification of enineer, onsite access -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 000}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 15:} \crlf No monitoring for critical errors (at back-up), 18 month for discovery unacceptable -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 193}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue 16:} \crlf No testing of the new customer system, security aspect of transfering customer accounts (encryption), verification of problem solved -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 196}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue 17:} \crlf Decisions on sending stuff, opening branch and signs on backup branch instead, authorisation missing -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 196}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue 18:} \crlf Incident was never officially closed -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 198}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=darkgreen,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV3}} \WORD{\bf Issue 19:} \crlf  COBIT governance
 \stopitemize
 \stopcolumns
 
-Legend: SEV1, SEV2, SEV3
-
-hint: detail, read through!
-
 ## Technical / Non-Technical Solution
+
+He has also asked you to recommend measures to mitigate the impact from each of the issues identified. These solutions may be either from a technical or non-technical perspective. \par
+
+\startitemize[joinedup,nowhite][distance=12mm]
+\sym{\WORD{\bf Issue 1:}} solution a/b
+\sym{\WORD{\bf Issue 2:}} solution
+\sym{\WORD{\bf Issue 3:}} solution
+\sym{\WORD{\bf Issue 4:}} solution
+\sym{\WORD{\bf Issue 5:}} solution
+\sym{\WORD{\bf Issue 6:}} solution
+\sym{\WORD{\bf Issue 7:}} solution
+\sym{\WORD{\bf Issue 8:}} solution
+\sym{\WORD{\bf Issue 9:}} solution
+\sym{\WORD{\bf Issue 10:}} solution
+\sym{\WORD{\bf Issue 11:}} solution
+\sym{\WORD{\bf Issue 12:}} solution
+\sym{\WORD{\bf Issue 13:}} solution
+\sym{\WORD{\bf Issue 14:}} solution
+\sym{\WORD{\bf Issue 15:}} solution
+\sym{\WORD{\bf Issue 16:}} solution
+\sym{\WORD{\bf Issue 17:}} solution
+\sym{\WORD{\bf Issue 18:}} solution
+\sym{\WORD{\bf Issue 19:}} solution
+\stopitemize
 
 For each issue above. Could be more than 1 per issue.
 
@@ -273,6 +292,7 @@ https://tomjsmyth.files.wordpress.com/2015/04/itilv3sd-itil-v3-service-design.pd
 # Appendix
 
 ## Incident Log
+\reference[ap:log]{Incident Log}
 \definetextbackground[log][
         location=paragraph,
         background=color,backgroundcolor=lightgray,
@@ -283,13 +303,12 @@ https://tomjsmyth.files.wordpress.com/2015/04/itilv3sd-itil-v3-service-design.pd
         frame=off,
 	align=right]
 \setuptyping[numbering=line,escape=yes]
-\setuplinenumbering[location=text,style=\ss]
+\setuplinenumbering[location=text,style=\ttx]
 \startlog
     \typefile[][]{incident.txt}
 \stoplog
 
+\page[yes]
+
 hint: not wordcount! (sample report lookup - incident reports, investigation reports, templates)
-
-\input tufte \par
-
 check document: v1.0 IS0756 Assignment 2014-15 (1).doc !
