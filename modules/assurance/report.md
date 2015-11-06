@@ -96,7 +96,7 @@ http://forum.chandoo.org/threads/how-can-i-build-this-5-attribute-2d-risk-map-in
 
 ## Identification Of Issues
 
-As part of the detailed analysis of the incident number 12345678 (see the full log in the appendix section \color[black]{\in{6.1}[ap:log]} on \color[black]{\at{page}[ap:log]}) the following list is showing the key issues that have been identified to have impacted the \infull{DR} (DR) and \infull{BCP} (BCP) of Northumbria Bank plc coupled with their security implications as outlined in section \color[black]{\in{2.1}[rep:risktable]} that will pose a risk to the business. \par
+As part of the detailed analysis of the incident number \color[black]{\it 12345678} (see the full log in the appendix section \color[black]{\in{6.1}[ap:log]} on \color[black]{\at{page}[ap:log]}) the following list is showing the key issues that have been identified to have impacted the \infull{DR} (DR) and \infull{BCP} (BCP) of Northumbria Bank plc coupled with their security implications as outlined in section \color[black]{\in{2.1}[rep:risktable]} that will pose a risk to the business. \par
 \blank[line]
 The findings are based on the ITIL Service Operation Incident Management framework which \quotation{describes best practice for managing services in supported environments} in order to achieve \quotation{effectiveness and efficiency in the delivery and support of services to ensure value for the customer, the users and the service provider.} \cite[great2011itilso]
 \blank[line]
@@ -115,7 +115,7 @@ Each issue is tagged with a preliminary severity level which will give an indica
 \sym{}
 \sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue \#5: (Business Continuity Planning)} \crlf The available hardware and processes are not BCP compliant, the \infull{UPS} (UPS) ran without any alerts or triggers for kicking off redundancy fail-over or recovery, making its operation meaningless. \crlf Insufficient BCP compliant hardware and procedures could cause a crisis level and violates against financial services regulatory requirements. -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 67}\stopcolor}
 \sym{}
-\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue \#6: (Disaster Recovery)} \crlf There is no redundant and ready to use server (with the company build) available or on stock delaying \infull{DR} (DR). No new build had been kicked off nor has there a ready to use replacement been provided after the last DR kit or hardware being disposed of. \crlf Possibly no DR test was done before from which the ETA for generating the builds and overall restore time could have been already known and expectations communicated accordingly (hours or days). -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 76}\stopcolor} \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 100}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue \#6: (Disaster Recovery)} \crlf There is no redundant and ready to use server (with the company build) available or on stock delaying \infull{DR} (DR). No new build had been kicked off nor has there a ready to use replacement been provided after the last DR kit or hardware being allocated. \crlf Possibly no DR test was done before from which the ETA for generating the builds and overall restore time could have been already known and expectations communicated accordingly (hours or days). -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 76}\stopcolor} \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 100}\stopcolor}
 \sym{}
 \sym{\framed[strut=no,background=color,backgroundcolor=red,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV1}} \WORD{\bf Issue \#7: (Communication)} \crlf There is a complete disconnect in communications with external parties. The on-site engineer is not informed with the current status nor with the next steps and is left alone, which raises security concerns. No one is in charge of overseeing the process to execute the plan, resulting in repeated failed attempts for engineers to carry out their duties and leaving unfinished work with an overnight delay. -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 91}\stopcolor} \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 142}\stopcolor} \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 173}\stopcolor}
 \sym{}
@@ -135,7 +135,7 @@ Each issue is tagged with a preliminary severity level which will give an indica
 \sym{}
 \sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue \#15: (Governance)} \crlf Sending staff (depending on their role) to redirect customers back to the branch is going to create a bottleneck for returning customer demand. The branch manager opens the Sunderland branch on his own accord without the authorisation from the business on the incident call whilst the incident is still ongoing. -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 196}\stopcolor}
 \sym{}
-\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue \#16: (Incident Closure)} \crlf The major severity level 1 incident was never officially closed, which could lead to resources still being on alert and affecting normal business operations. -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 198}\stopcolor}
+\sym{\framed[strut=no,background=color,backgroundcolor=orange,foreground=color,foregroundcolor=white,corner=0,frame=on]{\bfxx\ss SEV2}} \WORD{\bf Issue \#16: (Incident Closure)} \crlf The major severity level 1 incident was never formally closed, which could lead to resources still being on alert and affecting normal business operations. -- \inframed[frame=off,offset=0mm,loffset=1mm,roffset=1mm,corner=0,background=color,backgroundcolor=slategray]{\startcolor[white]\ssx\Word{Line 198}\stopcolor}
 \stopitemize
 \stopcolumns
 
@@ -144,46 +144,45 @@ Each issue is tagged with a preliminary severity level which will give an indica
 In order to improve the delays for business operation and mitigate the impact of each of the identified issues in section 2.2 the following recommendation measures are being proposed both from a technical and non-technical aspect: \par
 \blank[line]
 
-Technical - Non-Technical
-
 \startitemize[joinedup,nowhite][distance=12mm]
-\sym{\WORD{\bf Issue 1:}} \infull{ITSM} systems (configured accordingly) can help detect severity levels based on urgency and impact in accordance with the company's risk appetite, automatically alerting the relevant stakeholders and hence reducing the lag of reacting to an incident. \blank[line] Staff trainig can provide guidance for aquiring vital information at the initial diagnosis stage. \blank[line] In the best case scenario, the IS Service Desk aquires information about urgency and impact at the initial stages and assignes the relevant teams to the incident, while the ITSM is evaluating the severity if not triggerred already manually and alerting the stakeholders in a total of less than 5 minutes.
+\sym{\WORD{\bf Issue 1:}} \WORD{\ssx Technical Solution} \crlf ITSM system configured to calculate severity based on urgencyximpact, \infull{ITSM} systems (configured accordingly) can help detect severity levels based on urgency and impact in accordance with the company's risk appetite, automatically alerting the relevant stakeholders and hence reducing the lag of reacting to an incident. \crlf Staff trainig can provide guidance for aquiring vital information at the initial diagnosis stage. \blank[line] \WORD{\ssx Non-Technical Solution} \crlf In the best case scenario, the IS Service Desk aquires information about urgency and impact at the initial stages and assignes the relevant teams to the incident, while the ITSM is evaluating the severity if not triggerred already manually and alerting the stakeholders in a total of less than 5 minutes.
 \sym{}
-\sym{\WORD{\bf Issue 2:}} soluton1: automatic call opening, solution2: technical remedy \ Raising a Severity Level 1 implies an instant 'open' Incident Conference Call (every minute is a loss to business), the call has to be on-going and cannot be closed until the incident is resolved (even at close of business at 5pm)
+\sym{\WORD{\bf Issue 2:}} \WORD{\ssx Technical Solution} \crlf soluton1: automatic call opening, call triggers for sev1 \crlf solution2: technical remedy \ Raising a Severity Level 1 implies an instant 'open' Incident Conference Call (every minute is a loss to business), the call has to be on-going and cannot be closed until the incident is resolved (even at close of business at 5pm), follow the sun staff, systems, alerts round the clock, No updates after 5pm, follow the sun if needed
 \sym{}
-\sym{\WORD{\bf Issue 3:}} live ticketing tracking (updates with timestamp and status, teams involved, ITIL reference)
+\sym{\WORD{\bf Issue 3:}} \WORD{\ssx Non-Technical Solution} \crlf live ticketing tracking (updates with timestamp and status, teams involved, ITIL reference), policies/staff training
 \sym{}
-\sym{\WORD{\bf Issue 4:}} Business decision needs to be taken before business opens, cost/benefit
+\sym{\WORD{\bf Issue 4:}} \WORD{\ssx Non-Technical Solution} \crlf policy for starting call asap, Business decision needs to be taken before business opens, cost/benefit
 \sym{}
-\sym{\WORD{\bf Issue 5:}} BCP tests, redundant harware, regulatory requirements
+\sym{\WORD{\bf Issue 5:}} \WORD{\ssx Non-Technical Solution} \crlf BCP tests, redundant harware, regulatory requirements \blank[line] \WORD{\ssx Technical Solution} \crlf Database for hardware
 \sym{}
-\sym{\WORD{\bf Issue 6:}} automatic builds service, table of average build times
+\sym{\WORD{\bf Issue 6:}} \WORD{\ssx Non-Technical Solution} \crlf procedures for hardware after allocation, DR Test, table of average build times \blank[line] \WORD{\ssx Technical Solution} \crlf automatic builds service
 \sym{}
-\sym{\WORD{\bf Issue 7:}} communication channels (phone, online, confidentiality)
+\sym{\WORD{\bf Issue 7:}} \WORD{\ssx Non-Technical Solution} \crlf communication channels (phone, online, confidentiality)
 \sym{}
-\sym{\WORD{\bf Issue 8:}} HR details for individual (store) and call
+\sym{\WORD{\bf Issue 8:}} \WORD{\ssx Non-Technical Solution} \crlf HR details for individual (store) and call
 \sym{}
-\sym{\WORD{\bf Issue 9:}} DR test data for baseline, from scratch takes too much time and automated pre-builds can provide an ETA instead of guessing the time, Checking for BCP, tests
+\sym{\WORD{\bf Issue 9:}} \WORD{\ssx Non-Technical Solution} \crlf DR design, DR test data for baseline, from scratch takes too much time and automated pre-builds can provide an ETA instead of guessing the time, Checking for BCP, tests
 \sym{}
-\sym{\WORD{\bf Issue 10:}} follow the sun staff, systems, alerts round the clock, No updates after 5pm, follow the sun if needed
+\sym{\WORD{\bf Issue 10:}} \WORD{\ssx Non-Technical Solution} \crlf check-in, badge, access level, accompany, closing brach kick-out
 \sym{}
-\sym{\WORD{\bf Issue 11:}} definition of crisis-level, records of evidence/history
+\sym{\WORD{\bf Issue 11:}} \WORD{\ssx Non-Technical Solution} \crlf definition of crisis-level, records of evidence/history, manual allowed, but only change in circumstances would raise \blank[line] \WORD{\ssx Technical Solution} \crlf ITSM system could raise it
 \sym{}
-\sym{\WORD{\bf Issue 12:}} password policies, encryption solutions, badges, access
+\sym{\WORD{\bf Issue 12:}} \WORD{\ssx Technical Solution} \crlf security aspects: password security, encryption solutions, badges, access \blank[line] \WORD{\ssx Non-Technical Solution} \crlf password policies
 \sym{}
-\sym{\WORD{\bf Issue 13:}} automated monitoring, fireeye, incident monitoring nimsoft
+\sym{\WORD{\bf Issue 13:}} \WORD{\ssx Technical Solution} \crlf tracking of backups,errors (just attention, not mitigating itself), automated monitoring, fireeye, incident monitoring nimsoft \blank[line] \WORD{\ssx Non-Technical Solution} \crlf backup policy
 \sym{}
-\sym{\WORD{\bf Issue 14:}} QA, testing and verification, security aspects
+\sym{\WORD{\bf Issue 14:}} \WORD{\ssx Technical Solution} \crlf putting controls in place for encryption, secure transfer \blank[line] \WORD{\ssx Non-Technical Solution} \crlf QA: testing and verification
 \sym{}
-\sym{\WORD{\bf Issue 15:}} COBIT governance, authorisations, solution, COBIT governance, security aspect vs delay, computer misuse act
+\sym{\WORD{\bf Issue 15:}} \WORD{\ssx Non-Technical Solution} \crlf All decisions (governance over) have to be made by the business on the incident call (policy). COBIT governance, authorisations, solution, Signposts at the sub-branch, sendin on-critical staff over, staying critiacal staff at the tills for volume hangling. Avoiding delays in processing the backlog of returning customers a phone call and putting up signposts at the sub-branch would suffice.
 \sym{}
-\sym{\WORD{\bf Issue 16:}} remedy closing incident, Avoiding delays in processing the backlog of returning customers a phone call and putting up signposts at the sub-branch would suffice.
+\sym{\WORD{\bf Issue 16:}} \WORD{\ssx Technical Solution} \crlf \infull{ITSM} systems should be configured to alert on major severity incidents until the ticket is formally closed to draw attention to problems affecting business. Closure requirements are defined within the ITIL Incident Closure section stating full resolution and user agreement on closure.
 \stopitemize
 
 ## Incident Critique
 
 The incident wasnt handled well.
 business generated delays.
+computer misuse act
 
 \page[yes]
 
