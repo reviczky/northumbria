@@ -72,6 +72,9 @@ Where are we now?
 Where do we want to be?
 How do we get there?
 
+hint: appendix not wordcount! (sample report lookup - incident reports, investigation reports, templates)
+check document: v1.0 IS0756 Assignment 2014-15 (1).doc !
+
 ## Risk Table \reference[rep:risktable]{Risk Table}
 In order to quantify and relate to the incident at Northumbria Bank plc the proposed risk appetite is defined with the following risk table showing an estimate of likelihood and impact ratings. \par
 Best practices from the \infull{NIST} (NIST), see the risk table in the appendix section \color[black]{\in{6.2}[ap:nist]} on \color[black]{\at{page}[ap:nist]}, and the \infull{ISF} (ISF) for financial services will act as a guide for the risk averse ratings. \par
@@ -207,63 +210,48 @@ computer misuse act
 
 # Service Improvement Plan (SIP)
 
-## Purpose
-quote: The purpose of this document is to write down a formal plan to implement improvements to our line of IT Service Support. Those improvements have been selected as a result of the latest Service Improvement Initiative Assessment, which instead is part of our continuous efforts for the Continual Service Improvement in the organization.
+The purpose of this plan is to improve the service in relation to the incident management to recover business operations at Northumbria Bank plc.
+As part of the ITIL Continual Service Improvement \cite[great2011itilsd], the following draft \infull{SIP} (SIP) for IS Service Management is proposed. \par
 
-## Overview
-Provide a background to the plan, approach used, external references, considerations, etc.
-Beginning 20xx, the organization started a program to align its services and processes with the recommendations of the Information Technology Infrastructure Library. Since 20xx, a Continual Service Improvement program is in place. The last round in the program started in December 20xx with an Assessment, whose findings are shown in the external document “The Service Provider. Continual Service Improvement Initiative. Assessment. December 20xx.” The recommendations arising from this Assessment are the basis for the present Service Improvement Plan.
+\blank[line]
 
-## Scope
-Describe on which parts/areas/locations in the organization this plan will be applied.
-This document applies to our line of IT Service Support that is currently provided to several major clients. This plan will be effective from January 1, 2012 to June 30, 2012.
+Figure \in[fig:csi] from the "CSI Register" of the ITIL Process Map \cite[great2011itilcsi] is showing the lifecycle of service improvements.
 
-## Vision
-Vision: A description of what the organization intends to become in the future. A vision is created by senior management and is used to help influence culture and strategic planning. The vision should align the business and IT strategies. Setting the vision must be the starting point. Establish a vision aligned with the business vision and objectives. Express what is intended to be in terms of growth, values, employees, contributions to society, etc.
-Our vision is to be the undisputed provider of IT services for our clients, excelling in quality of service, agility and responsiveness to the changing demands of the business.
+\placefigure[place][fig:csi]{Continual Service Improvement (CSI)}{\externalfigure[http://wiki.en.it-processmaps.com/images/1/1e/Itil-2011.jpg][width=50mm]}
 
-## Mission
-Mission: A short but complete description of the overall purpose and intentions of an organization. It states what is to be achieved, but not how this should be done. It answers three questions: what do we do, how do we do and for whom do we do. Put together, the vision and the mission give directions for the improvement process.
-Our mission is to satisfy the needs that small and medium business in the area have for quality Information Technology (IT) services, in a way that is consistent with our values of excellence, efficiency, effectiveness and attention to details.
+\blank[line]
 
-## Objectives
-List here the objectives for this plan. The list of objectives comes as a result of the improvement assessment.
-As a result of the Service Improvement Initiative Assessment, the following objectives have been identified for the Service Improvement Plan:
-
-I. Increase service availability by means of web access.
-II. Decrease time to solve incidents.
-III. Improve customer satisfaction with Help Desk.
-IV. Increase accuracy of service provided.
-
-## Responsibilities
-Identify those with the overall responsibility for the whole initiative.
-The ownership of the overall Service Improvement Initiative belongs to the Service Owner.
-The Service Level Manager is accountable for the successful execution of the overall Service Improvement Initiative.
-Responsibilities for each one of the actions to be implemented as part of the present plan is listed in the section 2 Service Improvement Plan Actions below.
+As a result of the incident analysis, the following objectives have been identified: \par
+\startitemize[joinedup,nowhite]
+\item I. business ans IS practices, Increase service availability by means of web access.
+\item II. Decrease time to solve incidents.
+\item III. Improve customer satisfaction with Help Desk.
+\item IV. Increase accuracy of service provided.
+\stopitemize
 
 ## Service Improvement Plan Actions
 
-The Table 1 Service Improvement Plan Actions shows the actions scheduled to fulfill each of the objectives.
+This draft of the Service Improvement Plan is showing the scheduled actions to fulfill each of the identified objectives. \par
 
-Checklist "CSI Register" from the ITIL Process Map. \par
-As part of the ITIL Continual Service Improvement (reference!), the SIP has been produced. \par
-The following draft of a \infull{SIP} (SIP) is proposed: \par
-
-\startplacetable[location={here},title={\infull{SIP}}]
+\startplacetable[location={here,none}]
 \switchtobodyfont[heros,10pt]
-
 \startxtable[split=yes]
-\startxrow \startxcell[width=30mm] {\bf Document:} \stopxcell \startxcell[width=100mm] {\bf Service Improvement Plan} \stopxcell \startxcell[width=20mm] {\bf From:} \stopxcell \startxcell[width=20mm] {\bf 10/11/2015} \stopxcell \stopxrow
+\startxrow \startxcell[width=30mm] {\bf Document:} \stopxcell \startxcell[width=100mm] {\bf Service Improvement Plan \footnote[sip]{\goto{projectmanagementdocs.com}[url(http://www.projectmanagementdocs.com/template/Service-Improvement-Plan.doc)]}} \stopxcell \startxcell[width=20mm] {\bf From:} \stopxcell \startxcell[width=20mm] {\bf 10/11/2015} \stopxcell \stopxrow
 \startxrow \startxcell {\bf Organisation:} \stopxcell \startxcell {\bf Northumbria Bank plc} \stopxcell \startxcell {\bf To:} \stopxcell \startxcell {\bf 28/01/2017} \stopxcell \stopxrow
 \startxrow \startxcell {\bf Responsible:} \stopxcell \startxcell {\bf Service Level Manager} \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
+\stopxtable
+\stopplacetable
 
+\startplacetable[location={here},title={\infull{SIP}, Objective I}]
+\switchtobodyfont[heros,10pt]
+\startxtable[width=170mm]
 \startxrow \startxcell[nx=4,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective I: Increase Service Availability by Means of Web Access (Service Area)} \stopxcell \stopxrow
 \startxrow
     \startxcell[nx=4,option=tight,strut=no,offset=0mm]
-    \startxtable[option=stretch,bottomframe=off,topframe=off,offset=1mm]
+    \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
         \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Monitor availability \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell technical solutions, suppliers, Monitor availability \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
         \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Monitor availability \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
     \stopxtable
     \stopxcell
@@ -272,28 +260,17 @@ The following draft of a \infull{SIP} (SIP) is proposed: \par
 \startxrow \startxcell[nx=4,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Availability \%} \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
+\stopxtable
+\stopplacetable
 
+\startplacetable[location={here},title={\infull{SIP}, Objective II}]
+\switchtobodyfont[heros,10pt]
+\startxtable[width=170mm]
 \startxrow \startxcell[nx=4,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective II: Increase Service Availability by Means of Web Access (Service Area)} \stopxcell \stopxrow
 \startxrow
     \startxcell[nx=4,option=tight,strut=no,offset=0mm]
-    \startxtable[option=stretch,bottomframe=off,topframe=off,offset=1mm]
-        \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Technical solutions \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Suppliers \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
-    \stopxtable
-    \stopxcell
-\stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Resource Requirements: Staff and Time} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Availability \%} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
-
-\startxrow \startxcell[nx=4,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective III: Increase Service Availability by Means of Web Access (Service Area)} \stopxcell \stopxrow
-\startxrow
-    \startxcell[nx=4,option=tight,strut=no,offset=0mm]
-    \startxtable[option=stretch,bottomframe=off,topframe=off,offset=1mm]
+    \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
         \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
         \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Technical solutions \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
         \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Suppliers \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
@@ -305,24 +282,43 @@ The following draft of a \infull{SIP} (SIP) is proposed: \par
 \startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Availability \%} \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
 \stopxtable
-
 \stopplacetable
 
+\startplacetable[location={here},title={\infull{SIP}, Objective III}]
+\switchtobodyfont[heros,10pt]
+\startxtable[width=170mm]
+\startxrow \startxcell[nx=1,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight,align={middle,lohi},height=10mm] {\bfa Objective III: Increase Service Availability by Means of Web Access (Service Area)} \stopxcell \stopxrow
+\startxrow
+    \startxcell[nx=4,option=tight,strut=no,offset=0mm]
+    \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
+        \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Technical solutions \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Suppliers \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+    \stopxtable
+    \stopxcell
+\stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: Staff and Time} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Availability \%} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
+\stopxtable
+\stopplacetable
+
+\page[yes]
+
+## Monitoring and Reporting
+Success:
 Objective
 Critical Success Factor (CSF)
 Key Performance Indicator (KPI)
 Metrics
 Measurements
 Reports
+An important part of ensuring the success of the Plan is to define how each objective of the Improvement Initiative shall be measured and reported.
+The selection of the proper Key Performance Indicators (KPI), metrics and measurements is done as part of the Initiative Assessment.
 
-## Monitoring and Reporting
-An important part of ensuring the success of the Plan is to define how each objective of the Improvement Initiative shall be measured and reported. The selection of the proper Key Performance Indicators (KPI), metrics and measurements is done as part of the Initiative Assessment. Put here those selected along with the schedule to be applied.
-
-## Annex
-http://www.nihe.gov.uk/sample_service_improvement_plan.pdf
-http://www.projectmanagementdocs.com/template/Service-Improvement-Plan.doc
-http://www.mpa.gov.tt/diamond/sites/default/files/Service%20Improvement%20Plan%20Template_0.pdf
-https://tomjsmyth.files.wordpress.com/2015/04/itilv3sd-itil-v3-service-design.pdf
+\page[yes]
 
 # References
 
@@ -355,6 +351,3 @@ https://tomjsmyth.files.wordpress.com/2015/04/itilv3sd-itil-v3-service-design.pd
 ## NIST Risk Table \reference[ap:nist]{NIST Risk Table}
 
 \startalignment \switchtobodyfont[heros,small] \placetable[here][table:impactlevel]{\WORD{Assessment Scale - Level of Risk (Combination of Likelihood and Impact)\footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}}{ \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=25mm] \startxrow[height=15mm] \startxcellgroup[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Likelihood (Threat Event Occurs and Results in Adverse Impact)} \stopxcell \startxcell[nx=5] {\bf Level of Impact} \stopxcell \stopxcellgroup \stopxrow \startxrow[height=10mm] \startxcell[background=color,backgroundcolor=lightgreen] Very Low \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Low \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate \stopxcell \startxcell[background=color,backgroundcolor=red] High \stopxcell \startxcell[background=color,backgroundcolor=darkred] Very High \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=darkred] Very High \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \startxcell Very High \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=red] High \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \startxcell Very High \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=orange] Moderate \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=darkgreen] Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=lightgreen] Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \stopxrow \stopxtable} \stopalignment
-
-hint: not wordcount! (sample report lookup - incident reports, investigation reports, templates)
-check document: v1.0 IS0756 Assignment 2014-15 (1).doc !
