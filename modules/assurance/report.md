@@ -4,76 +4,19 @@
 \it
 It has been shown that given the Risk Appetite of Northumbria Bank plc the identified issued following the Incident 0123456789 revealed deficiencies on the Technical and Non-Technical aspects for the BCP. The proposed SIP showing improvements for the business. \par
 
+(similar to an abstract)
 for Head of IS and CEO!
-hints:
-write it last!
 important information
 worst case scenarios
 best outcomes
-(similar to an abstract)
 guides reader to determine whether report is worth reading!
 "Sells the report"
 \tf
 \stopnarrower
 
-# Contents, Report / Presentation
+# Report
 
-Referencing \par
-
-technical detail for IS Service Management and other IS operational teams
-
-hint:
-report must have value!
-real world
-applicable
-break up the text!
-headings
-graphs
-charts
-figures
-tables
-bullets points
-wordcount not includede: cover title page, contents page, acknoledgements, final reference and biblio, anything in appendicies, tables graphs pictorials and images
-colors/fonts
-
-1. Identify and evaluate the principles and concepts of information assurance and risk management.
-
-2. Critically discuss information assurance from a combined, managerial, organisational and technical perspective.
-
-3. Critically discuss the scope for risk management in an organisational context. 
-
-4. Undertake a detailed analysis of relevant information assurance and risk management issues from a theoretical and practice perspective.
-
-5. To identify and evaluate fundamental research issues in information assurance and risk management.
-
-Facts:
-* IS consultant currently contracted at Northumbria Bank plc
-* undertake a full review of their IS operations (incl. security)
-* arriving at work this morning, you have been informed, in passing; by the on-call IS Incident Manager that there has been a major incident at the main Sunderland branch.
-* overnight, a water pipe has leaked in the staff kitchen and flooded part of the top floor of the two-storey building
-* water has broken through the ceiling in places and poured into the main customer area
-* water short-circuited one of the motion detection sensors and triggered the intruder alarm
-* Bank's 24/7 security office were alerted of the alarm remotely and called out the Police and the branch manager
-* manager found the branch flooded and called out the Bank's 24/7 emergency property maintenance service
-* Police left due to no evidence of a crime having been committed
-* branch manager started switching off all electrical appliances incl. desktops and printers
-* emergency property maintenance service engineer recommended that the main power to be switched off while they fix the water leak using torches
-* leak was subsequently fixed and all the water mopped up before the staff started arriving at work in the morning
-* On switching back on the desktops, printers were operational but the members of staff were unable to login
-* The branch manager calls the IS Service Desk to raise an incident ('ticket')
-* branch was out of operation for 1.5 days - unacceptable
-* IS Incident Manager also has concerns regarding some potential security risks highlighted during the incident
-* /me: full and detailed analysis of the incident and identify the key issues (including any security concerns) which delayed the recovery of IS and therefore business operations
-* recommend measures to mitigate the impact from each of the issues identified (technical or non-technical perspective)
-* SIP (business and IS practices)
-
-What is the vision?
-Where are we now?
-Where do we want to be?
-How do we get there?
-
-hint: appendix not wordcount! (sample report lookup - incident reports, investigation reports, templates)
-check document: v1.0 IS0756 Assignment 2014-15 (1).doc !
+This report will detail the technical aspects intended for IS Service Management and IS Operations in order to show the principles and concepts behind information assurance and risk management.
 
 ## Risk Table \reference[rep:risktable]{Risk Table}
 In order to quantify and relate to the incident at Northumbria Bank plc the proposed risk appetite is defined with the following risk table showing an estimate of likelihood and impact ratings. \par
@@ -195,16 +138,50 @@ The proposed solutions also take into account that favourable circumstances of s
 \sym{}
 \sym{\WORD{\bf Issue 14:}} \WORD{\ssx Technical Solution} \crlf \bullet\ The minimal data security baseline would enforce encryption and password protection on any sensitive data and its copies. Any sort of data transfer has to be secure as in using encrypted traffic or being physically secured. \crlf \bullet\ Cloud based solutions would reduce the exposure to authentication and secure storage. \blank[line] \WORD{\ssx Non-Technical Solution} \crlf Putting \infull{QA} in place for testing and verification purposes.
 \sym{}
-\sym{\WORD{\bf Issue 15:}} \WORD{\ssx Non-Technical Solution} \crlf \bullet\ Using signposts and calling the sub-branch to direct customers back would suffice instead of sending staff over that should handle the volume in the re-opened branch to avoid delays in processing the backlog of returning customers. \crlf \bullet\ The decision of re-opening the branch has to come from the business on the incident call and should be written in a policy. Governance frameworks like COBIT would help in determining authorisation.
+\sym{\WORD{\bf Issue 15:}} \WORD{\ssx Non-Technical Solution} \crlf \bullet\ Using signposts and calling the sub-branch to direct customers back would suffice instead of sending staff over that should handle the volume in the re-opened branch to avoid delays in processing the backlog of returning customers. \crlf \bullet\ The decision of re-opening the branch has to come from the business on the incident call and should be written into a policy. Governance frameworks like COBIT would help in determining authorisation.
 \sym{}
 \sym{\WORD{\bf Issue 16:}} \WORD{\ssx Technical Solution} \crlf ITSM systems should be configured to alert on major severity incidents until the ticket is formally closed to draw attention to problems affecting business. Closure requirements are defined within the ITIL Incident Closure section stating full resolution and user agreement on closure.
 \stopitemize
 
 ## Incident Critique
 
-The incident wasnt handled well.
+400 words
+Critique of the handling of the
+incident. This should also include any
+business generated delays.
+Overall the incident was...
+
+Critically discuss information assurance from a combined, managerial, organisational and technical perspective.
+Critically discuss the scope for risk management in an organisational context. 
+
+graphs
+charts
+
+The incident wasn't handled well.
 business generated delays.
 computer misuse act
+references
+
+Facts:
+* IS consultant currently contracted at Northumbria Bank plc
+* undertake a full review of their IS operations (incl. security)
+* arriving at work this morning, you have been informed, in passing; by the on-call IS Incident Manager that there has been a major incident at the main Sunderland branch.
+* overnight, a water pipe has leaked in the staff kitchen and flooded part of the top floor of the two-storey building
+* water has broken through the ceiling in places and poured into the main customer area
+* water short-circuited one of the motion detection sensors and triggered the intruder alarm
+* Bank's 24/7 security office were alerted of the alarm remotely and called out the Police and the branch manager
+* manager found the branch flooded and called out the Bank's 24/7 emergency property maintenance service
+* Police left due to no evidence of a crime having been committed
+* branch manager started switching off all electrical appliances incl. desktops and printers
+* emergency property maintenance service engineer recommended that the main power to be switched off while they fix the water leak using torches
+* leak was subsequently fixed and all the water mopped up before the staff started arriving at work in the morning
+* On switching back on the desktops, printers were operational but the members of staff were unable to login
+* The branch manager calls the IS Service Desk to raise an incident ('ticket')
+* branch was out of operation for 1.5 days - unacceptable
+* IS Incident Manager also has concerns regarding some potential security risks highlighted during the incident
+* /me: full and detailed analysis of the incident and identify the key issues (including any security concerns) which delayed the recovery of IS and therefore business operations
+* recommend measures to mitigate the impact from each of the issues identified (technical or non-technical perspective)
+* SIP (business and IS practices)
 
 \page[yes]
 
@@ -215,7 +192,7 @@ As part of the ITIL Continual Service Improvement \cite[great2011itilsd], the fo
 
 \blank[line]
 
-Figure \in[fig:csi] from the "CSI Register" of the ITIL Process Map \cite[great2011itilcsi] is showing the lifecycle of service improvements.
+Figure \in[fig:csi] from the "CSI Register" of the ITIL Process Map \cite[great2011itilcsi] is showing the life-cycle of service improvements.
 
 \placefigure[place][fig:csi]{Continual Service Improvement (CSI)}{\externalfigure[http://wiki.en.it-processmaps.com/images/1/1e/Itil-2011.jpg][width=50mm]}
 
@@ -234,7 +211,7 @@ As a result of the incident analysis, the following objectives have been identif
 
 ## Service Improvement Plan Actions
 
-This draft of the Service Improvement Plan is showing the scheduled actions to fulfill each of the identified objectives. \par
+This draft of the Service Improvement Plan is showing the scheduled actions to fulfil each of the identified objectives. \par
 
 \startplacetable[location={here,none}]
 \switchtobodyfont[heros,10pt]
@@ -257,13 +234,14 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
         \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Evaluate ITSM systems (Remedy, ServiceNow) \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/02/2016 \stopxcell \stopxrow
         \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Define and implement auto-severity and conference call triggers \stopxcell \startxcell Event Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
         \startxrow[topframe=on] \startxcell[leftframe=off] c. \stopxcell \startxcell Monitor and track incidents \stopxcell \startxcell Incident Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] d. \stopxcell \startxcell Train staff on ITIl Incident Management \stopxcell \startxcell Knowledge Manager \stopxcell \startxcell 01/06/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
     \stopxtable
     \stopxcell
 \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Resource Requirements: 1 Engineer and 1 year for the Project} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Result: Decrease in mean time to close incidents} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Resource Requirements: 2 Engineers, 1 Trainer and 1 year for the Project} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Result: Decrease the mean time to close incidents} \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Less open incident tickets in \%} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 25,000} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 150,000} \stopxcell \stopxrow
 \stopxtable
 \stopplacetable
 
@@ -277,15 +255,15 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
     \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
         \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
         \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Creation of 24/7 facilities to react, follow-the-sun \stopxcell \startxcell Availability Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Integration of VoIP, IM, JIVE and other channels \stopxcell \startxcell Application Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/09/2016 \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] c. \stopxcell \startxcell Train staff on ITSM systems \stopxcell \startxcell Knowledge Manager \stopxcell \startxcell 01/06/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Integration of VoIP (Avaya), IM (Cisco, Skype), JIVE and other channels \stopxcell \startxcell Application Manager \stopxcell \startxcell 01/06/2016 \stopxcell \startxcell[rightframe=off] 01/09/2016 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] c. \stopxcell \startxcell Train staff on communication and how to use the systems \stopxcell \startxcell Knowledge Manager \stopxcell \startxcell 01/06/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
     \stopxtable
     \stopxcell
 \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Resource Requirements: 2 Engineers, 1 Trainer and 1 year for the Project} \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Result: Improved reaction and availability times} \stopxcell \stopxrow
 \startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Decreased response time in \%} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 50,000} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
 \stopxtable
 \stopplacetable
 
@@ -298,16 +276,17 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
     \startxcell[nx=4,option=tight,strut=no,offset=0mm]
     \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
         \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Introduction of whole-disk and database encryption (AES/DES) via BitLocker, SHA checksums \stopxcell \startxcell Application Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Creation of save transfer platforms: Intralinks, SSL \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] c. \stopxcell \startxcell Revision of password policy \stopxcell \startxcell Knowledge Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Introduction of whole-disk and database encryption (AES/DES) via BitLocker, GPG, SHA checksums \stopxcell \startxcell Application Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Creation of save transfer platforms: Intralinks, SSL/SSH \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] c. \stopxcell \startxcell Evaluate authentication methods of Smartcards and RSA tokens \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] d. \stopxcell \startxcell Revision of the password policy \stopxcell \startxcell Knowledge Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
     \stopxtable
     \stopxcell
 \stopxrow
 \startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: Crypto Team and 1 year for the Project} \stopxcell \stopxrow
 \startxrow \startxcell[nx=1,option=tight] {\bi Result: Improved data security} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Decreased amount of flags for data leakage in \%} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Decreased amount of flags raised for data leakage in \%} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 200,000} \stopxcell \stopxrow
 \stopxtable
 \stopplacetable
 
@@ -320,14 +299,15 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
     \startxcell[nx=4,option=tight,strut=no,offset=0mm]
     \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
         \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Aquire and implement discovery and detection software: FireEye, Kroll \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Acquire and implement discovery, detection and forensics software: FireEye, Kroll \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Integration of event management into SOC \stopxcell \startxcell Incident Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
     \stopxtable
     \stopxcell
 \stopxrow
 \startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: Supply Manager and 6 months for the Project} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Result: Increased amount of monitoring events} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Result: Increased volume of monitoring events} \stopxcell \stopxrow
 \startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Increase of events and reduced processing time} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 40,000} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 150,000} \stopxcell \stopxrow
 \stopxtable
 \stopplacetable
 
@@ -340,15 +320,15 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
     \startxcell[nx=4,option=tight,strut=no,offset=0mm]
     \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
         \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Scheduled periodical DR and BCP tests \stopxcell \startxcell Availability Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Increase BCP compliant hardware \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Introduction of scheduled periodical DR and BCP tests \stopxcell \startxcell Availability Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Increase BCP compliant hardware by creation of an inventory management system \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
     \stopxtable
     \stopxcell
 \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: 1 Manager and 1 year for the Project} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Result: Increased reasiness for business continuity and recovery} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: 2 Managers and 1 year for the Project} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Result: Increased readiness for business continuity and recovery} \stopxcell \stopxrow
 \startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Mostly test-based results} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 10,000} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 50,000} \stopxcell \stopxrow
 \stopxtable
 \stopplacetable
 
@@ -367,8 +347,8 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
 \stopxrow
 \startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: 1 Architect and 1 year for the Project} \stopxcell \stopxrow
 \startxrow \startxcell[nx=1,option=tight] {\bi Result: Better governance with quicker reaction} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Overall time for decision making} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 70,000} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Overall time for decision making decreasing} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 75,000} \stopxcell \stopxrow
 \stopxtable
 \stopplacetable
 
@@ -381,7 +361,7 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
     \startxcell[nx=4,option=tight,strut=no,offset=0mm]
     \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
         \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Creation of online portal (Chat, Email, Forum) \stopxcell \startxcell Application Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Creation of an online portal for customer communication (Chat, Email, Forum) \stopxcell \startxcell Application Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
         \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Monitor customer satisfaction \stopxcell \startxcell Customer Satisfaction Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
     \stopxtable
     \stopxcell
@@ -389,22 +369,13 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
 \startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: 2 Engineers and 1 year for the Project} \stopxcell \stopxrow
 \startxrow \startxcell[nx=1,option=tight] {\bi Result: Increased customer satisfaction} \stopxcell \stopxrow
 \startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Positive reviews in \%} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 60,000} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 75,000} \stopxcell \stopxrow
 \stopxtable
 \stopplacetable
 
 \page[yes]
 
-## Monitoring and Reporting
-Success:
-Objective
-Critical Success Factor (CSF)
-Key Performance Indicator (KPI)
-Metrics
-Measurements
-Reports
-An important part of ensuring the success of the Plan is to define how each objective of the Improvement Initiative shall be measured and reported.
-The selection of the proper Key Performance Indicators (KPI), metrics and measurements is done as part of the Initiative Assessment.
+In order to define the Critical Success Factor (CSF) for ensuring the success of the improvements, Key Performance Indicators (KPI) metrics for each objective have to be defined and measured as part of the monitoring and reporting stage of the evaluation to ensure the success of the plan. \par
 
 \page[yes]
 
