@@ -222,11 +222,14 @@ Figure \in[fig:csi] from the "CSI Register" of the ITIL Process Map \cite[great2
 \blank[line]
 
 As a result of the incident analysis, the following objectives have been identified: \par
-\startitemize[joinedup,nowhite]
-\item I. business ans IS practices, Increase service availability by means of web access.
-\item II. Decrease time to solve incidents.
-\item III. Improve customer satisfaction with Help Desk.
-\item IV. Increase accuracy of service provided.
+\startitemize[R,joinedup,nowhite]
+\item Decrease Time to Resolve and React to Incidents
+\item Improve Communication Methods
+\item Increase Security of Data Management
+\item Improve Discovery and Detection Capabilities (Event Monitoring)
+\item Increase DR and BCP Readiness
+\item Improve Governance and Business Decision Making
+\item Increase Customer Satisfaction by Means of Better Communication
 \stopitemize
 
 ## Service Improvement Plan Actions
@@ -246,20 +249,21 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
 \switchtobodyfont[heros,10pt]
 \startxtable[width=170mm]
 \startxrow \startxcell[nx=4,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective I: Increase Service Availability by Means of Web Access (Service Area)} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective I: Decrease Time to Resolve and React to Incidents (Operations)} \stopxcell \stopxrow
 \startxrow
     \startxcell[nx=4,option=tight,strut=no,offset=0mm]
     \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
         \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell technical solutions, suppliers, Monitor availability \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Monitor availability \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Evaluate ITSM systems (Remedy, ServiceNow) \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/02/2016 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Define and implement auto-severity and conference call triggers \stopxcell \startxcell Event Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] c. \stopxcell \startxcell Monitor and track incidents \stopxcell \startxcell Incident Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
     \stopxtable
     \stopxcell
 \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Resource Requirements: Staff and Time} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Availability \%} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Resource Requirements: 1 Engineer and 1 year for the Project} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Result: Decrease in mean time to close incidents} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Less open incident tickets in \%} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 25,000} \stopxcell \stopxrow
 \stopxtable
 \stopplacetable
 
@@ -267,20 +271,21 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
 \switchtobodyfont[heros,10pt]
 \startxtable[width=170mm]
 \startxrow \startxcell[nx=4,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective II: Increase Service Availability by Means of Web Access (Service Area)} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight,align={middle,lohi},height=10mm] {\bfa Objective II: Improve Communication Methods (Communications)} \stopxcell \stopxrow
 \startxrow
     \startxcell[nx=4,option=tight,strut=no,offset=0mm]
     \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
         \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Technical solutions \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Suppliers \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Creation of 24/7 facilities to react, follow-the-sun \stopxcell \startxcell Availability Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Integration of VoIP, IM, JIVE and other channels \stopxcell \startxcell Application Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/09/2016 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] c. \stopxcell \startxcell Train staff on ITSM systems \stopxcell \startxcell Knowledge Manager \stopxcell \startxcell 01/06/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
     \stopxtable
     \stopxcell
 \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Resource Requirements: Staff and Time} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Availability \%} \stopxcell \stopxrow
-\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Resource Requirements: 2 Engineers, 1 Trainer and 1 year for the Project} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Result: Improved reaction and availability times} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Evaluation Method/Measurement: Decreased response time in \%} \stopxcell \stopxrow
+\startxrow \startxcell[nx=4,option=tight] {\bi Indicative costs: \pound 50,000} \stopxcell \stopxrow
 \stopxtable
 \stopplacetable
 
@@ -288,20 +293,103 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
 \switchtobodyfont[heros,10pt]
 \startxtable[width=170mm]
 \startxrow \startxcell[nx=1,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight,align={middle,lohi},height=10mm] {\bfa Objective III: Increase Service Availability by Means of Web Access (Service Area)} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight,align={middle,lohi},height=10mm] {\bfa Objective III: Increase Security of Data Management (Information Security)} \stopxcell \stopxrow
 \startxrow
     \startxcell[nx=4,option=tight,strut=no,offset=0mm]
     \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
         \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Technical solutions \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
-        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Suppliers \stopxcell \startxcell Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Introduction of whole-disk and database encryption (AES/DES) via BitLocker, SHA checksums \stopxcell \startxcell Application Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Creation of save transfer platforms: Intralinks, SSL \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] c. \stopxcell \startxcell Revision of password policy \stopxcell \startxcell Knowledge Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
     \stopxtable
     \stopxcell
 \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: Staff and Time} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Result: Service availability increased through web access} \stopxcell \stopxrow
-\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Availability \%} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: Crypto Team and 1 year for the Project} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Result: Improved data security} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Decreased amount of flags for data leakage in \%} \stopxcell \stopxrow
 \startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 100,000} \stopxcell \stopxrow
+\stopxtable
+\stopplacetable
+
+\startplacetable[location={here},title={\infull{SIP}, Objective IV}]
+\switchtobodyfont[heros,10pt]
+\startxtable[width=170mm]
+\startxrow \startxcell[nx=1,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight,align={middle,lohi},height=10mm] {\bfa Objective IV: Improve Discovery and Detection Capabilities (Event Monitoring)} \stopxcell \stopxrow
+\startxrow
+    \startxcell[nx=4,option=tight,strut=no,offset=0mm]
+    \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
+        \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Aquire and implement discovery and detection software: FireEye, Kroll \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/06/2016 \stopxcell \stopxrow
+    \stopxtable
+    \stopxcell
+\stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: Supply Manager and 6 months for the Project} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Result: Increased amount of monitoring events} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Increase of events and reduced processing time} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 40,000} \stopxcell \stopxrow
+\stopxtable
+\stopplacetable
+
+\startplacetable[location={here},title={\infull{SIP}, Objective V}]
+\switchtobodyfont[heros,10pt]
+\startxtable[width=170mm]
+\startxrow \startxcell[nx=1,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight,align={middle,lohi},height=10mm] {\bfa Objective V: Increase DR and BCP Readiness (Operations)} \stopxcell \stopxrow
+\startxrow
+    \startxcell[nx=4,option=tight,strut=no,offset=0mm]
+    \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
+        \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Scheduled periodical DR and BCP tests \stopxcell \startxcell Availability Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Increase BCP compliant hardware \stopxcell \startxcell Supply Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+    \stopxtable
+    \stopxcell
+\stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: 1 Manager and 1 year for the Project} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Result: Increased reasiness for business continuity and recovery} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Mostly test-based results} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 10,000} \stopxcell \stopxrow
+\stopxtable
+\stopplacetable
+
+\startplacetable[location={here},title={\infull{SIP}, Objective VI}]
+\switchtobodyfont[heros,10pt]
+\startxtable[width=170mm]
+\startxrow \startxcell[nx=1,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight,align={middle,lohi},height=10mm] {\bfa Objective VI: Improve Governance and Business Decision Making (Governance)} \stopxcell \stopxrow
+\startxrow
+    \startxcell[nx=4,option=tight,strut=no,offset=0mm]
+    \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
+        \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Introduce COBIT framework into the organisation \stopxcell \startxcell Enterprise Architect \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+    \stopxtable
+    \stopxcell
+\stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: 1 Architect and 1 year for the Project} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Result: Better governance with quicker reaction} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Overall time for decision making} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 70,000} \stopxcell \stopxrow
+\stopxtable
+\stopplacetable
+
+\startplacetable[location={here},title={\infull{SIP}, Objective VII}]
+\switchtobodyfont[heros,10pt]
+\startxtable[width=170mm]
+\startxrow \startxcell[nx=1,background=color,backgroundcolor=steelblue,height=5mm] \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight,align={middle,lohi},height=10mm] {\bfa Objective VII: Increase Customer Satisfaction by Means of Better Communication (Communication)} \stopxcell \stopxrow
+\startxrow
+    \startxcell[nx=4,option=tight,strut=no,offset=0mm]
+    \startxtable[option=stretch,bottomframe=on,topframe=off,offset=1mm]
+        \startxrow \startxcell[leftframe=off] {\bf \letterhash} \stopxcell \startxcell {\bf Action Items/Deliverables} \stopxcell \startxcell {\bf Responsible} \stopxcell \startxcell {\bf Start} \stopxcell \startxcell[rightframe=off] {\bf End} \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] a. \stopxcell \startxcell Creation of online portal (Chat, Email, Forum) \stopxcell \startxcell Application Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+        \startxrow[topframe=on] \startxcell[leftframe=off] b. \stopxcell \startxcell Monitor customer satisfaction \stopxcell \startxcell Customer Satisfaction Manager \stopxcell \startxcell 01/01/2016 \stopxcell \startxcell[rightframe=off] 01/01/2017 \stopxcell \stopxrow
+    \stopxtable
+    \stopxcell
+\stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Resource Requirements: 2 Engineers and 1 year for the Project} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Result: Increased customer satisfaction} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Evaluation Method/Measurement: Positive reviews in \%} \stopxcell \stopxrow
+\startxrow \startxcell[nx=1,option=tight] {\bi Indicative costs: \pound 60,000} \stopxcell \stopxrow
 \stopxtable
 \stopplacetable
 
