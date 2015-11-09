@@ -72,27 +72,45 @@ Where are we now?
 Where do we want to be?
 How do we get there?
 
-## Risk Table
-\reference[rep:risktable]{Risk Table}
+## Risk Table \reference[rep:risktable]{Risk Table}
+In order to quantify and relate to the incident at Northumbria Bank plc the proposed risk appetite is defined with the following risk table showing an estimate of likelihood and impact ratings. \par
+Best practices from the \infull{NIST} (NIST), see the risk table in the appendix section \color[black]{\in{6.2}[ap:nist]} on \color[black]{\at{page}[ap:nist]}, and the \infull{ISF} (ISF) for financial services will act as a guide for the risk averse ratings. \par
 
-Change to likelihood/impact!
+\blank[line]
 
-\startalignment \switchtobodyfont[heros,small] \placetable[here][table:orf]{\WORD{Operational Risk Framework}}{ \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=25mm] \startxrow \startxcellgroup[background=color,backgroundcolor=darkgray] \startxcell {\bf Likelihood} \stopxcell \startxcell[nx=5,background=color,backgroundcolor=lightyellow] {\bf Overall ORF Rating} \stopxcell \stopxcellgroup \stopxrow \startxrow[height=15mm] \startxcell Almost Certain (more than once per year) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (5) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (10) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (15) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (20) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (25) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Likely (at least once per year) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (8) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (12) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (16) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (20) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Possibile (at least once in 5 years) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (3) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (6) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (9) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (12) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (15) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Unlikely (at least once in 5-10 years) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (6) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (8) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (10) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Rare (less than once every 10 years) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (3) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (5) \stopxcell \stopxrow \startxrow[background=color,backgroundcolor=salmon] \startxcell ORF Impact \stopxcell \startxcell Non Significant (1) \stopxcell \startxcell Minor (2) \stopxcell \startxcell Moderate (3) \stopxcell \startxcell Major (4) \stopxcell \startxcell Critical (5) \stopxcell \stopxrow \stopxtable} \stopalignment
+\startcolumns[n=2]
+The likelihood of the risk matrix is defined as: \par
+\startitemize[joinedup,nowhite]
+\item {\bf Very Low} (occurring once in 5 to 10 years)
+\item {\bf Low} (occurring once in 2 to 5 years)
+\item {\bf Medium} (occurring once in 1 to 2 years)
+\item {\bf High} (occurring up to 4 times per year)
+\item {\bf Very High} (occurring up to 12 times per year)
+\stopitemize
 
-should be an estimate
-no financials
-rationale for the rating/Reasoning!
+\blank[line]
 
-Risk Matrix for appendix?
+The estimated impact can be defined with: \par
+\startitemize[joinedup,nowhite]
+\item {\bf Very Low} (negligible effect)
+\item {\bf Low} (limited effect)
+\item {\bf Medium} (serious effect)
+\item {\bf High} (severe or catastrophic effect)
+\item {\bf Very High} (multiple severe or catastrophic effects)
+\stopitemize
+\stopcolumns
 
-Heat matrix with graph (this is the main?)
+Overall ratings are labelled with their criticality to business operations and the ratings are calculated with: \par 
+$$ risk = likelihood \times impact $$
 
-hint: rationale for the rating, where is it coming from? (reference, support)
-Ref: ISF/NIST \footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}
+The thresholds of financial loss will define the bands of risk to the business operation and are defined preliminary with: \par
+\midaligned{Non Significant (1-4), Minor (5-9), Moderate (10-14), Major (15-19), Critical (20-25)} \par
 
-http://www.carnacgroup.com/risk-management/
-http://www.rcmp-grc.gc.ca/dpr-rmr/2009-2010/crp-pro-eng.htm
-http://forum.chandoo.org/threads/how-can-i-build-this-5-attribute-2d-risk-map-in-excel.24287/
+\blank[line]
+
+\startalignment \switchtobodyfont[heros,small] \placetable[here][table:orf]{\WORD{Risk Profile}}{ \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=25mm] \startxrow \startxcellgroup[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Likelihood} \stopxcell \startxcell[nx=5,background=color,backgroundcolor=lightyellow] {\bf Impact} \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=salmon] {\bf Very Low (1)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf Low (2)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf Medium (3)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf High (4)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf Very High (5)} \stopxcell \stopxcellgroup \stopxrow \startxrow[height=15mm] \startxcell Very High (5) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (5) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (10) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (15) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (20) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (25) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell High (4) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (8) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (12) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (16) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (20) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Medium (3) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (3) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (6) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (9) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (12) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (15) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Low (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (6) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (8) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (10) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Very Low (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (3) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (5) \stopxcell \stopxrow \stopxtable} \stopalignment
+
+Looking at the risk profile of the incident, the key risk of a pipe leak would be defined as a "Low" likelihood but with a "High" impact and therefore be categorised as "Minor" in the matrix with an overall risk rating of 2 (Low Likelihood) \times\ 4 (High Impact) = 8. \par
 
 ## Identification Of Issues
 
@@ -152,7 +170,7 @@ The proposed solutions also take into account that favourable circumstances of s
 \sym{}
 \sym{\WORD{\bf Issue 3:}} \WORD{\ssx Technical Solution} \crlf \bullet\ Tickets within the ITSM system need to be tracked and updated upon changes to status (inclusive time stamp, teams involved) as defined by the ITIL's Incident Logging. Assigned teams should be notified accordingly. \blank[line] \WORD{\ssx Non-Technical Solution} \crlf \bullet\ Providing training on Incident Management will enhance awareness of tracking updates correctly.
 \sym{}
-\sym{\WORD{\bf Issue 4:}} \WORD{\ssx Non-Technical Solution} \crlf \bullet\ Policy should mandate an instant conference call for high severity incidents without delays. Providing training for relevant staff would ensure a swift response. \crlf \bullet\ Business needs to decide quickly taking the cost and benefit into account. Both the decision making and execution has to be prompt as those are the most important steps.
+\sym{\WORD{\bf Issue 4:}} \WORD{\ssx Non-Technical Solution} \crlf \bullet\ Policy should mandate an instant conference call for high severity incidents without delays. Providing training for relevant staff would ensure a swift response. \crlf \bullet\ Business needs to decide quickly taking the cost and benefit into account. Both the decision making and execution has to be prompt as those are the most important steps at an incident.
 \sym{}
 \sym{\WORD{\bf Issue 5:}} \WORD{\ssx Non-Technical Solution} \crlf Periodic \infull{BCP} (BCP) tests have to be conducted to ensure available redundant hardware, working fail-over and successful recovery procedures. \blank[line] \WORD{\ssx Technical Solution} \crlf Having an inventory database for hardware devices would make it easier for keeping track and discover non-compliant devices.
 \sym{}
@@ -170,7 +188,7 @@ The proposed solutions also take into account that favourable circumstances of s
 \sym{}
 \sym{\WORD{\bf Issue 12:}} \WORD{\ssx Technical Solution} \crlf From a security aspect, the database itself should contain encrypted data and the backup needs to be password protected according to the company's password policy. Physical verification of badges and access should be carried out before accepting storages and feeding data back into a live system. \blank[line] \WORD{\ssx Non-Technical Solution} \crlf Policies have to be in place to define the protection of data (password security, encryption) according to their classification level.
 \sym{}
-\sym{\WORD{\bf Issue 13:}} \WORD{\ssx Technical Solution} \crlf Event monitoring tools could help the discovery of errors, which would need to feed into the \infull{SOC} (SOC) for appropriate response. \blank[line] \WORD{\ssx Non-Technical Solution} \crlf Backup policies should take redundancy into account to prevent data loss.
+\sym{\WORD{\bf Issue 13:}} \WORD{\ssx Technical Solution} \crlf Event monitoring tools could help the discovery of errors, which would need to fed into the \infull{SOC} (SOC) for appropriate response. \blank[line] \WORD{\ssx Non-Technical Solution} \crlf Backup policies should take redundancy into account to prevent data loss.
 \sym{}
 \sym{\WORD{\bf Issue 14:}} \WORD{\ssx Technical Solution} \crlf \bullet\ The minimal data security baseline would enforce encryption and password protection on any sensitive data and its copies. Any sort of data transfer has to be secure as in using encrypted traffic or being physically secured. \crlf \bullet\ Cloud based solutions would reduce the exposure to authentication and secure storage. \blank[line] \WORD{\ssx Non-Technical Solution} \crlf Putting \infull{QA} in place for testing and verification purposes.
 \sym{}
@@ -316,8 +334,7 @@ https://tomjsmyth.files.wordpress.com/2015/04/itilv3sd-itil-v3-service-design.pd
 
 # Appendix
 
-## Incident Log
-\reference[ap:log]{Incident Log}
+## Incident Log \reference[ap:log]{Incident Log}
 \definetextbackground[log][
         location=paragraph,
         background=color,backgroundcolor=lightgray,
@@ -334,6 +351,10 @@ https://tomjsmyth.files.wordpress.com/2015/04/itilv3sd-itil-v3-service-design.pd
 \stoplog
 
 \page[yes]
+
+## NIST Risk Table \reference[ap:nist]{NIST Risk Table}
+
+\startalignment \switchtobodyfont[heros,small] \placetable[here][table:impactlevel]{\WORD{Assessment Scale - Level of Risk (Combination of Likelihood and Impact)\footnote[nist]{\goto{NIST - Guide for Conducting Risk Assessments, SP 800-30 Revision 1}[url(http://csrc.nist.gov/publications/nistpubs/800-30-rev1/sp800_30_r1.pdf)]}}}{ \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=25mm] \startxrow[height=15mm] \startxcellgroup[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Likelihood (Threat Event Occurs and Results in Adverse Impact)} \stopxcell \startxcell[nx=5] {\bf Level of Impact} \stopxcell \stopxcellgroup \stopxrow \startxrow[height=10mm] \startxcell[background=color,backgroundcolor=lightgreen] Very Low \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Low \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate \stopxcell \startxcell[background=color,backgroundcolor=red] High \stopxcell \startxcell[background=color,backgroundcolor=darkred] Very High \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=darkred] Very High \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \startxcell Very High \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=red] High \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \startxcell Very High \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=orange] Moderate \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \startxcell Moderate \stopxcell \startxcell High \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=darkgreen] Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \startxcell Moderate \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=lightgreen] Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Very Low \stopxcell \startxcell Low \stopxcell \startxcell Low \stopxcell \stopxrow \stopxtable} \stopalignment
 
 hint: not wordcount! (sample report lookup - incident reports, investigation reports, templates)
 check document: v1.0 IS0756 Assignment 2014-15 (1).doc !
