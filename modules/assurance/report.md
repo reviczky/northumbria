@@ -2,15 +2,23 @@
 
 \startnarrower
 \it
-It has been shown that given the Risk Appetite of Northumbria Bank plc the identified issued following the Incident 0123456789 revealed deficiencies on the Technical and Non-Technical aspects for the BCP. The proposed SIP showing improvements for the business. \par
+It has been shown that given the Risk Appetite of Northumbria Bank plc the identified issued following the Incident 0123456789 revealed deficiencies on the Technical and Non-Technical aspects for the BCP.
+The proposed SIP showing improvements for the business. \par
 
-(similar to an abstract)
+outlines the issues identified around the incident and their solutions on the technical and non-technical aspect.
+
+worst case scenarios
+the worst case scenario is that business is going out of operation as a whole (data loss, customer loss)
+
+best outcomes
+disruptions wouldve been at a minimum
+
 for Head of IS and CEO!
 important information
-worst case scenarios
-best outcomes
 guides reader to determine whether report is worth reading!
 "Sells the report"
+
+graphs, charts
 \tf
 \stopnarrower
 
@@ -145,43 +153,34 @@ The proposed solutions also take into account that favourable circumstances of s
 
 ## Incident Critique
 
-400 words
-Critique of the handling of the
-incident. This should also include any
-business generated delays.
-Overall the incident was...
+Overall the incident wasn't handled too well and as a result the business in the affected branch was out of operation for 1,5 days, which is deemed as unacceptable.
+Several factors influenced the way how the delays lead to a greater problem than it started off with, even though the decisions taken by the business were mostly appropriate in nature. \par
 
-Critically discuss information assurance from a combined, managerial, organisational and technical perspective.
-Critically discuss the scope for risk management in an organisational context. 
+\blank[line]
 
-graphs
-charts
+It is crucial to act quickly and ensure information assurance by "protecting information of the information systems" \cite[alexander2013information] so that the exposure of the major incident affecting business operations is minimised and the recovery effective.
 
-The incident wasn't handled well.
-business generated delays.
-computer misuse act
-references
+\blank[line]
 
-Facts:
-* IS consultant currently contracted at Northumbria Bank plc
-* undertake a full review of their IS operations (incl. security)
-* arriving at work this morning, you have been informed, in passing; by the on-call IS Incident Manager that there has been a major incident at the main Sunderland branch.
-* overnight, a water pipe has leaked in the staff kitchen and flooded part of the top floor of the two-storey building
-* water has broken through the ceiling in places and poured into the main customer area
-* water short-circuited one of the motion detection sensors and triggered the intruder alarm
-* Bank's 24/7 security office were alerted of the alarm remotely and called out the Police and the branch manager
-* manager found the branch flooded and called out the Bank's 24/7 emergency property maintenance service
-* Police left due to no evidence of a crime having been committed
-* branch manager started switching off all electrical appliances incl. desktops and printers
-* emergency property maintenance service engineer recommended that the main power to be switched off while they fix the water leak using torches
-* leak was subsequently fixed and all the water mopped up before the staff started arriving at work in the morning
-* On switching back on the desktops, printers were operational but the members of staff were unable to login
-* The branch manager calls the IS Service Desk to raise an incident ('ticket')
-* branch was out of operation for 1.5 days - unacceptable
-* IS Incident Manager also has concerns regarding some potential security risks highlighted during the incident
-* /me: full and detailed analysis of the incident and identify the key issues (including any security concerns) which delayed the recovery of IS and therefore business operations
-* recommend measures to mitigate the impact from each of the issues identified (technical or non-technical perspective)
-* SIP (business and IS practices)
+The initial action taken by the branch manager was correct by switching off the appliances and let the emergency property maintenance service engineer fix the leak.
+However, the resulting report to IS Service Desk to open an incident ticket was executed poorly by not determining the scope and impact of the problem and not informing key stakeholders.
+This has prevented business to take action and losing time so that decisions were delayed. \par
+
+\blank[line]
+
+In an event like this improvisation and agility is needed to quickly adapt to the environment, whereas company procedures should be set aside until "the elimination of the cause of the incident and the recovery" \cite[blyth2006information] is assured.
+The huge disconnect in decision making and execution oversight accumulated in severe delays increasing the criticality of the incident.
+Unfortunate chain of events prevented a fast recovery, mainly with problems of insufficient BCP availability. \par
+
+\blank[line]
+
+The steering of the incident call was not appropriate as it is crucial to take over responsibility on all matters regarding the business continuity.
+Decisions on the most important aspects as to quickly decide on branch closure and BCP invocation had been taken but not in a timely manner.
+The lack of management's ability about the long-term implications on the decisions taken by estimating service recovery based on actions taken and historical data and the misjudgement in severity levels seriously affected the business as a whole. \par
+
+\blank[line]
+
+It has to be noted that the utmost worrying aspect of careless security deficiencies discovered during the incident were neglected by the management. \par
 
 \page[yes]
 
