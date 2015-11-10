@@ -2,10 +2,17 @@
 
 \startnarrower
 \it
-It has been shown that given the Risk Appetite of Northumbria Bank plc the identified issued following the Incident 0123456789 revealed deficiencies on the Technical and Non-Technical aspects for the BCP.
-The proposed SIP showing improvements for the business. \par
+for Head of IS and CEO!
 
-outlines the issues identified around the incident and their solutions on the technical and non-technical aspect.
+brief statement of the problem or proposal covered
+
+The incident after the low probability flood at Northumbria Bank plc ... identified issues on BCP aspects
+the risk appetite of the company is shown
+outlines issues identified during the handling of the incident are layed out and solutions are proposed on technical and non-technical aspects.
+The critique is discussing the problems of business delays and handling the incident
+The proposed SIP showing improvements for operations. \par
+
+security aspect
 
 worst case scenarios
 the worst case scenario is that business is going out of operation as a whole (data loss, customer loss)
@@ -13,12 +20,7 @@ the worst case scenario is that business is going out of operation as a whole (d
 best outcomes
 disruptions wouldve been at a minimum
 
-for Head of IS and CEO!
-important information
-guides reader to determine whether report is worth reading!
-"Sells the report"
-
-graphs, charts
+main conclusions selling: best recommendations would improve business
 \tf
 \stopnarrower
 
@@ -63,6 +65,8 @@ The thresholds of financial loss will define the bands of risk to the business o
 \blank[line]
 
 \startalignment \switchtobodyfont[heros,small] \placetable[here][table:orf]{\WORD{Risk Profile}}{ \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=25mm] \startxrow \startxcellgroup[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Likelihood} \stopxcell \startxcell[nx=5,background=color,backgroundcolor=lightyellow] {\bf Impact} \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=salmon] {\bf Very Low (1)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf Low (2)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf Medium (3)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf High (4)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf Very High (5)} \stopxcell \stopxcellgroup \stopxrow \startxrow[height=15mm] \startxcell Very High (5) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (5) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (10) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (15) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (20) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (25) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell High (4) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (8) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (12) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (16) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (20) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Medium (3) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (3) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (6) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (9) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (12) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (15) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Low (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (6) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (8) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (10) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Very Low (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (3) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (5) \stopxcell \stopxrow \stopxtable} \stopalignment
+
+\page[yes]
 
 Looking at the risk profile of the incident, the key risk of a pipe leak would be defined as a "Low" likelihood but with a "High" impact and therefore be categorised as "Minor" in the matrix with an overall risk rating of 2 (Low Likelihood) \times\ 4 (High Impact) = 8. \par
 
@@ -154,6 +158,30 @@ The proposed solutions also take into account that favourable circumstances of s
 ## Incident Critique
 
 Overall the incident wasn't handled too well and as a result the business in the affected branch was out of operation for 1,5 days, which is deemed as unacceptable.
+
+\startGNUPLOTscript[bar]
+set ylabel "Delay (hours)"
+set tic scale 0
+set grid ytics
+set nokey
+unset border
+set xtics nomirror rotate by -45
+set boxwidth 0.4
+set style fill solid 1.00
+plot '-' using 1:3:xtic(2) title "delay" with boxes lt rgb "#406090"
+0 "Issue 1" 0.5
+1 "Issue 2" 16
+2 "Issue 3" 1.5
+3 "Issue 4" 1
+4 "Issue 6" 6
+5 "Issue 7" 20
+6 "Issue 8" 2
+7 "Issue 13" 1
+EOF
+\stopGNUPLOTscript
+
+\placefigure[place][fig:plot]{Delay caused from the identified issues}{\useGNUPLOTgraphic[bar]}
+
 Several factors influenced the way how the delays lead to a greater problem than it started off with, even though the decisions taken by the business were mostly appropriate in nature. \par
 
 \blank[line]
