@@ -2,25 +2,29 @@
 
 \startnarrower
 \it
-for Head of IS and CEO!
+Following a flooding at the Southampton branch of Northumbria Bank plc a major incident was declared which resulted in having the branch closed and business continuity invoked.
+During the process of resolving the incident and restoring normal business operations a series of problems resulted in an unexpected outage of 1,5 days for the main branch. \par
 
-brief statement of the problem or proposal covered
+\blank[line]
 
-The incident after the low probability flood at Northumbria Bank plc ... identified issues on BCP aspects
-the risk appetite of the company is shown
-outlines issues identified during the handling of the incident are layed out and solutions are proposed on technical and non-technical aspects.
-The critique is discussing the problems of business delays and handling the incident
-The proposed SIP showing improvements for operations. \par
+Addressing the deficiencies this report proposes mitigations to the discovered issues in order to improve business operations and preventing financial losses due to the delays from occurring again.
+Looking at the company's risk appetite as illustrated in the risk table ratings a detailed analysis of the issues identified affecting business operations during the incident is drawn.
+Different proposals for each of these issues are presented from technical and non-technical aspects on how to address the outlined problems, followed by presenting the business generated delays of handling the incident. \par
 
-security aspect
+\blank[line]
 
-worst case scenarios
-the worst case scenario is that business is going out of operation as a whole (data loss, customer loss)
+Attached is a draft for improving the service of business operations, taking the cost-benefit perspective into account, that has to be looked at.
+Finally, it has to be highlighted that grave security concerns have been discovered that would potentially need further investments. \par
 
-best outcomes
-disruptions wouldve been at a minimum
+\blank[line]
 
-main conclusions selling: best recommendations would improve business
+If no action is taken out of this report the information assurance is at great risk posing a threat to the business up to a crisis level.
+Similar, low probability but high impact events would lead to customer and customer data loss resulting in closure of business combined with regulatory fines. 
+However, by considering the proposed actions, the disaster recovery capability would be greatly enhanced and future disruptions would be kept to a minimum.
+
+\blank[line]
+
+Therefore, the conclusion of the analysis from the incident at Northumbria Bank plc, stressing the need of improving business operations in order to limit financial damages that would pose a risk to the business, is to invest into the proposals laid out in this report.
 \tf
 \stopnarrower
 
