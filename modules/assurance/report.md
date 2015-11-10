@@ -38,39 +38,43 @@ Best practices from the \infull{NIST} (NIST), see the risk table in the appendix
 
 \blank[line]
 
-\startcolumns[n=2]
-The likelihood of the risk matrix is defined as: \par
+\startcolumns[n=2,rule=off]
+\startplacetable[location={here},title={The likelihood of the risk matrix}]
+\framed[frame=on,align=right,strut=no,offset=2mm]{
 \startitemize[joinedup,nowhite]
 \item {\bf Very Low} (occurring once in 5 to 10 years)
 \item {\bf Low} (occurring once in 2 to 5 years)
 \item {\bf Medium} (occurring once in 1 to 2 years)
 \item {\bf High} (occurring up to 4 times per year)
 \item {\bf Very High} (occurring up to 12 times per year)
-\stopitemize
+\stopitemize}
+\stopplacetable
 
 \blank[line]
 
-The estimated impact can be defined with: \par
+\startplacetable[location={here},title={The estimated impact}]
+\framed[frame=on,align=right,strut=no,offset=2mm]{
 \startitemize[joinedup,nowhite]
 \item {\bf Very Low} (negligible effect)
 \item {\bf Low} (limited effect)
 \item {\bf Medium} (serious effect)
 \item {\bf High} (severe or catastrophic effect)
 \item {\bf Very High} (multiple severe or catastrophic effects)
-\stopitemize
+\stopitemize}
+\stopplacetable
 \stopcolumns
 
+\blank[line]
+
 Overall ratings are labelled with their criticality to business operations and the ratings are calculated with: \par 
-$$ risk = likelihood \times impact $$
+\placeformula $$ risk = likelihood \times impact $$
 
 The thresholds of financial loss will define the bands of risk to the business operation and are defined preliminary with: \par
-\midaligned{Non Significant (1-4), Minor (5-9), Moderate (10-14), Major (15-19), Critical (20-25)} \par
+\placeformula $$Non Significant (1-4), Minor (5-9), Moderate (10-14), Major (15-19), Critical (20-25)$$ \par
 
 \blank[line]
 
 \startalignment \switchtobodyfont[heros,small] \placetable[here][table:orf]{\WORD{Risk Profile}}{ \startxtable[option=width,background=color,backgroundcolor=gray,align={middle,lohi},width=25mm] \startxrow \startxcellgroup[background=color,backgroundcolor=darkgray] \startxcell[ny=2] {\bf Likelihood} \stopxcell \startxcell[nx=5,background=color,backgroundcolor=lightyellow] {\bf Impact} \stopxcell \stopxrow \startxrow \startxcell[background=color,backgroundcolor=salmon] {\bf Very Low (1)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf Low (2)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf Medium (3)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf High (4)} \stopxcell \startxcell[background=color,backgroundcolor=salmon] {\bf Very High (5)} \stopxcell \stopxcellgroup \stopxrow \startxrow[height=15mm] \startxcell Very High (5) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (5) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (10) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (15) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (20) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (25) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell High (4) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (8) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (12) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (16) \stopxcell \startxcell[background=color,backgroundcolor=darkred] Critical (20) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Medium (3) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (3) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (6) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (9) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (12) \stopxcell \startxcell[background=color,backgroundcolor=red] Major (15) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Low (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (6) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (8) \stopxcell \startxcell[background=color,backgroundcolor=orange] Moderate (10) \stopxcell \stopxrow \startxrow[height=15mm] \startxcell Very Low (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (1) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (2) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (3) \stopxcell \startxcell[background=color,backgroundcolor=lightgreen] Non Significant (4) \stopxcell \startxcell[background=color,backgroundcolor=darkgreen] Minor (5) \stopxcell \stopxrow \stopxtable} \stopalignment
-
-\page[yes]
 
 Looking at the risk profile of the incident, the key risk of a pipe leak would be defined as a "Low" likelihood but with a "High" impact and therefore be categorised as "Minor" in the matrix with an overall risk rating of 2 (Low Likelihood) \times\ 4 (High Impact) = 8. \par
 
@@ -184,7 +188,7 @@ plot '-' using 1:3:xtic(2) title "delay" with boxes lt rgb "#406090"
 EOF
 \stopGNUPLOTscript
 
-\placefigure[place][fig:plot]{Delay caused from the identified issues}{\useGNUPLOTgraphic[bar]}
+\placefigure[place][fig:plot]{Delay caused from the identified issues}{\scale[factor=175]{\useGNUPLOTgraphic[bar]}}
 
 Several factors influenced the way how the delays lead to a greater problem than it started off with, even though the decisions taken by the business were mostly appropriate in nature. \par
 
@@ -225,7 +229,7 @@ As part of the ITIL Continual Service Improvement \cite[great2011itilsd], the fo
 
 Figure \in[fig:csi] from the "CSI Register" of the ITIL Process Map \cite[great2011itilcsi] is showing the life-cycle of service improvements.
 
-\placefigure[place][fig:csi]{Continual Service Improvement (CSI)}{\externalfigure[http://wiki.en.it-processmaps.com/images/1/1e/Itil-2011.jpg][width=50mm]}
+\placefigure[place][fig:csi]{Continual Service Improvement (CSI)}{\externalfigure[http://wiki.en.it-processmaps.com/images/1/1e/Itil-2011.jpg][width=40mm]}
 
 \blank[line]
 
@@ -404,9 +408,10 @@ This draft of the Service Improvement Plan is showing the scheduled actions to f
 \stopxtable
 \stopplacetable
 
-\page[yes]
-
+\startplacetable[location={here,none}]
+\blank[line]
 In order to define the Critical Success Factor (CSF) for ensuring the success of the improvements, Key Performance Indicators (KPI) metrics for each objective have to be defined and measured as part of the monitoring and reporting stage of the evaluation to ensure the success of the plan. \par
+\stopplacetable
 
 \page[yes]
 
