@@ -37,3 +37,5 @@
 \startbginfo
     \typefile[][]{background.txt}
 \stopbginfo
+
+\page[yes]
