@@ -1,3 +1,9 @@
+\setuphead[title][textcommand={Table of }]
+
+\completecontent[criterium=all] \par
+
+\page[yes]
+
 # Abstract
 
 # Introduction
