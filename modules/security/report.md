@@ -8,6 +8,18 @@
 
 # Introduction
 
+\inmargin{\ssxx \color[darkgreen]{\WORD{AR}}}
+\startcolor[darkgreen]
+\input knuth \par
+\stopcolor
+
+\blank[line]
+
+\inmargin{\ssxx \color[brown]{\WORD{RN}}}
+\startcolor[brown]
+\input knuth \par
+\stopcolor
+
 # Threat Model
 
 # Design Specification
