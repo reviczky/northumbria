@@ -128,7 +128,8 @@ fill (446.535004,57.265598)--(446.457001,57.175800)--(455.496002,57.175800)..con
         \blank[2*line] \vfill
         Total number of words (with a theshold of 1 character, excluding appendix): {\bf \ctxlua{local data = dofile"\jobname.words"; context(data.total)}} \\
         Maximum number of words allowed for the Abstract: {\bf 150} \\
-        Number of sides allowed for the Report (excluding the facing page): {\bf 10} \\
+        Number of sides allowed for the Report: {\bf 10} \\
+        Total number of sides (excluding the facing page): {\bf \the\numexpr\totalnumberofpages-4\relax} \\
         Bibliography: {\bf American Psychological Association (APA) style} \\
         Paper Size: {\bf A4, Portrait} \\
         Font Family: {\bf TeX Gyre Adventor, TeX Gyre Pagella (10pt)} \\
