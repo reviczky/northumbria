@@ -24,16 +24,76 @@ Project Report: The project report should provide your design and recommendation
 
 # Threat Model
 
+The complexity of the proposed project for a secure inventory monitoring and control system touches various aspects of the Information Security (IS) domains defined by the International Information Systems Security Certification Consortium (ISC)\high{2}, page 18 \cite[gordon2015official]. \par
+In order to determine the greatest threats, setting aside all implied security aspects, the main focus of this analysis will look particularly at the following areas: \bold{Physical Security}, \bold{Cryptography}, \bold{Telecommunications and Networking Security} (including: Wireless Technologies) and \bold{Laws, Investigation and Ethics}. \par
+Excluding the compliance and regulatory requirements around payment service, the security design has to look at the security requirements for processing payments (PCI DSS), page 59 \cite[williams2014pci], as this would be regarded one of the highest risk to business continuity. \par
+
+\blank[line]
+
+Looking at the common best practices for threat modelling frameworks for assessing the greatest risks to protect the business from, the proposed model will align to the threat model frameworks set out by Microsoft (\tf{\goto{MSDN}[url(https://msdn.microsoft.com/en-us/library/ff648644.aspx)]}) and the Open Web Application Security Project (\tf{\goto{OWASP}[url(https://www.owasp.org/index.php/Threat_Risk_Modeling)]}). \par
+The following process will make up the threat model: (3.1) Identifying the assets, (3.2) threats and (3.3) attack trees leading to the (3.4) prioritasation of the threats. \par
+
+## Assets
+
+The two biggest category of assets for the retail business (Fenwick Inc.) that needs to be protected are: \par
+
+* the inventory of products \crlf \it this includes the home and decorative, grocery, clothes and electronical products from both self-produced and 3rd party suppliers \tf
+* customer data \crlf \it the database of sensitive customer data including business intelligence on demand and purchasing habbits (loyality card data) \tf
+
+The effective design of the IT system which is indeed essential to business will be covered in chapter 4 and hence will be excluded from the asset identification. \par
+
+## Threats
+either STRIDE or categorized threat lists or DREAD or Trike etc.
+
+physical security (perimeter)
+inventory control
+rfid on shelved
+fixed readers
+wifi/lan to adjacent warehouse
+finance system
+video physical secutiy
+(storage)
+
+### Network Threats
+sniffing (LAN/WiFI)
+RFID hack
+encryption for communication
+VPN
+VoIP ecryption
+passwords for routers/servers
+firewall ports
+application ports used
+IP discovery (blacklist)
+DDoS
+SPAM/Malware
+segregation of networks (inventory/payment)
+
+### Host Threats
+patching, embedded systems
+RFID tags
+Ransomware (backups)
+
+### Application Threats
+OWASP top 10, SANS top 25
+attack libraries and literature \par
+metasploit, WAF, Warratek
+
+## Using Attack Trees and Attack Patterns
+defensive tactics, mitigation, validation \par
+cloud threats? and taxonomies? \par
+
+## Rate the Threats
+High, Medium, and Low Ratings
+
+the most likely affecting threats for the proposed solution would be
+
+CHECK:
 Identification of threats with clear and evident threat trees relevant and linked to the case.
 Appropriate attack libraries and literature review throughout the section with clear links to defensive tactics, mitigation strategies and validation of threats.
 A systematic approach has been taken to fully utilize most relevant and appropriate technologies and threat modelling tools with rationalization on the challenges and issues in this scenario.
 Links to the way that cloud threats have been identified and linked to the case with clear indicators and discussion on taxonomies. \par
 
 Identify the threats, attacks arising from the proposed description of the planned network. Are there any aspects of the proposed network that pose a significant threat to sensitive data? \par
-
-## Threats
-
-Identification: \par
 
 # Design Specification
 
