@@ -18,21 +18,43 @@
 
 # Introduction
 
+The retail industry is highly dependent on margins where business managers are focused on minimizing the costs of doing business while maximizing revenue. Technology has become an important ingredient in the process of enhancing cost effectiveness of doing business as well as enhancing the revenue. Various areas such as loss prevention, customer experience, inventory management, and supply chain management have experienced significant improvement in the recent past \cite[Christoph_2012]. \par
+The development of wireless technologies that allow communication between devices and individuals without cables and anywhere has resulted in dramatic changes in business processes. However, the deployment of wireless technologies has been limited by lack of standards, insufficient management solutions, deployment costs, security requirements and the existence of innovative solutions \cite[mckinsey10techtrends]. Recent developments in wireless local area network (WLAN) technology coupled with widespread adoption of technology in enterprise and consumer space have eradicated most of these limitations \cite[citeulike:5405126]. \par
+Currently, there are numerous opportunities for retail industry players to enhance their margins by utilising wireless technologies. This paper presents a discussion of the application of various technological developments and their security requirements in a proposed inventory monitoring and control system of Fenwick Inc. \par
+
+## Background Information
+In an enterprise setting, wireless LANs are used as part of a networking structure with the focus on providing support to desktop applications such as file server access, web-browsing email, and other traditional enterprise applications. \par
+In the retail business organization, wireless LANs are utilised in supporting specific innovative applications with the focus on adding new processes and improving existing ones \cite[Christoph_2012]. \par
+The focus of development of the inventory monitoring and control system in this organization addresses various applications including mobile point of sale, inventory management, customer service, wireless voice communication, price auditing and changes, RFID and location tracking, and wireless video \cite[mckinsey10techtrends]. \par
+
+## Mobile Point of Sale
+Point-of-Sale (POS) is a physical location used for selling goods and services to the final consumer. Wireless technologies have been utilized in this area as a way of eliminating congestion and enhancing the efficiency of the point of sale \cite[prahalad2013future]. \par
+Mobile point of sale stations developed using printers, scanners and computers that have integrated credit card readers are widely used in this area. However, strong security is needed especially when credit cards are involved in the transactions. Furthermore, there are the handheld computers that can be used in speeding up the checkout process. In this regard, the sale staff is expected to use their own verdict in executing each transaction \cite[harper2014trust]. \par
+The conventional cash registers as well as desktop scanners can be linked to the back-end systems using the wireless technologies. This has been found to be beneficial to retailers with reduced cabling costs and enhanced flexibility of the configuration of the outlets. Using equipments that are connected via wireless technologies will enable this business to shift the checkout stations without the need of changing the existing network cabling. \par
+
+## Inentory Management
+In-store inventory management in both the warehouse and the retail space is a major source of expenditure for retailers. All merchandise must be inventoried at the loading dock, tracked when moving on the floor and eliminated from the inventory once it is sold out \cite[citeulike:5405126]. Moreover, real-time inventory data must be readily available to the clerks when the item is out of stock on the floor but is available in the warehouse. In addition, accurate inventory data is effective in minimizing out-of-stock conditions \cite[harper2014trust]. Since out of stock conditions have a negative implication to the customers, minimizing it is essential in boosting sales as well as increasing the levels of customer satisfaction. \par
+In the receiving and shipping area wireless technologies can be adopted using handheld barcode scanners and a wireless connection between entry terminals and back-end systems. This is vital in ensuring the item is received into the inventory and tracked immediately \cite[mckinsey10techtrends]. Outlets that have wireless computer systems have effective inventory management systems. For instance, portable computers with barcode scanners can be utilised during restocking as a way of tracking the product that is on the floor and how much goods have been moved to the floor from the warehouse. \par
+
+## Customer Service
+Technology is an inexpensive approach to enhancing customer service. Other than long checkout lines, other sources of customer complaints are the lack of store associates to assist in locating the merchandise and pricing problems \cite[mckinsey10techtrends]. Wireless technologies can minimize these complaints without hiring additional staff. \par
+
+## Wireless Voice Communication
+Most retail outlets utilize two-way radios for in-house voice communication. The most common systems used in this case are the licensed and the unlicensed radio frequencies, both approaches have limitations. \par
+Specifically, the licensed radio is more costly due to the payments for the frequency license. However, this approach eliminates radios interference. The unlicensed on the other hand are free to operate, but can face external interferences. The consideration of adopting wireless technologies offers an organization secure communication that is not subject to interference and is also unlicensed \cite[Christoph_2012]. \par
+This is the main consideration in ensuring security in store voice communication as it is encrypted to prevent snooping. \par
+
+## Location Tracking
+Radio frequency identification (RFID) has become an important consideration in the retail sector with this technology considered to be a major source of revolution in the area of logistics, inventory processing and customer experience \cite[prahalad2013future]. The consideration of wireless merchandise tracking technology is a promising approach as it is an effective approach to ensuring the customers are satisfied with services provided in the store in terms of merchandise availability. \par
+There are two types of RFID, namely the active and the passive. The passive RFID is made up of inexpensive stickers with a unique identifier. The passive RFID require the use of RFID readers that are located in the proximity of the merchandise for energising the tags \cite[harper2014trust]. Active RFID have active electronics and contain a battery and hence are more expensive. They utilise wireless LAN technologies where a single network can support all the radios on the outlet. This implies the development of the single network in the management of all in-store inventory activities. \par
+
 \starthiding
 \inmargin{\ssxx \color[brown]{\WORD{RN}}}
 \startcolor[brown]
 \stopcolor
-\stophiding
-
 \startcolor[darkred]
-The retail industry is highly dependent on margins where business managers are focused on minimizing the costs of doing business while maximizing revenue. Technology has become an important ingredient in the process of enhancing cost effectiveness of doing business as well as enhancing the revenue. Various areas such as loss prevention, customer experience, inventory management, and supply chain management have experienced significant improvement in the recent past \cite[Christoph_2012]. The development of wireless technologies that allow communication between devices and individuals without cables and anywhere has resulted in dramatic changes in business processes. However, the deployment of wireless technologies has been limited by lack of standards, insufficient management solutions, deployment costs, security requirements, and the existence of innovative solutions \cite[mckinsey10techtrends]. Recent developments in wireless local area network (WLAN) technology coupled with widespread adoption of technology in enterprise and consumer space have eradicated most of these limitations \cite[citeulike:5405126]. Currently, there are numerous opportunities for retail industry players to enhance their margins by utilising wireless technologies. This paper presents a discussion of the application of various technological developments and their security requirements in a proposed inventory monitoring and control system of Fenwick Inc. \par
-
-Introduction to the reader with structure and engineered to introduce the reader to the scope and purpose of this investigation. Section with impact and contribution to similar environments. \par
-
-You work as a design engineer at Northumbria Internetworking Inc. The company has recently received a request for a proposal from an International supermarket chain regarding a potential business opportunity in the greater Newcastle area. Your task is to propose a secure network design that meets customer’s requirements. \par
-
-Project Report: The project report should provide your design and recommendations for the planned network. Please pay attention to the following points in designing your security solution and preparation of report; \par
 \stopcolor
+\stophiding
 
 # Threat Model
 
@@ -47,6 +69,14 @@ In order to determine the greatest threats, setting aside all implied security a
 Excluding the compliance and regulatory requirements around payment service, the security design has to look at the security requirements for processing payments (PCI DSS), page 59 \cite[williams2014pci], as this would be regarded one of the highest risk to business continuity. \par
 
 \blank[line]
+
+It is important to critically analise the security requirements in retail to effectively position the approach that will be adopted in ensuring the wireless technology is secure for both the organization and its customers \cite[Ameen:2012:SPI:2158727.2158756]. \par
+Intruders are more likely to commit a mixed physical/cyber intrusion rather than one that is purely physical: \par
+
+* Creating fake identities with cloned access cards and remote connections
+* Onsite operational system hacking through intrusion activities that can damage elevators, power, production and distribution systems and fire alarms
+* Creation of a false perception by freezing security camera video that is streamed in the physical security monitors
+* Neutralising alerts, where saturation or blockage of the alarms that are connected to the smart fence
 
 Looking at the common best practices for threat modelling frameworks for assessing the greatest risks to protect the business from, the proposed model will align to the threat model frameworks set out by Microsoft (\tf{MSDN \footnote{\goto{https://msdn.microsoft.com/en-us/library/ff648644.aspx}[url(https://msdn.microsoft.com/en-us/library/ff648644.aspx)]}}) and the Open Web Application Security Project (\tf{OWASP \footnote{\goto{https://www.owasp.org/index.php/Threat_Risk_Modeling}[url(https://www.owasp.org/index.php/Threat_Risk_Modeling)]}}). \par
 
@@ -216,25 +246,81 @@ The below table is showing the DREAD ratings for this particular scenario of the
 Design specifications with solid evidence on selection of technologies, controls. Clear and impact full motivation and clear rationale on the selections but most importantly exclusions made threat and vulnerabilities identification using structured and well-defined methodologies and tools. Students managed to demonstrate a scalable network architecture with clear controls in place and full rationalisation on scalability, privacy, security and autonomy. Ability to demonstrate the comparative effectiveness of solutions in place or those excluded from the design. \par
 
 Since the network would carry sensitive financial information, security and privacy is the top priority. You must provide a clear rationale and motivation for the technology/technologies you would select for the proposed network. Discuss in details which security vulnerabilities are addressed by your proposed solution. \par
+
+RN:
+The solution is to monitor the flow of network and detect and respond to abnormalities and
+any suspected attacks immediately (Al Ameen et al., 2012). This can be attained through the
+use of a managed switch that is integrated into the firm's cyber security capabilities. This
+managed switch is vital in guarding the flow and enforcing the firm's security policy.
+According to Schumacher et al. (2013) when a switch is installed, it learns about the normal
+behaviour of the network and therefore, when the switch is triggered, it is able to detect any
+form of deviation from the established baseline and address the issue accordingly. Common
+abnormalities that can be detected by a guardian switch include:
+* Protocol change
+* Change in the IP address
+* Change in the MAC address
+* Disconnecting to an existing network element
+* Cable change
+* Fibre bending, cutting, and tapping
+* PoE consumption that is abnormal
+* Bandwidth consumption that is abnormal
+* Data flow change
 \stopcolor
 
 # Ethical, Legal and Social Impacts
 
+As the proposed designs are for locations in greater Northeast England, from a legal aspect, English Law applies. Regulatory bodies will regulate the financial transactions business of the proposed system, which is bound to Payment Card Industry Data Security Standard (PCI DSS). Further, there is also a due care and ethical consideration around the personally identifiable information (PII) and all customer data and the data gained through analising them. \par
+
+\blank[line]
+
+The seperate sections will look at the details and existing case studies that this project will address. \par
+
 ## Ethical
 
-* Tracking
-* Privcay
+There are many considerations around the ethics of business a company is conducting. Even though most of them are neither mandatory nor required by law, they can have huge implications to the business as the customers represent the business' biggest asset. \par
+
+\blank[line]
+
+Getting this wrong, they could be immense reputational losses, combined with customer dissatisfaction and losing customers to competitors. As the company is holding sensitive data about their customers and their behaviours, there is also a due care safeguarding these informations. \par
+
+\blank[line]
+
+The following etchical issues needs to be addressed in this project: \par
+
+* Only data relevant to the business should be captured to prevent violation of privacy or tracking customers (Spy Trash Can \footnote{\goto{https://www.rt.com/news/trash-bin-surveillance-wifi-402/}[url(https://www.rt.com/news/trash-bin-surveillance-wifi-402/)]})
+* Business Intelligence on customer data will make up characteristics of the customers and has to be safeguarded
+* Tax avoidance and any legal games on expenses or any other payments will result in reputational damage (Tax Shaming \footnote{\goto{http://www.bbc.co.uk/news/magazine-20560359}[url(http://www.bbc.co.uk/news/magazine-20560359)]})
+* Protecting customer databases is important as any leakage will breach the trust of the customers (TalkTalk Breach \footnote{\goto{http://www.theguardian.com/business/2015/nov/06/nearly-157000-had-data-breached-in-talktalk-cyber-attack}[url(http://www.theguardian.com/business/2015/nov/06/nearly-157000-had-data-breached-in-talktalk-cyber-attack)]})
+* No discrimination should result on analising PII (Name Discrimination \footnote{\goto{http://money.cnn.com/2015/12/11/technology/airbnb-bias-harvard/}[url(http://money.cnn.com/2015/12/11/technology/airbnb-bias-harvard/)]})
+* Ethically acceptable behaviour is described in the security patterns \cite[schumacher2013security]
+
+The design has to consider physical locations of the data, encrypting sensitive customer or payment data both in-transit and at-rest. \par
 
 ## Legal
 
-* PCI DSS
-* Privacy Laws UK? Act?
+The legal implications are easier to oversee as in this particular case we have the following laws and regulations to abide to: \par
 
-\startcolor[darkred]
-(Remarks and definitions on the common legal and ethical aspects in the domain of interest with discussion on considerations that can influence the outcome of both the design and selection of controls in place. Students give the professional code of practice and privacy requirement with clear and a holistic discussion of the area with links to the case study with clear list of ethical issues and legal considerations.)
+* PCI DSS applied to all payments where credit card transactions take place, hence, to avoid hefty fines, the design has to incorporate the security implications of secure zones and protecting credit card data
+* Privacy Laws within the UK including the Data Protection Act (DPA) 1998 for customer records has to be adhered to
+* Under the Data Protection Act (DPA) there is currently no legal obligation, but it might have to be considered to report serious breaches to the ICO
+* Most famous data breaches: HM Revenue & Customs (2007), T-Mobile (2009), Sony PlayStation Network (2011), Moonpig (2015) \footnote{\goto{http://www.techworld.com/security/uks-11-most-infamous-data-breaches-2015-3604586/}[url(http://www.techworld.com/security/uks-11-most-infamous-data-breaches-2015-3604586/)]}
+* Data security incident trends: ICO \footnote{\goto{https://ico.org.uk/action-weve-taken/data-security-incident-trends/}[url(https://ico.org.uk/action-weve-taken/data-security-incident-trends/)]}
+* The company may face legal challenges with regards to monitoring that is done on systems by employees and customers \cite[Ameen:2012:SPI:2158727.2158756]
 
-(You must also perform a review of ethical, legal and social issues that may arise from the planned network and how your proposed design/recommendations would address them.)
-\stopcolor
+These issues can be addressed by internal audit, acceptance of fines or re-location, out-sourcing if nessessairy. \par
+
+## Social
+
+Social issues can arise whilst algorithms take over more and more the different spaces of artificial and business intelligence. \par
+
+\blank[line]
+
+Most of the social issues will arise around sexism, discrimination or individuals processed differently. Not taking into account personal circumstances or age will result in wider social uproar. Examples are: \par
+
+* Buying habbits, Advertisement, Big Data (Target Pregnant Daughter \footnote{\goto{http://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/.}[url(http://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/.)]}, Ad Algorithm \footnote{\goto{http://www.standard.co.uk/lifestyle/london-life/how-does-facebook-and-google-target-ads-at-me-a3183361.html}[url(http://www.standard.co.uk/lifestyle/london-life/how-does-facebook-and-google-target-ads-at-me-a3183361.html)]})
+* Radio signal masts could start consultations about health implications in the area
+
+Controls should be in place to check customers age for buying and against fraud. Tacking and behavorial data should not be passed onto third parties and be encrypted and safely stored. \par
 
 # Conclusion
 
@@ -242,6 +328,15 @@ Since the network would carry sensitive financial information, security and priv
 Conclusions with clear remarks on the strengths and limitations of the work undertaken with clear and strong evidence on the suggestions, recommendation and way forward with strong research underpinned solutions students managed to produce a summary of the work with clear indicators on their limitations, exclusions and way forward in this domain. \par
 
 Design recommendations, summary of ethical, legal, social impacts. suggestions: LAN over WiFi \par
+
+You work as a design engineer at Northumbria Internetworking Inc. The company has recently received a request for a proposal from an International supermarket chain regarding a potential business opportunity in the greater Newcastle area. Your task is to propose a secure network design that meets customer's requirements. \par
+
+RN:
+From the above description, it is evident that development of an inventory monitoring and
+control system is complex and requires consideration of effectiveness and the cost during
+development to ensure maximum benefits are accrued from the system. There is also a need
+to ensure the considered design not only addresses potential security risks, but is also
+acceptable from a legal, ethical and social perspective.
 \stopcolor
 
 \page[yes]
