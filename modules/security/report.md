@@ -238,30 +238,39 @@ The below table is showing the DREAD ratings for this particular scenario of the
 
 # Design Specification
 
-\startcolor[darkred]
-Design specifications with solid evidence on selection of technologies, controls. Clear and impact full motivation and clear rationale on the selections but most importantly exclusions made threat and vulnerabilities identification using structured and well-defined methodologies and tools. Students managed to demonstrate a scalable network architecture with clear controls in place and full rationalisation on scalability, privacy, security and autonomy. Ability to demonstrate the comparative effectiveness of solutions in place or those excluded from the design. \par
+The solution is to monitor the flow of network and detect and respond to abnormalities and any suspected attacks immediately \cite[Ameen:2012:SPI:2158727.2158756]. This can be attained through the use of a managed switch that is integrated into the firm's cyber security capabilities. This managed switch is vital in guarding the flow and enforcing the firm's security policy. \par
+According to Schumacher \cite[schumacher2013security] when a switch is installed it learns about the normal behaviour of the network and therefore when the switch is triggered it is able to detect any form of deviation from the established baseline and address the issue accordingly. \par
 
-Since the network would carry sensitive financial information, security and privacy is the top priority. You must provide a clear rationale and motivation for the technology/technologies you would select for the proposed network. Discuss in details which security vulnerabilities are addressed by your proposed solution. \par
+\blank[line]
 
-RN:
-The solution is to monitor the flow of network and detect and respond to abnormalities and
-any suspected attacks immediately (Al Ameen et al., 2012). This can be attained through the
-use of a managed switch that is integrated into the firm's cyber security capabilities. This
-managed switch is vital in guarding the flow and enforcing the firm's security policy.
-According to Schumacher et al. (2013) when a switch is installed, it learns about the normal
-behaviour of the network and therefore, when the switch is triggered, it is able to detect any
-form of deviation from the established baseline and address the issue accordingly. Common
-abnormalities that can be detected by a guardian switch include:
+Common abnormalities that can be detected by a guardian switch include: \par
+
 * Protocol change
-* Change in the IP address
-* Change in the MAC address
+* Change in the MAC/IP address
 * Disconnecting to an existing network element
 * Cable change
-* Fibre bending, cutting, and tapping
+* Fibre bending, cutting and tapping
 * PoE consumption that is abnormal
 * Bandwidth consumption that is abnormal
 * Data flow change
-\stopcolor
+
+## Technologies / Controls
+
+* !!! clear rationale and motivation for the technology/technologies you would select for the proposed network
+
+## Network Architecture
+
+\placefigure[here]{Network Diagram}{\externalfigure[network.pdf][height=5cm]}
+
+* !!! network would carry sensitive financial information, security and privacy is the top priority
+* !!! scalable network architecture with clear controls in place and full rationalisation on scalability, privacy, security and autonomy
+* !!! comparative effectiveness of solutions in place or those excluded from the design
+
+## Security Vulnerabilities
+
+* Wireless vulnerabilities (RFID/WLAN/LAN)
+* !!! addressed by your proposed solution
+* !!! threat and vulnerabilities identification using structured and well-defined methodologies and tools
 
 # Ethical, Legal and Social Impacts
 
