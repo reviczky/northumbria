@@ -28,13 +28,13 @@ In the retail business organization, wireless LANs are utilised in supporting sp
 The focus of development of the inventory monitoring and control system in this organization addresses various applications including mobile point of sale, inventory management, customer service, wireless voice communication, price auditing and changes, RFID and location tracking, and wireless video \cite[mckinsey10techtrends]. \par
 
 ## Mobile Point of Sale
-Point-of-Sale (POS) is a physical location used for selling goods and services to the final consumer. Wireless technologies have been utilized in this area as a way of eliminating congestion and enhancing the efficiency of the point of sale \cite[prahalad2013future]. \par
-Mobile point of sale stations developed using printers, scanners and computers that have integrated credit card readers are widely used in this area. However, strong security is needed especially when credit cards are involved in the transactions. Furthermore, there are the handheld computers that can be used in speeding up the checkout process. In this regard, the sale staff is expected to use their own verdict in executing each transaction \cite[harper2014trust]. \par
+Point-of-Sale (PoS) is a physical location used for selling goods and services to the final consumer. Wireless technologies have been utilized in this area as a way of eliminating congestion and enhancing the efficiency of the point of sale \cite[prahalad2013future]. \par
+Mobile point of sale stations developed using printers, scanners and computers that have integrated credit card readers are widely used in this area. However, strong security is needed especially when credit cards are involved in the transactions. Furthermore, there are the hand-held computers that can be used in speeding up the checkout process. In this regard, the sale staff is expected to use their own verdict in executing each transaction \cite[harper2014trust]. \par
 The conventional cash registers as well as desktop scanners can be linked to the back-end systems using the wireless technologies. This has been found to be beneficial to retailers with reduced cabling costs and enhanced flexibility of the configuration of the outlets. Using equipments that are connected via wireless technologies will enable this business to shift the checkout stations without the need of changing the existing network cabling. \par
 
 ## Inentory Management
 In-store inventory management in both the warehouse and the retail space is a major source of expenditure for retailers. All merchandise must be inventoried at the loading dock, tracked when moving on the floor and eliminated from the inventory once it is sold out \cite[citeulike:5405126]. Moreover, real-time inventory data must be readily available to the clerks when the item is out of stock on the floor but is available in the warehouse. In addition, accurate inventory data is effective in minimizing out-of-stock conditions \cite[harper2014trust]. Since out of stock conditions have a negative implication to the customers, minimizing it is essential in boosting sales as well as increasing the levels of customer satisfaction. \par
-In the receiving and shipping area wireless technologies can be adopted using handheld barcode scanners and a wireless connection between entry terminals and back-end systems. This is vital in ensuring the item is received into the inventory and tracked immediately \cite[mckinsey10techtrends]. Outlets that have wireless computer systems have effective inventory management systems. For instance, portable computers with barcode scanners can be utilised during restocking as a way of tracking the product that is on the floor and how much goods have been moved to the floor from the warehouse. \par
+In the receiving and shipping area wireless technologies can be adopted using hand-held bar-code scanners and a wireless connection between entry terminals and back-end systems. This is vital in ensuring the item is received into the inventory and tracked immediately \cite[mckinsey10techtrends]. Outlets that have wireless computer systems have effective inventory management systems. For instance, portable computers with bar-code scanners can be utilised during restocking as a way of tracking the product that is on the floor and how much goods have been moved to the floor from the warehouse. \par
 
 ## Customer Service
 Technology is an inexpensive approach to enhancing customer service. Other than long checkout lines, other sources of customer complaints are the lack of store associates to assist in locating the merchandise and pricing problems \cite[mckinsey10techtrends]. Wireless technologies can minimize these complaints without hiring additional staff. \par
@@ -70,11 +70,11 @@ Excluding the compliance and regulatory requirements around payment service, the
 
 \blank[line]
 
-It is important to critically analise the security requirements in retail to effectively position the approach that will be adopted in ensuring the wireless technology is secure for both the organization and its customers \cite[Ameen:2012:SPI:2158727.2158756]. \par
+It is important to critically analyse the security requirements in retail to effectively position the approach that will be adopted in ensuring the wireless technology is secure for both the organization and its customers \cite[Ameen:2012:SPI:2158727.2158756]. \par
 Intruders are more likely to commit a mixed physical/cyber intrusion rather than one that is purely physical: \par
 
 * Creating fake identities with cloned access cards and remote connections
-* Onsite operational system hacking through intrusion activities that can damage elevators, power, production and distribution systems and fire alarms
+* On-site operational system hacking through intrusion activities that can damage elevators, power, production and distribution systems and fire alarms
 * Creation of a false perception by freezing security camera video that is streamed in the physical security monitors
 * Neutralising alerts, where saturation or blockage of the alarms that are connected to the smart fence
 
@@ -82,32 +82,32 @@ Looking at the common best practices for threat modelling frameworks for assessi
 
 \blank[line]
 
-The following process will make up the threat model: (3.1) Identifying the assets, (3.2) threats and (3.3) attack trees leading to the (3.4) prioritasation of the threats. \par
+The following process will make up the threat model: (3.1) Identifying the assets, (3.2) threats and (3.3) attack trees leading to the (3.4) prioritisation of the threats. \par
 
 ## Assets
 
 The two biggest category of assets for the retail business (Fenwick Inc.) that needs to be protected are: \par
 
-* the inventory of products \crlf \it this includes the home and decorative, grocery, clothes and electronical products from both self-produced and 3rd party suppliers \tf
-* customer data \crlf \it the database of sensitive customer data including business intelligence on demand and purchasing habbits (loyality card data) \tf
+* The inventory of products \crlf \it this includes the home and decorative, grocery, clothes and electronic products from both self-produced and 3rd party suppliers \tf
+* Customer data \crlf \it the database of sensitive customer data including business intelligence on demand and purchasing habits (loyalty card data) \tf
 
 The effective design of the IT system which is indeed essential to business will be covered in chapter 4 and hence will be excluded from the asset identification. \par
 
 ## Threats
 
-The threat modeling will be undertaken with the STRIDE methodology (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) as described on page 69 \cite[leblanc2002writing] and then categorised through a threat list. \par
+The threat modelling will be undertaken with the STRIDE methodology (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) as described on page 69 \cite[leblanc2002writing] and then categorised through a threat list. \par
 
 \blank[line]
 
-This will be followed by the counterpart methodology DREAD for risk prioritasation, see chapter 3.4, in favour of other threat aggregation models like Trike or OCTAVE. \par
+This will be followed by the counterpart methodology DREAD for risk prioritisation, see chapter 3.4, in favour of other threat aggregation models like Trike or OCTAVE. \par
 
 \blank[line]
 
-It is important to differenciate between internal and exteral threats, that are inside or outside the premises of the physical perimeter of the company. \par
+It is important to differentiate between internal and external threats, that are inside or outside the premises of the physical perimeter of the company. \par
 
 \blank[line]
 
-The physical security aspects are project-idependent, as they would apply to the entire enterprise for business continuity, however, they are essential for the bespoke solution design as short range technologies (like RFID) are only vulnerable when physical access is granted. \par
+The physical security aspects are project-independent, as they would apply to the entire enterprise for business continuity, however, they are essential for the bespoke solution design as short range technologies (like RFID) are only vulnerable when physical access is granted. \par
 
 \blank[line]
 
@@ -119,10 +119,10 @@ More specifically to the security design of the proposed project, the following 
 
 ### Network Threats
 
-* The attacker could look for the weakes link on the perimeter and jump networks \crlf (defensive tactic: segregation of networks for finance, inventory, customer database) \endash- see \tf{Target Hack \footnote{\goto{http://www.bloomberg.com/news/articles/2014-03-13/target-missed-warnings-in-epic-hack-of-credit-card-data}[url(http://www.bloomberg.com/news/articles/2014-03-13/target-missed-warnings-in-epic-hack-of-credit-card-data)]}}
-* Network traffic can be sniffed during wireless (WiFi) or wired (LAN) transmission with tools like: \crlf \tf{Wireshark \footnote{\goto{https://www.wireshark.org/}[url(https://www.wireshark.org/)]}}, \tf{Kismet \footnote{\goto{https://www.kismetwireless.net/}[url(https://www.kismetwireless.net/)]}}, \tf{Aircrack \footnote{\goto{http://www.aircrack-ng.org/}[url(http://www.aircrack-ng.org/)]}} and alike \crlf (defensive tactic: encryption of the communication: VPN, VoIP)
+* The attacker could look for the weakest link on the perimeter and jump networks \crlf (defensive tactic: segregation of networks for finance, inventory, customer database) \endash- see \tf{Target Hack \footnote{\goto{http://www.bloomberg.com/news/articles/2014-03-13/target-missed-warnings-in-epic-hack-of-credit-card-data}[url(http://www.bloomberg.com/news/articles/2014-03-13/target-missed-warnings-in-epic-hack-of-credit-card-data)]}}
+* Network traffic can be sniffed during wireless (Wi-Fi) or wired (LAN) transmission with tools like: \crlf \tf{Wireshark \footnote{\goto{https://www.wireshark.org/}[url(https://www.wireshark.org/)]}}, \tf{Kismet \footnote{\goto{https://www.kismetwireless.net/}[url(https://www.kismetwireless.net/)]}}, \tf{Aircrack \footnote{\goto{http://www.aircrack-ng.org/}[url(http://www.aircrack-ng.org/)]}} and alike \crlf (defensive tactic: encryption of the communication: VPN, VoIP)
 * Denial of Service (DoS) would disrupt or halt the business \crlf (defensive tactic: Anti-DDoS or cloud solutions, geo-blocking, diverse application landscape)
-* The attacker could use an "unknown" or external device on the network to gain access \crlf (defensive tactic: realtime IP discovery, whitelisting of company devices, defence-in-depth)
+* The attacker could use an "unknown" or external device on the network to gain access \crlf (defensive tactic: real-time IP discovery, white-listing of company devices, defence-in-depth)
 * Wrongly configured controls or default settings in firewalls and application ports in use could broaden the attack vector \crlf (defensive tactic: change control, traffic analyser, DMZ zones)
 * Malicious traffic on the network can infect endpoints and slow down the data through-put \crlf (defensive tactic: network protection for spam and malware and data leakage prevention)
 
@@ -130,15 +130,15 @@ More specifically to the security design of the proposed project, the following 
 
 * The attacker could gain access to accounts with weak controls around password and authentication for routers/servers \crlf (defensive tactic: ACL with PKI or two-factor authentication or tokens)
 * Un-patched systems could be compromised with 0-day attacks \crlf (defensive tactic: patch management especially for embedded systems like the tag readers)
-* Weak or non-standard RFID-tag solutions could be exploitet through malicious tags or on the inventory server \crlf (defensive tactic: encryption method for RFID, AI for anomality detection)
-* Ransomware attacks could be performed on storage or backups with tools like \tf{Angler Exploit Kit \footnote{\goto{https://blogs.sophos.com/2015/07/21/a-closer-look-at-the-angler-exploit-kit/}[url(https://blogs.sophos.com/2015/07/21/a-closer-look-at-the-angler-exploit-kit/)]}} \crlf (defensive tactic: incremental backup solutions, offline syncronisation)
+* Weak or non-standard RFID-tag solutions could be exploited through malicious tags or on the inventory server \crlf (defensive tactic: encryption method for RFID, AI for anomaly detection)
+* Ransom-ware attacks could be performed on storage or backups with tools like \tf{Angler Exploit Kit \footnote{\goto{https://blogs.sophos.com/2015/07/21/a-closer-look-at-the-angler-exploit-kit/}[url(https://blogs.sophos.com/2015/07/21/a-closer-look-at-the-angler-exploit-kit/)]}} \crlf (defensive tactic: incremental backup solutions, offline synchronisation)
 * The attacker could hide malicious activities via log tampering \crlf (defensive tactic: segregated log management, log analyser)
 
 ### Application Threats
 
 * All of the application threats listed at \tf{OWASP Top 10 \footnote{\goto{https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project}[url(https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)]}} and \tf{SANS Top 25 \footnote{\goto{http://www.sans.org/top25-software-errors/}[url(http://www.sans.org/top25-software-errors/)]}} would be a starting point for attacks, with a focus on injection, cross-side scripting and session management type of attacks \crlf (defensive tactic: static and dynamic code scanning)
-* Application break-outs could lead to priviledged access escalation \crlf (defensive tactic: containerasation with web application firewalls)
-* The most commonly used tool in use is \tf{Metasploit \footnote{\goto{https://www.metasploit.com/}[url(https://www.metasploit.com/)]}} for targeting un-patched, mis-configured and unsecure applications
+* Application break-outs could lead to privileged access escalation \crlf (defensive tactic: containerisation with web application firewalls)
+* The most commonly used tool in use is \tf{Metasploit \footnote{\goto{https://www.metasploit.com/}[url(https://www.metasploit.com/)]}} for targeting un-patched, mis-configured and in-secure applications
 
 ### Cloud Threats
 
@@ -177,8 +177,6 @@ The state of defining cloud threats and its taxonomy is still an evolving proces
 \stopFLOWcell
 \stopFLOWchart
 
-\page[yes]
-
 \placefigure[place]{Attack Tree for Network Sniffing}{\FLOWchart[attack_tree_1]}
 
 ## Threat Rating
@@ -188,8 +186,6 @@ There are multiple methodologies for determining the most likely and relevant th
 \blank[line]
 
 The below table is showing the DREAD ratings for this particular scenario of the planned network design: \par
-
-\page[yes]
 
 \placetable[here][tab:dread]{DREAD Ratings}{\ss
 \startxtable
@@ -269,11 +265,11 @@ abnormalities that can be detected by a guardian switch include:
 
 # Ethical, Legal and Social Impacts
 
-As the proposed designs are for locations in greater Northeast England, from a legal aspect, English Law applies. Regulatory bodies will regulate the financial transactions business of the proposed system, which is bound to Payment Card Industry Data Security Standard (PCI DSS). Further, there is also a due care and ethical consideration around the personally identifiable information (PII) and all customer data and the data gained through analising them. \par
+As the proposed designs are for locations in greater North-east England, from a legal aspect, English Law applies. Regulatory bodies will regulate the financial transactions business of the proposed system, which is bound to Payment Card Industry Data Security Standard (PCI DSS). Further, there is also a due care and ethical consideration around the personally identifiable information (PII) and all customer data and the data gained through analysing them. \par
 
 \blank[line]
 
-The seperate sections will look at the details and existing case studies that this project will address. \par
+The separate sections will look at the details and existing case studies that this project will address. \par
 
 ## Ethical
 
@@ -285,13 +281,13 @@ Getting this wrong, they could be immense reputational losses, combined with cus
 
 \blank[line]
 
-The following etchical issues needs to be addressed in this project: \par
+The following ethical issues needs to be addressed in this project: \par
 
 * Only data relevant to the business should be captured to prevent violation of privacy or tracking customers (Spy Trash Can \footnote{\goto{https://www.rt.com/news/trash-bin-surveillance-wifi-402/}[url(https://www.rt.com/news/trash-bin-surveillance-wifi-402/)]})
 * Business Intelligence on customer data will make up characteristics of the customers and has to be safeguarded
 * Tax avoidance and any legal games on expenses or any other payments will result in reputational damage (Tax Shaming \footnote{\goto{http://www.bbc.co.uk/news/magazine-20560359}[url(http://www.bbc.co.uk/news/magazine-20560359)]})
 * Protecting customer databases is important as any leakage will breach the trust of the customers (TalkTalk Breach \footnote{\goto{http://www.theguardian.com/business/2015/nov/06/nearly-157000-had-data-breached-in-talktalk-cyber-attack}[url(http://www.theguardian.com/business/2015/nov/06/nearly-157000-had-data-breached-in-talktalk-cyber-attack)]})
-* No discrimination should result on analising PII (Name Discrimination \footnote{\goto{http://money.cnn.com/2015/12/11/technology/airbnb-bias-harvard/}[url(http://money.cnn.com/2015/12/11/technology/airbnb-bias-harvard/)]})
+* No discrimination should result on analysing PII (Name Discrimination \footnote{\goto{http://money.cnn.com/2015/12/11/technology/airbnb-bias-harvard/}[url(http://money.cnn.com/2015/12/11/technology/airbnb-bias-harvard/)]})
 * Ethically acceptable behaviour is described in the security patterns \cite[schumacher2013security]
 
 The design has to consider physical locations of the data, encrypting sensitive customer or payment data both in-transit and at-rest. \par
@@ -307,7 +303,7 @@ The legal implications are easier to oversee as in this particular case we have 
 * Data security incident trends: ICO \footnote{\goto{https://ico.org.uk/action-weve-taken/data-security-incident-trends/}[url(https://ico.org.uk/action-weve-taken/data-security-incident-trends/)]}
 * The company may face legal challenges with regards to monitoring that is done on systems by employees and customers \cite[Ameen:2012:SPI:2158727.2158756]
 
-These issues can be addressed by internal audit, acceptance of fines or re-location, out-sourcing if nessessairy. \par
+These issues can be addressed by internal audit, acceptance of fines or re-location, out-sourcing if necessary. \par
 
 ## Social
 
@@ -317,10 +313,10 @@ Social issues can arise whilst algorithms take over more and more the different 
 
 Most of the social issues will arise around sexism, discrimination or individuals processed differently. Not taking into account personal circumstances or age will result in wider social uproar. Examples are: \par
 
-* Buying habbits, Advertisement, Big Data (Target Pregnant Daughter \footnote{\goto{http://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/.}[url(http://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/.)]}, Ad Algorithm \footnote{\goto{http://www.standard.co.uk/lifestyle/london-life/how-does-facebook-and-google-target-ads-at-me-a3183361.html}[url(http://www.standard.co.uk/lifestyle/london-life/how-does-facebook-and-google-target-ads-at-me-a3183361.html)]})
+* Buying habits, Advertisement, Big Data (Target Pregnant Daughter \footnote{\goto{http://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/.}[url(http://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/.)]}, Ad Algorithm \footnote{\goto{http://www.standard.co.uk/lifestyle/london-life/how-does-facebook-and-google-target-ads-at-me-a3183361.html}[url(http://www.standard.co.uk/lifestyle/london-life/how-does-facebook-and-google-target-ads-at-me-a3183361.html)]})
 * Radio signal masts could start consultations about health implications in the area
 
-Controls should be in place to check customers age for buying and against fraud. Tacking and behavorial data should not be passed onto third parties and be encrypted and safely stored. \par
+Controls should be in place to check customers age for buying and against fraud. Tacking and behavioural data should not be passed onto third parties and be encrypted and safely stored. \par
 
 # Conclusion
 
