@@ -117,6 +117,8 @@ One example of industry practices is to physically lock down the warehouse and u
 
 More specifically to the security design of the proposed project, the following detailed threat list covers the direct threats along with the defensive tactics against it and mitigation strategies. \par
 
+\page[yes]
+
 ### Network Threats
 
 * The attacker could look for the weakest link on the perimeter and jump networks \crlf (defensive tactic: segregation of networks for finance, inventory, customer database) \endash- see \tf{Target Hack \footnote{\goto{http://www.bloomberg.com/news/articles/2014-03-13/target-missed-warnings-in-epic-hack-of-credit-card-data}[url(http://www.bloomberg.com/news/articles/2014-03-13/target-missed-warnings-in-epic-hack-of-credit-card-data)]}}
