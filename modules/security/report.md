@@ -6,15 +6,15 @@
 
 # Abstract
 
+This report is presenting a proposal for a secure network design of an automated inventory monitoring and control system based on wireless technologies. The retailers of the future will be functioning fully automated and autonomous. This paper is focusing on the technologies of the inventory system and does not touch delivery services or stock ordering. \par
+It is shown, that with smart wireless transmission technologies like RFID combined with software intelligence a more effective warehouse/retail system can be constructed. The solution of the future will be scalable, secure, fault tolerant, resistant against attacks and effective. \par
+Ethical and legal discussions are started on the topic of autonomous systems and their implications on society. \par
+
 \starthiding
 \inmargin{\ssxx \color[darkgreen]{\WORD{AR}}}
 \startcolor[darkgreen]
 \stopcolor
 \stophiding
-
-\startcolor[darkred]
-150 words: Abstract with structure and engineered to answer fully the questions with a summative approach. \par
-\stopcolor
 
 # Introduction
 
@@ -256,21 +256,32 @@ Common abnormalities that can be detected by a guardian switch include: \par
 
 ## Technologies / Controls
 
-* !!! clear rationale and motivation for the technology/technologies you would select for the proposed network
+The following technologies and controls will be considered: \par
+
+* SecureRF for RFID encryption and protocols, based on the lessions learned of the MiFare hack \footnote{\goto{http://www.computerworld.com/article/2537817/security0/how-they-hacked-it--the-mifare-rfid-crack-explained.html}[url(http://www.computerworld.com/article/2537817/security0/how-they-hacked-it--the-mifare-rfid-crack-explained.html)]} and Arduino types of attacks \footnote{\goto{http://www.eweek.com/security/hacking-rfid-tags-is-easier-than-you-think-black-hat}[url(http://www.eweek.com/security/hacking-rfid-tags-is-easier-than-you-think-black-hat)]} 
+* Tag reader security and optimisation against tampering and false RFID chips
+* Wireless security (WPA, OpenVPN, and additonal GnuPG PKI encryptions)
+* Complete segregation of networks (in addition to internal hardening like DMZ)
+* Masking and encrypting the datbases (credit card data or other PII)
 
 ## Network Architecture
 
+The Network Diagram for the proposed design looks as follows: \par
+
 \placefigure[here]{Network Diagram}{\externalfigure[network.pdf][height=5cm]}
 
-* !!! network would carry sensitive financial information, security and privacy is the top priority
-* !!! scalable network architecture with clear controls in place and full rationalisation on scalability, privacy, security and autonomy
-* !!! comparative effectiveness of solutions in place or those excluded from the design
+Financial transactions are on a segregated network, credit card data is masked and the traffic is encrypted. \par
+Additional entry points to the inventory monitoring system can scale the solution for bigger warehouses or additional stores. \par
+The performance is taken also into account with the solution as that would have a business impact. \par
 
 ## Security Vulnerabilities
 
-* Wireless vulnerabilities (RFID/WLAN/LAN)
-* !!! addressed by your proposed solution
-* !!! threat and vulnerabilities identification using structured and well-defined methodologies and tools
+Numerous vulnerabilities exists or needs to be accounted for as with every technology, most notably: \par
+
+* Wireless vulnerabilities around RFID/Wi-Fi/LAN (including IPv6/IPv6,TCP/IP,SSL/TLS)
+* Encryption and hashing weaknesses
+
+All of these vulnerabilities have been addressed by assessing the technologies and the business value or impact. \par
 
 # Ethical, Legal and Social Impacts
 
@@ -329,20 +340,19 @@ Controls should be in place to check customers age for buying and against fraud.
 
 # Conclusion
 
-\startcolor[darkred]
-Conclusions with clear remarks on the strengths and limitations of the work undertaken with clear and strong evidence on the suggestions, recommendation and way forward with strong research underpinned solutions students managed to produce a summary of the work with clear indicators on their limitations, exclusions and way forward in this domain. \par
+It has been shown, that the development of an inventory monitoring and control system is complex and requires consideration of effectiveness and the cost during development to ensure maximum benefits are accrued from the system. \par
 
-Design recommendations, summary of ethical, legal, social impacts. suggestions: LAN over WiFi \par
+\blank[line]
 
-You work as a design engineer at Northumbria Internetworking Inc. The company has recently received a request for a proposal from an International supermarket chain regarding a potential business opportunity in the greater Newcastle area. Your task is to propose a secure network design that meets customer's requirements. \par
+The balance between security and effectiveness has to be stricken from a business point of view and the suggestions shown that using modern wireless technologies can help to create autonomous systems for inventory controls. There will always be threats and weaknesses in the technology utilised and the report showed a middle-ground of creating such a system. \par
 
-RN:
-From the above description, it is evident that development of an inventory monitoring and
-control system is complex and requires consideration of effectiveness and the cost during
-development to ensure maximum benefits are accrued from the system. There is also a need
-to ensure the considered design not only addresses potential security risks, but is also
-acceptable from a legal, ethical and social perspective.
-\stopcolor
+\blank[line]
+
+As wireless technologies are by definition weaker as their hard wired counterparts, speed and effectiveness needs to be measured up against technological novelties. The next step for a pure autonomous retailing system would be to automate inventory movements via robots, self-learning systems on stock ordering and removal of stock and a delivery system via self-driving cars or drones. Some fieldwork has been already undertaken with tests from Google, Apple and Amazon. \par
+
+\blank[line]
+
+Apart from the technology challenges the next most important aspects are the compliance with legal obligations and the ethical and social issues that would arise. It has been shown that there is a long way forward until these issues are properly addressed and incorporated into artificial intelligence solutions. \par
 
 \page[yes]
 
