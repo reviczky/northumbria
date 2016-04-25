@@ -1,0 +1,56 @@
+% engine=luajittex
+
+\setuppapersize[A4,portrait][A4,portrait]
+\mainlanguage[uk]
+
+\setuplayout
+    [
+        backspace=10mm,
+        cutspace=10mm,
+        width=190mm,
+        topspace=10mm,
+        header=0mm,
+        footer=0mm,
+        height=277mm,
+    ]
+
+\usemodule[filter]
+
+\defineexternalfilter
+    [pandoc]
+    [
+        filter={pandoc --no-wrap
+            -f \externalfilterparameter{format} -t context
+            -o \externalfilteroutputfile},
+        format=markdown,
+    ]
+
+\setuppagenumbering[location=]
+
+\definefontfeature[default][default][protrusion=quality,expansion=quality]
+\setupalign[hz,hanging]
+\setupbodyfont[heros,12pt]
+
+\placebookmarks[chapter,section,subsection][chapter,section]
+\setupinteractionscreen[option=bookmark]
+
+\setupinteraction
+    [
+        state=start,
+        title={Ethical Hacking for Cyber Security},
+        author={Graham Sexton},
+        subtitle={LD0777},
+        keyword={northumbria},
+    ]
+
+\setupcolor[x11]
+
+\definesynonyms[abbreviation][abbreviations][\infull]
+\setupsynonyms[abbreviation][textstyle=normal]
+\abbreviation{NIDS}{Network Intrusion Detection System}
+
+\showframe
+
+\starttext
+    \processpandocfile{pastpaper.md}
+\stoptext
