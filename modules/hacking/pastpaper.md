@@ -313,6 +313,8 @@ Select one correct answers for each question. 1.5 marks is assigned for each cor
 \stopxrow
 \stopxtable
 
+\page
+
 \blank[line] \color[black]{\rm\bf Question 9} \blank[line]
 
 \startxtable[option=stretch]
@@ -424,6 +426,8 @@ Select one correct answers for each question. 1.5 marks is assigned for each cor
 \startxcell Facial scanning \stopxcell
 \stopxrow
 \stopxtable
+
+\page
 
 \blank[line] \color[black]{\rm\bf Question 13} \blank[line]
 
@@ -537,6 +541,8 @@ Select one correct answers for each question. 1.5 marks is assigned for each cor
 \stopxrow
 \stopxtable
 
+\page
+
 \blank[line] \color[black]{\rm\bf Question 17} \blank[line]
 
 \startxtable[option=stretch]
@@ -648,6 +654,8 @@ Select one correct answers for each question. 1.5 marks is assigned for each cor
 \startxcell A two time pad \stopxcell
 \stopxrow
 \stopxtable
+
+\page
 
 \blank[line] \color[black]{\rm\bf Question 21} \blank[line]
 
@@ -761,6 +769,8 @@ Select one correct answers for each question. 1.5 marks is assigned for each cor
 \stopxrow
 \stopxtable
 
+\page
+
 \blank[line] \color[black]{\rm\bf Question 25} \blank[line]
 
 \startxtable[option=stretch]
@@ -872,6 +882,8 @@ Select one correct answers for each question. 1.5 marks is assigned for each cor
 \startxcell In the data centre \stopxcell
 \stopxrow
 \stopxtable
+
+\page
 
 \blank[line] \color[black]{\rm\bf Question 29} \blank[line]
 
@@ -985,6 +997,8 @@ Select one correct answers for each question. 1.5 marks is assigned for each cor
 \stopxrow
 \stopxtable
 
+\page
+
 \blank[line] \color[black]{\rm\bf Question 33} \blank[line]
 
 \startxtable[option=stretch]
@@ -1096,6 +1110,8 @@ Select one correct answers for each question. 1.5 marks is assigned for each cor
 \startxcell Changing the file properties within Windows \stopxcell
 \stopxrow
 \stopxtable
+
+\page
 
 \blank[line] \color[black]{\rm\bf Question 37} \blank[line]
 
