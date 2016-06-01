@@ -19,7 +19,7 @@
 \defineexternalfilter
     [pandoc]
     [
-        filter={pandoc --no-wrap
+        filter={pandoc --wrap=none
             -f \externalfilterparameter{format} -t context
             -o \externalfilteroutputfile},
         format=markdown,

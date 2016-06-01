@@ -1243,7 +1243,7 @@ Section 2 (40 out of 100 marks)
 \crlf \color[darkgray]{MITM}
 \item What can Mike now do? \color[black]{\bf (6 marks)}
 \crlf \color[darkgray]{CIA, examples}
-\item How could I dentify this attack from a Wireshark trace? \color[black]{\bf (4 marks)}
+\item How could I identify this attack from a Wireshark trace? \color[black]{\bf (4 marks)}
 \crlf \color[darkgray]{MAC address}
 \item How can I prevent this from happening again? \color[black]{\bf (6 marks)}
 \crlf \color[darkgray]{keysigning}
