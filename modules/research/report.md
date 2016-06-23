@@ -1,14 +1,41 @@
+\tfx
+
 # Introduction
 
 The following is a critical discussion on a research paper in the field of cyber security in order to understand and formulate a research problem, including a literature review.
 
 # Background Discussion
 
+Voice over IP (VoIP) is starting to get the norm in industry and there is little research on the topic of security and the impact on quality.
+
 # Main Body
 
-* Discuss the key sources, problem and consideration in the research domain that the paper tries to tackle and give summary on contributions made (250 word).
+## Key Sources
 
-* Identify cause and effects relationship(s) in the research problem formulated in the paper and motivation for the research (300 words)
+The research domain of secure communications and the effects of cryptography on the experience is based on the following sources:
+
+* Definition of Quality of Service (QoS)
+* Consideration of codecs: G.723, G.711, G.729 and block ciphers: DES, 3DES, AES
+* Comparison and selection of E-model and MOS methodologies
+* IPsec on Voice over IP
+
+## Contributions
+
+In summary, the contribution of the research paper has shown results of effects on cryptography on perceived quality in VoIP communications. Call areas have been presented for different codecs and their respective payload sizes.
+
+\blank[line]
+
+Further research is being conducted on optimisation on efficiency between QoE and security.
+
+## Cause and Effects
+
+In the research, the problem on the effects of different block ciphers on Quality of Experience (QoE) for secure VoIP was formulated.
+
+The default payload sizes for codecs and the effects of concurrent number of calls lead to a conclusion of optimal values (see Table 5 in the research paper).
+
+## Motivation
+
+Considering the main pillars of security, confidentiality, integrity and availability \cite[pfleeger2003security], the question of the trade-off on quality in communications is first looked at in this paper in order to gain an understanding of objective measurements on VoIP calls with different ciphers and codecs.
 
 ## Methodology
 
@@ -35,9 +62,7 @@ Generally, as no QoS (Quality of Service) can be guaranteed on encrypted VoIP tr
 The following data, excluding the RFC specifications, on secure VoIP is used in the research:
 
 * Securing VoIP via stream or block cipher \cite[Elbayoumy05streamor]
-
 * Confidentiality of communications in IP networks \cite[1182529]
-
 * The impact of IPsec on communications \cite[1420261]
 
 ## Ethical Issues
@@ -47,19 +72,26 @@ The journal paper clearly shows a degradation of the QoE (Quality of Experience)
 Depending on the usage of the technology, there could be two ethical aspects that needs to be considered on the limitation of concurrent VoIP call quality:
 
 i) The level of encryption and codecs used for CIA (confidentiality, integrity and availability) in order to protect privacy over calls \cite[diffie2010privacy]
-
 ii) Quality problems for emergency services through possible DoS (Denial of Service) and unusable "line" quality \cite[azari2003current]
 
 # Conclusion
 
+The journal paper showed that there is a clear correlation in degrading VoIP call quality (QoE) with the increase of concurrent number of calls in each of the payload sizes. The paper hence suggests a change in default payload size for the codecs in use.
+
 # Summary
+
+This critical discussion on the given research paper discussed the areas of security versus privacy in communications.
 
 \page[yes]
 
+\setuplayout[bibliography]
+
 # References
 
-\color[black]{\tfxx\placepublications[criterium=text]} \par
+\color[black]{\tfx\placepublications[criterium=text]} \par
 
 # Bibliography
 
-\color[black]{\tfxx\placepublications[criterium=all]} \par
+\color[black]{\tfx\placepublications[criterium=all]} \par
+
+\setuplayout[reset]
