@@ -24,7 +24,7 @@
 \startsetups[headertext]
     \startframed[frame=off,align=middle,width=fit]\bf\WORD
         {\studentname} ({\studentnumber}) \\
-        Module: {\modulename} ({\documentname})
+        Module: {\modulename} (1A Formative)
     \stopframed
 \stopsetups
 
@@ -93,15 +93,20 @@ fill (446.535004,57.265598)--(446.457001,57.175800)--(455.496002,57.175800)..con
     \switchtobodyfont[adventor,12pt] \tfd
     \startalignment[middle]
         \blank[25mm]
-        \WORD{Module 5 \blank[2*line] \facultyname \blank[line] Module: \modulename \blank[line] Module tutor: \moduletutor \blank[line] \currentdate} \\
+        \WORD{Module 5 \blank[2*line] \facultyname} \\
         \blank[2*line]
-        \bf\documentname \\
-        \blank[115mm]
+        {\tfxx Module: \crlf \modulename \blank[line] Module tutor: \crlf \moduletutor} \\
+        \blank[4*line]
+        {\bf\documentname} \\
+        \blank[line]
+        {\tfxx 1A Formative \blank[2*line] \date[d=24,m=6,y=2016]} \\
+        \blank[80mm]
     \stopalignment
     \startalignment[flushright]
         \definehspace[arch][3em]
-        \tfb \studentname\ (\studentnumber) \hspace[arch]\ \blank[2*line] \bfb MSc in Cyber Security 2015/2016 \hspace[arch]\
+        \tfb \studentname\ (\studentnumber) \hspace[arch]\ \blank[line] \bfb MSc in Cyber Security 2015/2016 \hspace[arch]\
     \stopalignment
+    \blank[28mm]
     \stopstandardmakeup
 
     \setupbackgrounds[page][background=]
