@@ -1,4 +1,4 @@
-## Writin a Research Proposal
+## Writing a Research Proposal
 
 A proposal is a special type of scientific article, as it describes what shall be done in the future.
 
