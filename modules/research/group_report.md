@@ -16,6 +16,10 @@ outline current market/ market offerings and perceived market opportunity (e.g. 
 
 ### Project cost and length
 
+\startcolor[darkgray]
+The project is constrained by a 24 month limit set by NPS; and an upper limit of £250,000.
+\stopcolor
+
 ### Project location(s)
 
 \startcolor[darkgray]
@@ -89,6 +93,32 @@ Gantt chart taken from MS Project. This should include all the tasks taken from 
 * \color[darkgray]{This is a Gantt chart in support of a project proposal. It is not in support of the operation of the project. It should therefore be at a less detailed level. A timeline of months or quarters would be appropriate.}
 * \color[darkgray]{The Gantt chart must be presented in such a way that it can be read as a single document, not included as a set of pages. You may tape pages together and fold into the overall A4 format of the report. Ask for guidance on what is acceptable/unacceptable for presentation in a report.}
 
+\blank[2*line]
+
+\placefigure[place]{Microsoft Project Gantt chart}{
+\startgantt[xunitlength=0.5cm,style=\ssx,titlestyle=\ssx,drawledgerline=true]{10}{24}
+\startganttitle
+\titleelement{2015}{7}
+\numtitle{2016}{1}{2016}{12} 
+\titleelement{2017}{5}
+\stopganttitle
+\startganttitle
+\numtitle{6}{1}{12}{1}
+\numtitle{1}{1}{12}{1}
+\numtitle{1}{1}{5}{1}
+\stopganttitle
+\ganttbar{task 1}{2}{3}
+\ganttgroup{a group of tasks}{4}{4}
+\ganttbar{task 2}{5}{5}
+\ganttbar[color=blue]{task 3}{10}{3}
+\ganttbar{task 4}{10}{3}
+\ganttcon{10}{4}{10}{6}
+\ganttbar{task 5}{10}{5}
+\ganttbarcon[color=red]{task 6}{15}{5}
+\ganttbarcon{task 7}{20}{3}
+\stopgantt
+}
+
 \page[yes]
 
 \startcolor[red]\WORD{one page only}\stopcolor
@@ -99,6 +129,8 @@ Gantt chart taken from MS Project. This should include all the tasks taken from 
 This must include a list of the physical resources required for the project.
 
 For each item you need to identify and justify its estimated purchase cost; the expected source (if sourced from inside the university they will expect to be reimbursed by the project; if sourced from outside the university you need to indicate the contractual arrangements). Any cost information here must agree with that in Section 2.
+
+Details of equipment or other physical resources that will be needed by your project team. 'No physical resources' is not acceptable.
 \stopcolor
 
 \page[yes]
@@ -119,6 +151,8 @@ Additional supporting text should be included that justifies, with evidence, the
 This section must include a description of the organisational structure for the project – listing all project staff and an outline of their responsibilities.
 
 Include a Job Description and Person Specification for the administrator post that you must recruit for the project. (You do not need for this assignment to include these for any other identified positions.)
+
+Detailed support for an additional person who must be recruited to deal with all the administration – including keeping detailed, auditable records.
 \stopcolor
 
 \page[yes]
