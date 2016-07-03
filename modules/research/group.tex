@@ -1,0 +1,133 @@
+% engine=luajittex
+
+\setuppapersize[A4,portrait][A4,portrait]
+\mainlanguage[uk]
+
+\setuplayout
+    [
+        backspace=10mm,
+        cutspace=10mm,
+        width=190mm,
+        topspace=10mm,
+        header=15mm,
+        footer=20mm,
+        height=282mm,
+    ]
+
+\define\studentnamefirsta{Adam}
+\define\studentnamelasta{Reviczky}
+\define\studentnamea{\studentnamefirsta\ \studentnamelasta}
+\define\studentnumbera{14044980}
+\define\studentnamefirstb{Stefan}
+\define\studentnamelastb{Fernandes}
+\define\studentnameb{\studentnamefirstb\ \studentnamelastb}
+\define\studentnumberb{13044697}
+\define\studentnamefirstc{Rafael}
+\define\studentnamelastc{Narezzi}
+\define\studentnamec{\studentnamefirstc\ \studentnamelastc}
+\define\studentnumberc{14045125}
+\define\facultyname{Engineering & Environment}
+\define\modulename{IS0749 – Research and Project Management}
+\define\moduletutor{Biddy Casselden, Dr Gregory Epiphaniou}
+\define\documentname{IS0749 Part B – Group Report}
+\define\groupname{\startcolor[darkblue]Group Identifier (Business Name)\stopcolor}
+
+\startsetups[footertext]
+    \startframed[frame=off,align=middle,width=fit]\bfx
+        \startcolor[darkgray]
+            \WORD{\studentnamea} ({\studentnumbera}) \| \WORD{\studentnameb} ({\studentnumberb}) \| \WORD{\studentnamec} ({\studentnumberc}) \\
+            {\modulename\ (1B Summative)} \\
+        \stopcolor
+        {\tf\ss\pagenumber}
+    \stopframed
+\stopsetups
+
+\startuseMPgraphic{watermark}{mpcolor}
+fill (446.535004,57.265598)--(446.457001,57.175800)--(455.496002,57.175800)..controls (475.371002,81.132797) and (494.976990,91.765602)..(510.152008,75.734398)..controls (510.257996,75.625000) and (510.457001,75.546898)..(510.281006,75.925797)..controls (508.273010,80.308601) and (490.750000,109.188004)..(446.535004,57.265598)--cycle withcolor \MPvar{mpcolor};
+\stopuseMPgraphic
+
+\startsetups[watermark:background]
+\scale[width=\textwidth]{\useMPgraphic{watermark}{mpcolor=gray}}
+\stopsetups
+
+\definelayer[watermark]
+\setlayer[watermark][x=\dimexpr\paperwidth/2-\textwidth/2\relax,y=174mm]{\setup{watermark:background}}
+
+\setupfootertexts[\directsetup{footertext}]
+
+\setuphead[section][style=\bfb]
+
+\usemodule[filter]
+
+\defineexternalfilter
+    [pandoc]
+    [
+        filter={pandoc --no-wrap
+            -f \externalfilterparameter{format} -t context
+            -o \externalfilteroutputfile},
+        format=markdown,
+    ]
+
+\setuppagenumbering[location=,left={\endash\ },right={\ \endash}]
+
+\definefontfeature[default][default][protrusion=quality,expansion=quality]
+\setupalign[hz,hanging]
+\setupbodyfont[pagella,12pt]
+
+\placebookmarks[chapter,section,subsection][chapter,section]
+\setupinteractionscreen[option=bookmark]
+
+\setupinteraction
+    [
+        state=start,
+        title={Research and Project Management},
+        author={Adam Reviczky, Stefan Fernandes, Rafael Narezzi},
+        subtitle={Group Report},
+        keyword={northumbria},
+    ]
+
+\setupspellchecking[state=start,method=2]
+\ctxlua{languages.words.threshold=1}
+
+\setupbibtex[database={group},sort=author]
+\setuppublications[alternative=apa]
+
+% \setupcolor[x11]
+\usecolors[xwi]
+
+\definesynonyms[abbreviation][abbreviations][\infull]
+\setupsynonyms[abbreviation][textstyle=normal]
+\abbreviation{IEEE}{Institute of Electrical and Electronics Engineers}
+
+% \showframe
+
+\starttext
+    \setupbackgrounds[page][background=watermark]
+    \startstandardmakeup
+    \switchtobodyfont[adventor,12pt] \tfd
+    \startalignment[middle]
+        \blank[25mm]
+        \WORD{Module 5 \blank[2*line] \facultyname} \\
+        \blank[2*line]
+        {\tfxx \modulename \blank[line] \moduletutor} \\
+        \blank[4*line]
+        {\bf\documentname} \blank[halfline] \\
+        {\bf\groupname} \\
+        \blank[line]
+        {\tfxx 1B Summative \blank[2*line] \date[d=9,m=7,y=2016]} \\
+        \blank[73mm]
+    \stopalignment
+    \startalignment[flushright]
+        \definehspace[arch][3em]
+        \tfb \studentnamefirsta\ \underbar{\studentnamelasta}\ (\studentnumbera) \hspace[arch]\ \blank[small] \studentnamefirstb\ \underbar{\studentnamelastb}\ (\studentnumberb) \hspace[arch]\ \blank[small] \studentnamefirstc\ \underbar{\studentnamelastc}\ (\studentnumberc) \hspace[arch]\ \blank[line] \bfb MSc in Cyber Security February 2015 Cohort \hspace[arch]\
+    \stopalignment
+    \blank[35mm]
+    \stopstandardmakeup
+
+    \setupbackgrounds[page][background=]
+    \page
+
+    \processpandocfile{group.md}
+
+    \stopalignment
+\stoptext
