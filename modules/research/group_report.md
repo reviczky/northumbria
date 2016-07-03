@@ -41,7 +41,14 @@ Your funding application must conform to the Notes on Presentation.
 \stopcolor
 
 * \color[darkgray]{The figures chosen must be reasonable for a project of this size and type and must agree with the project cost included in Section 1.}
-* \color[darkgray]{Additional supporting text should be included (maximum one additional page) that justifies, with evidence, the figures on your cash flow forecast.}
+
+\page[yes]
+
+\startcolor[red]\WORD{maximum one additional page}\stopcolor
+
+## Supporting Text
+
+* \color[darkgray]{Additional supporting text should be included that justifies, with evidence, the figures on your cash flow forecast.}
 
 \page[yes]
 
@@ -202,6 +209,10 @@ Included in your group management documents must be your Code of Conduct.
 \startcolor[darkgray]
 You must also have a report of which group members contributed to which elements of the submitted documents.
 \stopcolor
+
+* Rafael Narezzi: Section 1,2
+* Stefan Fernandes: Section 3
+* Adam Reviczky: Section 4,5,6
 
 ## Project Plan
 
