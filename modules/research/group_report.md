@@ -970,19 +970,19 @@ The following list of physical resources that is required is a detailed list fro
 \startcolor[midnightblue] \bf Expected source: Stationary contract with Ryman and using university facilities for printing (pay per use) \stopcolor
 * \startcolor[black]\it Build Servers for all in-house infrastructure \stopcolor \crlf
 \startcolor[brown] \bf Purchase costs: One off CapEx cost of £5,000 (HPE contract for blade servers) \stopcolor \crlf
-\startcolor[midnightblue] \bf Expected source: Buying online directly from the vendor. \stopcolor
+\startcolor[midnightblue] \bf Expected source: Buying online directly from the vendor \stopcolor
 * \startcolor[black]\it IP phones (excluding contract) \stopcolor \crlf
 \startcolor[brown] \bf Purchase costs: expected amount £600 (part of the running costs from the telephone budget of £1,200) \stopcolor \crlf
-\startcolor[midnightblue] \bf Expected source: Contract for the lease of Avaya IP phones as part of the overall telephone contract for a 12 month period. \stopcolor
+\startcolor[midnightblue] \bf Expected source: Contract for the lease of Avaya IP phones as part of the overall telephone contract for a 12 month period \stopcolor
 * \startcolor[black]\it Utilities (including workstations, tables, desks, chairs, lamps, whiteboards, flip charts, projectors, screens, scanners and printers, shredders) \stopcolor \crlf
 \startcolor[brown] \bf Purchase costs: £600 per annum from the utilities budget. \stopcolor \crlf
-\startcolor[midnightblue] \bf Expected source: Reimbursement fee for Northumbria University using university equipment and stationary. \stopcolor
+\startcolor[midnightblue] \bf Expected source: Reimbursement fee for Northumbria University using university equipment and stationary \stopcolor
 * \startcolor[black]\it Tools and Materials (Design, Build, Test) \stopcolor \crlf
 \startcolor[brown] \bf Purchase costs: Minimal (taken from the misc budget) \stopcolor \crlf
-\startcolor[midnightblue] \bf Expected source: Investigating resources from past project within the university. \stopcolor
+\startcolor[midnightblue] \bf Expected source: Investigating resources from past project within the university \stopcolor
 * \startcolor[black]\it Accommodation and rooms (workshops, meetings and presentations) \stopcolor \crlf
 \startcolor[brown] \bf Purchase costs: Minimal (taken from the misc budget) for occupying vacant rooms at the university \stopcolor \crlf
-\startcolor[midnightblue] \bf Expected source: Cleaning up after usage and nominal fee for university. No contract needed. \stopcolor
+\startcolor[midnightblue] \bf Expected source: Cleaning up after usage and nominal fee for university; no contract needed \stopcolor
 
 For a cost breakdown within the project, see the cash flow forecast on page \at[section:finance]. \par
 
