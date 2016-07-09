@@ -1073,7 +1073,7 @@ The following risk factors could pose a high risk and potentially be a problem f
 \startcolumns[n=2]
 \startitemize[joindup,nowhite]
 \WORD{\ss Political}
-\item Brexit (political uncertainty, market volatility, new trade deals) \crlf \color[black]{\it\bf Contingency Planning: Moving HQ and Data centre back to EU.}
+\item Brexit (political uncertainty, market volatility, new trade deals) \crlf \color[black]{\it\bf Contingency Planning: Moving HQ and Data Centre back to EU.}
 \blank[line] \WORD{\ss Economic}
 \item Weak GBP (exchange rate to EUR) could affect the project subscriptions
 \item GDP decrease (inflation), less trade and income
