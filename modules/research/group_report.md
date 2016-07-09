@@ -5,7 +5,7 @@ NPS Intel group is an entity that is actively involved in the ongoing cyber secu
 ## General Overview
 
 The proposed consultancy will focus on providing a platform that will enable business organisations to make claims or incidents any time and anywhere, allowing businesses to share critical intelligence.
-This will be essential in the process of predicting and getting more pragmatic against potentially new cybersecurity threats/incidents.
+This will be essential in the process of predicting and getting more pragmatic against potentially new cyber security threats/incidents.
 
 ### Project Abstract
 
