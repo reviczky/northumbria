@@ -102,7 +102,7 @@ Desks: £325/mo \par
 \midaligned{\color[black]{\goto{https://www.wework.com/locations/london}[url(https://www.wework.com/locations/london)]}}
 }
 
-* \color[black]{\bf Sales} – The group decided to work with an outsource \infull{B2B} (B2B) sales, given the fact that the our financial report has been agreed on a commission only basis. With that, the business must acquire five clients per month in the first year and increasing it to 6 per months the following year to have exclusivity for our service and contract. (Link: \color[black]{\goto{http://www.ventrica.co.uk/}[url(http://www.ventrica.co.uk/)]})
+* \color[black]{\bf Sales} – The group decided to work with an outsource \infull{B2B} (B2B) sales, given the fact that the our financial report has been agreed on a commission only basis. With that, the business must acquire five clients per month in the first year and increasing it to six per month the following year to have exclusivity for our service and contract. (Link: \color[black]{\goto{http://www.ventrica.co.uk/}[url(http://www.ventrica.co.uk/)]})
 
 The proposal is to cap 10% on the commission only basis.
 
