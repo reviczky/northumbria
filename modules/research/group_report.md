@@ -38,7 +38,7 @@ It will be able to present information regarding the approach adopted in breachi
 \blank[line]
 
 With this information, each business or individual could be in a position to initiate a tag system presented inside of the application that provides alerts on security issues that are relevant to each individual's business operations. \par
-Our consultancy group will review and analyse the collected data and hence provide the clients with access to information that is necessary in maintaining their cybersecurity. However, the client must pay for the subscription module of our special consultancy. \par
+Our consultancy group will review and analyse the collected data and hence provide the clients with access to information that is necessary in maintaining their cybersecurity. However, the client must pay for the subscription module of our intelligence analysis. \par
 
 \blank[line]
 
@@ -102,7 +102,7 @@ Desks: £325/mo \par
 \midaligned{\color[black]{\goto{https://www.wework.com/locations/london}[url(https://www.wework.com/locations/london)]}}
 }
 
-* \color[black]{\bf Sales} – The group decided to work with an outsource \infull{B2B} (B2B) sales, given the fact that the our financial report has been agreed on a commission only basis. With that, the business must acquire five clients per month in the first year and increasing it to 6 pet months the following year to have exclusivity for our service and contract. (Link: \color[black]{\goto{http://www.ventrica.co.uk/}[url(http://www.ventrica.co.uk/)]})
+* \color[black]{\bf Sales} – The group decided to work with an outsource \infull{B2B} (B2B) sales, given the fact that the our financial report has been agreed on a commission only basis. With that, the business must acquire five clients per month in the first year and increasing it to 6 per months the following year to have exclusivity for our service and contract. (Link: \color[black]{\goto{http://www.ventrica.co.uk/}[url(http://www.ventrica.co.uk/)]})
 
 The proposal is to cap 10% on the commission only basis.
 
@@ -122,7 +122,7 @@ Evidencing the projections with numbers from existing offers underlines the soun
 
 ### Quotes \reference[section:quotes]{Section 2.1.1}
 
-The following quote has been acquired from co-location spaces for the Lombard Street premises: \par
+The following quote has been acquired from co-location spaces for the NPS Intel group: \par
 
 \blank[line]
 
@@ -589,47 +589,328 @@ Figure \in[wbs] shows the work breakdown structure for the total scope of NPS In
 
 \page[yes]
 
-\startcolor[red]\WORD{one page only}\stopcolor
+\setuplayout[narrow]
 
-## Task List
+## Task List (Task List project, 74 days / NPS Intel, 69 days)
 
-\startcolor[darkgray]
-Task List for the project. This must be all the tasks taken from the WBS.
-subsection C should be derived from the information listed in subsection B
+### Initiation
+
+\startcolor[black]\tfxx
+\startxtable[option=stretch,foregroundstyle=\ss]
+\startxtablehead[background=color,backgroundcolor=gray]
+\startxrow[align=middle]
+\startxcell Task Name \stopxcell
+\startxcell Duration \stopxcell
+\startxcell Start \stopxcell
+\startxcell Finish \stopxcell
+\startxcell Cost (GBP) \stopxcell
+\startxcell Resource Name \stopxcell
+\stopxrow
+\stopxtablehead
+\startxrow
+\startxcell[width=38mm] \bf 1.1 Initiation \stopxcell
+\startxcell \bf 14 days \stopxcell
+\startxcell \bf Mon 18/07/16 \stopxcell
+\startxcell \bf Thu 04/08/16 \stopxcell
+\startxcell \stopxcell
+\startxcell[width=38mm] \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.1.1 Project Kick Off \stopxcell
+\startxcell 5 days \stopxcell
+\startxcell Mon 18/07/16 \stopxcell
+\startxcell Mon 22/07/16 \stopxcell
+\startxcell £1,680 \stopxcell
+\startxcell Reviczky, Narezzi, Fernandes \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.1.2 Business Plan \stopxcell
+\startxcell 10 days \stopxcell
+\startxcell Mon 18/07/16 \stopxcell
+\startxcell Fri 29/07/16 \stopxcell
+\startxcell £3,360 \stopxcell
+\startxcell Reviczky, Narezzi, Fernandes \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.1.3 Business Plan Sign off \stopxcell
+\startxcell 4 days \stopxcell
+\startxcell Mon 01/08/16 \stopxcell
+\startxcell Thu 04/08/16 \stopxcell
+\startxcell £1,344 \stopxcell
+\startxcell Reviczky, Narezzi, Fernandes \stopxcell
+\stopxrow
+\stopxtable
 \stopcolor
 
-* \color[darkgray]{Against each task must be noted an estimate of the resources (human and physical) needed to carry out the task; the estimated cost of each task; any recognised dependencies between tasks.}
-* \color[darkgray]{This Task List must not be a printout from MS Project but a document in its own right.}
+### Administration
 
-NPS Intel Group 69 days Mon 18/07/16 Thu 20/10/16
-2 1.1 Initiation 14 days Mon 18/07/16 Thu 04/08/16
-3 1.1.1 Project Kick Off 5 days Mon 18/07/16 Fri 22/07/16
-4 1.1.2 Business Plan 10 days Mon 18/07/16 Fri 29/07/16
-5 1.1.3 Business Plan Sign 4 days Mon 01/08/16 Thu 04/08/16
-7 1.2 Administration 24 days Mon 18/07/16 Thu 18/08/16
-8 1.2.1 Management 10 days Fri 05/08/16 Thu 18/08/16
-9 1.2.2 Recruitment 5 days Tue 19/07/16 Mon 25/07/16
-10 1.2.3 Human Resources 10 days Mon 18/07/16 Fri 29/07/16
-12 1.3 Finance 24 days Mon 11/07/16 Thu 11/08/16
-13 1.3.1 Funding 20 days Fri 15/07/16 Thu 11/08/16
-14 1.3.2 Clients 10 days Mon 11/07/16 Fri 22/07/16
-15 1.3.3 Tracking 5 days Fri 15/07/16 Thu 21/07/16
-16 1.3.4 Reporting 10 days Mon 11/07/16 Fri 22/07/16
-18 1.4 Product 43 days Mon 18/07/16 Wed 14/09/16
-19 1.4.1 Design 10 days Mon 18/07/16 Fri 29/07/16
-20 1.4.2 Build 10 days Fri 29/07/16 Thu 11/08/16
-21 1.4.3 Test 10 days Thu 25/08/16 Wed 07/09/16
-22 1.4.4 Deploy 5 days Thu 08/09/16 Wed 14/09/16
-23 1.4.5 Training 10 days Thu 11/08/16 Wed 24/08/16
-25 1.5 Sales 32 days Mon 01/08/16 Tue 13/09/16
-26 1.5.1 Product sales 15 days Mon 01/08/16 Fri 19/08/16
-27 1.5.2 Product sales
-29 1.6 Marketing 39 days Mon 25/07/16 Thu 15/09/16
-30 1.6.1 Branding 5 days Mon 25/07/16 Fri 29/07/16
-31 1.6.2 Website 20 days Mon 25/07/16 Fri 19/08/16
-32 1.6.3 Social Media 20 days Fri 19/08/16 Thu 15/09/16 20 days Wed 17/08/16 Tue 13/09/16reporting
+\startcolor[black]\tfxx
+\startxtable[option=stretch,foregroundstyle=\ss]
+\startxtablehead[background=color,backgroundcolor=gray]
+\startxrow[align=middle]
+\startxcell Task Name \stopxcell
+\startxcell Duration \stopxcell
+\startxcell Start \stopxcell
+\startxcell Finish \stopxcell
+\startxcell Cost (GBP) \stopxcell
+\startxcell Resource Name \stopxcell
+\stopxrow
+\stopxtablehead
+\startxrow
+\startxcell[width=38mm] \bf 1.2 Administration \stopxcell
+\startxcell \bf 24 days \stopxcell
+\startxcell \bf Mon 18/07/16 \stopxcell
+\startxcell \bf Thu 18/08/16 \stopxcell
+\startxcell \stopxcell
+\startxcell[width=38mm] \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.2.1 Management \stopxcell
+\startxcell 10 days \stopxcell
+\startxcell Fri 05/08/16 \stopxcell
+\startxcell Thu 18/08/16 \stopxcell
+\startxcell £3,360 \stopxcell
+\startxcell Reviczky, Narezzi, Fernandes \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.2.2 Recruitment \stopxcell
+\startxcell 5 days \stopxcell
+\startxcell Tue 19/07/16 \stopxcell
+\startxcell Mon 25/07/16 \stopxcell
+\startxcell £1,180 \stopxcell
+\startxcell Stefan Fernandes \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.2.3 Human Resources \stopxcell
+\startxcell 10 days \stopxcell
+\startxcell Mon 18/07/16 \stopxcell
+\startxcell Fri 29/07/16 \stopxcell
+\startxcell £3,360 \stopxcell
+\startxcell Administrator \stopxcell
+\stopxrow
+\stopxtable
+\stopcolor
+
+### Finance
+
+\startcolor[black]\tfxx
+\startxtable[option=stretch,foregroundstyle=\ss]
+\startxtablehead[background=color,backgroundcolor=gray]
+\startxrow[align=middle]
+\startxcell Task Name \stopxcell
+\startxcell Duration \stopxcell
+\startxcell Start \stopxcell
+\startxcell Finish \stopxcell
+\startxcell Cost (GBP) \stopxcell
+\startxcell Resource Name \stopxcell
+\stopxrow
+\stopxtablehead
+\startxrow
+\startxcell[width=38mm] \bf 1.3 Finance \stopxcell
+\startxcell \bf 24 days \stopxcell
+\startxcell \bf Mon 11/07/16 \stopxcell
+\startxcell \bf Thu 11/08/16 \stopxcell
+\startxcell \stopxcell
+\startxcell[width=38mm] \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.3.1 Funding \stopxcell
+\startxcell 20 days \stopxcell
+\startxcell Fri 15/07/16 \stopxcell
+\startxcell Thu 11/08/16 \stopxcell
+\startxcell £6,720 \stopxcell
+\startxcell Rafael Narezzi \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.3.2 Clients \stopxcell
+\startxcell 10 days \stopxcell
+\startxcell Mon 11/07/16 \stopxcell
+\startxcell Fri 22/07/16 \stopxcell
+\startxcell £3,360 \stopxcell
+\startxcell Adam Reviczky \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.3.3 Tracking \stopxcell
+\startxcell 5 days \stopxcell
+\startxcell Fri 15/07/16 \stopxcell
+\startxcell Thu 21/07/16 \stopxcell
+\startxcell £1,680 \stopxcell
+\startxcell Adam Reviczky \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.3.4 Reporting \stopxcell
+\startxcell 10 days \stopxcell
+\startxcell Mon 11/07/16 \stopxcell
+\startxcell Fri 22/07/16 \stopxcell
+\startxcell £3,360 \stopxcell
+\startxcell Administrator \stopxcell
+\stopxrow
+\stopxtable
+\stopcolor
+
+### Product
+
+\startcolor[black]\tfxx
+\startxtable[option=stretch,foregroundstyle=\ss]
+\startxtablehead[background=color,backgroundcolor=gray]
+\startxrow[align=middle]
+\startxcell Task Name \stopxcell
+\startxcell Duration \stopxcell
+\startxcell Start \stopxcell
+\startxcell Finish \stopxcell
+\startxcell Cost (GBP) \stopxcell
+\startxcell Resource Name \stopxcell
+\stopxrow
+\stopxtablehead
+\startxrow
+\startxcell[width=38mm] \bf 1.4 Product \stopxcell
+\startxcell \bf 43 days \stopxcell
+\startxcell \bf Mon 18/07/16 \stopxcell
+\startxcell \bf Wed 14/09/16 \stopxcell
+\startxcell \stopxcell
+\startxcell[width=38mm] \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.4.1 Design \stopxcell
+\startxcell 10 days \stopxcell
+\startxcell Mon 18/07/16 \stopxcell
+\startxcell Fri 29/07/16 \stopxcell
+\startxcell £3,360 \stopxcell
+\startxcell Rafael Narezzi, Stefan Fernandes \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.4.2 Build \stopxcell
+\startxcell 10 days \stopxcell
+\startxcell Fri 29/07/16 \stopxcell
+\startxcell Thu 11/08/16 \stopxcell
+\startxcell £3,360 \stopxcell
+\startxcell Adam Reviczky, Stefan Fernandes \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.4.3 Test \stopxcell
+\startxcell 10 days \stopxcell
+\startxcell Thu 25/08/16 \stopxcell
+\startxcell Wed 07/09/16 \stopxcell
+\startxcell £3,360 \stopxcell
+\startxcell Rafael Narezzi \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.4.4 Deploy \stopxcell
+\startxcell 5 days \stopxcell
+\startxcell Thu 08/09/16 \stopxcell
+\startxcell Wed 14/09/16 \stopxcell
+\startxcell £1,680 \stopxcell
+\startxcell Adam Reviczky, Stefan Fernandes \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.4.5 Training \stopxcell
+\startxcell 10 days \stopxcell
+\startxcell Thu 11/08/16 \stopxcell
+\startxcell Wed 24/08/16 \stopxcell
+\startxcell £3,360 \stopxcell
+\startxcell Rafael Narezzi \stopxcell
+\stopxrow
+\stopxtable
+\stopcolor
+
+### Sales
+
+\startcolor[black]\tfxx
+\startxtable[option=stretch,foregroundstyle=\ss]
+\startxtablehead[background=color,backgroundcolor=gray]
+\startxrow[align=middle]
+\startxcell Task Name \stopxcell
+\startxcell Duration \stopxcell
+\startxcell Start \stopxcell
+\startxcell Finish \stopxcell
+\startxcell Cost (GBP) \stopxcell
+\startxcell Resource Name \stopxcell
+\stopxrow
+\stopxtablehead
+\startxrow
+\startxcell[width=38mm] \bf 1.5 Sales \stopxcell
+\startxcell \bf 32 days \stopxcell
+\startxcell \bf Mon 01/08/16 \stopxcell
+\startxcell \bf Tue 13/09/16 \stopxcell
+\startxcell \stopxcell
+\startxcell[width=38mm] \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.5.1 Product sales \stopxcell
+\startxcell 15 days \stopxcell
+\startxcell Mon 01/08/16 \stopxcell
+\startxcell Fri 19/08/16 \stopxcell
+\startxcell £5,040 \stopxcell
+\startxcell Adam Reviczky \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.5.2 Product sales reporting \stopxcell
+\startxcell 20 days \stopxcell
+\startxcell Wed 17/08/16 \stopxcell
+\startxcell Tue 13/09/16 \stopxcell
+\startxcell £6,720 \stopxcell
+\startxcell Administrator \stopxcell
+\stopxrow
+\stopxtable
+\stopcolor
+
+### Marketing
+
+\startcolor[black]\tfxx
+\startxtable[option=stretch,foregroundstyle=\ss]
+\startxtablehead[background=color,backgroundcolor=gray]
+\startxrow[align=middle]
+\startxcell Task Name \stopxcell
+\startxcell Duration \stopxcell
+\startxcell Start \stopxcell
+\startxcell Finish \stopxcell
+\startxcell Cost (GBP) \stopxcell
+\startxcell Resource Name \stopxcell
+\stopxrow
+\stopxtablehead
+\startxrow
+\startxcell[width=38mm] \bf 1.6 Marketing \stopxcell
+\startxcell \bf 39 days \stopxcell
+\startxcell \bf Mon 25/07/16 \stopxcell
+\startxcell \bf Thu 15/09/16 \stopxcell
+\startxcell \stopxcell
+\startxcell[width=38mm] \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.6.1 Branding \stopxcell
+\startxcell 5 days \stopxcell
+\startxcell Mon 25/07/16 \stopxcell
+\startxcell Fri 29/07/16 \stopxcell
+\startxcell £500 \stopxcell
+\startxcell BareBoneArt \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.6.2 Website \stopxcell
+\startxcell 20 days \stopxcell
+\startxcell Mon 25/07/16 \stopxcell
+\startxcell Fri 19/08/16 \stopxcell
+\startxcell £2,000 \stopxcell
+\startxcell BareBoneArt \stopxcell
+\stopxrow
+\startxrow
+\startxcell 1.6.3 Social Media \stopxcell
+\startxcell 20 days \stopxcell
+\startxcell Fri 19/08/16 \stopxcell
+\startxcell Thu 15/09/16 \stopxcell
+\startxcell £2,000 \stopxcell
+\startxcell BareBoneArt \stopxcell
+\stopxrow
+\stopxtable
+\stopcolor
+
+\startcolor[black]
+\tfxx * Daily Costs: 336 (Total Cash Paid out in first year/365), Barebone Art Costs: £100 per day for initial builds then £1000 per month media package
+\stopcolor
+
 
 \page[yes]
+
+\setuplayout[reset]
 
 ## Gantt Chart
 
@@ -668,9 +949,6 @@ NPS Intel Group 69 days Mon 18/07/16 Thu 20/10/16
 }
 
 \page[yes]
-
-\setuplayout[reset]
-\setuppapersize[A4,portrait][A4,portrait]
 
 \startcolor[red]\WORD{one page only}\stopcolor
 
