@@ -1,6 +1,6 @@
 # Introduction \reference[section:intro]{Section 1}
 
-NPS Intel group is an entity that is actively involved in the ongoing cyber security Warfare on a global scale. As the role of the internet in the business world continues to grow, this company is bound to increase its global significance. In the recent past, the group has positioned a great idea, where business organisations can be able to share cyber security incidents within their operations without the need of being identified or providing information about their business name when highlighting any incidents or threats.
+NPS Intel group is an entity that is actively involved in the ongoing cyber security warfare on a global scale. As the role of the internet in the business world continues to grow, this company is bound to increase its global significance. In the recent past, the group has positioned a great idea, where business organisations can be able to share cyber security incidents within their operations without the need of being identified or providing information about their business name when highlighting any incidents or threats.
 
 ## General Overview
 
