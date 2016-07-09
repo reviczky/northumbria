@@ -1,64 +1,567 @@
-\startcolor[red]\WORD{not to exceed 2 pages}\stopcolor
+# Introduction \reference[section:intro]{Section 1}
 
-# Introduction
+NPS Intel group is an entity that is actively involved in the ongoing Cybersecurity Warfare on a global scale. As the role of the internet in the business world continues to grow, this company is bound to increase its global significance. In the recent past, the group has positioned a great idea, where business organizations can be able to share cybersecurity incidents within their operations without the need of being identified or providing information about their business name when highlighting any incidents or threats.
 
 ## General Overview
 
+The proposed consultancy will focus on providing a platform that will enable business organizations to make claims or incidents anytime and anywhere, allowing businesses to share critical intelligence.
+This will be essential in the process of predicting and getting more pragmatic against potentially new cybersecurity threats/incidents.
+
 ### Project abstract
+
+NPS Intel is a business proposal for anonym intelligence sharing between corporations. It provides the means for enterprises to share and collect threats from the cyber space in order to pro-actively assess and secure their environment from potential attacks. \par
 
 ### Reasons for the work
 
-\startcolor[darkgray]
-outline current market/ market offerings and perceived market opportunity (e.g. if addressing market gap, explain)
-\stopcolor
+Preventing cyberattacks is a matter of sharing information \cite[nc20] about existing and possible threats \cite[nc19]. \par
+In this regard, business organizations and governmental institutions must be provided with technology that allows for sufficient and effective information sharing and ultimately provide a better analysis and safer defence systems. \par
+
+\blank[line]
+
+Individuals and organizations that are involved in Cybercrime activities are very well organised. Therefore, business organizations must be capable of keeping their systems vigilant against potential threats. \par
+The application will enable businesses to combat cyber attacks effectively as well as learn from one another without necessarily knowing each other. The software application is centered on promoting high levels of anonymity with the involved parties during information sharing. \par
+
+\blank[line]
+
+Although there are already offerings available for intelligence gathering an sharing, this is a different approach by combining anonymity and intellience as a service. \par
 
 ### Project aims and deliverables
 
+The application will offer an easy to use and most importantly safe to use tool for information sharing while protecting organizational critical data. \par
+By promoting a safe way of sharing this critical information related to cybersecurity, business entities as well as governments will better equipped to cultivate a safer business environment. \par
+
+\blank[line]
+
+Moreover, the application includes a web dashboard, where one will be able to see all threats in real time during an incident. \par
+It will be able to present information regarding the approach adopted in breaching existing cybersecurity protocols with a detailed analysis of each individual event. \par
+
+\blank[line]
+
+With this information, each business or individual could be in a position to initiate a tag system presented inside of the application that provides alerts on security issues that are relevant to each individual's business operations. \par
+Our consultancy group will review and analyse the collected data and hence provide the clients with access to information that is necessary in maintaining their cybersecurity. However, the client must pay for the subscription module of our special consultancy. \par
+
+\blank[line]
+
+The group would use the best approach to make the submission easy and confidential. Each submission will then be analysed and published, where subscribed clients could see the information to assist them in dealing with security issues in their businesses. \par
+
 ### Project cost and length
 
-\startcolor[darkgray]
-The project is constrained by a 24 month limit set by NPS; and an upper limit of £250,000.
-\stopcolor
+The project costs for NPS Intel are set out with an upper limit of £250,000 budget inclusive all expenditures. \par
+
+\blank[line]
+
+Based on prior experience and looking at the knowledge portal for lessions learned we set out to finish the proposed project within 12 months. \par
 
 ### Project location(s)
 
-\startcolor[darkgray]
-where the work is to be done
-\stopcolor
+The main location for the project will be in London (United Kingdom) with the business using a global cloud base solution. \par
+
+\blank[line]
+
+The strategic reason behind that is to find the appropriate talent within the field of cyber security and cyber warefare in order successfully deliver the product. \par
 
 ### Incentive effect of grant
 
-\startcolor[darkgray]
-why do you need the grant and what would happen to the project without grant?
-\stopcolor
+The effectiveness of our application will be rooted to its ability to apply real case scenarios where the real threats and their effects will be applied in developing cyber threats preventative capabilities in business organizations. \par
+
+\blank[line]
+
+As this project requires specialised resources at high costs and building the infrastructure and development around them would be expensive, there lack of the grant would not allow the group the provide the tool that is required to offer the specialised service. \par
+
+\blank[line]
+
+Without the grant, the group would seek to fund the project through a bank loan and try to strip out non-core features of the offering. With today's world best practices of Agile and Scrum techniques it would still be possible to deliver a solution with this business idea. \par
 
 \page[yes]
 
 # Financial Justification
 
-\startcolor[darkgray]
-Your funding application must conform to the Notes on Presentation.
-\stopcolor
+The following lays out the financial plan for NPS Intel.
 
-* \color[darkgray]{The figures chosen must be reasonable for a project of this size and type and must agree with the project cost included in Section 1.}
+\blank[line]
+
+Expenditures for NPS Intel:
+
+* \color[black]{\bf Rental} – Wework offers a flexible and cheap option for our group, with a rental at £600 per month (see \color[black]{\in[section:intro]}). This includes all necessary support for the company in a function of premises.
+
+\placefigure[place]{Wework}{
+\startxtable[frame=off,columndistance=5mm,option=stretch,align={lohi}]
+\startxrow
+\startxcell[width=\dimexpr\textwidth/4\relax] \stopxcell
+\startxcell[width=\dimexpr\textwidth/4\relax] \midaligned{\externalfigure[http://cdn.wework.com/locations/image/661207c8-37fc-11e6-8bc6-0a488af3e541/devonshire-square-office-30.jpg?w=500][method=jpg,width=50mm]} \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax]
+Devonshire Square \par
+9 Devonshire Square, \par
+London EC2M 4YD \par
+\blank[line]
+Offices: £600/mo \par
+Desks: £325/mo \par
+\stopxcell
+\stopxrow
+\stopxtable
+\midaligned{\color[black]{\goto{https://www.wework.com/locations/london}[url(https://www.wework.com/locations/london)]}}
+}
+
+* \color[black]{\bf Sales} – The group decided to work with an outsource \infull{B2B} (B2B) sales, given the fact that the our financial report has been agreed on a commission only basis. With that, the business must acquire five clients per month in the first year and increasing it to 6 pet months the following year to have exclusivity for our service and contract. (Link: \color[black]{\goto{http://www.ventrica.co.uk/}[url(http://www.ventrica.co.uk/)]})
+
+The proposal is to cap 10% on the commission only basis.
+
+* \color[black]{\bf Salaries} – Salaries is running an upper limit of £1,000 per month in the first year and increasing to £2,000 the following year, where our number forecast is to be higher than the first running year. We have 3 IT Cyber Consultants and 1 outsourced financial contractor to follow with the business diligence.
+* Marketing is a high cost in comparison and we are working with Barebone Agency, a sub-contractor in the field, to make all necessary publicity from the Social Media (B2B) Linkedin and manage the Brand to achieve the best results. The sales are dependent on an aggressive investment from the marketing to push the sale.
+* Infrastructure costs are our products running cost. The entire product catalogue is put into the cloud through our strategic supplier Lumminet, who is a partner of Equinix, one of the biggest core networks around the globe. One server per continent is to supply the demand of our clients and create a circle and failure proof in resilience. This service provides a high cost of £1,000 per month (see \in[section:quotes]).
 
 \page[yes]
-
-\startcolor[red]\WORD{maximum one additional page}\stopcolor
 
 ## Supporting Text
 
-* \color[darkgray]{Additional supporting text should be included that justifies, with evidence, the figures on your cash flow forecast.}
+The financial figures for the financial justification and the cash flow forecast are supported with quotes that the group acquired from businesses to justify the amount to be spent for the project proposal. \par
+
+\blank[line]
+
+Evidencing the projections with numbers from existing offers underlines the sound proposal that is presented. \par
+
+### Quotes \reference[section:quotes]{Section 2.1.1}
+
+The following quote has been acquired from co-location spaces for the Lombard Street premises: \par
+
+\blank[line]
+
+\startxtable[frame=off,option=stretch]
+\startxrow
+\startxcell \midaligned{\externalfigure[LombardStreet][page=1,scale=250]\externalfigure[LombardStreet][page=3,scale=250]\externalfigure[LombardStreet][page=5,scale=250]} \stopxcell
+\stopxrow
+\stopxtable
+
+### Figures
+
+Cash Flow Forecast projection graph:
+
+\placefigure[place]{Cash Flow Projection}{\externalfigure[cashflow][width=150mm]}
 
 \page[yes]
 
-\startcolor[red]\WORD{one page}\stopcolor
+\setuppapersize[A4,landscape][A4,landscape]
+\setuplayout[wide]
 
 ## Cash Flow Forecast
 
-* \color[darkgray]{Include a one page cash flow forecast setting out the proposed expenditure on the project.}
+NPS Intel Cash Flow Projection, starting date: \color[black]{\bf July 2016} \par
+Cash balance alert minimum: \color[black]{\bf £100,000} | Profit at the end of the year: \color[black]{\bf £117,376} \par
+
+\blank[line]
+
+\startalignment[center]
+\ssx
+\startxtable[option=stretch]
+\startxtablehead
+\startxrow[align=middle,background=color,backgroundcolor=darkgray,foregroundcolor=white,foregroundstyle=bold]
+\startxcell \stopxcell
+\startxcell Beginning \stopxcell
+\startxcell Jul-16 \stopxcell
+\startxcell Aug-16 \stopxcell
+\startxcell Sep-16 \stopxcell
+\startxcell Oct-16 \stopxcell
+\startxcell Nov-16 \stopxcell
+\startxcell Dec-16 \stopxcell
+\startxcell Jan-17 \stopxcell
+\startxcell Feb-17 \stopxcell
+\startxcell Mar-17 \stopxcell
+\startxcell Apr-17 \stopxcell
+\startxcell May-17 \stopxcell
+\startxcell Jun-17 \stopxcell
+\startxcell Total \stopxcell
+\stopxrow
+\stopxtablehead
+\startxrow[align=left,background=color,backgroundcolor=lightgray]
+\startxcell[background=none] \bf Cash on hand (beginning) \stopxcell
+\startxcell[background=none] £250,000 \stopxcell
+\startxcell £250,000 \stopxcell
+\startxcell £242,198 \stopxcell
+\startxcell £234,396 \stopxcell
+\startxcell £248,194 \stopxcell
+\startxcell £261,992 \stopxcell
+\startxcell £270,790 \stopxcell
+\startxcell £284,588 \stopxcell
+\startxcell £298,386 \stopxcell
+\startxcell £312,184 \stopxcell
+\startxcell £325,982 \stopxcell
+\startxcell £339,780 \stopxcell
+\startxcell £353,578 \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\stopxrow
+\startxrow[background=color,backgroundcolor=darkgray,foregroundcolor=white,foregroundstyle=bold]
+\startxcell[nx=15] \WORD{Cash receipts} \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Cash sales \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell 0 \stopxcell
+\startxcell 0 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £240,000 \stopxcell
+\stopxrow
+\startxrow[align=left,background=color,backgroundcolor=lightgray]
+\startxcell[background=none] \bf\WORD{Total cash receipts} \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell 0 \stopxcell
+\startxcell 0 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £240,000 \stopxcell
+\stopxrow
+\startxrow[align=left,background=color,backgroundcolor=lightgray]
+\startxcell[background=none] \bf Total cash available \stopxcell
+\startxcell £250,000 \stopxcell
+\startxcell £250,000 \stopxcell
+\startxcell £242,198 \stopxcell
+\startxcell £258,396 \stopxcell
+\startxcell £272,194 \stopxcell
+\startxcell £285,992 \stopxcell
+\startxcell £294,790 \stopxcell
+\startxcell £308,588 \stopxcell
+\startxcell £322,386 \stopxcell
+\startxcell £336,184 \stopxcell
+\startxcell £349,982 \stopxcell
+\startxcell £363,780 \stopxcell
+\startxcell £377,578 \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\stopxrow
+\startxrow[background=color,backgroundcolor=darkgray,foregroundcolor=white,foregroundstyle=bold]
+\startxcell[nx=15] \WORD{Cash paid out} \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Advertising \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £12,000 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Commissions and fees \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell £2,400 \stopxcell
+\startxcell £2,400 \stopxcell
+\startxcell £2,400 \stopxcell
+\startxcell £2,400 \stopxcell
+\startxcell £2,400 \stopxcell
+\startxcell £2,400 \stopxcell
+\startxcell £2,400 \stopxcell
+\startxcell £2,400 \stopxcell
+\startxcell £2,400 \stopxcell
+\startxcell £2,400 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £24,000 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Sub Contract - Cloud \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell £1,000 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £12,000 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Salaries \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell £4,000 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £48,000 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Internet and Telephone cost \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £1,200 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Bank Fees \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £1,200 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Managed office rent \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell £600 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £7,200 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Taxes and licenses \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell £552 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £6,624 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Travel \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £1,200 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Utilities \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell £50 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £600 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Licenses \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell £200 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £2,400 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Seminar Costs \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell £5,000 \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £5,000 \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Miscellaneous \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell £100 \stopxcell
+\startxcell[background=color,backgroundcolor=lightgray] £1,200 \stopxcell
+\stopxrow
+\startxrow[align=left,background=color,backgroundcolor=lightgray]
+\startxcell[background=none] \bf\WORD{Subtotal} \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £7,802 \stopxcell
+\startxcell £7,802 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £15,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £122,624 \stopxcell
+\stopxrow
+\startxrow[align=left,background=color,backgroundcolor=lightgray]
+\startxcell[background=none] \bf\WORD{Total cash paid out} \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell £7,802 \stopxcell
+\startxcell £7,802 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £15,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £10,202 \stopxcell
+\startxcell £122,624 \stopxcell
+\stopxrow
+\startxrow[align=left,background=color,backgroundcolor=lightgray]
+\startxcell[background=none] \bf Cash on hand (end) \stopxcell
+\startxcell £250,000 \stopxcell
+\startxcell £242,198 \stopxcell
+\startxcell £234,396 \stopxcell
+\startxcell £248,194 \stopxcell
+\startxcell £261,992 \stopxcell
+\startxcell £270,790 \stopxcell
+\startxcell £284,588 \stopxcell
+\startxcell £298,386 \stopxcell
+\startxcell £312,184 \stopxcell
+\startxcell £325,982 \stopxcell
+\startxcell £339,780 \stopxcell
+\startxcell £353,578 \stopxcell
+\startxcell £367,376 \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\stopxrow
+\startxrow[background=color,backgroundcolor=darkgray,foregroundcolor=white,foregroundstyle=bold]
+\startxcell[nx=15] \WORD{Other operating data} \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Sales volume (GBP) \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell 5 \stopxcell
+\startxcell 10 \stopxcell
+\startxcell 15 \stopxcell
+\startxcell 20 \stopxcell
+\startxcell 25 \stopxcell
+\startxcell 30 \stopxcell
+\startxcell 35 \stopxcell
+\startxcell 40 \stopxcell
+\startxcell 45 \stopxcell
+\startxcell 50 \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\stopxrow
+\startxrow[align=left]
+\startxcell Accounts receivable balance \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\startxcell 0 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell £24,000 \stopxcell
+\startxcell[background=color,backgroundcolor=gray] \stopxcell
+\stopxrow
+\stopxtable
+\stopalignment
 
 \page[yes]
+
+\setuplayout[reset]
+\setuppapersize[A4,portrait][A4,portrait]
 
 \startcolor[red]\WORD{one page only}\stopcolor
 
@@ -74,6 +577,17 @@ This must include the following subsections: {\bf A}, {\bf B} and {\bf C}. They 
 Work Breakdown Structure (WBS) for the project
 \stopcolor
 
+Stefan:
+"The WBS is a hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables. The WBS organizes and defines the total scope of the project, and represents the work specified in the current approved project scope statement." \cite[project2013guide]
+
+\blank[line]
+
+Figure \in[wbs] (page \at[wbs]) shows the work breakdown structure for the NPS Intel Group Cyber Security Intelligence project.
+
+\placefigure[place][wbs]{WBS}{\externalfigure[WBS][width=175mm]}
+
+http://wiki.contextgarden.net/Flow_Charts
+
 \page[yes]
 
 \startcolor[red]\WORD{one page only}\stopcolor
@@ -88,6 +602,9 @@ Task List for the project. This must be all the tasks taken from the WBS.
 * \color[darkgray]{This Task List must not be a printout from MS Project but a document in its own right.}
 
 \page[yes]
+
+\setuppapersize[A4,landscape][A4,landscape]
+\setuplayout[wide]
 
 \startcolor[red]\WORD{one or two pages only}\stopcolor
 
@@ -128,6 +645,9 @@ Gantt chart taken from MS Project. This should include all the tasks taken from 
 
 \page[yes]
 
+\setuplayout[reset]
+\setuppapersize[A4,portrait][A4,portrait]
+
 \startcolor[red]\WORD{one page only}\stopcolor
 
 # Physical Resources
@@ -139,6 +659,24 @@ For each item you need to identify and justify its estimated purchase cost; the 
 
 Details of equipment or other physical resources that will be needed by your project team. 'No physical resources' is not acceptable.
 \stopcolor
+
+Adam:
+The following list of physical resources are needed for the NPS Intel project in order to deliver the presented business:
+Equipment or other physical resources needed by the project team
+Item, Purchase costs (EST), source
+* Develop
+Workstations, £200, within the uni
+Screens
+* Test/Deploy
+Servers, £5000, HP (contractual arrangements)
+* Office/Furniture
+Desk
+Chair
+IP Phone
+* Marketing
+Advertising Banners
+Utilities?
+Cost breakdown, See section 2
 
 \page[yes]
 
@@ -162,6 +700,17 @@ Include a Job Description and Person Specification for the administrator post th
 Detailed support for an additional person who must be recruited to deal with all the administration – including keeping detailed, auditable records.
 \stopcolor
 
+Adam:
+**Organisational Structure**
+CIO
+PM (project delivery) | DEV (app development) | Managers | Admin
+**Job Description**
+Administrator Post:
+Person Specification:
+**Support**
+Person for records: additional resource
+Total of X resources
+
 \page[yes]
 
 # Risk Assessment
@@ -169,6 +718,17 @@ Detailed support for an additional person who must be recruited to deal with all
 \startcolor[darkgray]
 Include a Risk Assessment for the proposed project discussing the {\bf risk factors} you can identify which may prevent successful completion of the project within time and the set budget (i.e. possible problems over staff, resources, subcontracting of tasks, etc). Include any {\bf contingency planning} that may be required.
 \stopcolor
+
+Adam:
+There is a risk that the project will...
+Risk Factors:
+Budget constrains
+Supply chain
+People (Developers)
+Sickness
+Outsourcing/Contracting
+Contingency Planning
+Recruit Students for internships?
 
 ## Risk Factors
 
@@ -178,48 +738,110 @@ Include a Risk Assessment for the proposed project discussing the {\bf risk fact
 
 # References
 
-\placepublications[criterium=text] \par
+\color[black]{\tfx\placepublications[criterium=text]} \par
 
 # Bibliography
 
-\placepublications[criterium=all] \par
+\color[black]{\tfx\placepublications[criterium=all]} \par
 
 \page[yes]
 
 # Group Management
 
-\startcolor[darkgray]
-In addition to the above report for NPS you need to provide information on how your group planned and organised this part of the assignment.
-\stopcolor
+The group 'Mitnick' was formed by three fellow Cyber Security MSc students Adam, Rafael and Stefan.
+Based on the previous group project, the assignment was divided into equal parts, taking the specialities of each individual into account.
+The following sections are showing the details and collaborative efforts of this group, giving evidence on the planning and execution of the work.
 
 ## Organisation
 
-\startcolor[darkgray]
-Provide information about the organisation of the academic project to produce this assignment.
-\stopcolor
+To produce the group assignment it has been concluded that the alignment to the PMI guidelines (PMBOK) was the most beneficial.
+Taking the requirements of the scope and time into account, the organisation of the academic work consisted of meetings to decide the work breakdown, decisions on the collaborative efforts and the construction of the document based on the individual parts.
+
+\blank[line]
+
+For this, the group met in person on Saturday 2nd of July at Pizza Union.
+Further communcation channels included voice over IP calls (Skype) and instand messaging (WhatsApp group) for the coordination.
+
+\blank[line]
+
+All work on the written assignment has been authored on collaborative platforms (PiratePad) for concurrent editing and version control.
+Decisions have been made unanimously on the devision of the sections for equal distribution, but ultimately the work was carried out by all participants within the group on all parts of the academic document.
 
 ## Code of Conduct
 
-\startcolor[darkgray]
-Included in your group management documents must be your Code of Conduct.
-\stopcolor
+Comparing code of conduct rules from established institutions and communities the group agreed upon and relied on the widely accepted guidelnes by the Apache Foundation.
+
+\blank[line]
+
+The overview of the main points of the guidelines:
+
+* Openness towards the participants
+* Welcoming and friendly intentions inside the group
+* Collaboration on the work
+* Inquisitive with each other
+* Careful of words with the interactions
+* Concise in conversations
+
+The full code can be found at: \color[black]{\goto{http://apache.org/foundation/policies/conduct.html}[url(http://apache.org/foundation/policies/conduct.html)]} \par
 
 ## Report
 
-\startcolor[darkgray]
-You must also have a report of which group members contributed to which elements of the submitted documents.
-\stopcolor
+This section shows the breakdown of the agreed ownership and contributions of each member of the group.
 
-* Rafael Narezzi: Section 1,2
-* Stefan Fernandes: Section 3
-* Adam Reviczky: Section 4,5,6
+\blank[halfline]
+
+Accountable are for the following elements:
+
+\blank[halfline]
+
+\midaligned{
+\startxtable
+\startxrow
+\startxcell {\bf Section 1, 2}: Rafael Narezzi \stopxcell
+\startxcell {\bf Section 3}: Stefan Fernandes \stopxcell
+\startxcell {\bf Section 4, 5, 6}: Adam Reviczky \stopxcell
+\stopxrow
+\stopxtable
+}
 
 ## Project Plan
 
-\startcolor[darkgray]
-It could also contain a project plan for the assignment, minutes of meetings, action lists, etc.
-\stopcolor
+The project plan for the assignment 1B of the group 'Mitnick' consist of the following topics within the project execution pase:
+
+* \color[black]{\bf Project Scope}: Assignment 1B of Module 5, all parts by all group members
+* \color[black]{\bf Project Requirements}: Blackboard space, IS0749 Assignment 2016-17 Jun start (Part B)
+* \color[black]{\bf Project Schedule}: Submission by midnight Saturday, 9 July
+* \color[black]{\bf Resources}: Group members consisting of Adam, Rafael, Stefan
+* \color[black]{\bf Stakeholders}: Group 'Mitnick' and Northumbria University
+* \color[black]{\bf Communications}: Real-time communication platform via the WhatsApp group
 
 ### Assignment Plan
 
+Rafael to submit \color[black]{\it "Introduction"} by Tuesday, 5 July \par
+Rafael to submit \color[black]{\it "Cash Flow"} by Wednesday, 6 July \par
+
+\blank[line]
+
+Stefan to submit \color[black]{\it "Work Breakdown Structure (WBS)"} by Wednesday, 6 July \par
+Stefan to submit \color[black]{\it "Task List"} by Thursday, 7 July \par
+
+\blank[line]
+
+Adam to submit \color[black]{\it "Physical Resources"} by Tuesday, 5 July \par
+Adam to submit \color[black]{\it "Human Resources"} by Wednesday, 6 July \par
+Adam to submit \color[black]{\it "Risk Assessment"} by Thursday, 7 July \par
+
 ### Minutes/Actions
+
+\color[black]{\bf Location}: \color[black]{\it Pizza Union (25 Sandy's Row, London E1 7HW)} \crlf
+\color[black]{\bf Date/Time}: \color[black]{\it 02/07/2016, 13:00 (UTC+1)} \crlf
+\color[black]{\bf Attendees}: \color[black]{\it Adam Reviczky; Rafael Narezzi; Stefan Fernandes}
+
+* Agreement on the distribution of the work, inclusive stakeholder distribution \crlf
+\startcolor[darkred]\bf\WORD{Actions}: Rafael writing draft for part 1 \& 2 and Stefan writing draft for part 3 and Adam writing draft for part 4 \& 5 \& 6 by Friday, 8 July \stopcolor
+* Research on the business and coming up with a name to kick-start the project \crlf
+\startcolor[darkred]\bf\WORD{Actions}: Collectively agreeing on a business name and Stefan to research on literature review about cyber security \stopcolor
+* Establish communication channels for the coordination of the group work \crlf
+\startcolor[darkred]\bf\WORD{Actions}: Rafael to create a WhatsApp group and invite all group member, taking chair and being in charge for organising meetings \stopcolor
+* Document processing and initialising the platform for the collaborative editing of the report \crlf
+\startcolor[darkred]\bf\WORD{Actions}: Adam to write up the group management and typeset a skeleton for the academic report 1B \stopcolor
