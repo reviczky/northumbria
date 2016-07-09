@@ -952,44 +952,61 @@ Figure \in[wbs] shows the work breakdown structure for the total scope of NPS In
 
 # Physical Resources
 
-List of physical resources required/Items:
+Various equipment and physical resources are needed for the NPS Intel project in order to deliver the project on the proposed time scale. \par
 
-* all assets, purchase costs, expected source
-* staff, purchase costs, expected source
-* equipment, purchase costs, expected source
-* physical resources that is needed ('No physical resources' is not acceptable)
-(if sourced from inside the university they will expect to be reimbursed by the project; if sourced from outside the university you need to indicate the contractual arrangements)
-See section 2
+"Such resources may include financial resources, inventory, labor skills, production resources, or information technology." \cite[van2013handbook] \par
 
-The following list of physical resources are needed for the NPS Intel project in order to deliver the presented business:
-Equipment or other physical resources needed by the project team
-Item, Purchase costs (EST), source
-* Develop
-Workstations, £200, within the uni
-Screens
-* Test/Deploy
-Servers, £5000, HP (contractual arrangements)
-* Office/Furniture
-Desk
-Chair
-IP Phone
-* Marketing
-Advertising Banners
-Utilities?
-Cost breakdown, See section 2
+\blank[line]
+
+The following list of physical resources that is required is a detailed list from the cash flow in \in[section:finance] concerning physical items:
+
+## All Physical Assets
+
+* \startcolor[black]\it Physical staff (including permanent staff, contractors in-house and out-sourced, consultants, vendor representation and service provider staff) \stopcolor \crlf
+\startcolor[orange] \bf Purchase costs: Estimated salaries £48,000 per annum \stopcolor \crlf
+\startcolor[purple] \bf Expected source: Direct hiring, vendors (contract with HPE for 12 month), consulting companies (Deloitte, KPMG) and student interns (Northumbria University) \stopcolor
+* \startcolor[black]\it Marketing materials (advertising banners, leaflets) \stopcolor \crlf
+\startcolor[orange] \bf Purchase costs: £1,000 from the overall £12,000 marketing budget per annum \stopcolor \crlf
+\startcolor[purple] \bf Expected source: Stationary contract with Ryman and using university facilities for printing (pay per use) \stopcolor
+* \startcolor[black]\it Build Servers for all in-house infrastructure \stopcolor \crlf
+\startcolor[orange] \bf Purchase costs: One off CapEx cost of £5,000 (HPE contract for blade servers) \stopcolor \crlf
+\startcolor[purple] \bf Expected source: Buying online directly from the vendor. \stopcolor
+* \startcolor[black]\it IP phones (excluding contract) \stopcolor \crlf
+\startcolor[orange] \bf Purchase costs: expected amount £600 (part of the running costs from the telephone budget of £1,200) \stopcolor \crlf
+\startcolor[purple] \bf Expected source: Contract for the lease of Avaya IP phones as part of the overall telephone contract for a 12 month period. \stopcolor
+* \startcolor[black]\it Utilities (including workstations, tables, desks, chairs, lamps, whiteboards, flip charts, projectors, screens, scanners and printers, shredders) \stopcolor \crlf
+\startcolor[orange] \bf Purchase costs: £600 per annum from the utilities budget. \stopcolor \crlf
+\startcolor[purple] \bf Expected source: Reimbursement fee for Northumbria University using university equipment and stationary. \stopcolor
+* \startcolor[black]\it Tools and Materials (Design, Build, Test) \stopcolor \crlf
+\startcolor[orange] \bf Purchase costs: Minimal (taken from the misc budget) \stopcolor \crlf
+\startcolor[purple] \bf Expected source: Investigating resources from past project within the university. \stopcolor
+* \startcolor[black]\it Accommodation and rooms (workshops, meetings and presentations) \stopcolor \crlf
+\startcolor[orange] \bf Purchase costs: Minimal (taken from the misc budget) for occupying vacant rooms at the university \stopcolor \crlf
+\startcolor[purple] \bf Expected source: Cleaning up after usage and nominal fee for university. No contract needed. \stopcolor
+
+For a cost breakdown within the project, see the cash flow forecast on page \at[section:finance]. \par
 
 \page[yes]
 
-\startcolor[red]\WORD{maximum one additional page}\stopcolor
-
 ## Supporting Text
 
-* Deloitte price for contracting
-* KPMG
+These are the supporting material for justifying the physical assets based on decisions made by comparing and selecting solutions for the project. \par
 
-\startcolor[darkgray]
-Additional supporting text should be included that justifies, with evidence, the decisions made on sourcing these physical resources.
-\stopcolor
+### Quotes from Vendors
+
+\placefigure[place]{HPE blade server}{\externalfigure[HPE][width=120mm]}
+
+\placefigure[place]{Northumbria University}{\externalfigure[http://northumbria.prospects.ac.uk/images/operator/347737/JOL Logo Header jpg.jpg][width=120mm]}
+
+### Consulting Firms to be considered
+
+* Deloitte Cyber Security and Cyber Risk consulting
+
+\startcolor[black]\tfx\goto{http://www2.deloitte.com/us/en/pages/risk/solutions/cyber-risk-services.html}[url(http://www2.deloitte.com/us/en/pages/risk/solutions/cyber-risk-services.html)]\stopcolor
+
+* KPMG Cyber Security
+
+\startcolor[black]\tfx\goto{https://home.kpmg.com/xx/en/home/services/advisory/risk-consulting/it-advisory-services/cyber-security.html}[url(https://home.kpmg.com/xx/en/home/services/advisory/risk-consulting/it-advisory-services/cyber-security.html)]\stopcolor
 
 \page[yes]
 
