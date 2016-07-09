@@ -1032,7 +1032,7 @@ This opportunity will provide the candidate the ability to work within a fast pa
 Skills Required:
 
 * Meticulous attention to detail
-* Highly organised and Methodical
+* Highly organised and methodical
 * Excellent interpersonal skills and able to deal effectively with internal and external stakeholders
 * Able to work to tight time scales and under pressure
 * Excellent reporting skills
