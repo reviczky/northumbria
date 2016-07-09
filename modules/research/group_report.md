@@ -1038,24 +1038,43 @@ Work closely with Project Managers and stakeholders to ensure the delivery of ad
 
 # Risk Assessment
 
-\startcolor[darkgray]
-Include a Risk Assessment for the proposed project discussing the {\bf risk factors} you can identify which may prevent successful completion of the project within time and the set budget (i.e. possible problems over staff, resources, subcontracting of tasks, etc). Include any {\bf contingency planning} that may be required.
-\stopcolor
+There is a risk that the project will be impacted on the scope of time and budget with certain scenarios that are impacting the project directly or indirectly. These factors consist of Political, Economic, Social, Technological, Environmental or Legal nature. \par
 
-Adam:
-There is a risk that the project will...
-Risk Factors:
-Budget constrains
-Supply chain
-People (Developers)
-Sickness
-Outsourcing/Contracting
-Contingency Planning
-Recruit Students for internships?
+\blank[line]
 
-## Risk Factors
+In order to have a plan and be prepared to act on these circumstances that are affecting the successful completion of the project, the most likely or most impactful risk factors are singled out in the list below, based on the PESTEL Framework. \par
 
-## Contingency Planning
+\placefigure[place]{PESTEL, © by Profession Alacademy}{\externalfigure[http://www.professionalacademy.com/media/images-news/PESTEL-Analysis.jpg][width=50mm]}
+
+## Risk Factors & Contingency Planning
+
+The following risk factors could pose a high risk and potentially be a problem for the completion of the tasks and with that the entire project. \par
+
+\blank[line]
+
+\startcolumns[n=2]
+\startitemize[joindup,nowhite]
+\WORD{\ss Political}
+\item Brexit (political uncertainty, market volatility, new trade deals) \crlf \color[black]{\it\bf Contingency Planning: Moving HQ and Datacentre back to EU.}
+\blank[line] \WORD{\ss Economic}
+\item Weak GBP (exchange rate to EUR) could affect the project subscriptions
+\item GDP decrease (inflation), less trade and income
+\item Competition (better product)
+\item People, Staff and Resources (skillset, understaffed, sickness) in the cyber domain
+\item Budget constrains (over budget)
+\item Sub-Contracting (out-sourcing) of tasks
+\item Supply chain (delays) \crlf \color[black]{\it\bf Contingency Planning: Multiple vendors, Recruiting NSU students for internships, use of open source software}
+\blank[line] \WORD{\ss Social} \crlf
+\item Culture (communication, attitude)
+\item Cyber Security (phishing) \crlf \color[black]{\it\bf Contingency Planning: Increase security Awareness}
+\blank[line] \WORD{\ss Technological} \crlf
+\item Emerging technologies (SME) \crlf \color[black]{\it\bf Contingency Planning: Partnership with start-ups}
+\blank[line] \WORD{\ss Environmental} \crlf
+\item Terror and Weather (ash-cloud) \crlf \color[black]{\it\bf Contingency Planning: Good DR facilities and BR plans}
+\blank[line] \WORD{\ss Legal} \crlf
+\item Data Protection (GDPR), Safe Harbor \crlf \color[black]{\it\bf Contingency Planning: Adhere to strictest legislations, seek legal advice }
+\stopitemize
+\stopcolumns
 
 \page[yes]
 
