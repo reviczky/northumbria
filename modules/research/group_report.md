@@ -1119,7 +1119,7 @@ Taking the requirements of the scope and time into account, the organisation of 
 
 \blank[line]
 
-For this, the group met in person on Saturday 2nd of July at Pizza Union.
+For this, the group met in person on Saturday 2\high{nd} of July at Pizza Union.
 Further communication channels included voice over IP calls (Skype) and instant messaging (WhatsApp group) for the coordination.
 
 \blank[line]
