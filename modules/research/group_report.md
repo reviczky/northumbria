@@ -1,50 +1,50 @@
 # Introduction \reference[section:intro]{Section 1}
 
-NPS Intel group is an entity that is actively involved in the ongoing cyber security Warfare on a global scale. As the role of the internet in the business world continues to grow, this company is bound to increase its global significance. In the recent past, the group has positioned a great idea, where business organizations can be able to share cyber security incidents within their operations without the need of being identified or providing information about their business name when highlighting any incidents or threats.
+NPS Intel group is an entity that is actively involved in the ongoing cyber security Warfare on a global scale. As the role of the internet in the business world continues to grow, this company is bound to increase its global significance. In the recent past, the group has positioned a great idea, where business organisations can be able to share cyber security incidents within their operations without the need of being identified or providing information about their business name when highlighting any incidents or threats.
 
 ## General Overview
 
-The proposed consultancy will focus on providing a platform that will enable business organizations to make claims or incidents any time and anywhere, allowing businesses to share critical intelligence.
+The proposed consultancy will focus on providing a platform that will enable business organisations to make claims or incidents any time and anywhere, allowing businesses to share critical intelligence.
 This will be essential in the process of predicting and getting more pragmatic against potentially new cybersecurity threats/incidents.
 
-### Project abstract
+### Project Abstract
 
-NPS Intel is a business proposal for anonymous intelligence sharing between corporations. It provides the means for enterprises to share and collect threats from the cyber space in order to pro-actively assess and secure their environment from potential attacks. \par
+NPS Intel is a business proposal for anonymous intelligence sharing between corporations. It provides the means for enterprises to share and collect threats from cyber space to pro-actively assess and secure their environment from potential attacks. \par
 
-### Reasons for the work
+### Reasons for the Work
 
 Preventing cyber attacks is a matter of sharing information \cite[nc20] about existing and possible threats \cite[nc19]. \par
-In this regard, business organizations and governmental institutions must be provided with technology that allows for sufficient and effective information sharing and ultimately provide a better analysis and safer defence systems. \par
+In this regard, business organisations and governmental institutions must be provided with technology that allows for sufficient and effective information sharing and ultimately provide a better analysis and safer defence systems. \par
 
 \blank[line]
 
-Individuals and organizations that are involved in cyber crime activities are very well organised. Therefore, business organizations must be capable of keeping their systems vigilant against potential threats. \par
+Individuals and organisations that are involved in cybercrime activities are very well organised. Therefore, business organisations must be capable of keeping their systems vigilant against potential threats. \par
 The application will enable businesses to combat cyber attacks effectively as well as learn from one another without necessarily knowing each other. The software application is centred on promoting high levels of anonymity with the involved parties during information sharing. \par
 
 \blank[line]
 
 Although there are already offerings available for intelligence gathering and sharing, this is a different approach by combining anonymity and intelligence as a service. \par
 
-### Project aims and deliverables
+### Project Aims and Deliverables
 
-The application will offer an easy to use and most importantly safe to use tool for information sharing while protecting organizational critical data. \par
+The application will offer an easy to use and most importantly safe to use tool for information sharing while protecting critical data. \par
 By promoting a safe way of sharing this critical information related to cyber security, business entities as well as governments will better equipped to cultivate a safer business environment. \par
 
 \blank[line]
 
 Moreover, the application includes a web dashboard, where one will be able to see all threats in real time during an incident. \par
-It will be able to present information regarding the approach adopted in breaching existing cyber security protocols with a detailed analysis of each individual event. \par
+It will be able to present information regarding the approach adopted in breaching existing cyber security protocols with a detailed analysis of each event. \par
 
 \blank[line]
 
 With this information, each business or individual could be in a position to initiate a tag system presented inside of the application that provides alerts on security issues that are relevant to each individual's business operations. \par
-Our consultancy group will review and analyse the collected data and hence provide the clients with access to information that is necessary in maintaining their cyber security. However, the client must pay for the subscription module of our intelligence analysis. \par
+Our consultancy group will review and analyse the collected data and hence provide the clients with access to information that is necessary for maintaining their cyber security. However, the client must pay for the subscription module of our intelligence analysis. \par
 
 \blank[line]
 
 The group would use the best approach to make the submission easy and confidential. Each submission will then be analysed and published, where subscribed clients could see the information to assist them in dealing with security issues in their businesses. \par
 
-### Project cost and length
+### Project Cost and Length
 
 The project costs for NPS Intel are set out with an upper limit of £250,000 budget inclusive all expenditures. \par
 
@@ -52,7 +52,7 @@ The project costs for NPS Intel are set out with an upper limit of £250,000 bud
 
 Based on prior experience and looking at the knowledge portal for lessons learned we set out to finish the proposed project within 12 months. \par
 
-### Project location(s)
+### Project Location(s)
 
 The main location for the project will be in London (United Kingdom) with the business using a global cloud base solution. \par
 
@@ -60,13 +60,13 @@ The main location for the project will be in London (United Kingdom) with the bu
 
 The strategic reason behind that is to find the appropriate talent within the field of cyber security and cyber warefare in order successfully deliver the product. \par
 
-### Incentive effect of grant
+### Incentive Effect of Grant
 
-The effectiveness of our application will be rooted to its ability to apply real case scenarios where the real threats and their effects will be applied in developing cyber threats preventative capabilities in business organizations. \par
+The effectiveness of our application will be rooted to its ability to apply real case scenarios where the real threats and their effects will be applied in developing cyber threats preventative capabilities in business organisations. \par
 
 \blank[line]
 
-As this project requires specialised resources at high costs and building the infrastructure and development around them would be expensive, there lack of the grant would not allow the group the provide the tool that is required to offer the specialised service. \par
+As this project requires specialised resources at high costs, building the infrastructure and expensive development, their lack of the grant would not allow the group the provide the tool that is required to offer the specialised service. \par
 
 \blank[line]
 
@@ -82,7 +82,7 @@ The following lays out the financial plan for NPS Intel.
 
 Expenditures for NPS Intel:
 
-* \color[black]{\bf Rental} – Wework offers a flexible and cheap option for our group, with a rental at £600 per month (see \color[black]{\in[section:intro]}). This includes all necessary support for the company in a function of premises.
+* \color[black]{\bf Rental} – Wework offers a flexible and cheap option for our group, with a rental at £600 per month (see \color[black]{\in[section:intro]}). This includes all necessary support for the company in a premises function.
 
 \placefigure[place]{Wework}{
 \startxtable[frame=off,columndistance=5mm,option=stretch,align={lohi}]
@@ -917,8 +917,8 @@ Figure \in[wbs] shows the work breakdown structure for the total scope of NPS In
 \placefigure[place]{Microsoft Project Gantt chart}{
 \startgantt[xunitlength=10mm,style=\ssx,titlestyle=\ssx,drawledgerline=true]{23}{13}
 \startganttitle
-\titleelement{2015}{7}
-\titleelement{2016}{6}
+\titleelement{2016}{7}
+\titleelement{2017}{6}
 \stopganttitle
 \startganttitle
 \numtitle{6}{1}{12}{1}
@@ -963,26 +963,26 @@ The following list of physical resources that is required is a detailed list fro
 ## All Physical Assets
 
 * \startcolor[black]\it Physical staff (including permanent staff, contractors in-house and out-sourced, consultants, vendor representation and service provider staff) \stopcolor \crlf
-\startcolor[orange] \bf Purchase costs: Estimated salaries £48,000 per annum \stopcolor \crlf
-\startcolor[purple] \bf Expected source: Direct hiring, vendors (contract with HPE for 12 month), consulting companies (Deloitte, KPMG) and student interns (Northumbria University) \stopcolor
+\startcolor[brown] \bf Purchase costs: Estimated salaries £48,000 per annum \stopcolor \crlf
+\startcolor[midnightblue] \bf Expected source: Direct hiring, vendors (contract with HPE for 12 month), consulting companies (Deloitte, KPMG) and student interns (Northumbria University) \stopcolor
 * \startcolor[black]\it Marketing materials (advertising banners, leaflets) \stopcolor \crlf
-\startcolor[orange] \bf Purchase costs: £1,000 from the overall £12,000 marketing budget per annum \stopcolor \crlf
-\startcolor[purple] \bf Expected source: Stationary contract with Ryman and using university facilities for printing (pay per use) \stopcolor
+\startcolor[brown] \bf Purchase costs: £1,000 from the overall £12,000 marketing budget per annum \stopcolor \crlf
+\startcolor[midnightblue] \bf Expected source: Stationary contract with Ryman and using university facilities for printing (pay per use) \stopcolor
 * \startcolor[black]\it Build Servers for all in-house infrastructure \stopcolor \crlf
-\startcolor[orange] \bf Purchase costs: One off CapEx cost of £5,000 (HPE contract for blade servers) \stopcolor \crlf
-\startcolor[purple] \bf Expected source: Buying online directly from the vendor. \stopcolor
+\startcolor[brown] \bf Purchase costs: One off CapEx cost of £5,000 (HPE contract for blade servers) \stopcolor \crlf
+\startcolor[midnightblue] \bf Expected source: Buying online directly from the vendor. \stopcolor
 * \startcolor[black]\it IP phones (excluding contract) \stopcolor \crlf
-\startcolor[orange] \bf Purchase costs: expected amount £600 (part of the running costs from the telephone budget of £1,200) \stopcolor \crlf
-\startcolor[purple] \bf Expected source: Contract for the lease of Avaya IP phones as part of the overall telephone contract for a 12 month period. \stopcolor
+\startcolor[brown] \bf Purchase costs: expected amount £600 (part of the running costs from the telephone budget of £1,200) \stopcolor \crlf
+\startcolor[midnightblue] \bf Expected source: Contract for the lease of Avaya IP phones as part of the overall telephone contract for a 12 month period. \stopcolor
 * \startcolor[black]\it Utilities (including workstations, tables, desks, chairs, lamps, whiteboards, flip charts, projectors, screens, scanners and printers, shredders) \stopcolor \crlf
-\startcolor[orange] \bf Purchase costs: £600 per annum from the utilities budget. \stopcolor \crlf
-\startcolor[purple] \bf Expected source: Reimbursement fee for Northumbria University using university equipment and stationary. \stopcolor
+\startcolor[brown] \bf Purchase costs: £600 per annum from the utilities budget. \stopcolor \crlf
+\startcolor[midnightblue] \bf Expected source: Reimbursement fee for Northumbria University using university equipment and stationary. \stopcolor
 * \startcolor[black]\it Tools and Materials (Design, Build, Test) \stopcolor \crlf
-\startcolor[orange] \bf Purchase costs: Minimal (taken from the misc budget) \stopcolor \crlf
-\startcolor[purple] \bf Expected source: Investigating resources from past project within the university. \stopcolor
+\startcolor[brown] \bf Purchase costs: Minimal (taken from the misc budget) \stopcolor \crlf
+\startcolor[midnightblue] \bf Expected source: Investigating resources from past project within the university. \stopcolor
 * \startcolor[black]\it Accommodation and rooms (workshops, meetings and presentations) \stopcolor \crlf
-\startcolor[orange] \bf Purchase costs: Minimal (taken from the misc budget) for occupying vacant rooms at the university \stopcolor \crlf
-\startcolor[purple] \bf Expected source: Cleaning up after usage and nominal fee for university. No contract needed. \stopcolor
+\startcolor[brown] \bf Purchase costs: Minimal (taken from the misc budget) for occupying vacant rooms at the university \stopcolor \crlf
+\startcolor[midnightblue] \bf Expected source: Cleaning up after usage and nominal fee for university. No contract needed. \stopcolor
 
 For a cost breakdown within the project, see the cash flow forecast on page \at[section:finance]. \par
 
@@ -1079,7 +1079,7 @@ The following risk factors could pose a high risk and potentially be a problem f
 \item GDP decrease (inflation), less trade and income
 \item Competition (better product)
 \item People, Staff and Resources (skill set, understaffed, sickness) in the cyber domain
-\item Budget constrains (over budget)
+\item Budget constraints (over budget)
 \item Sub-Contracting (out-sourcing) of tasks
 \item Supply chain (delays) \crlf \color[black]{\it\bf Contingency Planning: Multiple vendors, Recruiting NSU students for internships, use of open source software}
 \blank[line] \WORD{\ss Social} \crlf
@@ -1125,7 +1125,7 @@ Further communication channels included voice over IP calls (Skype) and instant 
 \blank[line]
 
 All work on the written assignment has been authored on collaborative platforms (PiratePad) for concurrent editing and version control.
-Decisions have been made unanimously on the devision of the sections for equal distribution, but ultimately the work was carried out by all participants within the group on all parts of the academic document.
+Decisions have been made unanimously on the decision of the sections for equal distribution, but ultimately the work was carried out by all participants within the group on all parts of the academic document.
 
 ## Code of Conduct
 
@@ -1203,5 +1203,5 @@ Adam to submit \color[black]{\it "Risk Assessment"} by Thursday, 7 July \par
 \startcolor[darkred]\bf\WORD{Actions}: Collectively agreeing on a business name and Stefan to research on literature review about cyber security \stopcolor
 * Establish communication channels for the coordination of the group work \crlf
 \startcolor[darkred]\bf\WORD{Actions}: Rafael to create a WhatsApp group and invite all group member, taking chair and being in charge for organising meetings \stopcolor
-* Document processing and initialising the platform for the collaborative editing of the report \crlf
+* Document processing and initializing the platform for the collaborative editing of the report \crlf
 \startcolor[darkred]\bf\WORD{Actions}: Adam to write up the group management and typeset a skeleton for the academic report 1B \stopcolor
