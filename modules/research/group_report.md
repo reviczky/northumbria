@@ -1,44 +1,44 @@
 # Introduction \reference[section:intro]{Section 1}
 
-NPS Intel group is an entity that is actively involved in the ongoing Cybersecurity Warfare on a global scale. As the role of the internet in the business world continues to grow, this company is bound to increase its global significance. In the recent past, the group has positioned a great idea, where business organizations can be able to share cybersecurity incidents within their operations without the need of being identified or providing information about their business name when highlighting any incidents or threats.
+NPS Intel group is an entity that is actively involved in the ongoing cyber security Warfare on a global scale. As the role of the internet in the business world continues to grow, this company is bound to increase its global significance. In the recent past, the group has positioned a great idea, where business organizations can be able to share cyber security incidents within their operations without the need of being identified or providing information about their business name when highlighting any incidents or threats.
 
 ## General Overview
 
-The proposed consultancy will focus on providing a platform that will enable business organizations to make claims or incidents anytime and anywhere, allowing businesses to share critical intelligence.
+The proposed consultancy will focus on providing a platform that will enable business organizations to make claims or incidents any time and anywhere, allowing businesses to share critical intelligence.
 This will be essential in the process of predicting and getting more pragmatic against potentially new cybersecurity threats/incidents.
 
 ### Project abstract
 
-NPS Intel is a business proposal for anonym intelligence sharing between corporations. It provides the means for enterprises to share and collect threats from the cyber space in order to pro-actively assess and secure their environment from potential attacks. \par
+NPS Intel is a business proposal for anonymous intelligence sharing between corporations. It provides the means for enterprises to share and collect threats from the cyber space in order to pro-actively assess and secure their environment from potential attacks. \par
 
 ### Reasons for the work
 
-Preventing cyberattacks is a matter of sharing information \cite[nc20] about existing and possible threats \cite[nc19]. \par
+Preventing cyber attacks is a matter of sharing information \cite[nc20] about existing and possible threats \cite[nc19]. \par
 In this regard, business organizations and governmental institutions must be provided with technology that allows for sufficient and effective information sharing and ultimately provide a better analysis and safer defence systems. \par
 
 \blank[line]
 
-Individuals and organizations that are involved in Cybercrime activities are very well organised. Therefore, business organizations must be capable of keeping their systems vigilant against potential threats. \par
-The application will enable businesses to combat cyber attacks effectively as well as learn from one another without necessarily knowing each other. The software application is centered on promoting high levels of anonymity with the involved parties during information sharing. \par
+Individuals and organizations that are involved in cyber crime activities are very well organised. Therefore, business organizations must be capable of keeping their systems vigilant against potential threats. \par
+The application will enable businesses to combat cyber attacks effectively as well as learn from one another without necessarily knowing each other. The software application is centred on promoting high levels of anonymity with the involved parties during information sharing. \par
 
 \blank[line]
 
-Although there are already offerings available for intelligence gathering an sharing, this is a different approach by combining anonymity and intellience as a service. \par
+Although there are already offerings available for intelligence gathering and sharing, this is a different approach by combining anonymity and intelligence as a service. \par
 
 ### Project aims and deliverables
 
 The application will offer an easy to use and most importantly safe to use tool for information sharing while protecting organizational critical data. \par
-By promoting a safe way of sharing this critical information related to cybersecurity, business entities as well as governments will better equipped to cultivate a safer business environment. \par
+By promoting a safe way of sharing this critical information related to cyber security, business entities as well as governments will better equipped to cultivate a safer business environment. \par
 
 \blank[line]
 
 Moreover, the application includes a web dashboard, where one will be able to see all threats in real time during an incident. \par
-It will be able to present information regarding the approach adopted in breaching existing cybersecurity protocols with a detailed analysis of each individual event. \par
+It will be able to present information regarding the approach adopted in breaching existing cyber security protocols with a detailed analysis of each individual event. \par
 
 \blank[line]
 
 With this information, each business or individual could be in a position to initiate a tag system presented inside of the application that provides alerts on security issues that are relevant to each individual's business operations. \par
-Our consultancy group will review and analyse the collected data and hence provide the clients with access to information that is necessary in maintaining their cybersecurity. However, the client must pay for the subscription module of our intelligence analysis. \par
+Our consultancy group will review and analyse the collected data and hence provide the clients with access to information that is necessary in maintaining their cyber security. However, the client must pay for the subscription module of our intelligence analysis. \par
 
 \blank[line]
 
@@ -50,7 +50,7 @@ The project costs for NPS Intel are set out with an upper limit of £250,000 bud
 
 \blank[line]
 
-Based on prior experience and looking at the knowledge portal for lessions learned we set out to finish the proposed project within 12 months. \par
+Based on prior experience and looking at the knowledge portal for lessons learned we set out to finish the proposed project within 12 months. \par
 
 ### Project location(s)
 
@@ -107,7 +107,7 @@ Desks: £325/mo \par
 The proposal is to cap 10% on the commission only basis.
 
 * \color[black]{\bf Salaries} – Salaries is running an upper limit of £1,000 per month in the first year and increasing to £2,000 the following year, where our number forecast is to be higher than the first running year. We have 3 IT Cyber Consultants and 1 outsourced financial contractor to follow with the business diligence.
-* Marketing is a high cost in comparison and we are working with Barebone Agency, a sub-contractor in the field, to make all necessary publicity from the Social Media (B2B) Linkedin and manage the Brand to achieve the best results. The sales are dependent on an aggressive investment from the marketing to push the sale.
+* Marketing is a high cost in comparison and we are working with Barebone Agency, a sub-contractor in the field, to make all necessary publicity from the Social Media (B2B) LinkedIn and manage the Brand to achieve the best results. The sales are dependent on an aggressive investment from the marketing to push the sale.
 * Infrastructure costs are our products running cost. The entire product catalogue is put into the cloud through our strategic supplier Lumminet, who is a partner of Equinix, one of the biggest core networks around the globe. One server per continent is to supply the demand of our clients and create a circle and failure proof in resilience. This service provides a high cost of £1,000 per month (see \in[section:quotes]).
 
 \page[yes]
@@ -904,7 +904,7 @@ Figure \in[wbs] shows the work breakdown structure for the total scope of NPS In
 \stopcolor
 
 \startcolor[black]
-\tfxx * Daily Costs: 336 (Total Cash Paid out in first year/365), Barebone Art Costs: £100 per day for initial builds then £1000 per month media package
+\tfxx * Daily Costs: 336 (Total Cash Paid out in first year/365), BareBone Art Costs: £100 per day for initial builds then £1000 per month media package
 \stopcolor
 
 
@@ -950,19 +950,17 @@ Figure \in[wbs] shows the work breakdown structure for the total scope of NPS In
 
 \page[yes]
 
-\startcolor[red]\WORD{one page only}\stopcolor
-
 # Physical Resources
 
-\startcolor[darkgray]
-This must include a list of the physical resources required for the project.
+List of physical resources required/Items:
 
-For each item you need to identify and justify its estimated purchase cost; the expected source (if sourced from inside the university they will expect to be reimbursed by the project; if sourced from outside the university you need to indicate the contractual arrangements). Any cost information here must agree with that in Section 2.
+* all assets, purchase costs, expected source
+* staff, purchase costs, expected source
+* equipment, purchase costs, expected source
+* physical resources that is needed ('No physical resources' is not acceptable)
+(if sourced from inside the university they will expect to be reimbursed by the project; if sourced from outside the university you need to indicate the contractual arrangements)
+See section 2
 
-Details of equipment or other physical resources that will be needed by your project team. 'No physical resources' is not acceptable.
-\stopcolor
-
-Adam:
 The following list of physical resources are needed for the NPS Intel project in order to deliver the presented business:
 Equipment or other physical resources needed by the project team
 Item, Purchase costs (EST), source
@@ -985,6 +983,9 @@ Cost breakdown, See section 2
 \startcolor[red]\WORD{maximum one additional page}\stopcolor
 
 ## Supporting Text
+
+* Deloitte price for contracting
+* KPMG
 
 \startcolor[darkgray]
 Additional supporting text should be included that justifies, with evidence, the decisions made on sourcing these physical resources.
@@ -1016,21 +1017,21 @@ Skills Required:
 * Meticulous attention to detail
 * Highly organised and Methodical
 * Excellent interpersonal skills and able to deal effectively with internal and external stakeholders
-* Able to work to tight timescales and under pressure
+* Able to work to tight time scales and under pressure
 * Excellent reporting skills
 * Extensive prior project management experience required
 * Ability to work on own (self starter) and as part of the wider team
 * High level of analytical and numerical skills
 
 Main duties and Responsibilities: \par
-Work closely with Project Managers and stakeholders to ensure the delivery of administration tasks. Particularily accountable and responsible for the following parts. \par
+Work closely with Project Managers and stakeholders to ensure the delivery of administration tasks. Particularly accountable and responsible for the following parts. \par
 
 * Sales and Management reporting
 * Customer reporting
 * Controlling task/issues lists and project documentation
 * Communications link between customers and internal resource
 * Project services tasks
-* Adhoc duties when required
+* Ad hoc duties when required
 * Building and developing new reports
 * Resource booking and scheduling
 
@@ -1055,12 +1056,12 @@ The following risk factors could pose a high risk and potentially be a problem f
 \startcolumns[n=2]
 \startitemize[joindup,nowhite]
 \WORD{\ss Political}
-\item Brexit (political uncertainty, market volatility, new trade deals) \crlf \color[black]{\it\bf Contingency Planning: Moving HQ and Datacentre back to EU.}
+\item Brexit (political uncertainty, market volatility, new trade deals) \crlf \color[black]{\it\bf Contingency Planning: Moving HQ and Data centre back to EU.}
 \blank[line] \WORD{\ss Economic}
 \item Weak GBP (exchange rate to EUR) could affect the project subscriptions
 \item GDP decrease (inflation), less trade and income
 \item Competition (better product)
-\item People, Staff and Resources (skillset, understaffed, sickness) in the cyber domain
+\item People, Staff and Resources (skill set, understaffed, sickness) in the cyber domain
 \item Budget constrains (over budget)
 \item Sub-Contracting (out-sourcing) of tasks
 \item Supply chain (delays) \crlf \color[black]{\it\bf Contingency Planning: Multiple vendors, Recruiting NSU students for internships, use of open source software}
@@ -1102,7 +1103,7 @@ Taking the requirements of the scope and time into account, the organisation of 
 \blank[line]
 
 For this, the group met in person on Saturday 2nd of July at Pizza Union.
-Further communcation channels included voice over IP calls (Skype) and instand messaging (WhatsApp group) for the coordination.
+Further communication channels included voice over IP calls (Skype) and instant messaging (WhatsApp group) for the coordination.
 
 \blank[line]
 
@@ -1111,7 +1112,7 @@ Decisions have been made unanimously on the devision of the sections for equal d
 
 ## Code of Conduct
 
-Comparing code of conduct rules from established institutions and communities the group agreed upon and relied on the widely accepted guidelnes by the Apache Foundation.
+Comparing code of conduct rules from established institutions and communities the group agreed upon and relied on the widely accepted guidelines by the Apache Foundation.
 
 \blank[line]
 
@@ -1148,7 +1149,7 @@ Accountable are for the following elements:
 
 ## Project Plan
 
-The project plan for the assignment 1B of the group 'Mitnick' consist of the following topics within the project execution pase:
+The project plan for the assignment 1B of the group 'Mitnick' consist of the following topics within the project execution phase:
 
 * \color[black]{\bf Project Scope}: Assignment 1B of Module 5, all parts by all group members
 * \color[black]{\bf Project Requirements}: Blackboard space, IS0749 Assignment 2016-17 Jun start (Part B)
