@@ -1125,7 +1125,7 @@ Further communication channels included voice over IP calls (Skype) and instant 
 \blank[line]
 
 All work on the written assignment has been authored on collaborative platforms (PiratePad) for concurrent editing and version control.
-Decisions have been made unanimously on the decision of the sections for equal distribution, but ultimately the work was carried out by all participants within the group on all parts of the academic document.
+Decisions have been made unanimously on the division of the sections for equal distribution, but ultimately the work was carried out by all participants within the group on all parts of the academic document.
 
 ## Code of Conduct
 
