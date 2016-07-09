@@ -107,7 +107,7 @@ Desks: £325/mo \par
 The proposal is to cap 10% on the commission only basis.
 
 * \color[black]{\bf Salaries} – Salaries is running an upper limit of £1,000 per month in the first year and increasing to £2,000 the following year, where our number forecast is to be higher than the first running year. We have 3 IT Cyber Consultants and 1 outsourced financial contractor to follow with the business diligence.
-* Marketing is a high cost in comparison and we are working with Barebone Agency, a sub-contractor in the field, to make all necessary publicity from the Social Media (B2B) LinkedIn and manage the Brand to achieve the best results. The sales are dependent on an aggressive investment from the marketing to push the sale.
+* Marketing is a high cost in comparison and we are working with BareBoneArt Agency, a sub-contractor in the field, to make all necessary publicity from the Social Media (B2B) LinkedIn and manage the Brand to achieve the best results. The sales are dependent on an aggressive investment from the marketing to push the sale.
 * Infrastructure costs are our products running cost. The entire product catalogue is put into the cloud through our strategic supplier Lumminet, who is a partner of Equinix, one of the biggest core networks around the globe. One server per continent is to supply the demand of our clients and create a circle and failure proof in resilience. This service provides a high cost of £1,000 per month (see \in[section:quotes]).
 
 \page[yes]
@@ -904,7 +904,7 @@ Figure \in[wbs] shows the work breakdown structure for the total scope of NPS In
 \stopcolor
 
 \startcolor[black]
-\tfxx * Daily Costs: 336 (Total Cash Paid out in first year/365), BareBone Art Costs: £100 per day for initial builds then £1000 per month media package
+\tfxx * Daily Costs: 336 (Total Cash Paid out in first year/365), BareBoneArt Costs: £100 per day for initial builds then £1000 per month media package
 \stopcolor
 
 
