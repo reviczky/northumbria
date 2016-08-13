@@ -1,11 +1,38 @@
 \startcomponent titlepage
 \product dissertation
 
-\startMPcode
-    input northumbria;
-\stopMPcode
+\switchtobodyfont[18pt]
 
-\input knuth
+\startalignment[middle]
+
+\startcolor[lavender]
+{\tfx MSc Cyber Security} \\
+{\tfx Dissertation} \\
+
+\hairline
+
+\blank[line]
+
+{\bfc\sc Proactive threat detection of cyber-physical systems using Bayesian estimation: \crlf connected cars as a case study} \\
+
+\blank[15mm]
+
+{\cap\bf Adam Reviczky \crlf \tf (14044980)} \\
+
+\blank[35mm]
+
+\midaligned{\reuseMPgraphic{logo}{fgcolor=lavender,bgcolor=lavender,width=0.6mm}}
+
+\blank[35mm]
+
+{\tfx Faculty of Engineering & Environment} \\
+{\tfx 110 Middlesex Street, London E1 7HT, United Kingdom} \\
+
+\blank[15mm]
+
+{\cap\bf London \currentdate[year]} \\
+\stopalignment
+\stopcolor
+
+\page[yes]
 \stopcomponent
-
-\typefile{\jobname.words}
