@@ -50,12 +50,18 @@
 \setupspellchecking[state=start,method=2]
 \ctxlua{languages.words.threshold=1}
 \setupbibtex[database={dissertation},sort=author]
+\setuppublications[alternative=apa]
 
 \usecolors[xwi]
 
 \setupbackgrounds[page][background=color,backgroundcolor=\ctxlua{if \rawcountervalue[userpage] == 1 then context("darkolivegreen") end}]
-
+\setuphead[chapter][alternative=margin]
 \setuppagenumbering[location=footer,left={},right={},style={\ss}]
+
+% chapter numbering in ToC
+\setuplist[chapter][numbercommand=\listchapter,width=0pt]
+\definemargindata[listchapter][hoffset=1em,location=left,style=]
+\setupcombinedlist[content][list={chapter,section,subsection}]
 
 \startsectionblockenvironment[frontpart]
 \setupheader[state=stop]
