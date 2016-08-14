@@ -1,0 +1,34 @@
+\startcomponent copyleft
+\product dissertation
+
+\switchtobodyfont[adventor]
+
+\startalignment[middle]
+
+© Adam Reviczky. Some Rights Reserved.
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit \goto{http://creativecommons.org/licenses/by-nc-nd/4.0/}[url(creativecommons.org/licenses/by-nc-nd/4.0/)]. \par
+
+Copyright, Designs and Patents Act 1988 sections 9-11 \\
+http://www.legislation.gov.uk/ukpga/1988/48
+
+https://www.gov.uk/guidance/ownership-of-copyright-works
+
+\blank[line]
+
+Typesetted in Great Britain by: \\
+\ConTeXt\ version \contextversion
+\LuajitTeX\ version \texengineversion
+\MetaPost version ???
+
+Total number of words: {\bf \ctxlua{local data = dofile"\jobname.words"; context(data.total)}} \\
+Maximum number of words allowed for the Dissertation: {\bf 15,000} \\
+Bibliography: {\bf American Psychological Association (APA) style} \\
+Paper Size: {\bf A4, Portrait} \\
+Font Family: {\bf TeX Gyre Adventor, TeX Gyre Pagella (12pt)} \\
+Margins: {\bf Backspace (\startluacode local layout = tex.dimen.backspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Cutspace (\startluacode local layout = tex.dimen.cutspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Topspace (\startluacode local layout = tex.dimen.topspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Header (\startluacode local layout = tex.dimen.headerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Footer (\startluacode local layout = tex.dimen.footerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)} \\
+
+\stopalignment
+
+\switchtobodyfont[pagella]
+
+\stopcomponent

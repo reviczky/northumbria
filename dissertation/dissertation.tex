@@ -1,8 +1,13 @@
+% engine=luajittex
+
 \startproduct dissertation
 \environment northumbria
 
+% IS0718
+
 \startfrontmatter
     \component titlepage
+    \component copyleft
     \component contents
 \stopfrontmatter
 
@@ -15,6 +20,9 @@
 \stopbodymatter
 
 \startbackmatter
+    \component bibliography
     % \component appendices
 \stopbackmatter
 \stopproduct
+
+\typefile{\jobname.words}

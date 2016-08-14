@@ -1,10 +1,9 @@
 \startcomponent contents
 \product dissertation
 
-\starttitle[title=Contents]
-\input knuth
-\stoptitle
+\setuphead[title][textcommand={Table of }]
+% \starttitle[title=Table of Contents]
+\completecontent[criterium=all] \par
+% \stoptitle
 
 \stopcomponent
-
-\typefile{\jobname.words}

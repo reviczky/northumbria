@@ -1,17 +1,67 @@
 \startenvironment northumbria
 \usepath[{chapter,graphics}]
+% \usemodule[gnuplot]
+
+\placebookmarks[chapter,section,subsection][chapter,section]
+\setupinteractionscreen[option=bookmark]
+
+\setupinteraction
+[
+  state=start,
+  title={Proactive threat detection of cyber-physical systems using Bayesian estimation: connected cars as a case study},
+  author={Adam Reviczky},
+  subtitle={Dissertation},
+  keyword={northumbria},
+]
+
+\setuppapersize[A4,portrait][A4,portrait]
+\mainlanguage[uk]
+\definefontfeature[default][default][protrusion=quality,expansion=quality]
+\setupalign[hz,hanging]
 \setupbodyfont[palatino,12pt]
+
+%\definelayout[1]
+%[
+%  backspace=20mm,
+%  cutspace=20mm,
+%  width=170mm,
+%  topspace=10mm,
+%  bottomspace=10mm,
+%  header=0mm,
+%  footer=0mm,
+%  height=277mm,
+%]
+
+\setuplayout
+[
+  backspace=20mm,
+  cutspace=20mm,
+  width=170mm,
+  topspace=10mm,
+  bottomspace=10mm,
+  header=10mm,
+  footer=10mm,
+  height=277mm,
+]
+
+\define\studentname{Adam Reviczky}
+\define\studentnumber{14044980}
+
+\setupspellchecking[state=start,method=2]
+\ctxlua{languages.words.threshold=1}
+\setupbibtex[database={dissertation},sort=author]
 
 \usecolors[xwi]
 
 \setupbackgrounds[page][background=color,backgroundcolor=\ctxlua{if \rawcountervalue[userpage] == 1 then context("darkolivegreen") end}]
+
+\setuppagenumbering[location=footer,left={},right={},style={\ss}]
 
 \startsectionblockenvironment[frontpart]
 \setupheader[state=stop]
 \setupfooter[state=stop]
 \stopsectionblockenvironment
 
-%(0.347600,0.726800,0.718900)
 \startuniqueMPgraphic{logo}{fgcolor,bgcolor,width}
 drawoptions (withcolor \MPvar{fgcolor});
 fill (473.144989,65.011703)--(475.664001,65.011703)--(475.664001,69.207001)..controls (475.664001,70.054703) and (476.082001,70.855499)..(477.027008,70.855499)..controls (478.410004,70.855499) and (478.289001,69.785202)..(478.289001,68.734398)--(478.289001,65.011703)--(480.808990,65.011703)--(480.808990,69.949203)..controls (480.808990,71.062500) and (480.601990,72.929703)..(478.039001,72.929703)..controls (477.117004,72.929703) and (476.082001,72.441399)..(475.621002,71.656303)--(475.589996,71.656303)--(475.589996,72.707001)--(473.144989,72.707001)--cycle;
@@ -49,6 +99,10 @@ fill (552.034973,57.039101)--(555.895020,57.039101)--(555.895020,58.167999)--(55
 fill (556.687988,57.039101)--(561.004028,57.039101)--(561.004028,58.167999)--(558.015991,58.167999)--(558.015991,59.285198)--(560.676025,59.285198)--(560.676025,60.296902)--(558.015991,60.296902)--(558.015991,61.332001)--(560.926025,61.332001)--(560.926025,62.378899)--(556.687988,62.378899)--cycle;
 currentpicture := currentpicture scaled \MPvar{width};
 \stopuniqueMPgraphic
+
+\definesynonyms[abbreviation][abbreviations][\infull]
+\setupsynonyms[abbreviation][textstyle=normal]
+\abbreviation{NIST}{National Institute of Standards and Technology}
 
 \showframe
 \stopenvironment
