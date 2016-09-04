@@ -3,6 +3,43 @@
 
 \startchapter[title=Presentation and Discussion of the Findings]
 \input lorem
+
+\startsection[title=ADS-B]
+\defineseparatedlist[CSV][separator=comma,left=\startxcell,right=\stopxcell,first=\startxrow,last=\stopxrow,before=\startxtablebody,after=\stopxtablebody]
+\setupxtable[align=flushright,width=2.5cm,align=middle]
+
+\startplacetable[title=ADS-B]
+\startxtable[split=yes,foregroundstyle=\ss,bodyfont=10pt]
+\startxtablehead[background=color,backgroundcolor=gray]
+\startxrow
+ \startxcell Time \stopxcell
+ \startxcell Position \stopxcell
+ \startxcell Orientation \stopxcell
+ \startxcell Groundspeed \stopxcell
+ \startxcell Altitude \stopxcell
+ \startxcell Reporting \stopxcell
+\stopxrow
+\stopxtablehead
+% http://i.imgur.com/Pkk38yU.png
+% https://pbs.twimg.com/media/CiytDdDU4AII8h_.jpg:large
+% Time,Position,Orientation,Groundspeed,Altitude,Reporting
+\startCSV
+Thu 01:18:41,34.87 27.54,SE 138,520,37000,0
+Thu 01:19:11,34.81 27.59,SE 138,520,37000,0
+Thu 01:19:41,34.76 27.65,SE 138,520,37000,0
+Thu 01:20:11,34.70 27.71,SE 138,519,37000,0
+Thu 01:20:41,34.65 27.77,SE 138,521,37000,0
+Thu 01:21:50,34.52 27.90,SE 139,521,37000,0
+Thu 01:22:49,34.47 27.96,SE 139,528,37000,0
+Thu 01:28:10,33.82 28.63,SE 139,527,37000,0
+Thu 01:28:46,33.77 28.68,SE 139,529,37000,0
+Thu 01:29:21,33.69 28.77,SE 136,533,37000,0
+Thu 01:32:01,33.39 29.00,SE 147,0,37000,0
+Thu 01:33:01,33.27 29.09,SE 147,0,37000,0
+\stopCSV
+\stopxtable
+\stopplacetable
+\stopsection
 \stopchapter
 
 \stopcomponent
