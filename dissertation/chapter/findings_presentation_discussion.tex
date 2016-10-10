@@ -4,11 +4,12 @@
 \startchapter[title=Presentation and Discussion of the Findings]
 \input lorem
 
+\setuphead[section][numberstyle={tfb},textstyle={tfb}]
 \startsection[title=ADS-B]
 \defineseparatedlist[CSV][separator=comma,left=\startxcell,right=\stopxcell,first=\startxrow,last=\stopxrow,before=\startxtablebody,after=\stopxtablebody]
 \setupxtable[align=flushright,width=2.5cm,align=middle]
 
-\startplacetable[title=ADS-B]
+\startplacetable[title=ADS-B,style={cap}]
 \startxtable[split=yes,foregroundstyle=\ss,bodyfont=10pt]
 \startxtablehead[background=color,backgroundcolor=gray]
 \startxrow
@@ -39,6 +40,13 @@ Thu 01:33:01,33.27 29.09,SE 147,0,37000,0
 \stopCSV
 \stopxtable
 \stopplacetable
+\stopsection
+
+\startsection[title=Bayesian Regression]
+\startplacefigure[title=RStan,style={cap}]
+\externalfigure[rstan][height=60mm]
+\stopplacefigure
+%\placefigure[place]{RStan}{\externalfigure[rstan][height=60mm]}
 \stopsection
 \stopchapter
 

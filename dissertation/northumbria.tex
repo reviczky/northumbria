@@ -1,7 +1,10 @@
 \startenvironment northumbria
-\usepath[{chapter,graphics}]
 \usemodule[database]
 % \usemodule[gnuplot]
+
+\usepath[{chapter,graphics}]
+\doifmodeelse{*product}
+ {\setupexternalfigures[directory={graphics}]}
 
 \placebookmarks[chapter,section,subsection][chapter,section]
 \setupinteractionscreen[option=bookmark]
@@ -9,6 +12,7 @@
 \setupinteraction
 [
   state=start,
+  color=darkolivegreen,
   title={Proactive threat detection of cyber-physical systems using Bayesian estimation: connected cars as a case study},
   author={Adam Reviczky},
   subtitle={Dissertation},
@@ -56,13 +60,15 @@
 \usecolors[xwi]
 
 \setupbackgrounds[page][background=color,backgroundcolor=\ctxlua{if \rawcountervalue[userpage] == 1 then context("darkolivegreen") end}]
-\setuphead[chapter,section][alternative=margin]
+\setuphead[chapter,section,subsection][alternative=margin]
 \setuppagenumbering[location=footer,left={},right={},style={\ss}]
 
 % chapter numbering in ToC
 \setuplist[chapter,section][numbercommand=\listchapter,width=0pt]
 \definemargindata[listchapter][hoffset=1em,location=left,style=]
 \setupcombinedlist[content][list={chapter,section,subsection}]
+
+\setupcaptions[prefix=yes,way=bysection,prefixsegments=2:4]
 
 \startsectionblockenvironment[frontpart]
 \setupheader[state=stop]

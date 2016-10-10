@@ -25,10 +25,11 @@ Typesetted in Great Britain \\
 Total number of words: {\bf \ctxlua{local data = dofile"\jobname.words"; context(data.total)}} \\
 Maximum number of words allowed for the dissertation: {\bf 15,000} \\
 \blank[line]
-Bibliography style: {\bf American Psychological Association (APA)} \\
-Paper Size: {\bf A4, Portrait} \\
-Font Family: {\bf TeX Gyre Adventor (12pt), TeX Gyre Pagella (12pt)} \\
-Margins: {\bf Backspace (\startluacode local layout = tex.dimen.backspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Cutspace (\startluacode local layout = tex.dimen.cutspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Topspace (\startluacode local layout = tex.dimen.topspace context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Header (\startluacode local layout = tex.dimen.headerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\bf Footer (\startluacode local layout = tex.dimen.footerheight context("%s mm", number.tomillimeters(layout, "%.0f")) \stopluacode)} \\
+{\cap Bibliography style}: {\cap\bf American Psychological Association (APA)} \\
+{\cap Paper Size}: {\cap\bf A4, Portrait} \\
+{\cap Font Family}: {\cap\bf TeX Gyre Adventor (12pt), TeX Gyre Pagella (12pt)} \\
+\blank[line]
+{\cap Margins}: {\cap\bf Backspace (\startluacode local layout = tex.dimen.backspace context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\cap\bf Cutspace (\startluacode local layout = tex.dimen.cutspace context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\cap\bf Topspace (\startluacode local layout = tex.dimen.topspace context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\cap\bf Header (\startluacode local layout = tex.dimen.headerheight context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\cap\bf Footer (\startluacode local layout = tex.dimen.footerheight context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)} \\
 \stopalignment
 
 \switchtobodyfont[pagella]
