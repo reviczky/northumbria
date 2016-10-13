@@ -1,0 +1,19 @@
+\startcomponent abbreviation
+\product dissertation
+
+%\startchapter[title=Abbreviations]
+\completelistofabbreviations[criterium=all] \par
+%\stopchapter
+
+%\page[yes]
+
+\setuphead[chapter,section][textstyle={\tfd\sc}]
+\startchapter[title=List of Tables]
+\placelist[table][criterium=all]
+\stopchapter
+
+\startsection[title=List of Figures]
+\placelist[figure][criterium=all]
+\stopchapter
+
+\stopcomponent

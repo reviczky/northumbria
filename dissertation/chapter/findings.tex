@@ -1,15 +1,15 @@
-\startcomponent findings_presentation_discussion
+\startcomponent findings
 \product dissertation
 
 \startchapter[title=Presentation and Discussion of the Findings]
-\input lorem
+\input ward
 
 \setuphead[section][numberstyle={tfb},textstyle={tfb}]
-\startsection[title=ADS-B]
+\startsection[title=Automatic Dependent Surveillance – Broadcast]
 \defineseparatedlist[CSV][separator=comma,left=\startxcell,right=\stopxcell,first=\startxrow,last=\stopxrow,before=\startxtablebody,after=\stopxtablebody]
 \setupxtable[align=flushright,width=2.5cm,align=middle]
 
-\startplacetable[title=ADS-B,style={cap}]
+\startplacetable[title=ADS-B Table of a Connected Car,style={cap}]
 \startxtable[split=yes,foregroundstyle=\ss,bodyfont=10pt]
 \startxtablehead[background=color,backgroundcolor=gray]
 \startxrow
@@ -43,8 +43,8 @@ Thu 01:33:01,33.27 29.09,SE 147,0,37000,0
 \stopsection
 
 \startsection[title=Bayesian Regression]
-\startplacefigure[title=RStan,style={cap}]
-\externalfigure[rstan][height=60mm]
+\startplacefigure[title=RStan Bayesian Estimation Graph,style={cap}]
+\externalfigure[rstan][width=90mm]
 \stopplacefigure
 %\placefigure[place]{RStan}{\externalfigure[rstan][height=60mm]}
 \stopsection
