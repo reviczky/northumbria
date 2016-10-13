@@ -2,9 +2,8 @@
 \usemodule[database]
 % \usemodule[gnuplot]
 
-\usepath[{chapter,graphics}]
-\doifmodeelse{*product}
- {\setupexternalfigures[directory={graphics}]}
+\usepath[{chapter,graphics,stan}]
+\doifmodeelse{*product}{\setupexternalfigures[directory={graphics,stan}]}
 
 \placebookmarks[chapter,section,subsection][chapter,section]
 \setupinteractionscreen[option=bookmark]

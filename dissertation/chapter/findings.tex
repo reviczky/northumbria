@@ -1,6 +1,17 @@
 \startcomponent findings
 \product dissertation
 
+\usemodule[filter]
+\defineexternalfilter[R]
+  [
+    filtercommand={R CMD BATCH -q --save --restore \externalfilterinputfile\space \externalfilteroutputfile},
+    output=\externalfilterbasefile.out,
+    directory=stan,
+    readcommand=\typefile,
+    read=no,
+    cache=yes,
+  ]
+
 \startchapter[title=Presentation and Discussion of the Findings]
 \input ward
 
@@ -47,6 +58,12 @@ Thu 01:33:01,33.27 29.09,SE 147,0,37000,0
 \externalfigure[rstan][width=90mm]
 \stopplacefigure
 %\placefigure[place]{RStan}{\externalfigure[rstan][height=60mm]}
+
+\startplacefigure[title=RStan Bayesian Estimation Filter,style={cap}]
+\processRfile{sample.R}
+\externalfigure[Rplots][width=80mm]
+\stopplacefigure
+
 \stopsection
 \stopchapter
 
