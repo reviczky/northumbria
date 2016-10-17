@@ -1,6 +1,15 @@
 \startcomponent copyleft
 \product dissertation
 
+\startuseMPgraphic{outline}{color}
+drawoptions (withcolor \MPvar{color});
+input outline.mp;
+currentpicture := currentpicture scaled 0.8;
+\stopuseMPgraphic
+
+\defineoverlay[outline][\useMPgraphic{outline}{color=lavender}]
+\setupbackgrounds[page][background=\ctxlua{if \rawcountervalue[userpage] == 2 then context("outline") end}]
+
 \switchtobodyfont[adventor]
 
 \dontleavehmode\blank[50mm]
@@ -29,7 +38,7 @@ Maximum number of words allowed for the dissertation: {\bf 15,000} \\
 {\cap Paper Size}: {\cap\bf A4, Portrait} \\
 {\cap Font Family}: {\cap\bf TeX Gyre Adventor (12pt), TeX Gyre Pagella (12pt)} \\
 \blank[line]
-{\cap Margins}: {\cap\bf Backspace (\startluacode local layout = tex.dimen.backspace context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\cap\bf Cutspace (\startluacode local layout = tex.dimen.cutspace context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\cap\bf Topspace (\startluacode local layout = tex.dimen.topspace context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\cap\bf Header (\startluacode local layout = tex.dimen.headerheight context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\cap\bf Footer (\startluacode local layout = tex.dimen.footerheight context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)} \\
+{\cap Margins}: {\cap\bf Backspace (\startluacode local layout = tex.dimen.backspace context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode /30mm)}, {\cap\bf Cutspace (\startluacode local layout = tex.dimen.cutspace context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode /25mm)}, {\cap\bf Topspace (\startluacode local layout = tex.dimen.topspace context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\cap\bf Header (\startluacode local layout = tex.dimen.headerheight context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)}, {\cap\bf Footer (\startluacode local layout = tex.dimen.footerheight context("%smm", number.tomillimeters(layout, "%.0f")) \stopluacode)} \\
 \stopalignment
 
 \switchtobodyfont[pagella]

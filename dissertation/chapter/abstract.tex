@@ -1,9 +1,24 @@
 \startcomponent abstract
 \product dissertation
 
-\setuphead[chapter][textstyle={\tfd\sc}]
+\setuphead[chapter][textstyle={\tfd\sc},commandbefore={\blank[3*halfline]}]
 \startchapter[title=Abstract]
-\input zapf
+
+\definelayer[abstract]
+\setlayer[abstract][x=0mm,y=-56mm]{\framed[frame=off,width=\textwidth,align=middle]{\sc \studentname \blank[line] Proactive threat detection of cyber-physical systems using Bayesian estimation: connected cars as a case study}}
+\flushlayer[abstract]
+
+\startframed[frame=on,width=\textwidth,align=right]
+The abstract is usually about 200 words long and not exceeding 300 words and summarises the motivation for the project, the work done, and the key results. \par
+\startitemize
+\item Motivation for the Project
+\item Research Hypothesis/Question/Aim
+\item Work done
+\item Results
+\item Conclusions
+\stopitemize
+\stopframed
 \stopchapter
+\setuphead[chapter][textstyle={\tfd\sc},commandbefore=]
 
 \stopcomponent

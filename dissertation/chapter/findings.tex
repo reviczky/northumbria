@@ -12,10 +12,15 @@
     cache=yes,
   ]
 
-\startchapter[title=Presentation and Discussion of the Findings]
+\startchapter[title=Presentation \& Discussion of the Findings]
 \input ward
 
 \setuphead[section][numberstyle={tfb},textstyle={tfb}]
+\startsection[title=Statistics]
+Mean time to crash/hijack. \par
+\externalfigure[tesla-x][width=75mm]
+\stopsection
+
 \startsection[title=Automatic Dependent Surveillance – Broadcast]
 \defineseparatedlist[CSV][separator=comma,left=\startxcell,right=\stopxcell,first=\startxrow,last=\stopxrow,before=\startxtablebody,after=\stopxtablebody]
 \setupxtable[align=flushright,width=2.5cm,align=middle]
@@ -60,7 +65,7 @@ Thu 01:33:01,33.27 29.09,SE 147,0,37000,0
 %\placefigure[place]{RStan}{\externalfigure[rstan][height=60mm]}
 
 \startplacefigure[title=RStan Bayesian Estimation Filter,style={cap}]
-\processRfile{sample.R}
+%\processRfile{sample.R}
 \externalfigure[Rplots][width=80mm]
 \stopplacefigure
 

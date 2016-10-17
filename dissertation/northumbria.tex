@@ -36,6 +36,18 @@
 %  height=277mm,
 %]
 
+\definelayout[gutter]
+[
+  backspace=30mm,
+  cutspace=25mm,
+  width=155mm,
+  topspace=10mm,
+  bottomspace=10mm,
+  header=10mm,
+  footer=10mm,
+  height=277mm,
+]
+
 \setuplayout
 [
   backspace=20mm,
@@ -61,6 +73,10 @@
 \setupbackgrounds[page][background=color,backgroundcolor=\ctxlua{if \rawcountervalue[userpage] == 1 then context("darkolivegreen") end}]
 \setuphead[chapter,section,subsection][alternative=margin]
 \setuppagenumbering[location=footer,left={},right={},style={\ss}]
+
+\setuphead[chapter,section][color=darkolivegreen]
+% \setuplabeltext[appendix=APPENDIX~]
+% \setuplist[chapter][label=yes,width=fit,stopper=~~]
 
 % chapter numbering in ToC
 \setuplist[chapter,section][numbercommand=\listchapter,width=0pt]

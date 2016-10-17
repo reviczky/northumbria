@@ -8,17 +8,23 @@
 \startfrontmatter
     \component title
     \component copyleft
+    \component declaration
     \component acknowledgement
-    \component content
     \component abstract
+    \component content
 \stopfrontmatter
 
+%\setuplayout[gutter]
+\setuphead[chapter][page=yes]
+\setuppagenumbering[alternative=doublesided]
+\setupinterlinespace[big]
 \startbodymatter
     \component intro
     \component framework
     \component rationale
     \component literature
     \component research
+    \component work
     \component findings
     \component design
     \component ethical
@@ -26,12 +32,18 @@
     \component discussion
     \component conclusion
 \stopbodymatter
+\setupinterlinespace[reset]
+\setuppagenumbering[alternative=]
+\setuplayout[reset]
 
 \startbackmatter
     \component bibliography
     \component abbreviation
-    \component appendix
 \stopbackmatter
+
+\startappendices
+    \component appendix
+\stopappendices
 \stopproduct
 
 \typefile{\jobname.words}
