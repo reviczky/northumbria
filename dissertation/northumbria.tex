@@ -74,12 +74,15 @@
 \setuphead[chapter,section,subsection][alternative=margin]
 \setuppagenumbering[location=footer,left={},right={},style={\ss}]
 
-\setuphead[chapter,section][color=darkolivegreen]
+\setuphead[chapter][after={\blank[5mm]},color=darkolivegreen]
+\setuphead[section,subsection][after={\blank[2.5mm]},color=darkolivegreen]
 % \setuplabeltext[appendix=APPENDIX~]
 % \setuplist[chapter][label=yes,width=fit,stopper=~~]
 
 % chapter numbering in ToC
-\setuplist[chapter,section][numbercommand=\listchapter,width=0pt]
+\setuplist[chapter][numbercommand=\listchapter,width=0mm,textstyle=bold]
+\setuplist[section][width=10mm]
+\setuplist[subsection][width=20mm]
 \definemargindata[listchapter][hoffset=1em,location=left,style=]
 \setupcombinedlist[content][list={chapter,section,subsection}]
 
