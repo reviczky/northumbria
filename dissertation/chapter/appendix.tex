@@ -4,6 +4,75 @@
 \setuphead[chapter][textstyle={\tfd\sc}]
 \startchapter[title=Appendix - Research Proposal]
 Insert your research proposal here. \par
+
+\blank[line]
+
+\placefigure[place]{Project Timetable}{
+\startxtable[option={width},foregroundstyle={\ss},offset=1mm]
+\startxtablehead[foregroundstyle={\ss\bf}]
+\startxrow
+\startxcell[width=85mm] Project Milestone \stopxcell \startxcell[width=50mm,align=middle] Indicative Timescales \stopxcell
+\stopxrow
+\stopxtablehead
+\startxtablebody
+\startxrow
+\startxcell Briefing by Project tutor \stopxcell \startxcell[align=middle] Start of Dissertation \stopxcell
+\stopxrow
+\startxrow
+\startxcell Submission of Project Initiation Form \stopxcell \startxcell[align=middle] 01 August 2016 \stopxcell
+\stopxrow
+\startxrow
+\startxcell Submission of Research Proposal \stopxcell \startxcell[align=middle] 01 August 2016 \stopxcell
+\stopxrow
+\startxrow
+\startxcell Research Proposal Review Meeting \\ Submission of MSc Project Ethical \\ and Risk Assessment Form \stopxcell \startxcell[align=middle] Oct/Nov 2016 \stopxcell
+\stopxrow
+\startxrow
+\startxcell Submission of Dissertation & \\ Seminar Presentation \stopxcell \startxcell[align=middle] 19 January 2017 \stopxcell
+\stopxrow
+\startxrow
+\startxcell Award Board \stopxcell \startxcell[align=middle] Tbc \stopxcell
+\stopxrow
+\stopxtablebody
+\stopxtable
+}
+
+\blank[line]
+
+\placefigure[place]{Key Facts \& Dates/Deadlines}{
+\startxtable[option={width},foregroundstyle={\ss\bf},offset=1mm]
+\startxrow
+\startxcell[width=60mm,height=18mm] Deadline for submitting Project Initiation Form \stopxcell \startxcell[width=75mm] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=18mm] Deadline for submitting Research Proposal \stopxcell \startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=18mm] Date of Research Proposal Review Meeting \stopxcell \startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=18mm] Deadline for submitting MSc Project Ethical and Risk Assessment Form \stopxcell \startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=18mm] Deadline for submitting Dissertation \stopxcell \startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=18mm] Date of Viva \stopxcell \startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=18mm] Name of Supervisor \stopxcell \startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=18mm] Name of Second Marker \stopxcell \startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=18mm] Name of Project Tutor \stopxcell \startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=18mm] Name of Programme Leader \stopxcell \startxcell \stopxcell
+\stopxrow
+\stopxtable
+}
 \stopchapter
 
 \startchapter[title=Appendix - Figures and Diagrams]
@@ -12,5 +81,36 @@ Put your pictures, charts and tables here. Number them and refer to the number i
 
 \startchapter[title=Appendix - Other Stuff]
 You may need to include other appendices. Code? Design diagrams? \par
+\stopchapter
+
+\startchapter[title=Appendix - Project Log]
+% \placefigure[place]{Log Book}{\clip[width=150mm,height=180mm,hoffset=5mm,voffset=30mm]{\externalfigure[logbook.pdf][page=1,xscale=800,yscale=800,width=\textwidth,height=\textheight]}}
+\vfill
+\placefigure[place]{Log Book}{\externalfigure[logbook.pdf][page=1]}
+\vfill
+\stopchapter
+
+\startchapter[title=Appendix - Project Risk Assessment Form]
+\vfill
+\placefigure[place]{Risk Assessment}{\externalfigure[assessment.pdf][page=1]}
+\vfill
+\stopchapter
+
+\startchapter[title=Appendix - Project Ethical and Risk Assessment Form]
+\vfill
+\placefigure[place]{Ethical and Risk Assessment (page 1)}{\externalfigure[ethics.pdf][page=1]}
+\vfill
+\page[yes]
+\vfill
+\placefigure[place]{Ethical and Risk Assessment (page 2)}{\externalfigure[ethics.pdf][page=2]}
+\vfill
+\page[yes]
+\vfill
+\placefigure[place]{Ethical and Risk Assessment (page 3)}{\externalfigure[ethics.pdf][page=3]}
+\vfill
+\page[yes]
+\vfill
+\placefigure[place]{Ethical and Risk Assessment (page 4)}{\externalfigure[ethics.pdf][page=4]}
+\vfill
 \stopchapter
 \stopcomponent

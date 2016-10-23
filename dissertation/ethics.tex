@@ -1,0 +1,329 @@
+% engine=luajittex
+\usepath[{graphics}]
+
+\setupinteraction
+[
+  state=start,
+  color=darkolivegreen,
+  title={Project Ethical and Risk Assessment Form},
+  author={Adam Reviczky},
+  subtitle={Ethical and Risk Assessment Form},
+  keyword={northumbria},
+]
+
+\setuppapersize[A4,portrait][A4,portrait]
+\mainlanguage[uk]
+\definefontfeature[default][default][protrusion=quality,expansion=quality]
+\setupalign[hz,hanging]
+\setupbodyfont[palatino,11pt]
+
+\usecolors[xwi]
+
+\setuppagenumbering[location=]
+
+\setuplayout
+[
+  backspace=20mm,
+  cutspace=20mm,
+  width=170mm,
+  topspace=10mm,
+  bottomspace=10mm,
+  header=10mm,
+  footer=10mm,
+  height=277mm,
+]
+
+% \showframe
+
+\starttext
+\startTEXpage
+\startuseMPgraphic{logo} input northumbria.mp; \stopuseMPgraphic \midaligned{\scale[scale=1500]{\useMPgraphic{logo}}} \par
+\blank[line]
+\startalignment[middle]
+\ss\bf Faculty of Engineering and Environment \par
+\blank[line]
+\WORD{\bf \startcolor[steelblue] Research Project: Ethics Registration and Approval Form \stopcolor} \par
+\stopalignment
+
+\blank[line]
+{\bfa\ss Section One: Registration \bi \[To be completed by researcher\]} \par
+
+\blank[line]
+
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=10mm,width=80mm] Title of research project/dissertation \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\stopxtable
+
+\blank[line]
+
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=10mm,width=80mm] Researcher's name \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10mm] Student number (if applicable) \stopxcell
+\startxcell \stopxcell
+\stopxrow
+\stopxtable
+
+\blank[line]
+{\it \ \hspace[big] Please only complete the following if researcher is a student:} \par
+\blank[line]
+
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm,spaceinbetween=line]
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=10mm,width=80mm] Programme of study \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10mm] Academic Year \stopxcell
+\startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10mm] Module code (if applicable) \stopxcell
+\startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10mm] Principal Supervisor \stopxcell
+\startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10mm] Start Date \stopxcell
+\startxcell \stopxcell
+\stopxrow
+\stopxtable
+
+\blank[line]
+
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=40mm] Brief outline of research topic: \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=40mm] Short description of proposed research methods including identification of participants: \stopxcell
+\stopxrow
+\stopxtable
+
+\stopTEXpage
+\page[yes]
+\startTEXpage
+
+\startxtable[option={stretch,width},foregroundstyle={\ss},offset=1mm]
+\startxtablehead[background=color,backgroundcolor=gray,foregroundstyle={\ss\bf}]
+\startxrow
+\startxcell[width=100mm,height=7mm] Ethical considerations in the research project \stopxcell
+\startxcell[align=middle] \WORD{Yes} \stopxcell
+\startxcell[align=middle] \WORD{No} \stopxcell
+\stopxrow
+\stopxtablehead
+\startxtablebody
+\startxrow
+\startxcell 1. Does your research involve an external organisation or partner? \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell 2. Does your research involve human participants? \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell 3. If yes to Q.2, will you inform the participants about the research? \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell 4. Will you obtain their consent using the standard consent form? \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell 5. Is any deception involved? \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell 6. Do any participants constitute a 'vulnerable group'? \\ (refer to definition of Vulnerable People) \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell 7. Will the research involve the following information? \\ Commercially sensitive \\ Personally sensitive \\ Politically sensitive \\ Legally sensitive \stopxcell
+\startxcell[align=middle] \ \\ {\tfc $\Box$} \\ {\tfc $\Box$} \\ {\tfc $\Box$} \\ {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] \ \\ {\tfc $\Box$} \\ {\tfc $\Box$} \\ {\tfc $\Box$} \\ {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell 8. Is the research likely to have any significant environmental impacts? \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell 9. Are there likely to be any risks for the participants in your research? \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell 10. Are there likely to be any risks for you in conducting the research? \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell 11. If yes \[to 5, 6, 7, 8, 9 or 10 above\] have you identified steps to address the issues and mitigate any risks to participants, yourself or the environment? \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\stopxtablebody
+\stopxtable
+
+\blank[2*line]
+
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[height=50mm] Statement to explain how any issues identified above will be addressed and what steps will be taken to mitigate such risks or adverse impacts \stopxcell
+\stopxrow
+\stopxtable
+
+\blank[line]
+
+{\ss {\bf Ethical category of research project} \par
+Based on the above Ethical Considerations and with reference to the University's Ethical Scrutiny Risk Assessment tool identify the Ethical category of your research project (refer to \\ \goto{\hyphenatedurl{http://northumbria.ac.uk/static/5007/respdf/riskassesmenttool}}[url(http://www.northumbria.ac.uk/static/5007/respdf/riskassesmenttool)] for further guidance):
+}
+
+\blank[line]
+
+{\ss\it [Please tick as appropriate]} \par
+\startxtable[option={stretch},foregroundstyle={\ss},offset=1mm]
+\startxrow
+\startxcell {\bf Red} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell \ssx vulnerable participants; human tissue; sensitive data; risks to participants \& researchers etc. \stopxcell
+\stopxrow
+\startxrow
+\startxcell {\bf Amber} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell \ssx human participants requiring informed consent; commercially sensitive information etc. \stopxcell
+\stopxrow
+\startxrow
+\startxcell {\bf Green} \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\startxcell \ssx no participants involved; secondary data only; no sensitive data \stopxcell
+\stopxrow
+\stopxtable
+
+\stopTEXpage
+\page[yes]
+\startTEXpage
+
+\startxtable[frame=on,option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[height=70mm] I have read the University and the Faculty Ethics Policy and Procedures and confirm that the answers I have given above are correct. Where issues arise under items 5, 6, 7, 8, 9 or 10 \[above\] I have described in writing how I intend to approach these issues in the research. \\
+\blank[line]
+\startxtable[frame=off]
+\startxrow
+\startxcell Researcher's signature \stopxcell
+\startxcell[width=45mm] \stopxcell
+\startxcell[width=55mm] \color[white]{.}\dotfill\color[white]{.} \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=3,height=5mm] \stopxcell
+\stopxrow
+\startxrow
+\startxcell Date \stopxcell
+\startxcell \stopxcell
+\startxcell \color[white]{.}\dotfill\color[white]{.} \stopxcell
+\stopxrow
+\stopxtable
+\blank[3*halfline]
+Section 1 Ethics Registration to be submitted to Principal Supervisor \par \stopxcell
+\stopxrow
+\stopxtable
+
+\stopTEXpage
+\page[yes]
+\startTEXpage
+
+{\ssa\bf Section Two: Approval} \par
+\blank[halfline]
+
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[height=10mm] Supervisor/Module Tutor's name \stopxcell
+\startxcell[width=80mm] \stopxcell
+\stopxrow
+\stopxtable
+
+\blank[halfline]
+{\ss\bf Ethical approval \tfx\it [Please tick as appropriate]} \par
+
+\startxtable[option={stretch},foregroundstyle={\ss},offset=1mm]
+\startxrow
+\startxcell[height=10mm] Green - Ethical approval is given without conditions \stopxcell
+\startxcell[align=middle,width=30mm] {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell Amber - Ethical approval is given with the following conditions: \par
+\blank[line]
+\startitemize[n,joindup,nowhite][start=15]
+\item Information to be provided to all participants
+\item Participant consent to be obtained using the standard Research Participant Consent Form or otherwise in accordance with Faculty procedures
+\item Data to be stored and destroyed securely in accordance with University guidelines
+\item Adherence to DPA
+\item Anonymity to be provided to participants
+\item Commercial confidentiality to be provided to organisations(s)
+\item Other (please state):
+\sym{}
+\stopitemize
+\stopxcell
+\startxcell[align=middle] \ \blank[line] {\tfc $\Box$} \\ \ \\ {\tfc $\Box$} \\ \ \\ {\tfc $\Box$} \\ {\tfc $\Box$} \\ {\tfc $\Box$} \\ {\tfc $\Box$} \\ {\tfc $\Box$} \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10mm] Red - Project is referred to FREC for approval \stopxcell
+\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+\stopxrow
+\stopxtable
+
+\blank[line]
+
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[height=35mm]
+\startxtable[frame=off]
+\startxrow
+\startxcell Name \& role of approving member of staff 1: \stopxcell
+\startxcell[width=15mm] \stopxcell
+\startxcell[width=50mm] \color[white]{.}\dotfill\color[white]{.} \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=3,height=4mm] \stopxcell
+\stopxrow
+\startxrow
+\startxcell Signature \stopxcell
+\startxcell \stopxcell
+\startxcell \color[white]{.}\dotfill\color[white]{.} \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=3,height=4mm] \stopxcell
+\stopxrow
+\startxrow
+\startxcell Date \stopxcell
+\startxcell \stopxcell
+\startxcell \color[white]{.}\dotfill\color[white]{.} \stopxcell
+\stopxrow
+\stopxtable
+\stopxcell
+\stopxrow
+\stopxtable
+
+\blank[line]
+
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[height=40mm] Outcome of FREC referral – Decision, minute and date of meeting; identify two signatories \stopxcell
+\stopxrow
+\stopxtable
+\stopTEXpage
+\stoptext

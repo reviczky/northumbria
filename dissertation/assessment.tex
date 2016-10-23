@@ -1,0 +1,113 @@
+% engine=luajittex
+
+\setupinteraction
+[
+  state=start,
+  color=darkolivegreen,
+  title={Project Risk Assessment Form},
+  author={Adam Reviczky},
+  subtitle={Risk Assessment Form},
+  keyword={northumbria},
+]
+
+\setuppapersize[A4,portrait][A4,portrait]
+\mainlanguage[uk]
+\definefontfeature[default][default][protrusion=quality,expansion=quality]
+\setupalign[hz,hanging]
+\setupbodyfont[palatino,11pt]
+
+% \spaceskip=0pt plus 2 fill \relax
+
+\setuppagenumbering[location=]
+
+\setuplayout
+[
+  backspace=20mm,
+  cutspace=20mm,
+  width=170mm,
+  topspace=10mm,
+  bottomspace=10mm,
+  header=10mm,
+  footer=10mm,
+  height=277mm,
+]
+
+% \showframe
+
+%\starttext
+\startTEXpage
+\WORD{\ssx\bi Are you aware that no one is allowed to work alone in the laboratory? Yes/No} \par
+\startalignment[left]{\ssx\bi (delete as applicable)} \stopalignment \par
+\blank[line]
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Student Name \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Student ID \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Student Email \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Programme Title \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=14mm] Project Title \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Project Location \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=28mm] List the Significant Hazards associated with your project {\tfx\it (continue on a separate sheet if necessary)} \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=21mm] List the other people at risk {\tfx\it (continue on a separate sheet if necessary)} \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=28mm] Describe the working procedures to be used to minimise risk {\tfx\it (continue on a separate sheet if necessary)} \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=21mm] Are there any other Risk Control Measures needed? {\tfx\it (continue on a separate sheet if necessary)} \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=21mm] When will you and your supervisor review the risk assessment? And how will the risk be monitored on an ongoing basis? \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Student Signature \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Supervisor \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Supervisor Signature \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Second Marker \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Second Marker Signature \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Date of Agreement \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\stopxrow
+\stopxtable
+\stopTEXpage
+%\stoptext

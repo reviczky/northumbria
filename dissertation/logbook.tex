@@ -1,0 +1,57 @@
+% engine=luajittex
+
+\setupinteraction
+[
+  state=start,
+  color=darkolivegreen,
+  title={Project Log},
+  author={Adam Reviczky},
+  subtitle={Supervision Log Book},
+  keyword={northumbria},
+]
+
+\setuppapersize[A4,portrait][A4,portrait]
+\mainlanguage[uk]
+\definefontfeature[default][default][protrusion=quality,expansion=quality]
+\setupalign[hz,hanging]
+\setupbodyfont[palatino,12pt]
+
+\setuppagenumbering[location=]
+
+% \showframe
+
+%\starttext
+\startTEXpage
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[width=\dimexpr\textwidth*2/3\relax,height=11mm] Date and time of meeting \stopxcell
+\startxcell[width=\dimexpr\textwidth/3\relax] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=2,height=52mm] Brief description of work done since last meeting \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=11mm] Hours spent on project since last meeting \stopxcell
+\startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=2,height=52mm] Issues identified during supervision \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=2,height=52mm] Agreed tasks for next meeting \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=11mm] Date and time of next meeting \stopxcell
+\startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10.5mm] Student signature \stopxcell
+\startxcell \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10.5mm] Supervisor signature \stopxcell
+\startxcell \stopxcell
+\stopxrow
+\stopxtable
+\stopTEXpage
+%\stoptext

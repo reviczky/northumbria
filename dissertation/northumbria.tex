@@ -74,6 +74,14 @@
 \setuphead[chapter,section,subsection][alternative=margin]
 \setuppagenumbering[location=footer,left={},right={},style={\ss}]
 
+%\startuniqueMPgraphic{gradient}{bgcolor,textcolor}
+% path sq; sq := unitsquare xscaled \overlaywidth yscaled \overlayheight;
+% linear_shade(sq,8,\MPvar{bgcolor},\MPvar{textcolor});
+%\stopuniqueMPgraphic
+%\defineoverlay[gradient][\uniqueMPgraphic{gradient}{bgcolor=gray,textcolor=white}]
+
+%\define[2]\chapterbackground{\framed[frame=off,background=gradient,width=\textwidth]{\inmargin{\framed[frame=off,offset=0mm,roffset=1.5mm,location={depth}]{#1}} #2}}
+%\setuphead[chapter][after={\blank[5mm]},color=darkolivegreen,command=\chapterbackground]
 \setuphead[chapter][after={\blank[5mm]},color=darkolivegreen]
 \setuphead[section,subsection][after={\blank[2.5mm]},color=darkolivegreen]
 % \setuplabeltext[appendix=APPENDIX~]
