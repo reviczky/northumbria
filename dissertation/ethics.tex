@@ -101,10 +101,12 @@
 
 \startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
 \startxrow
-\startxcell[width=\dimexpr\textwidth/2\relax,height=20mm] Brief outline of research topic: \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax,height=20mm] Brief outline of research topic: \\
+Cyber-Physical Systems; Behavioural Profiling; Anomality Detection; Threat Definition; Threat Prevention; Bayesian Filtering; Intelligent transportation systems; \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=20mm] Short description of proposed research methods including identification of participants: \stopxcell
+\startxcell[height=20mm] Short description of proposed research methods including identification of participants: \\
+Non-experimental research will be conducted with quantitative data analysis methods. \\ No participants will be required for this research. \stopxcell
 \stopxrow
 \stopxtable
 
@@ -183,7 +185,7 @@
 
 \startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
 \startxrow
-\startxcell[height=50mm] Statement to explain how any issues identified above will be addressed and what steps will be taken to mitigate such risks or adverse impacts \stopxcell
+\startxcell[height=50mm] Statement to explain how any issues identified above will be addressed and what steps will be taken to mitigate such risks or adverse impacts \\ \blank[line] There are no issues that needs to be addressed. \stopxcell
 \stopxrow
 \stopxtable
 
@@ -218,6 +220,11 @@ Based on the above Ethical Considerations and with reference to the University's
 \page[yes]
 \startTEXpage
 
+\definelayer[date]
+\definelayer[signature]
+\setlayer[date][x=.5\layerwidth,y=0mm]{\ss\date[d=1,m=8,y=2016][dd,month,year]}
+\setlayer[signature][x=.2\layerwidth,y=-5mm]{\startuniqueMPgraphic{signature} input signature.mp; \stopuniqueMPgraphic \framed[frame=off,location={lohi}]{\scale[scale=750]{\reuseMPgraphic{signature}}}}
+
 \startxtable[frame=on,option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
 \startxrow
 \startxcell[height=70mm] I have read the University and the Faculty Ethics Policy and Procedures and confirm that the answers I have given above are correct. Where issues arise under items 5, 6, 7, 8, 9 or 10 \[above\] I have described in writing how I intend to approach these issues in the research. \\
@@ -226,7 +233,7 @@ Based on the above Ethical Considerations and with reference to the University's
 \startxrow
 \startxcell Researcher's signature \stopxcell
 \startxcell[width=45mm] \stopxcell
-\startxcell[width=55mm] \color[white]{.}\dotfill\color[white]{.} \stopxcell
+\startxcell[width=55mm,background=signature] \color[white]{.}\dotfill\color[white]{.} \stopxcell
 \stopxrow
 \startxrow
 \startxcell[nx=3,height=5mm] \stopxcell
@@ -234,7 +241,7 @@ Based on the above Ethical Considerations and with reference to the University's
 \startxrow
 \startxcell Date \stopxcell
 \startxcell \stopxcell
-\startxcell \color[white]{.}\dotfill\color[white]{.} \stopxcell
+\startxcell[background=date] \color[white]{.}\dotfill\color[white]{.} \stopxcell
 \stopxrow
 \stopxtable
 \blank[3*halfline]
@@ -288,6 +295,9 @@ Section 1 Ethics Registration to be submitted to Principal Supervisor \par \stop
 
 \blank[line]
 
+\definelayer[date]
+\setlayer[date][x=.45\layerwidth,y=0mm]{\ss\date[d=1,m=8,y=2016][dd,month,year]}
+
 \startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
 \startxrow
 \startxcell[height=35mm]
@@ -311,7 +321,7 @@ Section 1 Ethics Registration to be submitted to Principal Supervisor \par \stop
 \startxrow
 \startxcell Date \stopxcell
 \startxcell \stopxcell
-\startxcell \color[white]{.}\dotfill\color[white]{.} \stopxcell
+\startxcell[background=date] \color[white]{.}\dotfill\color[white]{.} \stopxcell
 \stopxrow
 \stopxtable
 \stopxcell

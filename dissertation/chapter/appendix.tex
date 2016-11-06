@@ -3,10 +3,12 @@
 
 \setuphead[chapter][textstyle={\tfd\sc}]
 \startchapter[title=Appendix - Research Proposal]
-Insert your research proposal here. \par
+\startsection[title=Abstract (Research Proposal)]
+This proposal for a master's dissertation on the "Internet of Things" is looking at a novel way of predicting cyber threats of a specific sub-set of said cyber-physical systems \cite[citeulike:13779694], by applying a specialised version of the Bayesian estimation to compare the predicted behaviour of cyber-physical systems with the actual motion patterns \cite[Fox03bayesianfiltering]. Taking advantage of known-good behaviour of large-scale movement flows at a regulated traffic \cite[perallos2015intelligent], it can be deducted when a system behaves in a rogue manner. \par
+\stopsection
 
-\blank[line]
-
+\startsection[title=Project Timetable]
+{\ssx
 \placefigure[place]{Project Timetable}{
 \startxtable[option={width},foregroundstyle={\ss},offset=1mm]
 \startxtablehead[foregroundstyle={\ss\bf}]
@@ -35,52 +37,104 @@ Insert your research proposal here. \par
 \stopxrow
 \stopxtablebody
 \stopxtable
-}
+}}
+\stopsection
 
-\blank[line]
-
+\startsection[title=Project Deadlines]
+{\ssx
 \placefigure[place]{Key Facts \& Dates/Deadlines}{
 \startxtable[option={width},foregroundstyle={\ss\bf},offset=1mm]
 \startxrow
-\startxcell[width=74mm,height=14mm] Deadline for submitting Project Initiation Form \stopxcell \startxcell[width=75mm,align=left] 02 July 2016 \stopxcell
+\startxcell[width=80mm,height=12mm] Deadline for submitting Project Initiation Form \stopxcell \startxcell[width=75mm,align=left] 02 July 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=14mm] Deadline for submitting Research Proposal \stopxcell \startxcell[align=left] 01 August 2016 \stopxcell
+\startxcell[height=7mm] Deadline for submitting Research Proposal \stopxcell \startxcell[align=left] 01 August 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=14mm] Date of Research Proposal Review Meeting \stopxcell \startxcell[align=left] 01 August 2016 \stopxcell
+\startxcell[height=7mm] Date of Research Proposal Review Meeting \stopxcell \startxcell[align=left] 01 August 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=20mm] Deadline for submitting MSc Project Ethical and Risk Assessment Form \stopxcell \startxcell[align=left] 01 August 2016 \stopxcell
+\startxcell[height=12mm] Deadline for submitting MSc Project Ethical and Risk Assessment Form \stopxcell \startxcell[align=left] 01 August 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=14mm] Deadline for submitting Dissertation \stopxcell \startxcell[align=left] 19 January 2017 \stopxcell
+\startxcell[height=7mm] Deadline for submitting Dissertation \stopxcell \startxcell[align=left] 19 January 2017 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=8mm] Date of Viva \stopxcell \startxcell[align=left] February 2017 \stopxcell
+\startxcell[height=7mm] Date of Viva \stopxcell \startxcell[align=left] February 2017 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=8mm] Name of Supervisor \stopxcell \startxcell[align=left] Dr Haider Al-Khateeb \stopxcell
+\startxcell[height=7mm] Name of Supervisor \stopxcell \startxcell[align=left] Dr Haider Al-Khateeb \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=8mm] Name of Second Marker \stopxcell \startxcell[align=left] Dr Gregory Epiphaniou \stopxcell
+\startxcell[height=7mm] Name of Second Marker \stopxcell \startxcell[align=left] Dr Gregory Epiphaniou \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=8mm] Name of Project Tutor \stopxcell \startxcell[align=left] Dr Ali Mansour \stopxcell
+\startxcell[height=7mm] Name of Project Tutor \stopxcell \startxcell[align=left] Dr Ali Mansour \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=8mm] Name of Programme Leader \stopxcell \startxcell[align=left] Prof Hamid Jahankhani \stopxcell
+\startxcell[height=7mm] Name of Programme Leader \stopxcell \startxcell[align=left] Prof Hamid Jahankhani \stopxcell
 \stopxrow
 \stopxtable
-}
+}}
+\stopsection
 \stopchapter
 
 \startchapter[title=Appendix - Figures and Diagrams]
-Put your pictures, charts and tables here. Number them and refer to the number in your text, so we can find them easily. \par
+\startsection[title=Pictures]
+Reference: Number P.1 \par
+\stopsection
+
+\startsection[title=Charts]
+Reference: Number C.1 \par
+\stopsection
+
+\startsection[title=Tables]
+Reference: Number T.1 \par
+\stopsection
 \stopchapter
 
 \startchapter[title=Appendix - Other Stuff]
-You may need to include other appendices. Code? Design diagrams? \par
+\startsection[title=R Code]
+
+\setuptyping[option=color]
+\setuplinenumbering[location=text]
+\defineframedtext[framedcode][frame=off,strut=yes,offset=2mm,width=\textwidth,align=right]
+\definetyping[code][numbering=line,bodyfont=small,before={\startframedcode},after={\stopframedcode}]
+
+\startcode
+library(extrafont)
+library(rstan)
+library(coda)
+set.seed(20151204)
+
+dat<-data.frame(x1=runif(100,-2,2),x2=runif(100,-2,2))
+X<-model.matrix(~x1*x2,dat)
+betas<-runif(4,-1,1)
+sigma<-1
+y_norm<-rnorm(100,X%*%betas,sigma)
+new_X<-model.matrix(~x1*x2,expand.grid(x1=seq(min(dat$x1),
+max(dat$x1),length=20),x2=c(min(dat$x2),mean(dat$x2),max(dat$x2))))
+setwd("stan")
+m_norm<-stan(file="sample.stan",data =
+list(N=100,N2=60,K=4,y=y_norm,X=X,new_X=new_X),pars =
+c("beta","sigma","y_pred"))
+apply(extract(m_norm,pars="beta")$beta,2,function(x) length(which(x>0))/4000)
+
+new_x<-data.frame(x1=new_X[,2],x2=rep(c("Min","Mean","Max"),each=20))
+new_y<-extract(m_norm,pars="y_pred")
+pred<-apply(new_y[[1]],2,quantile,probs=c(0.025,0.5,0.975)) #the median line with 95% credible intervals
+
+plot(dat$x1,y_norm,pch="+")
+lines(new_x$x1[1:20],pred[2,21:40],col="orange",lwd=3)
+lines(new_x$x1[1:20],pred[1,21:40],col="orange",lwd=1,lty=2)
+lines(new_x$x1[1:20],pred[3,21:40],col="orange",lwd=1,lty=2)
+legend("topright",legend=c("Mean"),lty=1,col=c("orange"),bty = "n",title = "Tesla crash")
+\stopcode
+\stopsection
+
+\startsection[title=Design Diagrams]
+Reference: Number DD.1 \par
+\stopsection
 \stopchapter
 
 \startchapter[title=Appendix - Project Log]
