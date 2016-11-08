@@ -7,7 +7,7 @@
   color=darkolivegreen,
   title={Project Ethical and Risk Assessment Form},
   author={Adam Reviczky},
-  subtitle={Ethical and Risk Assessment Form},
+  subtitle={IS0749 part C Ethics form 2015-16},
   keyword={northumbria},
 ]
 
@@ -37,22 +37,30 @@
 
 \starttext
 \startTEXpage
-\startuseMPgraphic{logo} input northumbria.mp; \stopuseMPgraphic \midaligned{\scale[scale=1500]{\useMPgraphic{logo}}} \par
-\blank[line]
-\startalignment[middle]
-\ss\bf Faculty of Engineering and Environment \par
-\blank[line]
-\WORD{\bf \startcolor[steelblue] Research Project: Ethics Registration and Approval Form \stopcolor} \par
-\stopalignment
+\startxtable[offset=2mm]
+\startxrow[height=30mm]
+\startxcell[width=.72\textwidth,leftframe=off,topframe=off,bottomframe=off] \stopxcell
+\startxcell[width=45mm] {\ssx Ethical category of project \\ {\it \midaligned{\[Complete after approval\]}} \blank[halfline] \startxtable[offset=0mm] \startxrow \startxcell[align=left,roffset=2mm,width=24mm] \color[darkred]{\bf Red} \stopxcell \startxcell[width=14mm] \stopxcell \stopxrow \startxrow \startxcell[align=left,roffset=2mm] \color[orange]{\bf Amber} \stopxcell \startxcell \stopxcell \stopxrow \startxrow \startxcell[align=left,roffset=2mm] \color[darkgreen]{\bf Green} \stopxcell \startxcell \stopxcell \stopxrow \stopxtable} \stopxcell
+\stopxrow
+\stopxtable
 
-\blank[line]
-{\bfa\ss Section One: Registration \color[gray]{\bi\[To be completed by researcher\]}} \par
+%\blank[line]
 
+\startxtable[frame=off,align=middle]
+\startxrow
+\startxcell[width=.3\textwidth,align={low,middle}] {\ssx\bf Department of Computer \\ Technologies \blank[line] \WORD{Student \\ registration}} \stopxcell
+\startxcell[width=.4\textwidth,align={low,middle}] \startuseMPgraphic{logo} input northumbria.mp; \stopuseMPgraphic \midaligned{\scale[scale=1500]{\useMPgraphic{logo}}} \stopxcell
+\startxcell[width=.3\textwidth,align={low,middle}] {\ssx\bf Science and Digital} \blank[3*halfline] {\ssx\bf \startcolor[black] \WORD{Project: Ethics and approval form} \stopcolor} \stopxcell
+\stopxrow
+\stopxtable
+
+\blank[halfline]
+{\bf\ss Section One: Registration \color[gray]{\bi\[To be completed by student\]}} \par
 \blank[line]
 
 \startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
 \startxrow
-\startxcell[width=\dimexpr\textwidth/2\relax,height=10mm,width=80mm] Title of research project/dissertation \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax,height=10mm,width=80mm] Title of project \stopxcell
 \startxcell[width=\dimexpr\textwidth/2\relax] Proactive threat detection of cyber-physical systems using Bayesian estimation: connected cars as a case study \stopxcell
 \stopxrow
 \stopxtable
@@ -64,15 +72,15 @@
 \startxcell[width=\dimexpr\textwidth/2\relax,height=10mm,width=80mm] Researcher's name \stopxcell
 \startxcell[width=\dimexpr\textwidth/2\relax] Adam Reviczky \stopxcell
 \stopxrow
-\startxrow
-\startxcell[height=10mm] Student number (if applicable) \stopxcell
-\startxcell 14044980 \stopxcell
-\stopxrow
+%\startxrow
+%\startxcell[height=10mm] Student number (if applicable) \stopxcell
+%\startxcell 14044980 \stopxcell
+%\stopxrow
 \stopxtable
 
 \blank[line]
-{\it \ \hspace[big] Please only complete the following if researcher is a student:} \par
-\blank[line]
+%{\it \ \hspace[big] Please only complete the following if researcher is a student:} \par
+%\blank[line]
 
 \startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm,spaceinbetween=line]
 \startxrow
@@ -84,15 +92,19 @@
 \startxcell 2016/2017 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=10mm] Module code (if applicable) \stopxcell
+\startxcell[height=10mm] Module code \stopxcell
 \startxcell LD0718 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=10mm] Principal Supervisor \stopxcell
+\startxcell[height=10mm] Supervisor's name \stopxcell
 \startxcell Dr Haider Al-Khateeb \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=10mm] Start Date \stopxcell
+\startxcell[height=10mm] Second Marker's name \stopxcell
+\startxcell Dr Gregory Epiphaniou \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10mm] Start Date of project \stopxcell
 \startxcell 01 August 2016 \stopxcell
 \stopxrow
 \stopxtable
@@ -100,12 +112,12 @@
 \blank[line]
 
 \startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+%\startxrow
+%\startxcell[width=\dimexpr\textwidth/2\relax,height=20mm] Brief outline of research topic: \\
+%Cyber-Physical Systems; Behavioural Profiling; Anomality Detection; Threat Definition; Threat Prevention; Bayesian Filtering; Intelligent transportation systems; \stopxcell
+%\stopxrow
 \startxrow
-\startxcell[width=\dimexpr\textwidth/2\relax,height=20mm] Brief outline of research topic: \\
-Cyber-Physical Systems; Behavioural Profiling; Anomality Detection; Threat Definition; Threat Prevention; Bayesian Filtering; Intelligent transportation systems; \stopxcell
-\stopxrow
-\startxrow
-\startxcell[height=20mm] Short description of proposed research methods including identification of participants: \\
+\startxcell[height=30mm] Short description of project, including research methods and selection of any participants: \blank[line]
 Non-experimental research will be conducted with quantitative data analysis methods. \\ No participants will be required for this research. \stopxcell
 \stopxrow
 \stopxtable
@@ -124,7 +136,7 @@ Non-experimental research will be conducted with quantitative data analysis meth
 \stopxtablehead
 \startxtablebody
 \startxrow
-\startxcell 1. Does your research involve an external organisation or partner? \stopxcell
+\startxcell 1. Does your research involve an external organisation or partner e.g. NHS, \\ School etc. \stopxcell
 \startxcell[align=middle] {\tfc $\Box$} \stopxcell
 \startxcell[align=middle] {\tfc $\boxtimes$} \stopxcell
 \stopxrow
@@ -149,32 +161,27 @@ Non-experimental research will be conducted with quantitative data analysis meth
 \startxcell[align=middle] \color[gray]{\tfc $\Box$} \stopxcell
 \stopxrow
 \startxrow
-\startxcell 6. Do any participants constitute a 'vulnerable group'? \\ (refer to definition of Vulnerable People) \stopxcell
+\startxcell 6. Do any participants constitute a 'vulnerable group' (see definition of Vulnerable People) \stopxcell
 \startxcell[align=middle] \color[gray]{\tfc $\Box$} \stopxcell
 \startxcell[align=middle] \color[gray]{\tfc $\Box$} \stopxcell
 \stopxrow
 \startxrow
-\startxcell 7. Will the research involve the following information? \\ Commercially sensitive \\ Personally sensitive \\ Politically sensitive \\ Legally sensitive \stopxcell
-\startxcell[align=middle] \ \\ {\tfc $\Box$} \\ {\tfc $\Box$} \\ {\tfc $\Box$} \\ {\tfc $\Box$} \stopxcell
-\startxcell[align=middle] \ \\ {\tfc $\boxtimes$} \\ {\tfc $\boxtimes$} \\ {\tfc $\boxtimes$} \\ {\tfc $\boxtimes$} \stopxcell
+\startxcell 7. Will the research involve the following information? \blank[small] Commercially sensitive \blank[small] Personally sensitive \blank[small] Politically sensitive \stopxcell
+\startxcell[align=middle] \ \blank[small] {\tfc $\Box$} \blank[small] {\tfc $\Box$} \blank[small] {\tfc $\Box$} \stopxcell
+\startxcell[align=middle] \ \blank[small] {\tfc $\boxtimes$} \blank[small] {\tfc $\boxtimes$} \blank[small] {\tfc $\boxtimes$} \stopxcell
 \stopxrow
 \startxrow
-\startxcell 8. Is the research likely to have any significant environmental impacts? \stopxcell
+\startxcell 8. Is the research likely to cause any significant environmental impacts? \stopxcell
 \startxcell[align=middle] {\tfc $\Box$} \stopxcell
 \startxcell[align=middle] {\tfc $\boxtimes$} \stopxcell
 \stopxrow
 \startxrow
-\startxcell 9. Are there likely to be any risks for the participants in your research? \stopxcell
-\startxcell[align=middle] \color[gray]{\tfc $\Box$} \stopxcell
-\startxcell[align=middle] \color[gray]{\tfc $\Box$} \stopxcell
-\stopxrow
-\startxrow
-\startxcell 10. Are there likely to be any risks for you in conducting the research? \stopxcell
+\startxcell 9. Are there likely to be any risks for you or for the participants in your research? \stopxcell
 \startxcell[align=middle] {\tfc $\Box$} \stopxcell
 \startxcell[align=middle] {\tfc $\boxtimes$} \stopxcell
 \stopxrow
 \startxrow
-\startxcell 11. If yes \[to 5, 6, 7, 8, 9 or 10 above\] have you identified steps to address the issues and mitigate any risks to participants, yourself or the environment? \stopxcell
+\startxcell 10. If yes \[to 5, 6, 7, 8 or 9 above\] have you identified steps to address the \\ issues? \stopxcell
 \startxcell[align=middle] \color[gray]{\tfc $\Box$} \stopxcell
 \startxcell[align=middle] \color[gray]{\tfc $\Box$} \stopxcell
 \stopxrow
@@ -185,36 +192,15 @@ Non-experimental research will be conducted with quantitative data analysis meth
 
 \startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
 \startxrow
-\startxcell[height=50mm] Statement to explain how any issues identified above will be addressed and what steps will be taken to mitigate such risks or adverse impacts \\ \blank[line] There are no issues that needs to be addressed. \stopxcell
+\startxcell[height=120mm] Statement by researcher \blank[halfline] {\it This statement should explain how any issues identified in the answers to the above questions will be addressed and what steps will be taken to mitigate such risks or adverse impact} \\ \blank[line] There are no issues that needs to be addressed. \stopxcell
 \stopxrow
 \stopxtable
 
-\blank[line]
-
-{\ss {\bf Ethical category of research project} \par
-Based on the above Ethical Considerations and with reference to the University's Ethical Scrutiny Risk Assessment tool identify the Ethical category of your research project (refer to \\ \goto{\hyphenatedurl{http://northumbria.ac.uk/static/5007/respdf/riskassesmenttool.pdf}}[url(https://www.northumbria.ac.uk/static/5007/respdf/riskassesmenttool.pdf)] for further guidance):
-}
-
-\blank[line]
-
-{\ss\it [Please tick as appropriate]} \par
-\startxtable[option={stretch},foregroundstyle={\ss},offset=1mm]
-\startxrow
-\startxcell \color[darkred]{\bf Red} \stopxcell
-\startxcell[align=middle] {\tfc $\Box$} \stopxcell
-\startxcell \ssx vulnerable participants; human tissue; sensitive data; risks to participants \& researchers etc. \stopxcell
-\stopxrow
-\startxrow
-\startxcell \color[orange]{\bf Amber} \stopxcell
-\startxcell[align=middle] {\tfc $\Box$} \stopxcell
-\startxcell \ssx human participants requiring informed consent; commercially sensitive information etc. \stopxcell
-\stopxrow
-\startxrow
-\startxcell \color[darkgreen]{\bf Green} \stopxcell
-\startxcell[align=middle] {\tfc $\boxtimes$} \stopxcell
-\startxcell \ssx no participants involved; secondary data only; no sensitive data \stopxcell
-\stopxrow
-\stopxtable
+%\blank[line]
+%{\ss {\bf Ethical category of research project} \par
+%Based on the above Ethical Considerations and with reference to the University's Ethical Scrutiny Risk Assessment tool identify the Ethical category of your research project (refer to \\ \goto{\hyphenatedurl{http://northumbria.ac.uk/static/5007/respdf/riskassesmenttool.pdf}}[url(https://www.northumbria.ac.uk/static/5007/respdf/riskassesmenttool.pdf)] for further guidance):
+%}
+%\blank[line]
 
 \stopTEXpage
 \page[yes]
@@ -227,7 +213,7 @@ Based on the above Ethical Considerations and with reference to the University's
 
 \startxtable[frame=on,option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
 \startxrow
-\startxcell[height=70mm] I have read the University and the Faculty Ethics Policy and Procedures and confirm that the answers I have given above are correct. Where issues arise under items 5, 6, 7, 8, 9 or 10 \[above\] I have described in writing how I intend to approach these issues in the research. \\
+\startxcell[height=50mm] I have read the University and the Faculty Ethics Policy and Procedures and confirm that the answers I have given above are correct. Where issues arise under items 5, 6, 7, 8 or 9 \[above\] I have described in writing how I intend to approach these issues in the research. \\
 \blank[line]
 \startxtable[frame=off]
 \startxrow
@@ -244,8 +230,9 @@ Based on the above Ethical Considerations and with reference to the University's
 \startxcell[background=date] \color[white]{.}\dotfill\color[white]{.} \stopxcell
 \stopxrow
 \stopxtable
-\blank[3*halfline]
-Section 1 Ethics Registration to be submitted to Principal Supervisor \par \stopxcell
+%\blank[3*halfline]
+%Section 1 Ethics Registration to be submitted to Principal Supervisor \par
+\stopxcell
 \stopxrow
 \stopxtable
 
@@ -253,39 +240,61 @@ Section 1 Ethics Registration to be submitted to Principal Supervisor \par \stop
 \page[yes]
 \startTEXpage
 
-{\ssa\bf Section Two: Approval} \par
-\blank[halfline]
-
-\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
-\startxrow
-\startxcell[height=10mm] Supervisor / Module Tutor's name \stopxcell
-\startxcell[width=80mm] Dr Haider Al-Khateeb \stopxcell
-\stopxrow
-\stopxtable
+{\ss\bf Section Two: Approval} \par
 
 \blank[halfline]
-{\ss\bf Ethical approval \color[gray]{\tfx\it\[Please tick as appropriate\]}} \par
+{\ss\it \[The form is reviewed by the supervisor and second marker. Approval maybe given by either for green projects; amber projects must be approved by the second marker. Red projects must be referred to the Faculty Research Ethics Committee.\]} \par
+\blank[halfline]
+
+%{\ss\it [Please tick as appropriate]} \par
+%\startxtable[option={stretch},foregroundstyle={\ss},offset=1mm]
+%\startxrow
+%\startxcell \color[darkred]{\bf Red} \stopxcell
+%\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+%\startxcell \ssx vulnerable participants; human tissue; sensitive data; risks to participants \& researchers etc. \stopxcell
+%\stopxrow
+%\startxrow
+%\startxcell \color[orange]{\bf Amber} \stopxcell
+%\startxcell[align=middle] {\tfc $\Box$} \stopxcell
+%\startxcell \ssx human participants requiring informed consent; commercially sensitive information etc. \stopxcell
+%\stopxrow
+%\startxrow
+%\startxcell \color[darkgreen]{\bf Green} \stopxcell
+%\startxcell[align=middle] {\tfc $\boxtimes$} \stopxcell
+%\startxcell \ssx no participants involved; secondary data only; no sensitive data \stopxcell
+%\stopxrow
+%\stopxtable
+
+\framed[frame=on,width=\textwidth,height=25mm,align=top]{\ss%
+\color[darkred]{\it{\bi Red}: Vulnerable participants, sensitive data, risks to participants or researchers, NHS, etc.} \\
+\color[orange]{\it{\bi Amber}: Human participants, environmental issues, commercially sensitive information, etc.} \\
+\color[darkgreen]{\it{\bi Green}: No participants involved, no sensitive data, etc.} \\
+\it For full definitions see section on Risk Categories in the Engineering and Environment Ethics Procedures.}
+
+\blank[3*halfline]
+{\ss\bf Ethical approval \\ \color[gray]{\tfx\it\[Please tick as appropriate\]}} \par
+\blank[halfline]
 
 \startxtable[option={stretch},foregroundstyle={\ss},offset=1mm]
 \startxrow
 \startxcell[height=10mm] \color[darkgreen]{Green - Ethical approval is given without conditions} \stopxcell
-\startxcell[align=middle,width=30mm] {\tfc $\boxtimes$} \stopxcell
+\startxcell[align=middle,width=20mm] {\tfc $\boxtimes$} \stopxcell
 \stopxrow
 \startxrow
-\startxcell \color[orange]{Amber - Ethical approval is given with the following conditions:} \par
+\startxcell \color[orange]{Amber - Ethical approval is given with the following conditions} \par
 \blank[line]
-\startitemize[n,joindup,nowhite][start=15]
+\startitemize[joindup,nowhite][margin=2em]
 \item Information to be provided to all participants
 \item Participant consent to be obtained using the standard Research Participant Consent Form or otherwise in accordance with Faculty procedures
 \item Data to be stored and destroyed securely in accordance with University guidelines
-\item Adherence to DPA
+\item Adherence to Data Protection Act (DPA)
 \item Anonymity to be provided to participants
 \item Commercial confidentiality to be provided to organisations(s)
 \item Other (please state):
 \sym{}
 \stopitemize
 \stopxcell
-\startxcell[align=middle] \ \blank[line] \color[gray]{\tfc $\Box$} \\ \ \\ \color[gray]{\tfc $\Box$} \\ \ \\ \color[gray]{\tfc $\Box$} \\ \color[gray]{\tfc $\Box$} \\ \color[gray]{\tfc $\Box$} \\ \color[gray]{\tfc $\Box$} \\ \color[gray]{\tfc $\Box$} \stopxcell
+\startxcell[align=middle] \ \blank[line] \color[gray]{\tfc $\Box$} \\ \color[gray]{\tfc $\Box$} \\ \ \\ \color[gray]{\tfc $\Box$} \\ \ \\ \color[gray]{\tfc $\Box$} \\ \color[gray]{\tfc $\Box$} \\ \color[gray]{\tfc $\Box$} \\ \color[gray]{\tfc $\Box$} \stopxcell
 \stopxrow
 \startxrow
 \startxcell[height=10mm] \color[darkred]{Red - Project is referred to FREC for approval} \stopxcell
@@ -303,8 +312,8 @@ Section 1 Ethics Registration to be submitted to Principal Supervisor \par \stop
 \startxcell[height=35mm]
 \startxtable[frame=off]
 \startxrow
-\startxcell Name \& role of approving member of staff 1: \stopxcell
-\startxcell[width=15mm] \stopxcell
+\startxcell Name of Approver \stopxcell
+\startxcell[width=60mm] \stopxcell
 \startxcell[width=50mm] \color[white]{.}\dotfill\color[white]{.} \stopxcell
 \stopxrow
 \startxrow
@@ -332,7 +341,7 @@ Section 1 Ethics Registration to be submitted to Principal Supervisor \par \stop
 
 \startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
 \startxrow
-\startxcell[height=40mm] Outcome of FREC referral – Decision, minute and date of meeting; identify two signatories \stopxcell
+\startxcell[height=45mm] Outcome of FREC referral – Decision, minute and date of meeting, or signatures of two signatories, one of whom is a member of FREC. \stopxcell
 \stopxrow
 \stopxtable
 \stopTEXpage
