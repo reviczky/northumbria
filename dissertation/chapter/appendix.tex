@@ -1,6 +1,8 @@
 \startcomponent appendix
 \product dissertation
 
+\usemodule[steps]
+
 \setuphead[chapter][textstyle={\tfd\sc}]
 \startchapter[title=Appendix - Research Proposal]
 \startsection[title=Abstract (Research Proposal)]
@@ -18,22 +20,22 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 \stopxtablehead
 \startxtablebody
 \startxrow
-\startxcell Briefing by Project Tutor \stopxcell \startxcell[align=middle] Start of Dissertation \stopxcell
+\startxcell Briefing by Project Tutor \stopxcell \startxcell[align=middle] July 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell Submission of Project Initiation Form \stopxcell \startxcell[align=middle] 01 August 2016 \stopxcell
+\startxcell Submission of Project Initiation Form \stopxcell \startxcell[align=middle] July 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell Submission of Research Proposal \stopxcell \startxcell[align=middle] 01 August 2016 \stopxcell
+\startxcell Submission of Research Proposal \stopxcell \startxcell[align=middle] 09 July 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell Research Proposal Review Meeting \\ Submission of MSc Project Ethical \\ and Risk Assessment Form \stopxcell \startxcell[align=middle] Oct/Nov 2016 \stopxcell
+\startxcell Research Proposal Review Meeting \\ Submission of MSc Project Ethical \\ and Risk Assessment Form \stopxcell \startxcell[align=middle] December 2016 \\ 25 November 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell Submission of Dissertation & \\ Seminar Presentation \stopxcell \startxcell[align=middle] 19 January 2017 \\ 30 March 2017 \stopxcell
+\startxcell Submission of Dissertation & \blank[line] Seminar Presentation \stopxcell \startxcell[align=middle] 19 January 2017 \\ (30 March 2017) \\ 01-08 April 2017 \stopxcell
 \stopxrow
 \startxrow
-\startxcell Award Board \stopxcell \startxcell[align=middle] TBC \stopxcell
+\startxcell Award Board \stopxcell \startxcell[align=middle] June 2017 \stopxcell
 \stopxrow
 \stopxtablebody
 \stopxtable
@@ -63,10 +65,10 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 \startxcell[height=7mm] Date of Viva \stopxcell \startxcell[align=left] February 2017 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=7mm] Name of Supervisor \stopxcell \startxcell[align=left] Dr Haider Al-Khateeb \stopxcell
+\startxcell[height=7mm] Name of Supervisor \stopxcell \startxcell[align=left] Dr Haider al-Khateeb \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=7mm] Name of Second Marker \stopxcell \startxcell[align=left] Dr Gregory Epiphaniou \stopxcell
+\startxcell[height=7mm] Name of Second Marker \stopxcell \startxcell[align=left] Ahmed Bouridane \stopxcell
 \stopxrow
 \startxrow
 \startxcell[height=7mm] Name of Project Tutor \stopxcell \startxcell[align=left] Dr Ali Mansour \stopxcell
@@ -77,35 +79,105 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 \stopxtable
 }}
 \stopsection
+
+\startsection[title=Schedule of Activities - Project Plan]
+\placefigure[place]{ProjectLibre Gantt Chart}{\externalfigure[project][width=\textwidth]}
+\stopsection
+
+\startsection[title=Time Management - Supervisor Meetings]
+Regular meetings every 2 weeks (Sundays 6pm) \par
+\blank[line]
+\startitemize[joindup,nowhite][width=2.5em]
+\sym{w/c} \date[d=31,m=10,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year] \[\date[d=6,m=11,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year] (1 hr)\]
+\sym{w/c} \date[d=14,m=11,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year]
+\sym{w/c} \date[d=28,m=11,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year]
+\sym{w/c} \date[d=12,m=12,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year]
+\sym{w/c} \date[d=26,m=12,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year]
+\sym{w/c} \date[d=9,m=1,y=2017][dd,~,\Word{\monthshort\normalmonth},~,year]
+\sym{w/c} \date[d=23,m=1,y=2017][dd,~,\Word{\monthshort\normalmonth},~,year]
+\stopitemize
+\stopsection
+
+\startsection[title=Project Start Schedule]
+\startitemize[n,joindup,nowhite][stopper={)}]
+\item Dissertation coordinator sets up link on BlackBoard and sends a communication to all students to complete and submit ethics approval form.
+\item Student fill ethics approval form with the help of supervisor and submits via BlackBoard.
+\item Supervisor approves the form if the project is in Green category - no primary data is being collected, no sensitive info, no vulnerable population, etc. Then, supervisor sends the form to Second marker, dissertation coordinator and Programme leader
+\item If the project is Amber category, medium risk project, then dissertation coordinator after consultation with supervisor will send form to second marker for approval.
+\item If the project is Red category (high risk) as it involves vulnerable group, sensitive data (NHS, etc.), dissertation module coordinator will send the form to ethics committee – I will send details if required. Our aim should be to discourage students to do such projects having high risks in the first place.
+\item Programme leader sends all ethics form to Associate Dean (London Campus) for review.
+\stopitemize
+\stopsection
 \stopchapter
 
 \startchapter[title=Appendix - Figures and Diagrams]
 \startsection[title=Pictures]
-Reference: Number P.1 \par
+{
+\setupcaptions[prefix=yes,way=bysection,prefixconnector={.P.},location={left}]
+\placefigure[place][picture:1]{Picture Tesla}{\framed[frame=off,strut=no,offset=0mm]{\mirror{\externalfigure[tesla-x][width=75mm]}}}
+%\placefigure[left][picture:2]{Picture Model X}{\externalfigure[tesla-x][width=50mm]}
+}
 \stopsection
 
 \startsection[title=Charts]
-Reference: Number C.1 \par
+{
+\setupcaptions[prefix=yes,way=bysection,prefixconnector={.C.},location={left}]
+\placefigure[place][chart:1]{Pie Chart}{\framed[frame=off,strut=no,offset=0mm,width=50mm]{\startMPcode draw fullcircle scaled 3cm; \stopMPcode}}
+}
 \stopsection
 
 \startsection[title=Tables]
-Reference: Number T.1 \par
+{
+\setupcaptions[prefix=yes,way=bysection,prefixconnector={.T.},location={left}]
+\placetable[place][table:1]{Table}{
+\startxtable
+\startxrow[width=25mm,align=middle]
+\startxcell 1 \stopxcell
+\startxcell 2 \stopxcell
+\startxcell 3 \stopxcell
+\stopxrow
+\startxrow
+\startxcell \ \stopxcell
+\startxcell \stopxcell
+\startxcell \stopxcell
+\stopxrow
+\stopxtable}
+}
+\stopsection
+
+\startsection[title=Design Diagrams]
+{
+\setupcaptions[prefix=yes,way=bysection,prefixconnector={.D.},location={left}]
+\placefigure[place][diagram:1]{Diagram}{
+\framed[frame=off,strut=no,offset=0mm]{
+\startSTEPchart
+\cell {A}
+\cell {one}   \texts{$+2$}{$-2$}
+\cell {two}   \texts{$+3$}{$-3$}
+\cell {three} \texts{$+4$}{$-4$}
+\cell {four}  \texts{$+5$}{$-5$}
+\cell {five}
+\stopSTEPchart
+}}}
 \stopsection
 \stopchapter
 
-\startchapter[title=Appendix - Other Stuff]
-\startsection[title=R Code]
+\startchapter[title=Appendix - Source Code]
+\startsection[title=Routes anomality with Bayesian filtering (R Language)]
 
 \setuptyping[option=color]
 \setuplinenumbering[location=text]
 \defineframedtext[framedcode][frame=off,strut=yes,offset=2mm,width=\textwidth,align=right]
 \definetyping[code][numbering=line,bodyfont=small,before={\startframedcode},after={\stopframedcode}]
 
+%\hairline
+\framedtext[leftframe=off,rightframe=off,width=max,offset=0mm,align=middle]{\ss cars_bayesian.stan}
+%\hairline
 \startcode
 library(extrafont)
 library(rstan)
 library(coda)
-set.seed(20151204)
+set.seed(20170102)
 
 dat<-data.frame(x1=runif(100,-2,2),x2=runif(100,-2,2))
 X<-model.matrix(~x1*x2,dat)
@@ -115,32 +187,34 @@ y_norm<-rnorm(100,X%*%betas,sigma)
 new_X<-model.matrix(~x1*x2,expand.grid(x1=seq(min(dat$x1),
 max(dat$x1),length=20),x2=c(min(dat$x2),mean(dat$x2),max(dat$x2))))
 setwd("stan")
-m_norm<-stan(file="sample.stan",data =
+m_norm<-stan(file="cars_bayesian.stan",data =
 list(N=100,N2=60,K=4,y=y_norm,X=X,new_X=new_X),pars =
 c("beta","sigma","y_pred"))
 apply(extract(m_norm,pars="beta")$beta,2,function(x) length(which(x>0))/4000)
 
-new_x<-data.frame(x1=new_X[,2],x2=rep(c("Min","Mean","Max"),each=20))
+new_x<-data.frame(x1=new_X[,2],x2=rep(c("min","mean","max"),each=20))
 new_y<-extract(m_norm,pars="y_pred")
-pred<-apply(new_y[[1]],2,quantile,probs=c(0.025,0.5,0.975)) #the median line with 95% credible intervals
+pred<-apply(new_y[[1]],2,quantile,probs=c(0.025,0.5,0.975))
 
 plot(dat$x1,y_norm,pch="+")
 lines(new_x$x1[1:20],pred[2,21:40],col="orange",lwd=3)
 lines(new_x$x1[1:20],pred[1,21:40],col="orange",lwd=1,lty=2)
 lines(new_x$x1[1:20],pred[3,21:40],col="orange",lwd=1,lty=2)
-legend("topright",legend=c("Mean"),lty=1,col=c("orange"),bty = "n",title = "Tesla crash")
+legend("topright",legend=c("mean"),lty=1,col=c("orange"),bty = "n",title = "connected car routes")
 \stopcode
-\stopsection
-
-\startsection[title=Design Diagrams]
-Reference: Number DD.1 \par
+\hairline
 \stopsection
 \stopchapter
 
 \startchapter[title=Appendix - Project Log]
 % \placefigure[place]{Log Book}{\clip[width=150mm,height=180mm,hoffset=5mm,voffset=30mm]{\externalfigure[logbook.pdf][page=1,xscale=800,yscale=800,width=\textwidth,height=\textheight]}}
 \vfill
-\placefigure[place]{Log Book}{\externalfigure[logbook.pdf][page=1]}
+\placefigure[place]{Log Book (page 1)}{\externalfigure[logbook.pdf][page=1]}
+\vfill
+\page[yes]
+\ 
+\vfill
+\placefigure[place]{Log Book (page 2)}{\externalfigure[logbook.pdf][page=2]}
 \vfill
 \stopchapter
 
@@ -162,9 +236,9 @@ Reference: Number DD.1 \par
 \vfill
 \placefigure[place]{Ethical and Risk Assessment (page 3)}{\externalfigure[ethics.pdf][page=3]}
 \vfill
-\page[yes]
-\vfill
-\placefigure[place]{Ethical and Risk Assessment (page 4)}{\externalfigure[ethics.pdf][page=4]}
-\vfill
+%\page[yes]
+%\vfill
+%\placefigure[place]{Ethical and Risk Assessment (page 4)}{\externalfigure[ethics.pdf][page=4]}
+%\vfill
 \stopchapter
 \stopcomponent

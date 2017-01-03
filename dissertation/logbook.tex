@@ -1,4 +1,5 @@
 % engine=luajittex
+\usepath[{graphics}]
 
 \setupinteraction
 [
@@ -20,7 +21,93 @@
 
 % \showframe
 
-%\starttext
+\starttext
+\startTEXpage
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[width=\dimexpr\textwidth*2/3\relax,height=11mm] Date and time of meeting \stopxcell
+\startxcell[width=\dimexpr\textwidth/3\relax,align={lohi,middle}] \date[d=6,m=11,y=2016][dd,month,year] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=2,height=52mm] Brief description of work done since last meeting \blank[halfline] \tf\ss \startblockquote New ethics approval form filled out and emailed to the supervisor as agreed in the previous meeting. \\ Agreed on the supervisor meeting schedule for a bi-weekly meet-up on Sundays 6pm. \\ "Table of Contents" work completed based on the input from the previous meeting. Time management page added to the appendix including a gantt chart and project log. \stopblockquote \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=11mm] Hours spent on project since last meeting \stopxcell
+%\startxcell[align={lohi,middle}] {\definefont[symbola][file:/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf]{\symbola⏲} \definefont[babelstone][file:/usr/share/fonts/truetype/babelstone/BabelStoneHan.ttf]\babelstone㉌} hours} \stopxcell
+\startxcell[align={lohi,middle}] {\definefont[symbola][file:/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf]{\symbola⏲} \cap{50} hours} \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=2,height=52mm] Issues identified during supervision \blank[line] \tf\ss \startitemize[joindup,nowhite][margin=1em] \item Wrong ethics form used, the proper form is on Blackboard \item Reduce the scope by focusing on a specific threat example \item Time management prioritisation for 2017 January submission \item Work to focus on time and accuracy, being measurable \item Clarification of objectives and methodology, simulation \stopitemize \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=2,height=52mm] Agreed tasks for next meeting \blank[line] \tf\ss
+%\startitemize[n,joindup,nowhite][left={\[\WORD{Action} \ },right={\] :},stopper={},margin=1em,width=7em]
+\startitemize[n,joindup,nowhite][stopper={},margin=1em,width=7em]
+\sym{\bf\cap{Action} {\switchtobodyfont[xits]①}} Adam to provide the new ethics form from the Blackboard in Microsoft Word format.
+\sym{}
+\sym{\bf\cap{Action} {\switchtobodyfont[xits]②}} Adam to forward "Table of Contents" and "Plan" including the details and objectives for the dissertation via email before the next meeting.
+\stopitemize
+\stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=11mm] Date and time of next meeting \stopxcell
+\startxcell[align={lohi,middle}] \date[d=5,m=12,y=2016][dd,month,year] \\ \ssx 4.00pm, Skype Call \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10.5mm] Student signature \stopxcell
+\startxcell[align={lohi,middle}] \startuniqueMPgraphic{signature} input signature.mp; \stopuniqueMPgraphic \midaligned{\framed[frame=off,location={lohi},offset=0mm,strut=no]{\scale[scale=600]{\reuseMPgraphic{signature}}}} \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=11.5mm] Supervisor signature \stopxcell
+\startxcell[align={lohi,middle}] \startuniqueMPgraphic{supervisor} input haider.mp; \stopuniqueMPgraphic \midaligned{\framed[frame=off,location={lohi},offset=0mm,strut=no]{\scale[scale=7500]{\reuseMPgraphic{supervisor}}}} \stopxcell
+\stopxrow
+\stopxtable
+\stopTEXpage
+
+\page[yes]
+
+\startTEXpage
+\startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
+\startxrow
+\startxcell[width=\dimexpr\textwidth*2/3\relax,height=11mm] Date and time of meeting \stopxcell
+\startxcell[width=\dimexpr\textwidth/3\relax,align={lohi,middle}] \date[d=5,m=12,y=2016][dd,month,year] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=2,height=52mm] Brief description of work done since last meeting \blank[halfline] \tf\ss \startblockquote New ethics form has been completed in Word and signed by both the researcher and the supervisor with the outcome of a green status. \\ Table of Contents structure re-created based on the Student Handbook 2016 from Blackboard and last meetings supervisor input. \\ Research on literature for the dissertation on the topic of autonomous cars and profiling, estimations. \\ Preparation of the plan for the next supervisor meeting. \stopblockquote \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=11mm] Hours spent on project since last meeting \stopxcell
+%\startxcell[align={lohi,middle}] {\definefont[symbola][file:/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf]{\symbola⏲} \definefont[babelstone][file:/usr/share/fonts/truetype/babelstone/BabelStoneHan.ttf]\babelstone㉏} hours} \stopxcell
+\startxcell[align={lohi,middle}] {\definefont[symbola][file:/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf]{\symbola⏲} \cap{85} hours} \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=2,height=77mm] Issues identified during supervision \blank[line] \tf\ss Work on the structure of the thesis as follows: \startitemize[joindup,nowhite][margin=1em] \item 1. Introduction {\it ("Problem Statement" supporting that it is a real problem, "Aim", "Objectives", "Key Findings" and "Contribution")} \item 2. Methodology {\it (part of chapter 1, experiments to consider)} \item 3. Literature Review {\it (usability study, test existing models)} \item 4. Design of Experiments {\it (detailed version of experiments, graphs and tables, planning, particular events, looking into a model, case study, similar requirements to convince the community)} \item 5. Results Collected and Analysis {\it ("Reflection")} \item 6. Discussion {\it ("Correlation")} \item 7. Conclusion {\it (review of objectives, reflecting, mapping, further work)} \stopitemize \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=2,height=27mm] Agreed tasks for next meeting \blank[line] \tf\ss
+%\startitemize[n,joindup,nowhite][left={\[\WORD{Action} \ },right={\] :},stopper={},margin=1em,width=7em]
+\startitemize[joindup,nowhite][stopper={},margin=1em,width=7em]
+\sym{\bf\cap{Action} {\switchtobodyfont[xits]①}} Adam to send "Literature Review" chapter to supervisor by the following weekend for next meetings discussion.
+\stopitemize
+\stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=11mm] Date and time of next meeting \stopxcell
+\startxcell[align={lohi,middle}] \date[d=14,m=12,y=2016][dd,month,year] \\ \ssx 4.00pm, Skype Call \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=10.5mm] Student signature \stopxcell
+\startxcell[align={lohi,middle}] \startuniqueMPgraphic{signature} input signature.mp; \stopuniqueMPgraphic \midaligned{\framed[frame=off,location={lohi},offset=0mm,strut=no]{\scale[scale=600]{\reuseMPgraphic{signature}}}} \stopxcell
+\stopxrow
+\startxrow
+\startxcell[height=11.5mm] Supervisor signature \stopxcell
+\startxcell[align={lohi,middle}] \startuniqueMPgraphic{supervisor} input haider.mp; \stopuniqueMPgraphic \midaligned{\framed[frame=off,location={lohi},offset=0mm,strut=no]{\scale[scale=7500]{\reuseMPgraphic{supervisor}}}} \stopxcell
+\stopxrow
+\stopxtable
+\stopTEXpage
+
+\page[yes]
+
 \startTEXpage
 \startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
 \startxrow
@@ -49,9 +136,9 @@
 \startxcell \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=10.5mm] Supervisor signature \stopxcell
+\startxcell[height=11.5mm] Supervisor signature \stopxcell
 \startxcell \stopxcell
 \stopxrow
 \stopxtable
 \stopTEXpage
-%\stoptext
+\stoptext

@@ -37,8 +37,10 @@
 
 %\starttext
 \startTEXpage
-\WORD{\ssx\bi Are you aware that no one is allowed to work alone in the laboratory? Yes\color[gray]{/No}} \par
-\startalignment[left]{\ssx\bi (delete as applicable)} \stopalignment \par
+%\WORD{\ssx\bi Are you aware that no one is allowed to work alone in the laboratory? Yes\color[gray]{/No}} \par
+\WORD{\ssx\bi Are you aware that no one is allowed to work alone in the laboratory? Yes} \par
+%\startalignment[left]{\ssx\bi (delete as applicable)} \stopalignment \par
+\startalignment[left]{\ssx\bi\ } \stopalignment \par
 \blank[line]
 \startxtable[option={stretch,width},foregroundstyle={\bf\ss},offset=1mm]
 \startxrow
@@ -67,15 +69,15 @@
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=18mm] List the Significant Hazards associated with your project {\tfx\it (continue on a separate sheet if necessary)} \stopxcell
-\startxcell[width=\dimexpr\textwidth/2\relax] N/A \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \color[gray]{N/A} \stopxcell
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=13mm] List the other people at risk {\tfx\it (continue on a separate sheet if necessary)} \stopxcell
-\startxcell[width=\dimexpr\textwidth/2\relax] N/A \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \color[gray]{N/A} \stopxcell
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=18mm] Describe the working procedures to be used to minimise risk {\tfx\it (continue on a separate sheet if necessary)} \stopxcell
-\startxcell[width=\dimexpr\textwidth/2\relax] N/A \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \color[gray]{N/A} \stopxcell
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=13mm] Are there any other Risk Control Measures needed? {\tfx\it (continue on a separate sheet if necessary)} \stopxcell
@@ -83,23 +85,23 @@
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=18mm] When will you and your supervisor review the risk assessment? And how will the risk be monitored on an ongoing basis? \stopxcell
-\startxcell[width=\dimexpr\textwidth/2\relax] 01 August 2016 \\ Changes on the risk will be checked regularly at supervisor meetings. \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \date[d=6,m=11,y=2016][dd,month,year] \\ Changes to the risk will be checked regularly at supervisor meetings. \stopxcell
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=15mm] Student Signature \stopxcell
-\startxcell[width=\dimexpr\textwidth/2\relax] \startuniqueMPgraphic{signature} input signature.mp; \stopuniqueMPgraphic \framed[frame=off,location={lohi}]{\scale[scale=750]{\reuseMPgraphic{signature}}} \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax,align=lohi] \startuniqueMPgraphic{signature} input signature.mp; \stopuniqueMPgraphic \framed[frame=off,location={lohi},offset=0mm,strut=no]{\scale[scale=750]{\reuseMPgraphic{signature}}} \stopxcell
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Supervisor \stopxcell
-\startxcell[width=\dimexpr\textwidth/2\relax] Dr Haider Al-Khateeb \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] Dr Haider al-Khateeb \stopxcell
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=15mm] Supervisor Signature \stopxcell
-\startxcell[width=\dimexpr\textwidth/2\relax] \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax,align=lohi] \startuniqueMPgraphic{supervisor} input haider.mp; \stopuniqueMPgraphic \framed[frame=off,location={lohi},offset=0mm,strut=no]{\scale[scale=8500]{\reuseMPgraphic{supervisor}}} \stopxcell
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Second Marker \stopxcell
-\startxcell[width=\dimexpr\textwidth/2\relax] Dr Gregory Epiphaniou \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] Ahmed Bouridane \stopxcell
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=15mm] Second Marker Signature \stopxcell
@@ -107,7 +109,7 @@
 \stopxrow
 \startxrow
 \startxcell[width=\dimexpr\textwidth/2\relax,height=7mm] Date of Agreement \stopxcell
-\startxcell[width=\dimexpr\textwidth/2\relax] 01 August 2016 \stopxcell
+\startxcell[width=\dimexpr\textwidth/2\relax] \date[d=6,m=11,y=2016][dd,month,year] \stopxcell
 \stopxrow
 \stopxtable
 \stopTEXpage
