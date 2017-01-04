@@ -11,11 +11,11 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 
 \startsection[title=Project Timetable]
 {\ssx
-\placefigure[place]{Project Timetable}{
+\startplacefigure[location=place,title={Project Timetable}]
 \startxtable[option={width},foregroundstyle={\ss},offset=1mm]
 \startxtablehead[foregroundstyle={\ss\bf}]
 \startxrow
-\startxcell[width=85mm] Project Milestone \stopxcell \startxcell[width=50mm,align=middle] Indicative Timescales \stopxcell
+\startxcell[width=85mm] Project Milestone \stopxcell \startxcell[width=70mm,align=middle] Indicative Timescales \stopxcell
 \stopxrow
 \stopxtablehead
 \startxtablebody
@@ -29,7 +29,7 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 \startxcell Submission of Research Proposal \stopxcell \startxcell[align=middle] 09 July 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell Research Proposal Review Meeting \\ Submission of MSc Project Ethical \\ and Risk Assessment Form \stopxcell \startxcell[align=middle] December 2016 \\ 25 November 2016 \stopxcell
+\startxcell Research Proposal Review Meeting \\ Submission of MSc Project Ethical and \\ Risk Assessment Form \stopxcell \startxcell[align=middle] December 2016 \\ 25 November 2016 \stopxcell
 \stopxrow
 \startxrow
 \startxcell Submission of Dissertation & \blank[line] Seminar Presentation \stopxcell \startxcell[align=middle] 19 January 2017 \\ (30 March 2017) \\ 01-08 April 2017 \stopxcell
@@ -39,15 +39,15 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 \stopxrow
 \stopxtablebody
 \stopxtable
-}}
+\stopplacefigure}
 \stopsection
 
 \startsection[title=Project Deadlines]
 {\ssx
-\placefigure[place]{Key Facts \& Dates/Deadlines}{
+\startplacefigure[location=place,title={Key Facts \& Dates/Deadlines}]
 \startxtable[option={width},foregroundstyle={\ss\bf},offset=1mm]
 \startxrow
-\startxcell[width=80mm,height=12mm] Deadline for submitting Project Initiation Form \stopxcell \startxcell[width=75mm,align=left] 02 July 2016 \stopxcell
+\startxcell[width=85mm] Deadline for submitting Project Initiation Form \stopxcell \startxcell[width=70mm,align=left] 02 July 2016 \stopxcell
 \stopxrow
 \startxrow
 \startxcell[height=7mm] Deadline for submitting Research Proposal \stopxcell \startxcell[align=left] 01 August 2016 \stopxcell
@@ -77,11 +77,13 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 \startxcell[height=7mm] Name of Programme Leader \stopxcell \startxcell[align=left] Prof Hamid Jahankhani \stopxcell
 \stopxrow
 \stopxtable
-}}
+\stopplacefigure}
 \stopsection
 
 \startsection[title=Schedule of Activities - Project Plan]
-\placefigure[place]{ProjectLibre Gantt Chart}{\externalfigure[project][width=\textwidth]}
+\startplacefigure[location=place,title={ProjectLibre Gantt Chart}]
+\externalfigure[project][width=\textwidth]
+\stopplacefigure
 \stopsection
 
 \startsection[title=Time Management - Supervisor Meetings]
@@ -114,7 +116,11 @@ Regular meetings every 2 weeks (Sundays 6pm) \par
 \startsection[title=Pictures]
 {
 \setupcaptions[prefix=yes,way=bysection,prefixconnector={.P.},location={left}]
-\placefigure[place][picture:1]{Picture Tesla}{\framed[frame=off,strut=no,offset=0mm]{\mirror{\externalfigure[tesla-x][width=75mm]}}}
+\startplacefigure[location=place,reference={picture:1},title={Picture Tesla},style={cap}]
+\startframed[frame=off,strut=no,offset=0mm]
+\mirror{\externalfigure[tesla-x][height=25mm]}
+\stopframed
+\stopplacefigure
 %\placefigure[left][picture:2]{Picture Model X}{\externalfigure[tesla-x][width=50mm]}
 }
 \stopsection
@@ -122,43 +128,97 @@ Regular meetings every 2 weeks (Sundays 6pm) \par
 \startsection[title=Charts]
 {
 \setupcaptions[prefix=yes,way=bysection,prefixconnector={.C.},location={left}]
-\placefigure[place][chart:1]{Pie Chart}{\framed[frame=off,strut=no,offset=0mm,width=50mm]{\startMPcode draw fullcircle scaled 3cm; \stopMPcode}}
+\startplacefigure[location=place,reference={chart:1},title={RStan Bayesian Estimation Graph},style={cap}]
+\startframed[frame=off,strut=no,offset=0mm,width=80mm]
+\externalfigure[rstan][height=50mm]
+\stopframed
+\stopplacefigure
+%\placefigure[place]{RStan}{\externalfigure[rstan][height=60mm]}
+
+\startplacefigure[location=place,reference={chart:2},title={RStan Bayesian Estimation Filter},style={cap}]
+%\processRfile{sample.R}
+\startframed[frame=off,strut=no,offset=0mm,width=80mm]
+\externalfigure[Rplots][height=50mm]
+\stopframed
+\stopplacefigure
+
+%\startplacefigure[location=place,reference={chart:3},title={Pie Chart}]
+%\startframed[frame=off,strut=no,offset=0mm,width=50mm]
+%\startMPcode draw fullcircle scaled 3cm; \stopMPcode
+%\stopframed
+%\stopplacefigure
 }
 \stopsection
 
 \startsection[title=Tables]
 {
 \setupcaptions[prefix=yes,way=bysection,prefixconnector={.T.},location={left}]
-\placetable[place][table:1]{Table}{
-\startxtable
-\startxrow[width=25mm,align=middle]
-\startxcell 1 \stopxcell
-\startxcell 2 \stopxcell
-\startxcell 3 \stopxcell
-\stopxrow
+\startplacetable[location=place,reference={table:1},title={Table ADS-B},style={cap}]
+\defineseparatedlist[CSV][separator=comma,left=\startxcell,right=\stopxcell,first=\startxrow,last=\stopxrow,before=\startxtablebody,after=\stopxtablebody]
+\setupxtable[align=flushright,align=middle]
+\startxtable[split=yes,foregroundstyle=\ss,bodyfont=8pt]
+\startxtablehead[background=color,backgroundcolor=gray]
 \startxrow
-\startxcell \ \stopxcell
-\startxcell \stopxcell
-\startxcell \stopxcell
+ \startxcell[width=25mm] Time \stopxcell
+ \startxcell Position \stopxcell
+ \startxcell Orientation \stopxcell
+ \startxcell Groundspeed \stopxcell
+ \startxcell Altitude \stopxcell
+ \startxcell Reporting \stopxcell
 \stopxrow
-\stopxtable}
+\stopxtablehead
+% http://i.imgur.com/Pkk38yU.png
+% https://pbs.twimg.com/media/CiytDdDU4AII8h_.jpg:large
+% Time,Position,Orientation,Groundspeed,Altitude,Reporting
+\startCSV
+Thu 01:18:41,34.87 27.54,SE 138,520,37000,0
+Thu 01:19:11,34.81 27.59,SE 138,520,37000,0
+Thu 01:19:41,34.76 27.65,SE 138,520,37000,0
+Thu 01:20:11,34.70 27.71,SE 138,519,37000,0
+Thu 01:20:41,34.65 27.77,SE 138,521,37000,0
+Thu 01:21:50,34.52 27.90,SE 139,521,37000,0
+Thu 01:22:49,34.47 27.96,SE 139,528,37000,0
+Thu 01:28:10,33.82 28.63,SE 139,527,37000,0
+Thu 01:28:46,33.77 28.68,SE 139,529,37000,0
+Thu 01:29:21,33.69 28.77,SE 136,533,37000,0
+Thu 01:32:01,33.39 29.00,SE 147,0,37000,0
+Thu 01:33:01,33.27 29.09,SE 147,0,37000,0
+\stopCSV
+\stopxtable
+\stopplacetable
+
+%\startplacetable[location=place,reference={table:2},title={Table}]
+%\startxtable
+%\startxrow[width=25mm,align=middle]
+%\startxcell 1 \stopxcell
+%\startxcell 2 \stopxcell
+%\startxcell 3 \stopxcell
+%\stopxrow
+%\startxrow
+%\startxcell \ \stopxcell
+%\startxcell \stopxcell
+%\startxcell \stopxcell
+%\stopxrow
+%\stopxtable
+%\stopplacetable
 }
 \stopsection
 
 \startsection[title=Design Diagrams]
 {
 \setupcaptions[prefix=yes,way=bysection,prefixconnector={.D.},location={left}]
-\placefigure[place][diagram:1]{Diagram}{
-\framed[frame=off,strut=no,offset=0mm]{
+\startplacefigure[location=place,reference={diagram:1},title={Diagram},style={cap}]
+\startframed[frame=off,strut=no,offset=0mm]
 \startSTEPchart
-\cell {A}
-\cell {one}   \texts{$+2$}{$-2$}
-\cell {two}   \texts{$+3$}{$-3$}
-\cell {three} \texts{$+4$}{$-4$}
-\cell {four}  \texts{$+5$}{$-5$}
-\cell {five}
+\cell {CPS}
+\cell {Route 1} \texts{$+5 \%$}{$-5 \%$}
+\cell {Route 2} \texts{$+5 \%$}{$-5 \%$}
+\cell {Route 3} \texts{$+5 \%$}{$-5 \%$}
+\cell {Route 4}
 \stopSTEPchart
-}}}
+\stopframed
+\stopplacefigure
+}
 \stopsection
 \stopchapter
 
@@ -209,32 +269,44 @@ legend("topright",legend=c("mean"),lty=1,col=c("orange"),bty = "n",title = "conn
 \startchapter[title=Appendix - Project Log]
 % \placefigure[place]{Log Book}{\clip[width=150mm,height=180mm,hoffset=5mm,voffset=30mm]{\externalfigure[logbook.pdf][page=1,xscale=800,yscale=800,width=\textwidth,height=\textheight]}}
 \vfill
-\placefigure[place]{Log Book (page 1)}{\externalfigure[logbook.pdf][page=1]}
+\startplacefigure[location=place,title={Log Book (page 1)}]
+\externalfigure[logbook.pdf][page=1]
+\stopplacefigure
 \vfill
 \page[yes]
 \ 
 \vfill
-\placefigure[place]{Log Book (page 2)}{\externalfigure[logbook.pdf][page=2]}
+\startplacefigure[location=place,title={Log Book (page 2)}]
+\externalfigure[logbook.pdf][page=2]
+\stopplacefigure
 \vfill
 \stopchapter
 
 \startchapter[title=Appendix - Project Risk Assessment Form]
 \vfill
-\placefigure[place]{Risk Assessment}{\externalfigure[assessment.pdf][page=1]}
+\startplacefigure[location=place,title={Risk Assessment}]
+\externalfigure[assessment.pdf][page=1]
+\stopplacefigure
 \vfill
 \stopchapter
 
 \startchapter[title=Appendix - Project Ethical Form]
 \vfill
-\placefigure[place]{Ethical and Risk Assessment (page 1)}{\externalfigure[ethics.pdf][page=1]}
+\startplacefigure[location=place,title={Ethical and Risk Assessment (page 1)}]
+\externalfigure[ethics.pdf][page=1]
+\stopplacefigure
 \vfill
 \page[yes]
 \vfill
-\placefigure[place]{Ethical and Risk Assessment (page 2)}{\externalfigure[ethics.pdf][page=2]}
+\startplacefigure[location=place,title={Ethical and Risk Assessment (page 2)}]
+\externalfigure[ethics.pdf][page=2]
+\stopplacefigure
 \vfill
 \page[yes]
 \vfill
-\placefigure[place]{Ethical and Risk Assessment (page 3)}{\externalfigure[ethics.pdf][page=3]}
+\startplacefigure[location=place,title={Ethical and Risk Assessment (page 3)}]
+\externalfigure[ethics.pdf][page=3]
+\stopplacefigure
 \vfill
 %\page[yes]
 %\vfill

@@ -1,13 +1,24 @@
 \startcomponent result
 \product dissertation
 
+\usemodule[filter]
+\defineexternalfilter[R]
+  [
+    filtercommand={R CMD BATCH -q --save --restore \externalfilterinputfile\space \externalfilteroutputfile},
+    output=\externalfilterbasefile.out,
+    directory=stan,
+    readcommand=\typefile,
+    read=no,
+    cache=yes,
+  ]
+
 \setuphead[chapter][textstyle={\tfd\sc}]
 \startchapter[title=Results Collected and Analysis]
 \startsection[title=Background]
-Background \par
+Results, Analysis and Evaluation. \par
+Mean time to crash/hijack. \par
+Automatic Dependent Surveillance – Broadcast, see: \in{Chart}{.}[chart:2] \par
 \stopsection
-
-\input zapf \par
 
 \startsection[title=Reflection]
 Summary \par
