@@ -5,7 +5,7 @@
 
 \setuphead[chapter][textstyle={\tfd\sc}]
 \startchapter[title=Appendix - Research Proposal]
-\startsection[title=Abstract (Research Proposal)]
+\startsection[title=Abstract - Research Proposal]
 This proposal for a master's dissertation on the "Internet of Things" is looking at a novel way of predicting cyber threats of a specific sub-set of said cyber-physical systems \cite[citeulike:13779694], by applying a specialised version of the Bayesian estimation to compare the predicted behaviour of cyber-physical systems with the actual motion patterns \cite[Fox03bayesianfiltering]. Taking advantage of known-good behaviour of large-scale movement flows at a regulated traffic \cite[perallos2015intelligent], it can be deducted when a system behaves in a rogue manner. \par
 \stopsection
 
@@ -32,7 +32,8 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 \startxcell Research Proposal Review Meeting \\ Submission of MSc Project Ethical and \\ Risk Assessment Form \stopxcell \startxcell[align=middle] December 2016 \\ 25 November 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell Submission of Dissertation & \blank[line] Seminar Presentation \stopxcell \startxcell[align=middle] 19 January 2017 \\ (30 March 2017) \\ 01-08 April 2017 \stopxcell
+%\startxcell Submission of Dissertation & \blank[line] Seminar Presentation \stopxcell \startxcell[align=middle] 19 January 2017 \\ (30 March 2017) \\ 01-08 April 2017 \stopxcell
+\startxcell Submission of Dissertation \blank[line] Seminar Presentation \stopxcell \startxcell[align=middle] 19 January 2017 \\ (30 March 2017) \\ 01-08 April 2017 \stopxcell
 \stopxrow
 \startxrow
 \startxcell Award Board \stopxcell \startxcell[align=middle] June 2017 \stopxcell
@@ -44,7 +45,8 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 
 \startsection[title=Project Deadlines]
 {\ssx
-\startplacefigure[location=place,title={Key Facts \& Dates/Deadlines}]
+%\startplacefigure[location=place,title={Key Facts \& Dates/Deadlines}]
+\startplacefigure[location=place,title={Key Facts and Dates/Deadlines}]
 \startxtable[option={width},foregroundstyle={\ss\bf},offset=1mm]
 \startxrow
 \startxcell[width=85mm] Deadline for submitting Project Initiation Form \stopxcell \startxcell[width=70mm,align=left] 02 July 2016 \stopxcell
@@ -59,10 +61,10 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 \startxcell[height=12mm] Deadline for submitting MSc Project Ethical and Risk Assessment Form \stopxcell \startxcell[align=left] 01 August 2016 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=7mm] Deadline for submitting Dissertation \stopxcell \startxcell[align=left] 19 January 2017 \stopxcell
+\startxcell[height=7mm] Deadline for submitting Dissertation \stopxcell \startxcell[align=left] 19 January 2017 / 30 March 2017 \stopxcell
 \stopxrow
 \startxrow
-\startxcell[height=7mm] Date of Viva \stopxcell \startxcell[align=left] February 2017 \stopxcell
+\startxcell[height=7mm] Date of Viva \stopxcell \startxcell[align=left] February/April 2017 \stopxcell
 \stopxrow
 \startxrow
 \startxcell[height=7mm] Name of Supervisor \stopxcell \startxcell[align=left] Dr Haider al-Khateeb \stopxcell
@@ -82,22 +84,47 @@ This proposal for a master's dissertation on the "Internet of Things" is looking
 
 \startsection[title=Schedule of Activities - Project Plan]
 \startplacefigure[location=place,title={ProjectLibre Gantt Chart}]
-\externalfigure[project][width=\textwidth]
+% Landscape, Legal, 100%
+% Landscape, Designated-long, 75%
+\externalfigure[project][page=1,width=\textwidth]
 \stopplacefigure
 \stopsection
 
 \startsection[title=Time Management - Supervisor Meetings]
-Regular meetings every 2 weeks (Sundays 6pm) \par
+Regular meetings every fortnight (Sundays 6pm, 1 hour) \par
 \blank[line]
-\startitemize[joindup,nowhite][width=2.5em]
-\sym{w/c} \date[d=31,m=10,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year] \[\date[d=6,m=11,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year] (1 hr)\]
-\sym{w/c} \date[d=14,m=11,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year]
-\sym{w/c} \date[d=28,m=11,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year]
-\sym{w/c} \date[d=12,m=12,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year]
-\sym{w/c} \date[d=26,m=12,y=2016][dd,~,\Word{\monthshort\normalmonth},~,year]
-\sym{w/c} \date[d=9,m=1,y=2017][dd,~,\Word{\monthshort\normalmonth},~,year]
-\sym{w/c} \date[d=23,m=1,y=2017][dd,~,\Word{\monthshort\normalmonth},~,year]
-\stopitemize
+% http://www.texample.net/tikz/examples/changing-the-default-calendar-layout/
+\startxtable[option=stretch,align={middle,lohi}]
+\startxrow
+\startxcell {\it November 2016} \\ \hfil \startframed[frame=on,strut=no,offset=0mm]
+\startxtable[frame=off]
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] \stopxcell \startxcell \stopxcell \startxcell 1 \stopxcell \startxcell 2 \stopxcell \startxcell 3 \stopxcell \startxcell 4 \stopxcell \startxcell 5 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue,background=color,backgroundcolor=darkred] 6 \stopxcell \startxcell 7 \stopxcell \startxcell 8 \stopxcell \startxcell 9 \stopxcell \startxcell 10 \stopxcell \startxcell 11 \stopxcell \startxcell 12 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 13 \stopxcell \startxcell[background=color,backgroundcolor=darkred] 14 \stopxcell \startxcell 15 \stopxcell \startxcell 16 \stopxcell \startxcell 17 \stopxcell \startxcell 18 \stopxcell \startxcell 19 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 20 \stopxcell \startxcell 21 \stopxcell \startxcell 22 \stopxcell \startxcell 23 \stopxcell \startxcell 24 \stopxcell \startxcell 25 \stopxcell \startxcell 26 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 27 \stopxcell \startxcell[background=color,backgroundcolor=darkred] 28 \stopxcell \startxcell 29 \stopxcell \startxcell 30 \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
+\stopxtable
+\stopframed \hfil \ \\ \stopxcell
+\startxcell {\it December 2016} \\ \hfil \startframed[frame=on,strut=no,offset=0mm]
+\startxtable[frame=off]
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell 1 \stopxcell \startxcell 2 \stopxcell \startxcell 3 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 4 \stopxcell \startxcell 5 \stopxcell \startxcell 6 \stopxcell \startxcell 7 \stopxcell \startxcell 8 \stopxcell \startxcell 9 \stopxcell \startxcell 10 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 11 \stopxcell \startxcell[background=color,backgroundcolor=darkred] 12 \stopxcell \startxcell 13 \stopxcell \startxcell 14 \stopxcell \startxcell 15 \stopxcell \startxcell 16 \stopxcell \startxcell 17 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 18 \stopxcell \startxcell 19 \stopxcell \startxcell 20 \stopxcell \startxcell 21 \stopxcell \startxcell 22 \stopxcell \startxcell 23 \stopxcell \startxcell 24 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 25 \stopxcell \startxcell[background=color,backgroundcolor=darkred] 26 \stopxcell \startxcell 27 \stopxcell \startxcell 28 \stopxcell \startxcell 29 \stopxcell \startxcell 30 \stopxcell \startxcell 31 \stopxcell \stopxrow
+\stopxtable
+\stopframed \hfil \ \\ \stopxcell
+\startxcell {\it January 2017} \\ \hfil \startframed[frame=on,strut=no,offset=0mm]
+\startxtable[frame=off]
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 1 \stopxcell \startxcell 2 \stopxcell \startxcell 3 \stopxcell \startxcell 4 \stopxcell \startxcell 5 \stopxcell \startxcell 6 \stopxcell \startxcell 7 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 8 \stopxcell \startxcell[background=color,backgroundcolor=darkred] 9 \stopxcell \startxcell 10 \stopxcell \startxcell 11 \stopxcell \startxcell 12 \stopxcell \startxcell 13 \stopxcell \startxcell 14 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 15 \stopxcell \startxcell 16 \stopxcell \startxcell 17 \stopxcell \startxcell 18 \stopxcell \startxcell 19 \stopxcell \startxcell 20 \stopxcell \startxcell 21 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 22 \stopxcell \startxcell[background=color,backgroundcolor=darkred] 23 \stopxcell \startxcell 24 \stopxcell \startxcell 25 \stopxcell \startxcell 26 \stopxcell \startxcell 27 \stopxcell \startxcell 28 \stopxcell \stopxrow
+ \startxrow \startxcell[foreground=color,foregroundcolor=blue] 29 \stopxcell \startxcell 30 \stopxcell \startxcell 31 \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell \stopxcell \startxcell \stopxcell \stopxrow
+\stopxtable
+\stopframed \hfil \ \\ \stopxcell
+\stopxrow
+\stopxtable
 \stopsection
 
 \startsection[title=Project Start Schedule]
