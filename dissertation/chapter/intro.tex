@@ -3,7 +3,10 @@
 
 \setuphead[chapter][textstyle={\tfd\sc}]
 \startchapter[title=Introduction]
-This chapter is normally the last thing to be written and summarises the entire project. Someone reading this introduction would not, in most cases, need to read the rest of the dissertation unless they were interested in specific aspects. \par
+% This chapter is normally the last thing to be written and summarises the entire project. Someone reading this introduction would not, in most cases, need to read the rest of the dissertation unless they were interested in specific aspects. \par
+The world is getting more and more connected and whilst the newest technologies of auto-piloted cars, autonomous drones and remote controlled planes are shaping the way of modern cyber-physical systems, the increased cyber security threats \cite[graham2016cyber] are playing a bigger role than ever \cite[loukas2015cyber]. \par
+\blank[line]
+This proposal for a master's dissertation on the "Internet of Things" is looking at a novel way of predicting cyber threats of a specific sub-set of said cyber-physical systems \cite[citeulike:13779694], by applying a specialised version of the Bayesian estimation to compare the predicted behaviour of cyber-physical systems with the actual motion patterns \cite[Fox03bayesianfiltering]. Taking advantage of known-good behaviour of large-scale movement flows at a regulated traffic \cite[perallos2015intelligent], it can be deducted when a system behaves in a rogue manner. \par
 
 \setuphead[section][numberstyle={tfb},textstyle={tfb}]
 \startsection[title=Problem Statement]
@@ -11,7 +14,10 @@ In this section, set out the main aim(s) of your project and explain what they m
 \stopsection
 
 \startsection[title=Aim]
-In this section, set out the main aim(s) of your project and explain what they mean. The aim is the fundamental purpose of what you were trying to do – to find out something, to make something, to test something. There is usually only one or two aims and they are often expressed in terms of a hypothesis or research question. \par
+% In this section, set out the main aim(s) of your project and explain what they mean. The aim is the fundamental purpose of what you were trying to do – to find out something, to make something, to test something. There is usually only one or two aims and they are often expressed in terms of a hypothesis or research question. \par
+The purpose of this study is to demonstrate the pro-active approach of predicting cyber security threats in connected cars, as an example of a cyber-physical system, through deviations in behaviour profiling patterns on location awareness using mathematical probability density functions. \par
+\blank[line]
+By detecting deviations from predicted desired future state spectrum the project will achieve to create a warning mechanism for cyber threats on cyber-physical systems and being able to react in a fail-safe manner. \par
 \stopsection
 
 %\startsection[title=Background]
@@ -20,10 +26,23 @@ In this section, set out the main aim(s) of your project and explain what they m
 %\stopsection
 
 \startsection[title=Objectives]
-In this section, explain the objectives of your project. These are the sub-goals you needed to achieve in order to complete your project. There will be several objectives – typically around eight. \par
-An objective should be a definite statement that can be clearly identified as "complete" or "not complete". A statement like "To improve my understanding of programming" is too vague, as it is not clear whether it is complete or not. A statement like "To learn how to use dynamic memory structures in C++" is clearer. \par
-You may also wish to include objectives that discuss the parts of your dissertation, like "To produce a literature survey on the subject of…" or "To write a discussion of the implementation of the system". \par
-It is fine to include objectives that you did not complete. Explain why you did not achieve them. Also make clear any new objectives that you have added since writing your research proposal. \par
+%In this section, explain the objectives of your project. These are the sub-goals you needed to achieve in order to complete your project. There will be several objectives – typically around eight. \par
+%An objective should be a definite statement that can be clearly identified as "complete" or "not complete". A statement like "To improve my understanding of programming" is too vague, as it is not clear whether it is complete or not. A statement like "To learn how to use dynamic memory structures in C++" is clearer. \par
+%You may also wish to include objectives that discuss the parts of your dissertation, like "To produce a literature survey on the subject of…" or "To write a discussion of the implementation of the system". \par
+%It is fine to include objectives that you did not complete. Explain why you did not achieve them. Also make clear any new objectives that you have added since writing your research proposal. \par
+In order to achieve the aims and validate the hypothesis the following steps have to be completed:
+
+\startitemize[joinedup,nowhite]
+\item Define the criteria of vehicles to be counting as a cyber-physical systems in the study (connected cars)
+\item Create a set of data and format on behaviour profiling that will be needed for the analysis and estimation: \color[black]{\it speed, location, time, weight}
+\item Compare and contrast different density functions, particularly Bayesian estimation algorithms
+\item Combine the estimation techniques to create a formula and algorithm to predict future positions
+\item Validate the predicted values on historical data (sensors, simulations)
+\item Propose a live warning alarm system (similar to the ground proximity alarm in planes) and a live tracking site (see flightradar24.com)
+\item Suggest fail-safe actions to be implemented in autonomous systems (disconnect and safely stop)
+\stopitemize
+
+Given these steps, there should be possible to show the holistic approach of anomaly detection in connected cars. \par
 \stopsection
 
 \startsection[title=Key Findings]
