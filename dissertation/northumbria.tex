@@ -65,8 +65,15 @@
 
 \setupspellchecking[state=start,method=2]
 \ctxlua{languages.words.threshold=1}
-\setupbibtex[database={dissertation},sort=author]
-\setuppublications[alternative=apa]
+
+%\setupbibtex[database={dissertation},sort=author]
+%\setuppublications[alternative=apa]
+\usebtxdataset[default][dissertation.bib]
+\setupbtx[dataset=default]
+\usebtxdefinitions[apa]
+\setupbtxrendering[default][repeat=yes,continue=yes,method=global]
+\definebtxrendering[default][apa][specification=apa,sorttype=authoryear,numbering=no]
+%\setupbtxrendering[default][numbering=yes]
 
 \usecolors[xwi]
 

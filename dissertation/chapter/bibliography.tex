@@ -3,13 +3,21 @@
 
 \setuphead[chapter][textstyle={\tfd\sc}]
 \startchapter[title=References]
-\placepublications[criterium=text] \par
+%\placepublications[criterium=text] \par
+\placelistofpublications[default][criterium=text] \par
 \stopchapter
 
 \page[yes]
 
 \startchapter[title=Bibliography]
-\placepublications[criterium=all] \par
+%\placepublications[criterium=all] \par
+%\placelistofpublications[criterium=all] \par
+\starttexdefinition btx:apa:url
+\stoptexdefinition
+\starttexdefinition btx:apa:doi
+\stoptexdefinition
+\placelistofpublications[default][method=dataset] \par
+%\placelistofpublications[method=dataset] \par
 \stopchapter
 
 \stopcomponent
