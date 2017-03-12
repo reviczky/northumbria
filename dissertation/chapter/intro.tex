@@ -25,84 +25,102 @@ Finally, the closing of this chapter will be laid out with the structure and ove
 
 \setuphead[section][numberstyle={tfb},textstyle={tfb}]
 \startsection[title=Problem Statement]
-In this section, set out the main aim(s) of your project and explain what they mean. The aim is the fundamental purpose of what you were trying to do – to find out something, to make something, to test something. There is usually only one or two aims and they are often expressed in terms of a hypothesis or research question. \par
+Currently, the problem of resilience for cyber attacks on autonomous \infull{CPS} is not tackled. Weaknesses in semi-autonomous (autopilot) cars has been already shown through local exploitation \footnote{\goto{www.bloomberg.com/features/2015-george-hotz-self-driving-car}[url(https://www.bloomberg.com/features/2015-george-hotz-self-driving-car/)]} and interconnecting these systems will lead to an even bigger attack surface. Whilst the industry is moving ahead with big steps to produce self driving cars, buses and trains, autonomous flying drones and various other transportation systems, the aspect of built-in security is falling short. Moreover, the \infull{IoT} creates a world where devices and systems can be taken over and cause significant disruptions in our day-to-day lives. \par
+This leaves an open door to targeted attacks and malicious intent starting from small criminals to state sponsored attacks to harm individuals or gain influence through sabotage and even industry espionage \cite[authoryear][6459914].
+With over a billion cars owned in the world and being potentially replaced with new, connected vehicles this papers sets out to show how to solve this deficiency through defining behavioural analysis of such systems with the help of profiling by looking particularly at autonomous connected cars. Profiling will help addressing the correlation of various systems, whereas through behavioural analysis it can be deducted whether an expected state of a sensor reading is within the margins of errors. A novel method to detect and react to a specific use case of cyber hijacking will be presented in order to prove that effective pro-active security can be built-in and create resilience towards cyber attacks. \par
+This technique shown through the geo-data with the scenario of a hijacking can be used further by introducing the method in combination to other sensor data readings. Current implementations of smart systems which are utilising machine learning to detect anomalies \cite[authoryear][5166473] are impractical for vehicles. \par
 \stopsection
 
-% Total number of words per section: 300
+% Total number of words per section: 285/300
 
 \startsection[title=Aim]
-% In this section, set out the main aim(s) of your project and explain what they mean. The aim is the fundamental purpose of what you were trying to do – to find out something, to make something, to test something. There is usually only one or two aims and they are often expressed in terms of a hypothesis or research question. \par
-The purpose of this study is to demonstrate the pro-active approach of predicting cyber security threats in connected cars, as an example of a cyber-physical system, through deviations in behaviour profiling patterns on location awareness using mathematical probability density functions. \par
-\blank[line]
-By detecting deviations from predicted desired future state spectrum the project will achieve to create a warning mechanism for cyber threats on cyber-physical systems and being able to react in a fail-safe manner. \par
-Introducing a novel approach on proactive
-Hence, this research is looking at the current known-good/known-bad methods and related efforts in profiling and behavioural analysis of connected cars used in detecting cyber threats, their weaknesses and showing a novel way of \par
-proactive vs reactive methods, good-bad behaviour (cite)
-looking at a novel way of predicting cyber threats of a specific sub-set of said cyber-physical systems
-\cite[authoryear][citeulike:13779694], by applying a specialised version of the Bayesian estimation to compare the predicted behaviour of cyber-physical systems with the actual motion patterns \cite[authoryear][Fox03bayesianfiltering].
-Learning from in / other systems / Taking advantage of
-predictive, behavioural
-anomalies, deviations
-the proposal, resulting, the sections of, whilst, forming
-are playing a bigger role than ever
-bayesian (to analyse and predict future states)
-malicious intent
-use case of hijacked connected cars
-kill chain?
+% In this section, set out the main aim(s) of your project and explain what they mean.
+% The aim is the fundamental purpose of what you were trying to do – to find out something, to make something, to test something.
+% There is usually only one or two aims and they are often expressed in terms of a hypothesis or research question.
+
+The aim of this project is to demonstrate that by incorporating different applications of Bayesian estimation techniques a novel method can be developed and established to counter cyber attacks. With the specific scenario of a cyber hijacking, given a connected car driving between two cities, it can be shown that pro-active resiliency is addressed and that cyber defence can be achieved. \par
+Once it is proven that behavioural analysis is superior to signature based machine learning for real-time predictive modelling of future states for comparable travel routes and actual motion patterns \cite[authoryear][Fox03bayesianfiltering], in terms of the tolerance on the deviation from the norm of behavioural profiling patterns on location awareness using mathematical probability density functions, anomaly detection can be reacted upon far quicker and more accurately than before. This research is looking at the current related efforts of methods in profiling and behavioural analysis \cite[authoryear][alpaydin2014introduction] and their weaknesses. Hence, the fundamental purpose of this paper is to show the comparison of time-spans to react to cyber attacks between current industry-standard machine learning algorithms of known-good/known-bad behaviour and the new approach of behavioural analysis through a specialised version of the Bayesian estimation and proving the superiority of the latter. \par
+With the significant improvements to reaction times, malicious intent can be countered to eliminate the intended harm and a pro-active stance can be taken instead of the current re-active solutions to predict cyber security threats as early as they happen in the kill chain. \par
+To prove that this new approach of behavioural analysis can be the baseline of cyber defence of \infull{CPS} \cite[authoryear][citeulike:13779694], this paper will demonstrate the technique on a specific scenario of connected cars (vehicles) as an example, from which it can be deduced that the technique is fit for purpose in the general application of land-based or aerial transportation.
+By detecting deviations from a predicted desired future state spectrum, the project will achieve to create the fundamentals of a warning mechanism for cyber threats on \infull{CPS} and the ability to react in a fail-safe manner.
 \stopsection
 
-% Total number of words per section: 300
+% Total number of words per section: 334/300
 
 %\startsection[title=Background]
-%This should explain the background and motivation of the project: why did you do it, and why should the reader be interested in what you did. \par
-%Definitions: CPS, Connected Cars (Semi-Autonomous), Bayesian, Threat \par
+% This should explain the background and motivation of the project: why did you do it, and why should the reader be interested in what you did.
 %\stopsection
 
 \startsection[title=Objectives]
-%In this section, explain the objectives of your project. These are the sub-goals you needed to achieve in order to complete your project. There will be several objectives – typically around eight. \par
-%An objective should be a definite statement that can be clearly identified as "complete" or "not complete". A statement like "To improve my understanding of programming" is too vague, as it is not clear whether it is complete or not. A statement like "To learn how to use dynamic memory structures in C++" is clearer. \par
-%You may also wish to include objectives that discuss the parts of your dissertation, like "To produce a literature survey on the subject of…" or "To write a discussion of the implementation of the system". \par
-%It is fine to include objectives that you did not complete. Explain why you did not achieve them. Also make clear any new objectives that you have added since writing your research proposal. \par
-%http://dissertationwriting.com/introduction-chapter-writing/
-In order to achieve the aims and validate the hypothesis the following steps have to be completed:
+% In this section, explain the objectives of your project.
+% These are the sub-goals you needed to achieve in order to complete your project.
+% There will be several objectives – typically around eight.
+% An objective should be a definite statement that can be clearly identified as "complete" or "not complete".
+% A statement like "To improve my understanding of programming" is too vague, as it is not clear whether it is complete or not.
+% A statement like "To learn how to use dynamic memory structures in C++" is clearer.
+% You may also wish to include objectives that discuss the parts of your dissertation, like "To produce a literature survey on the subject of…" or "To write a discussion of the implementation of the system".
+% It is fine to include objectives that you did not complete.
+% Explain why you did not achieve them.
+% Also make clear any new objectives that you have added since writing your research proposal.
+
+% http://dissertationwriting.com/introduction-chapter-writing/
+
+In order to achieve the aims and validate the hypothesis the following steps have to be completed to achieve the projects objectives:
+
+\blank[line]
 
 \startitemize[joinedup,nowhite]
-\item Define the criteria of vehicles to be counting as a cyber-physical systems in the study (connected cars)
-\item Create a set of data and format on behaviour profiling that will be needed for the analysis and estimation: \color[black]{\it speed, location, time, weight}
-\item Compare and contrast different density functions, particularly Bayesian estimation algorithms
-\item Combine the estimation techniques to create a formula and algorithm to predict future positions
-\item Validate the predicted values on historical data (sensors, simulations)
-\item Propose a live warning alarm system (similar to the ground proximity alarm in planes) and a live tracking site (see flightradar24.com)
-\item Suggest fail-safe actions to be implemented in autonomous systems (disconnect and safely stop)
+\item To define the sub-set and criteria of autonomous \infull{CPS} that are described as connected cars (vehicles) in the examples of the case study
+\item To create a scenario with a set of data \color[black]{\tf (direction, speed, location, time)} and proposing a data format that will be needed for the analysis and estimation on behavioural profiling
+\item To compare and contrast different density functions, particularly Bayesian estimation algorithms to determine the suitability for real-time anomaly detection
+\item To combine the estimation techniques to create a formula and algorithm for predicting future states (positions)
+\item To validate the predicted values on historical data (sensor data) on pre-defined simulations
+\item To suggest fail-safe actions to be implemented in autonomous systems (disconnection and stopping safely) in the event of a breach
+\item To show the improvements that can be achieved with behavioural analysis in comparison to signature based machine learning
+\item To propose a live warning alarm system (similar to the ground proximity alarm in aeroplanes) and a live tracking site (see \goto{flightradar24.com}[url(https://www.flightradar24.com/)]) to form a control centre against cyber attacks
 \stopitemize
 
-Given these steps, there should be possible to show the holistic approach of anomaly detection in connected cars. \par
+\blank[line]
+
+Given the completion of these goals, it is possible to show how a holistic approach of anomaly detection in connected cars can be incorporated into the security design to limit the effects of a cyber attack. \par
+Follow-up objectives can be defined in the application of the presented techniques, especially on the ethical aspects of reaction based decisions, but these do not form a part of this project. \par
 \stopsection
 
-% Total number of words per section: 300
+% Total number of words per section: 259/300
 
 \startsection[title=Key Findings]
-Work Done and Results \\ Here you should explain the research you carried out, the methodology chosen and the reason for that choice, and the main results and conclusions drawn from those results. \par
-short summary of development (concepts,hypothesis,objectives)
+% Here you should explain the research you carried out, the methodology chosen and the reason for that choice, and the main results and conclusions drawn from those results.
+
+This paper has developed the following concepts and  and the following work has been done with the following results:
+research carried out: behavioural analysis on connected cars, ...
+methodology chosen + reason why: qualitative sampling, ...
+main results: time-window of bayesian estimation, short summary of development (concepts, hypothesis, objectives), ...
+conclusion of results: better system than the current, ...
 \stopsection
 
 % Total number of words per section: 300
 
 \startsection[title=Contribution]
-Here you should explain the research you carried out, the methodology chosen and the reason for that choice, and the main results and conclusions drawn from those results. \par
+% Here you should explain the research you carried out, the methodology chosen and the reason for that choice, and the main results and conclusions drawn from those results.
+
+are playing a bigger role than ever
+Learning from in / other systems / Taking advantage of
 \stopsection
 
 % Total number of words per section: 300
 
 \startsection[title=Structure of the Report]
-Here you should {\it briefly} explain the structure of the report so that the reader knows what issues are discussed where. \par
+% Here you should {\it briefly} explain the structure of the report so that the reader knows what issues are discussed where.
+
 outline for the rest of paper
+the proposal, resulting, the sections of, whilst, forming
 \stopsection
 
 % Total number of words per section: 300
 
-Before looking at the literature ...
-The next chapter will look at the methodology!
+\blank[line]
+
+The next chapter is looking at the methodology that is being used for this paper, before the review of the literature is discussed. \par
 
 \stopchapter
 
