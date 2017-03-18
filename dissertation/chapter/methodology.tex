@@ -11,37 +11,112 @@ In this chapter it is going to be explained what methods have been used and how 
 
 \blank[line]
 
-explain how the research has been carried out
-where is the data come from?
-data gathering techniques (data optained, collection, primary/secondary sources)
-analysing and assembling the data (interpretation)
-quantitative (data) analysis (https://www.postgrad.com/advice/phd/research_methods/quantitative_research/)
-how did it serve my purposes? (more appropriate than other methods?)
-see gps table
+For this project, a quantitative data type research methodology approach was chosen underpinned by empirically observed data (sample location data) to support and illustrate experiments on mathematical modelling with the introduction of a new formula to correlate routes. \par
 
 \startsection[title=Research Overview]
-(methods and sources)
-(aims for the methodology)
-(how/why)
+% Explain how the research has been carried out
+% Where is the data come from
+% Method and Sources, Aims for the Methodology, How/Why
+% How did it serve the purpose (mora appropriate than other methods)
+The research is based on a sample set of route data that has been created in order to show different possible vehicle movement behaviours. The data uses real \infull{GPS} (GPS) coordinates but the routes should only resemble motion patterns and are not taken from real events (see: \in{Table}[table:ads]). This set of data is then analysed and compared with current machine learning techniques and a second time with the proposed new algorithms of behaviour analysis (see: \in{Chart}[chart:rstan]). \par
+With the output of the correlation data, metrics of deviation from the norm and time to detect will form the main evidence of significant improvements to detect anomalies. \par
+To avoid problems relating with data privacy and \infull{PII} (PII), statistical sampling provides the best method to conduct correlation techniques based on real routes but fictitious behaviour.
+Once the proposed technique for profiling and behavioural analysis is proven to be a new and better way of defining anomalies, it can then be run through a database of real recorded routes and behaviours to support and validate the findings in a scenario taken from live data. \par
 \stopsection
 
-% Total number of words per section: 200
+% Total number of words per section: 182/200
 
 \startsection[title=Research Design]
-Data collection
-sample size
+% Data gathering techniques:
+% data optained, data collection, primary/secondary sources
+% types of data used: numerical, what do they record
+
+Data gathering techniques for this research are based on numerical data collection that was created through capturing geolocation available through secondary sources in a way that the latitude, longitude and elevation coordinates \footnote{\goto{ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf}[url(https://www.ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf)]} are real but not specific to any individual's travel route behaviour. The sample size is capped with an approximate target of 100 comparable routes of various vehicle movements. \par
+To illustrate the data-set, the following excerpt shows the data types and data fields of the data obtained. For the full table and database defined with open data formats that are being analysed, see \in{ADS Table}[table:ads] in the Appendix. Each type of data is chosen in line with \infull{SI} (SI) measurements and universal or atomic definitions to abstract the proposed method in order to be applicable to a wide range of use-cases. \par
+Obtained data includes: System Identity, Universal Date & Time, Global Position, Global Orientation, Ground Speed and Reporting Method. \par
+
+% following technique / The following specific data is showing an example extract of the routes: / sample:
+
+\blank[line]
+
+\placetable[here][table:dataset]{Sample data-set extract}{
+\startxtable[foregroundstyle=\ssxx]
+\startxtablehead[background=color,backgroundcolor=gray]
+\startxrow
+\startxcell[foregroundstyle=\ssxx\bf] Cyber-Physical \\ System (ID) \stopxcell
+\startxcell[foregroundstyle=\ssxx\bf] Date \\ (UTC) \stopxcell
+\startxcell[foregroundstyle=\ssxx\bf] Time \\ (UTC) \stopxcell
+\startxcell[foregroundstyle=\ssxx\bf] Position \\ (latitude) \stopxcell
+\startxcell[foregroundstyle=\ssxx\bf] Position \\ (longitude) \stopxcell
+\startxcell[foregroundstyle=\ssxx\bf] Position \\ (elevation) \stopxcell
+\startxcell[foregroundstyle=\ssxx\bf] Orientation \\ (degree) \stopxcell
+\startxcell[foregroundstyle=\ssxx\bf] Orientation \\ (cardinal) \stopxcell
+\startxcell[foregroundstyle=\ssxx\bf] Ground Speed \\ (m/s) \stopxcell
+\startxcell[foregroundstyle=\ssxx\bf] Reporting \\ (system) \stopxcell
+\stopxrow
+\stopxtablehead
+\startxtablebody[align=middle]
+\startxrow
+% \startxcell 2017:0db8:85a3:0000:0000:8a2e:0370:7334 \stopxcell
+\startxcell 2017:0db8:85a3 \stopxcell
+\startxcell 2017-03-11 \stopxcell
+\startxcell 06:50:27 \stopxcell
+\startxcell 47.82520828 \stopxcell
+\startxcell 12.54956887 \stopxcell
+\startxcell 456 \stopxcell
+\startxcell 190 \stopxcell
+\startxcell \WORD{S} \stopxcell
+\startxcell 9 \stopxcell
+\startxcell ADS-B \stopxcell
+\stopxrow
+\startxrow
+\startxcell 2017:0db8:85a3 \stopxcell
+\startxcell 2017-03-11 \stopxcell
+\startxcell 06:50:29 \stopxcell
+\startxcell 48.24533500 \stopxcell
+\startxcell 12.53889999 \stopxcell
+\startxcell 455 \stopxcell
+\startxcell 191 \stopxcell
+\startxcell \WORD{S} \stopxcell
+\startxcell 11 \stopxcell
+\startxcell ADS-B \stopxcell
+\stopxrow
+\startxrow
+\startxcell[nx=10] \vdots \stopxcell
+\stopxrow
+\startxrow
+\startxcell 2017:0db8:85a3 \stopxcell
+\startxcell 2017-03-11 \stopxcell
+\startxcell 15:30:40 \stopxcell
+\startxcell 48.24545299 \stopxcell
+\startxcell 12.53923599 \stopxcell
+\startxcell 449 \stopxcell
+\startxcell 12 \stopxcell
+\startxcell \WORD{N} \stopxcell
+\startxcell 7 \stopxcell
+\startxcell ADS-B \stopxcell
+\stopxrow
+\stopxtablebody
+\stopxtable
+}
+
+% http://031c074.netsolhost.com/WordPress/wp-content/uploads/2016/05/MH804-FlightAware.jpg
+
+Many more metrics could be captured and incorporated into the data-set, but this minimalistic set of data will suffice for proving the theory of profiling and behavioural analysis this paper sets out. \par
 \stopsection
 
-% Total number of words per section: 200
+% Total number of words per section: 187/200
 
 \startsection[title=Data Analysis]
 % https://www.postgrad.com/advice/exams/dissertations_and_theses/dissertation_methodology/
+
+analysing and assembling the data (interpretation)
+quantitative (data) analysis (https://www.postgrad.com/advice/phd/research_methods/quantitative_research/)
+rstan, python
+
 what does the data mean in context of the research
 results conclusive?
-quantitative type of data: experiments on mathematical modelling (empirically observed data)
 theory of interpreting data
-types of data used: numerical, what do they record? position, etc.
-secondary sources
 any factors in the results
 \stopsection
 
