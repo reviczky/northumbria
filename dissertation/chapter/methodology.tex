@@ -30,6 +30,7 @@ Once the proposed technique for profiling and behavioural analysis is proven to 
 % Data gathering techniques:
 % data optained, data collection, primary/secondary sources
 % types of data used: numerical, what do they record
+% what does the data mean in context of the research
 
 Data gathering techniques for this research are based on numerical data collection that was created through capturing geolocation available through secondary sources in a way that the latitude, longitude and elevation coordinates \footnote{\goto{ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf}[url(https://www.ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf)]} are real but not specific to any individual's travel route behaviour. The sample size is capped with an approximate target of 100 comparable routes of various vehicle movements. \par
 To illustrate the data-set, the following excerpt shows the data types and data fields of the data obtained. For the full table and database defined with open data formats that are being analysed, see \in{ADS Table}[table:ads] in the Appendix. Each type of data is chosen in line with \infull{SI} (SI) measurements and universal or atomic definitions to abstract the proposed method in order to be applicable to a wide range of use-cases. \par
@@ -109,18 +110,38 @@ Many more metrics could be captured and incorporated into the data-set, but this
 
 \startsection[title=Data Analysis]
 % https://www.postgrad.com/advice/exams/dissertations_and_theses/dissertation_methodology/
+% https://www.postgrad.com/advice/phd/research_methods/quantitative_research/
 
-analysing and assembling the data (interpretation)
-quantitative (data) analysis (https://www.postgrad.com/advice/phd/research_methods/quantitative_research/)
-rstan, python
+Having the underlying raw data of comparable routes as a base for assembling and quantitative data analysis the following process is used to interpret the data. \par
+The proposed algorithm to analyse the data is based on Recursive Bayesian estimation techniques (Bayes filters), more specifically on Sequential Bayesian filtering (including: filtering, smoothing and prediction). For this project the focus is on Bayesian filtering for the estimation of future states within the route. \par
+Free and open source tools have been acquired to help with the statistical modelling of probability and density functions and the plotting of the experiments \footnote{\goto{github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers}[url(https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)]}. The core tools that have been utilised include: \par
 
-what does the data mean in context of the research
-results conclusive?
-theory of interpreting data
-any factors in the results
+\startitemize[joinedup,nowhite]
+\item Stan full Bayesian statistical inference with MCMC sampling (including the interfaces for R and Python): Available at \goto{mc-stan.org}[url(http://mc-stan.org/)]
+\item PyMC for Bayesian statistical modelling and Probabilistic Machine Learning (version 2 and 3): Available at \goto{pystan.readthedocs.io}[url(https://pystan.readthedocs.io/en/latest/)], \goto{github.com/markdregan/Bayesian-Modelling-in-Python}[url(https://github.com/markdregan/Bayesian-Modelling-in-Python)]
+\stopitemize
+
+% http://twiecki.github.io/blog/2013/09/12/bayesian-glms-1/
+% http://andrewgelman.com/2015/10/15/whats-the-one-thing-you-have-to-know-about-pystan-and-pymc-click-here-to-find-out/
+
+More tools have been used in the development of the experiments but are not forming part of the research: \par
+
+\startitemize[joinedup,nowhite]
+\item PyBayes for recursive Bayesian estimation (Bayesian filtering): Available at \goto{github.com/strohel/PyBayes}[url(https://github.com/strohel/PyBayes)]
+\item BEST Bayesian estimation for two groups (with the interface for R): Available at \goto{github.com/strawlab/best}[url(https://github.com/strawlab/best)], \goto{github.com/mvuorre/bestan}[url(https://github.com/mvuorre/bestan)]
+\stopitemize
+
+% theory of interpreting the data
+Results of the statistical modelling will be interpreted with metrics of deviations of optimal routes defined with Bayesian filters calculated in percentage as key indicators. The balance of how much deviation to allow until it is flagged as anomaly is the biggest challenge. \par
+% results conclusive
+As the deviation is based on a comparison of density of comparable profiles of behaviour, the results will be conclusive for any significant deviation.
+% any factors in the results
+False-positives and bad data is factored into the algorithm and would statistically be not significant. \par
+
+The exact same data is also used to conduct the comparison with current signature based methods. \par
 \stopsection
 
-% Total number of words per section: 200
+% Total number of words per section: 281/200
 
 \startsection[title=Experiments to Consider]
 Experiments \par
