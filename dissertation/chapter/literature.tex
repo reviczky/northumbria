@@ -1,41 +1,124 @@
 \startcomponent literature
 \product dissertation
 
-\startchapter[title=Critical Review of the Literature]
+\startchapter[title={Critical Review of the Literature},reference=chapter:literature]
 % https://patthomson.net/2014/01/16/connecting-chapterschapter-introductions/
-Literature Review \par
-20-30 references
-% Definitions: CPS, Connected Cars (Semi-Autonomous), Bayesian, Threat
-%\input knuth \par
+
+The literature review in this chapter is looking at the relevant contemporary papers, books and articles related to the project and gives definitions as well as a frame to the subject of behavioural analysis and why the research question is justified. \par
+Building a logical flow, the sections will cover the validity of the case study of connected cars followed by the review of existing models on data analysis and solutions utilised in the field. Continuing with the elaboration on the data capturing techniques for \infull{CPS} and different takes on system profiling models that will make up behavioural data with references to state-of-the-art research will lead to answering questions on how to deal with anomaly detection. In order to relate to current cyber threats and giving evidence of the contribution this project provides, the closing critique will be on the topic of threat prediction methods. \par
+
+\blank[line]
+
+% Relevancy to the paper, work done, results found, strenghts of findings and critical evaluation
+Each section explains the relevancy to this paper, discussing the work that has been done containing the results found and the stengths of these findings. All of the literature presented will be critically evaluated and linked back to the project. \par
 
 \startsection[title=Usability Study]
-Test \par
+% Relevancy
+As the paper is proving the research question on a case study of connected cars, this section will dive into the importance of the subset of \infull{CPS} and what autonomous and semi-autonomous control stands for, how far remote control can be taken. Through the comparison of literature on estimation techniques and signature based learning the gathered intelligence is linked to the new threat landscape of cyber-attacks. \par
+% Work done & Results found
+Even though this research is touching the whole space of \infull{CPS}, systems that {\it\quote{interface directly with the physical world, making the detection of environmental changes and the system behavior adaptation to be considered the key challenge}} \cite[authoryear][krishna2014challenges], the hypothesis of proactive approach is proven on a specific sub-set of vehicles, namely connected cars. \par
+As connected cars will be the building blocks of the emerging \infull{IoV} (IoV) \cite[authoryear][6823640] it is a perfect example to conduct the experiments on for behaviour profiling. \par
+The different levels of automation between manually driven, semi-autonomous and fully autonomous connected vehicles, that can navigate themselves without any human interaction or input is described and explained in the book of \quote{Preparing a Nation for Autonomous Vehicles} \cite[authoryear][Fagnant2015167]. For this case study the baseline will be set on level 5, fully autonomous connected cars. \par
+Communication channels and flow of communication between \infull{CPS} is shown in \in{Figure}[figure:cps]. Looking at the importance of profiling autonomous vehicles with deduced behaviour like vehicle usage, see \in{Figure}[figure:vehicleuse], the comparable profiles build the base of correlating behavioural analysis, so that norming against general behaviour will give the mean against which the deviation will be calculated. \par
+In order to put the entire simulation into perspective of tackling a proactive approach on detecting anomalies, these behaviours will be analysed with the different sequential Bayesian estimation techniques as seen in \in{Section}[section:anomalydetection]. \par
+Having had the specific set of vehicles defined for this project, the type of profiling and behaviour on navigation explained, the very last aspect on why all this is relevant is the real problem of cyber threats that these autonomous vehicles will be exposed and are facing from the internet \cite[authoryear][6803166]. This brings a whole new set of challenging situations \cite[authoryear][adouane2016autonomous], like the particular one on cyber-hijacking, that has to be dealt with. \par
+%\quote{Unlike the traditional embedded systems, the CPSs interface directly with the physical world, making the detection of environmental changes and the system behavior adaptation to be considered the key challenges in the design of such systems.} \cite[authoryear][krishna2014challenges]
+%\quote{Moreover, connected vehicles are also the building blocks of emerging Internet of Vehicles (IoV).} \cite[authoryear][6823640]
+%\quote{Some companies have pushed the envelope even further by creating almost fully autonomous vehicles (AVs) that can navigate highways and urban environments with almost no direct human input.} \cite[authoryear][Fagnant2015167]
+%\quote{This book reveals innovative control architectures that can lead to fully autonomous vehicle navigation in these challenging situations.} \cite[authoryear][adouane2016autonomous]
+%\quote{The next step in this evolution is just around the corner: the Internet of Autonomous Vehicles.} \cite[authoryear][6803166]
+
+\blank[line]
+
+\startcolumns[n=2,rule=on]
+\startplacefigure[title={CPS Communication \\ \tfx © Cyber Physical Systems (CPSs)},list={CPS Communication},reference=figure:cps]
+ \externalfigure[http://www.igi-global.com/sourcecontent/9781466673120_112206/978-1-4666-7312-0.ch001.f01.png][height=35mm]
+\stopplacefigure
+\column
+\startplacefigure[title={Vehicle Use \\ \tfx © Preparing a Nation for Autonomous Vehicles},list={Vehicle Use},reference=figure:vehicleuse]
+ \externalfigure[https://ai2-s2-public.s3.amazonaws.com/figures/2016-11-08/192c9fe684f2340d413e7826ac574d16595c2fdb/10-Figure1-1.png][height=35mm]
+\stopplacefigure
+\stopcolumns
+
+By choosing \infull{CPS} as the subject of systems to analyse, the entirety of data analysis on the vehicles will create the foundation of a security baseline to protect proactively from external or internal attacks. \par
 \stopsection
 
-% Total number of words per section: 300
+% Total number of words per section: 400/400
 
-\startsection[title=Existing Models]
-Test \par
+\startsection[title=Existing Models on Data Analysis]
+% Relevancy
+% Work done
+% Results found
+Arguing that \par
+connected cars are... \par
+the techniques compromises of... \par
+definition of connected cars (Semi-Autonomous) \par
+definition of CPS \par
+signature based machine learning (known-good/known-bad) \par
+darktrace with recursive bayesian estimation \par
+traffic analysis (logs) on behavioural analysis \par
+Bayesian estimation vs signature based
+5 references \par
 \stopsection
+
+% Total number of words per section: 400
 
 \startsection[title=Data Capturing for Connected Things]
+% Relevancy
+% Work done
+% Results found
 ADS reference from Aviation industry, see: in \par
+car-sharing-modules (CSM) modules \par
+intelligent traffic systems (ITS), command centre \par
+5 references \par
 \stopsection
+
+% Total number of words per section: 400
 
 \startsection[title=Behavioural Profiling]
+% Relevancy
+% Work done
+% Results found
 Patterns of Cyber-Physical Systems \par
 Combination of data \par
+commuting, families, types etc \par
+5 references \par
 \stopsection
 
-\startsection[title=Anomality Detection]
-Mean time for anomality \par
+% Total number of words per section: 400
+
+\startsection[title=Anomaly Detection,reference=section:anomalydetection]
+% Relevancy
+% Work done
+% Results found
+Mean time for anomaly \par
+Deviation from norm \par
+\cite[authoryear][Patcha20073448] \par
+\cite[authoryear][GarciaTeodoro200918] \par
+\cite[authoryear][doi:10.1137/1.9781611972733.3] \par
+5 references \par
 \stopsection
+
+% Total number of words per section: 400
 
 \startsection[title=Threat Prediction Methods]
-Bayesian Filter methods \par
+% Relevancy
+% Work done
+% Results found
+definition of Bayesian Filter methods (filtering, smoothing, prediction) for robots \par
+Define cyber threat \par
+5 references \par
 \stopsection
+
+% Total number of words per section: 400
+
+This chapter looked at the literature review, next up is the design of the project. \par
+
 \stopchapter
 
-% Total number of words: 2-3000 / 6 pages
+% The hypothesis or research question and research aim should be the natural conclusion of the literature review.
+% Why your chosen question is worth asking (and answering).
+
+% Total number of words: 3000 / 6 pages
 
 \stopcomponent

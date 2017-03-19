@@ -2,7 +2,7 @@
 \product dissertation
 
 \setuphead[chapter][textstyle={\tfd\sc}]
-\startchapter[title=Methodology]
+\startchapter[title=Methodology,reference=chapter:methodology]
 % All chapters should be topped and tailed.
 % In other words, the first paragraph of a chapter should say what the chapter is about;
 % the last paragraph should summarise what the chapter was about.
@@ -24,7 +24,7 @@ To avoid problems relating with data privacy and \infull{PII} (PII), statistical
 Once the proposed technique for profiling and behavioural analysis is proven to be a new and better way of defining anomalies, it can then be run through a database of real recorded routes and behaviours to support and validate the findings in a scenario taken from live data. \par
 \stopsection
 
-% Total number of words per section: 182/200
+% Total number of words per section: 183/200
 
 \startsection[title=Research Design]
 % Data gathering techniques:
@@ -35,8 +35,6 @@ Once the proposed technique for profiling and behavioural analysis is proven to 
 Data gathering techniques for this research are based on numerical data collection that was created through capturing geolocation available through secondary sources in a way that the latitude, longitude and elevation coordinates \footnote{\goto{ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf}[url(https://www.ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf)]} are real but not specific to any individual's travel route behaviour. The sample size is capped with an approximate target of 100 comparable routes of various vehicle movements. \par
 To illustrate the data-set, the following excerpt shows the data types and data fields of the data obtained. For the full table and database defined with open data formats that are being analysed, see \in{ADS Table}[table:ads] in the Appendix. Each type of data is chosen in line with \infull{SI} (SI) measurements and universal or atomic definitions to abstract the proposed method in order to be applicable to a wide range of use-cases. \par
 Obtained data includes: System Identity, Universal Date & Time, Global Position, Global Orientation, Ground Speed and Reporting Method. \par
-
-% following technique / The following specific data is showing an example extract of the routes: / sample:
 
 \blank[line]
 
@@ -106,7 +104,7 @@ Obtained data includes: System Identity, Universal Date & Time, Global Position,
 Many more metrics could be captured and incorporated into the data-set, but this minimalistic set of data will suffice for proving the theory of profiling and behavioural analysis this paper sets out. \par
 \stopsection
 
-% Total number of words per section: 187/200
+% Total number of words per section: 185/200
 
 \startsection[title=Data Analysis]
 % https://www.postgrad.com/advice/exams/dissertations_and_theses/dissertation_methodology/
@@ -179,6 +177,6 @@ In summary, this chapter explained the given methodology that has been used and 
 
 \stopchapter
 
-% Total number of words: 1074/1000
+% Total number of words: 1073/1000
 
 \stopcomponent
