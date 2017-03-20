@@ -49,7 +49,7 @@ By choosing \infull{CPS} as the subject of systems to analyse, the entirety of d
 % Relevancy
 This section is looking at the existing models that are available and used in the industry that can help to analyse the motion patterns of connected cars. Most of the work has been done on network traffic log analysis and this will be looked at for adoption for interpreting sensor readings. \par
 There are several different data analysis methods \cite[authoryear][miles2013qualitative]. Pattern matching tries to find common structure to compare and group against. Sequential and qualitative analysis utilises ordering and takes an analytical approach on the data, whereas sampling will focus on bounding the collection of data. \par
-Most of the historical work was conducted on \infull{IDPS} and the analysis on network log traffic \cite[authoryear][Krugel:2002:SSA:508791.508835]. Although it is certainly a knowledge-base to be build from, the fast changing constellation of connected systems needs to adapt a new approach on dynamic analysis. \par
+Most of the historical work was conducted on \infull{IDPS}s and the analysis on network log traffic \cite[authoryear][Krugel:2002:SSA:508791.508835]. Although it is certainly a knowledge-base to be build from, the fast changing constellation of connected systems needs to adapt a new approach on dynamic analysis. \par
 One of the more recently adopted techniques compromising behavioural data analysis is based on recursive Bayesian estimation \cite[authoryear][Bergman99recursivebayesian], arguing that signature based machine learning of known-good/known-bad states takes too much time to establish a baseline and is prone to multiple false-positive findings. Machine learning tends to be less able to react to real events at an adequate time-frame \cite[authoryear][alpaydin2014introduction] and makes it difficult to react proactively, especially on novel environmental set-ups. \par
 By looking specifically on how profiling and behavioural analysis has been analysed on different types of traffic accident scenarios \cite[authoryear][Parker1995571], a good profiling pattern can be derived on the data being processed. \par
 % Work done
@@ -94,33 +94,48 @@ It has been shown that indeed it is even more easier to group pre-defined system
 
 \startsection[title=Anomaly Detection,reference=section:anomalydetection]
 % Relevancy
+Anomaly detection plays a crucial part in the proactive approach of detecting cyber threats. Various detection techniques are applied in a variety of scenarios \cite[authoryear][Patcha20073448] to show deviations from the norm through mean functions hitting a threshold and hence indicating suspicious activities. \par
+Current \infull{IDPS}s predominantly are using signature-based detecting algorithms of machine learning with rule-based updates to detect known attacks \cite[authoryear][GarciaTeodoro200918]. \par
+More modern trends are shifting towards more flexible and adaptive anomaly detection mechanisms in contrast to the signature based solutions. This gives a more security oriented approach on detecting malicious activities. On addition, these methods tend to have also fewer false-positive alarms. \par
+Networks are not immune towards intrusions either and studies show \cite[authoryear][doi:10.1137/1.9781611972733.3] that by utilising anomaly detection schemes reaction times can be significantly lowered. \par
+This new approach of real-time specification based correlation \cite[authoryear][Sekar:2002:SAD:586110.586146] will give a boost on the time to detect malicious behaviour. \par
+Another aspect in regards to connected cars are ad-hoc networks and the intrusion detection of such networks. It has been shown that anomaly detection methods are particularly advantageous in such circumstances \cite[authoryear][Zhang:2000:IDW:345910.345958]. \par
 % Work done
+The novel approach in cyber threat detection on connected cars has been advanced through getting rid of signature based detection mechanisms and replace it with anomaly detection algorithms, that are more fit for purpose in the connected wireless transportation landscape. \par
 % Results found
-Mean time for anomaly \par
-Deviation from norm \par
-\cite[authoryear][Patcha20073448] \par
-\cite[authoryear][GarciaTeodoro200918] \par
-\cite[authoryear][doi:10.1137/1.9781611972733.3] \par
-\cite[authoryear][Sekar:2002:SAD:586110.586146] \par
-\cite[authoryear][Zhang:2000:IDW:345910.345958] \par
+Results in increased window to react on malicious activities within the network and a reduced number of false incidents proves the new approach on cyber risk very effective. \par
+
+% "An overview of anomaly detection techniques: Existing solutions and latest technological trends"
+% "Anomaly-based network intrusion detection: Techniques, systems and challenges"
+% "A Comparative Study of Anomaly Detection Schemes in Network Intrusion Detection"
+% "Specification-based anomaly detection: a new approach for detecting network intrusions"
+% "Intrusion detection in wireless ad-hoc networks"
+
 % http://ieeexplore.ieee.org/abstract/document/5971980/
 % http://ieeexplore.ieee.org/abstract/document/1212675/
 \stopsection
 
-% Total number of words per section: 400
+% Total number of words per section: 245/400
 
 \startsection[title=Threat Prediction Methods]
 % Relevancy
+Defining the cyber threat before looking at predicting methods. \par
 % Work done
 % Results found
 definition of Bayesian Filter methods (filtering, smoothing, prediction) for robots \par
 Define cyber threat \par
-5 references \par
+https://link.springer.com/chapter/10.1007/978-3-642-15152-1_3 \par
+http://ieeexplore.ieee.org/abstract/document/4085956/ \par
+http://onlinelibrary.wiley.com/doi/10.1002/cplx.20001/full \par
+https://link.springer.com/chapter/10.1007/978-3-642-26001-8_1 \par
+% image?
 \stopsection
 
-% Total number of words per section: 400
+% Total number of words per section: /400
 
-This chapter looked at the literature review, next up is the design of the project. \par
+\blank[line]
+
+This chapter has looked in-depth at the literature available in regards to the papers research question on proactive threat detection methods with the use case of connected cars. In the next chapter the design of the project, including the experiments and case study can be found. \par
 
 \stopchapter
 
