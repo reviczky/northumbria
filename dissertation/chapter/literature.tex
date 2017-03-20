@@ -95,6 +95,38 @@ It has been shown that indeed it is even more easier to group pre-defined system
 \startsection[title=Anomaly Detection,reference=section:anomalydetection]
 % Relevancy
 Anomaly detection plays a crucial part in the proactive approach of detecting cyber threats. Various detection techniques are applied in a variety of scenarios \cite[authoryear][Patcha20073448] to show deviations from the norm through mean functions hitting a threshold and hence indicating suspicious activities. \par
+
+\startplacefigure[title={A summary of statistical anomaly detection systems \\ © An overview of anomaly detection techniques},list={Anomaly Detection Methods},reference=figure:adsb]
+\startxtable[frame=off,option=stretch]
+\startxrow[topframe=on,bottomframe=on,foregroundstyle={\tfxx}]
+\startxcell[width=23mm] Reference \stopxcell
+\startxcell Highlighting feature \stopxcell
+\startxcell[width=40mm] Methodology \stopxcell
+\stopxrow
+\startxrow[foregroundstyle={\tfxx}]
+\startxcell Haystack [\startcolor[blue]11\stopcolor] \stopxcell
+\startxcell It uses descriptive statistics to model user behavior Also modeled acceptable behavior of a generic user within a particular user group \stopxcell
+\startxcell Host based statistical anomaly detection \stopxcell
+\stopxrow
+\startxrow[foregroundstyle={\tfxx}]
+\startxcell NIDES [\startcolor[blue]15\stopcolor] \stopxcell
+\startxcell A distributed intrusion detection system that had both anomaly as well as signature detection modules \stopxcell
+\startxcell Network based statistical anomaly detection \stopxcell
+\stopxrow
+\startxrow[foregroundstyle={\tfxx}]
+\startxcell Staniford \\ \ \hspace[big] et al. [\startcolor[blue]17\stopcolor] \stopxcell
+\startxcell Statistical anomaly detection technique that calculates an anomaly score for each packet that is sees; it forwards the packets to a correlation engine for intrusion detection purposes when a predefined threshold was crossed \stopxcell
+\startxcell Network based statistical anomaly detection \stopxcell
+\stopxrow
+\startxrow[bottomframe=on,foregroundstyle={\tfxx}]
+\startxcell Ye et al. [\startcolor[blue]19\stopcolor] \stopxcell
+\startxcell It uses the Hotellings {\it T\high{2}} test to analyze the audit trails of activities in an computer system and detect host-based intrusions \stopxcell
+\startxcell Host based multivariate statistical anomaly detection \stopxcell
+\stopxrow
+\stopxtable
+% \externalfigure[https://ai2-s2-public.s3.amazonaws.com/figures/2016-11-08/7c3870e4c6f75aefeb7801c75026cefb512304f6/8-Table1-1.png][width=150mm]
+\stopplacefigure
+
 Current \infull{IDPS}s predominantly are using signature-based detecting algorithms of machine learning with rule-based updates to detect known attacks \cite[authoryear][GarciaTeodoro200918]. \par
 More modern trends are shifting towards more flexible and adaptive anomaly detection mechanisms in contrast to the signature based solutions. This gives a more security oriented approach on detecting malicious activities. On addition, these methods tend to have also fewer false-positive alarms. \par
 Networks are not immune towards intrusions either and studies show \cite[authoryear][doi:10.1137/1.9781611972733.3] that by utilising anomaly detection schemes reaction times can be significantly lowered. \par
