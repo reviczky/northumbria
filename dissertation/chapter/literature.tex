@@ -21,7 +21,7 @@ As connected cars will be the building blocks of the emerging \infull{IoV} (IoV)
 The different levels of automation between manually driven, semi-autonomous and fully autonomous connected vehicles, that can navigate themselves without any human interaction or input is described and explained in the book of \quote{Preparing a Nation for Autonomous Vehicles} \cite[authoryear][Fagnant2015167]. For this case study the baseline will be set on level 5, fully autonomous connected cars. \par
 Communication channels and flow of communication between \infull{CPS} is shown in \in{Figure}[figure:cps]. Looking at the importance of profiling autonomous vehicles with deduced behaviour like vehicle usage, see \in{Figure}[figure:vehicleuse], the comparable profiles build the base of correlating behavioural analysis, so that norming against general behaviour will give the mean against which the deviation will be calculated. \par
 In order to put the entire simulation into perspective of tackling a proactive approach on detecting anomalies, these behaviours will be analysed with the different sequential Bayesian estimation techniques as seen in \in{Section}[section:anomalydetection]. \par
-Having had the specific set of vehicles defined for this project, the type of profiling and behaviour on navigation explained, the very last aspect on why all this is relevant is the real problem of cyber threats that these autonomous vehicles will be exposed and are facing from the internet \cite[authoryear][6803166]. This brings a whole new set of challenging situations \cite[authoryear][adouane2016autonomous], like the particular one on cyber-hijacking, that has to be dealt with. \par
+Having had the specific set of vehicles defined for this project, the type of profiling and behaviour on navigation explained, the very last aspect on why all this is relevant is the real problem of cyber threats that these autonomous vehicles will be exposed and are facing from the internet \cite[authoryear][6803166]. This brings a whole new set of challenging situations \cite[authoryear][adouane2016autonomous], like the particular one on cyber-hijacking that has to be dealt with. \par
 %\quote{Unlike the traditional embedded systems, the CPSs interface directly with the physical world, making the detection of environmental changes and the system behavior adaptation to be considered the key challenges in the design of such systems.} \cite[authoryear][krishna2014challenges]
 %\quote{Moreover, connected vehicles are also the building blocks of emerging Internet of Vehicles (IoV).} \cite[authoryear][6823640]
 %\quote{Some companies have pushed the envelope even further by creating almost fully autonomous vehicles (AVs) that can navigate highways and urban environments with almost no direct human input.} \cite[authoryear][Fagnant2015167]
@@ -49,7 +49,7 @@ By choosing \infull{CPS} as the subject of systems to analyse, the entirety of d
 % Relevancy
 This section is looking at the existing models that are available and used in the industry that can help to analyse the motion patterns of connected cars. Most of the work has been done on network traffic log analysis and this will be looked at for adoption for interpreting sensor readings. \par
 There are several different data analysis methods \cite[authoryear][miles2013qualitative]. Pattern matching tries to find common structure to compare and group against. Sequential and qualitative analysis utilises ordering and takes an analytical approach on the data, whereas sampling will focus on bounding the collection of data. \par
-Most of the historical work was conducted on \infull{IDPS}s and the analysis on network log traffic \cite[authoryear][Krugel:2002:SSA:508791.508835]. Although it is certainly a knowledge-base to be build from, the fast changing constellation of connected systems needs to adapt a new approach on dynamic analysis. \par
+Most of the historical work was conducted on \infull{IDPS}s and the analysis on network log traffic \cite[authoryear][Krugel:2002:SSA:508791.508835]. Although it is certainly a knowledge-base to be built from, the fast changing constellation of connected systems needs to adapt a new approach on dynamic analysis. \par
 One of the more recently adopted techniques compromising behavioural data analysis is based on recursive Bayesian estimation \cite[authoryear][Bergman99recursivebayesian], arguing that signature based machine learning of known-good/known-bad states takes too much time to establish a baseline and is prone to multiple false-positive findings. Machine learning tends to be less able to react to real events at an adequate time-frame \cite[authoryear][alpaydin2014introduction] and makes it difficult to react proactively, especially on novel environmental set-ups. \par
 By looking specifically on how profiling and behavioural analysis has been analysed on different types of traffic accident scenarios \cite[authoryear][Parker1995571], a good profiling pattern can be derived on the data being processed. \par
 % Work done
@@ -62,20 +62,20 @@ The results underline that approaching data analysis with predictive behavioural
 
 \startsection[title=Data Capturing for Connected Things]
 % Relevancy
-Without valid and quality data that will be captured through the various sensors of the connected car, the analysis would be meaningless. Therefore, it is utmost important to define what data needs to be captured, through what means (readings of sensor data) and that the quality of reading is ensured, coupled with minimal misreadings and errors. Some of the inevitably present abnormal readings left in the data-set can be filtered out with mathematical models. \par
-For the definition of the data-set and capturing techniques, this paper is looking at established methods already in used within the aviation industry. The global tracking system \infull{ADS-B} (ADS-B) defines prerequisite data types that needs to be sent through radar capturing facilities \cite[authoryear][McCallie201178]. Among the required fields are flight ID, geolocation, time, speed and various other sensor readings. For an illustration of the raw \infull{CSV} (CSV) data, see table \in{Table}[table:ads] in the Appendix. The following screenshot of a live ADS-B tracking along an airport gives an indication how this is going to be used in relation to connected cars for this project: \par
+Without valid and quality data that will be captured through the various sensors of the connected car, the analysis would be meaningless. Therefore, it is utmost important to define what data needs to be captured, through what means (readings of sensor data) and that the quality of reading is ensured, coupled with minimal misreading and errors. Some of the inevitably present abnormal readings left in the data-set can be filtered out with mathematical models. \par
+For the definition of the data-set and capturing techniques, this paper is looking at established methods already in used within the aviation industry. The global tracking system \infull{ADS-B} (ADS-B) defines prerequisite data types that needs to be sent through radar capturing facilities \cite[authoryear][McCallie201178]. Among the required fields are flight ID, geolocation, time, speed and various other sensor readings. For an illustration of the raw \infull{CSV} (CSV) data, see \in{Table}[table:ads] in the Appendix. The following screenshot of a live ADS-B tracking along an airport gives an indication how this is going to be used in relation to connected cars for this project: \par
 \startplacefigure[title={ADS-B Screenshot},list={ADS-B},reference=figure:adsb]
  \externalfigure[http://www.rtl-sdr.com/wp-content/uploads/2013/04/adsbScopeScreenShot1.png][height=50mm]
 \stopplacefigure
 More importantly, there is already some form of data capturing available with electric car-sharing providers, the so-called Car-Sharing Modules (CSM) \cite[authoryear][lee2011electric]. Although proprietary, the captured data includes the user renting the car, readings of battery charge, location and speed and log data from the machine learning application. \par
-On a more higher level, this paper also ponders the viability of \infull{ITS} (ITS), with data from connected vehicles going to a command-and-control centre for intelligent traffic distribution and threat prevention \cite[authoryear][6526427]. \par
+On a higher level, this paper also ponders the viability of \infull{ITS} (ITS), with data from connected vehicles going to a command-and-control centre for intelligent traffic distribution and threat prevention \cite[authoryear][6526427]. \par
 % Work done
 This paper has proposed and developed a data format for recording vital sensor readings of connected cars, based on the ADS-B model. This open data is suggested as an industry standard for all car manufacturers. \par
 % Results found
 Having a global standard to compare data and run data analysis on helped creating comparable data sets to show differences in approaches on data analysis. \par
 \stopsection
 
-% Total number of words per section: 319/400
+% Total number of words per section: 318/400
 
 \startsection[title=Behavioural Profiling]
 % Relevancy
@@ -87,10 +87,10 @@ Network traffic behaviour has been researched and different profiling data group
 There has been done some research on human behaviour profiling, with different types of groups behaving in a similar pattern (commuting people, families and various other types like taxi drivers). \par
 In this paper the focus shifted towards whether a profile pattern can be established with autonomous systems in order to combine these groups with the machine learning estimation techniques. \par
 % Results found
-It has been shown that indeed it is even more easier to group pre-defined system behaviour on predicted routes as compared to humans driving freely on the motorway. Through profiling it is now also possible to distinguish between autonomous and non-autonomous driven vehicles. \par
+It has been shown that indeed it is even easier to group pre-defined system behaviour on predicted routes as compared to humans driving freely on the motorway. Through profiling it is now also possible to distinguish between autonomous and non-autonomous driven vehicles. \par
 \stopsection
 
-% Total number of words per section: 263/400
+% Total number of words per section: 262/400
 
 \startsection[title=Anomaly Detection,reference=section:anomalydetection]
 % Relevancy
@@ -150,7 +150,7 @@ Networks are not immune towards intrusions either and studies show \cite[authory
 This new approach of real-time specification based correlation \cite[authoryear][Sekar:2002:SAD:586110.586146] will give a boost of the "time to detect" factor on malicious behaviour. \par
 Another aspect in regards to connected cars are ad-hoc networks and the intrusion detection of such networks. It has been shown that anomaly detection methods are particularly advantageous in such circumstances \cite[authoryear][Zhang:2000:IDW:345910.345958]. \par
 % Work done
-The novel approach in cyber threat detection on connected cars in this paper has been advanced through getting rid of signature based detection mechanisms and replace it with anomaly detection algorithms, that are more fit for purpose in the connected wireless transportation landscape. \par
+The novel approach in cyber threat detection on connected cars in this paper has been advanced through getting rid of signature based detection mechanisms and replace it with anomaly detection algorithms that are more purposeful in the connected wireless transportation landscape. \par
 % Results found
 Results in an increased window to react on malicious activities within the network and a significantly reduced number of false incidents proves that this new approach on cyber risk is very effective indeed. \par
 
@@ -164,7 +164,7 @@ Results in an increased window to react on malicious activities within the netwo
 % http://ieeexplore.ieee.org/abstract/document/1212675/
 \stopsection
 
-% Total number of words per section: 271/400
+% Total number of words per section: 269/400
 
 \startsection[title=Threat Prediction Methods]
 % Relevancy
@@ -206,6 +206,6 @@ This chapter has looked in-depth at the literature available in regards to the p
 % The hypothesis or research question and research aim should be the natural conclusion of the literature review.
 % Why your chosen question is worth asking (and answering).
 
-% Total number of words: 2076/3000
+% Total number of words: 2072/3000
 
 \stopcomponent
