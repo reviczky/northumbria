@@ -14,16 +14,18 @@ Recursive Bayesian estimation:
 %\setupnumber[formula][way=bysection]
 \setupformulas[location=left]
 \startformula
-p ( C k | x )
+p(\bf{x}_k|\bf{x}_{k-1},\bf{x}_{k-2},\dots,\bf{x}_0) = p(\bf{x}_k|\bf{x}_{k-1})
 \stopformula
 
 \placenamedformula[formula:bayesian]{Recursive Bayesian filter}
 \startformula
-q ( D l | y )
+p(\bf{z}_k|\bf{x}_k,\bf{x}_{k-1},\dots,\bf{x}_{0}) = p(\bf{z}_k|\bf{x}_{k})
 \stopformula
 
 % picture from Bayesian Kalman from Wikipedia
-\externalfigure[https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/HMM_Kalman_Filter_Derivation.svg/466px-HMM_Kalman_Filter_Derivation.svg.png][width=50mm]
+\startplacefigure[title={Kalman Filter \\ \tfx © Wikipedia},list={Kalman},reference=figure:cps]
+ \externalfigure[https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/HMM_Kalman_Filter_Derivation.svg/466px-HMM_Kalman_Filter_Derivation.svg.png][width=50mm]
+\stopplacefigure
 
 This formula, see: \in{Equation}{.}[formula:bayesian]. \par
 \par
