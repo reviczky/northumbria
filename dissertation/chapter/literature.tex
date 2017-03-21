@@ -4,13 +4,13 @@
 \startchapter[title={Critical Review of the Literature},reference=chapter:literature]
 % https://patthomson.net/2014/01/16/connecting-chapterschapter-introductions/
 
-The literature review in this chapter is looking at the relevant contemporary papers, books and articles related to the project and gives definitions as well as a frame to the subject of behavioural analysis and why the research question is justified. \par
+The literature review in this chapter is looking at the relevant contemporary papers, books and articles related to the project and gives definitions as well as a frame to the subject of behavioural analysis and why the research question (\in{Section}[section:researchquestion]) is justified. \par
 Building a logical flow, the sections will cover the validity of the case study of connected cars followed by the review of existing models on data analysis and solutions utilised in the field. Continuing with the elaboration on the data capturing techniques for \infull{CPS} and different takes on system profiling models that will make up behavioural data with references to state-of-the-art research will lead to answering questions on how to deal with anomaly detection. In order to relate to current cyber threats and giving evidence of the contribution this project provides, the closing critique will be on the topic of threat prediction methods. \par
 
 \blank[line]
 
 % Relevancy to the paper, work done, results found, strenghts of findings and critical evaluation
-Each section explains the relevancy to this paper, discussing the work that has been done containing the results found and the stengths of these findings. All of the literature presented will be critically evaluated and linked back to the project. \par
+Each section explains the relevancy to this paper, discussing the work that has been done containing the results found and the strengths of these findings. All of the literature presented will be critically evaluated and linked back to the project. \par
 
 \startsection[title=Usability Study]
 % Relevancy
@@ -94,9 +94,9 @@ It has been shown that indeed it is even more easier to group pre-defined system
 
 \startsection[title=Anomaly Detection,reference=section:anomalydetection]
 % Relevancy
-Anomaly detection plays a crucial part in the proactive approach of detecting cyber threats. Various detection techniques are applied in a variety of scenarios \cite[authoryear][Patcha20073448] to show deviations from the norm through mean functions hitting a threshold and hence indicating suspicious activities. \par
+Anomaly detection plays a crucial part in the proactive approach of detecting cyber threats. Various detection techniques (\in{Figure}[figure:anomaly]) are applied to a multitude of scenarios \cite[authoryear][Patcha20073448] to show deviations from the norm through mean functions hitting a threshold and hence indicating suspicious activities. \par
 
-\startplacefigure[title={A summary of statistical anomaly detection systems \\ © An overview of anomaly detection techniques},list={Anomaly Detection Methods},reference=figure:adsb]
+\startplacefigure[title={A summary of statistical anomaly detection systems \\ © An overview of anomaly detection techniques},list={Anomaly Detection Methods},reference=figure:anomaly]
 \startxtable[frame=off,option=stretch]
 \startxrow[topframe=on,bottomframe=on,foregroundstyle={\tfxx}]
 \startxcell[width=23mm] Reference \stopxcell
@@ -127,15 +127,32 @@ Anomaly detection plays a crucial part in the proactive approach of detecting cy
 % \externalfigure[https://ai2-s2-public.s3.amazonaws.com/figures/2016-11-08/7c3870e4c6f75aefeb7801c75026cefb512304f6/8-Table1-1.png][width=150mm]
 \stopplacefigure
 
-Current \infull{IDPS}s predominantly are using signature-based detecting algorithms of machine learning with rule-based updates to detect known attacks \cite[authoryear][GarciaTeodoro200918]. \par
-More modern trends are shifting towards more flexible and adaptive anomaly detection mechanisms in contrast to the signature based solutions. This gives a more security oriented approach on detecting malicious activities. On addition, these methods tend to have also fewer false-positive alarms. \par
+Current \infull{IDPS}s (\in{Figure}[figure:ids]) are predominantly using signature-based detecting algorithms of machine learning with rule-based updates to detect known attacks \cite[authoryear][GarciaTeodoro200918], as incident reporting is skyrocketing (\in{Figure}[figure:growth]). \par
+
+\blank[line]
+
+\startcolumns[n=2,rule=on]
+\startplacefigure[title={Growth rate of cyber incidents reported to Computer Emergency Response Team/Coordination Center (CERT/CC) \\ \tfx © Intrusion Detection: A Survey},list={Growth rate of cyber incidents},reference=figure:growth]
+ % https://www.researchgate.net/profile/Ali_Movaghar/publication/232623012/figure/fig1/AS:341633552928771@1458463194712/Figure-2-1-Growth-rate-of-cyber-incidents-reported-to-Computer-Emergency-Response.png
+ \externalfigure[http://i.imgur.com/Q6JVXPy.png][height=35mm]
+\stopplacefigure
+\column
+\startplacefigure[title={Basic architecture of intrusion detection system (IDS) \\ \tfx © Intrusion Detection: A Survey},list={intrusion detection system (IDS)},reference=figure:ids]
+ % https://www.researchgate.net/profile/Ali_Movaghar/publication/232623012/figure/fig2/AS:341633552928772@1458463194728/Figure-2-4-Basic-architecture-of-intrusion-detection-system-IDS.png
+ \externalfigure[http://i.imgur.com/AhIJOms.png][height=35mm]
+\stopplacefigure
+\stopcolumns
+
+\blank[line]
+
+Modern trends can be observed however, with a shift towards a more flexible and adaptive anomaly detection mechanisms in contrast to the signature based solutions. This gives a greater security oriented approach on detecting malicious activities. On addition, these methods tend to have also fewer false-positive alarms. \par
 Networks are not immune towards intrusions either and studies show \cite[authoryear][doi:10.1137/1.9781611972733.3] that by utilising anomaly detection schemes reaction times can be significantly lowered. \par
-This new approach of real-time specification based correlation \cite[authoryear][Sekar:2002:SAD:586110.586146] will give a boost on the time to detect malicious behaviour. \par
+This new approach of real-time specification based correlation \cite[authoryear][Sekar:2002:SAD:586110.586146] will give a boost of the "time to detect" factor on malicious behaviour. \par
 Another aspect in regards to connected cars are ad-hoc networks and the intrusion detection of such networks. It has been shown that anomaly detection methods are particularly advantageous in such circumstances \cite[authoryear][Zhang:2000:IDW:345910.345958]. \par
 % Work done
-The novel approach in cyber threat detection on connected cars has been advanced through getting rid of signature based detection mechanisms and replace it with anomaly detection algorithms, that are more fit for purpose in the connected wireless transportation landscape. \par
+The novel approach in cyber threat detection on connected cars in this paper has been advanced through getting rid of signature based detection mechanisms and replace it with anomaly detection algorithms, that are more fit for purpose in the connected wireless transportation landscape. \par
 % Results found
-Results in increased window to react on malicious activities within the network and a reduced number of false incidents proves the new approach on cyber risk very effective. \par
+Results in an increased window to react on malicious activities within the network and a significantly reduced number of false incidents proves that this new approach on cyber risk is very effective indeed. \par
 
 % "An overview of anomaly detection techniques: Existing solutions and latest technological trends"
 % "Anomaly-based network intrusion detection: Techniques, systems and challenges"
@@ -147,33 +164,48 @@ Results in increased window to react on malicious activities within the network 
 % http://ieeexplore.ieee.org/abstract/document/1212675/
 \stopsection
 
-% Total number of words per section: 245/400
+% Total number of words per section: 271/400
 
 \startsection[title=Threat Prediction Methods]
 % Relevancy
-Defining the cyber threat before looking at predicting methods. \par
+Before the attention can be shifted toward the advancements in cyber thread detection of connected cars the plethora of prediction methods has to be considered for applicability and suitability detecting malicious activities. \par
+
+\startplacefigure[title={Insider threat prediction model \\ \tfx © An Insider Threat Prediction Model},list={threat prediction model},reference=figure:threatprediction,location={right}]
+ % https://www.researchgate.net/publication/220855345/figure/fig1/AS:297441258688512@1447926930054/Fig-1-Insider-threat-prediction-model.png
+ \externalfigure[http://i.imgur.com/K8zDVeA.png][method=png,height=35mm]
+\stopplacefigure
+
+Taking the cyber security definition of threats from the cyberspace \cite[authoryear][citeulike:13779694] as the base to analyse data traffic will allow the creation of specific attack vectors \cite[authoryear][CPLX:CPLX20001] and the patterns for threat models with targeted attack scenarios. \par
+Insider threat prediction \cite[authoryear][Kandias2010] is an interesting angle of how the behaviour of malicious intent tries to blend with legitimate actions (\in{Figure}[figure:threatprediction]). Looking into another field taken from the mathematical models in game theory with a mesh of situational awareness \cite[authoryear][4085956] it can be learned that improvements in threat prediction could also be achieved with a more abstract view. \par
+Integrating different prediction methods into a framework for security \cite[authoryear][Chien2012] allows for applying a proactive approach with the specific use case of remote cyber hacking, demonstrated by the action of hijacking. \par
+The most interesting predictive models are based on the Recursive Bayesian estimation, also known as Bayes filters. Diving deeper into the mathematical functions, the attention of focus will concentrate on these techniques as they are the most applicable to connected cars.
+Whilst in robotics these techniques are commonly used, the extensions of the Bayesian estimation, named sequential Bayesian filtering and made up of filtering, smoothing and prediction, is of particular focus for this paper. \par
 % Work done
+This paper has applied the sequential Bayesian filtering methods on the specific simulations with connected cars and compared the results in contrast to the machine learning models.
 % Results found
-definition of Bayesian Filter methods (filtering, smoothing, prediction) for robots \par
-Define cyber threat \par
-https://link.springer.com/chapter/10.1007/978-3-642-15152-1_3 \par
-http://ieeexplore.ieee.org/abstract/document/4085956/ \par
-http://onlinelibrary.wiley.com/doi/10.1002/cplx.20001/full \par
-https://link.springer.com/chapter/10.1007/978-3-642-26001-8_1 \par
-% image?
+It turns out that with the big data created through the sensors whilst in transit it is in an order of magnitude more precise in creating a baseline to compare against and hence these methods are more appropriate for cyber threat prediction. \par
+
+% https://link.springer.com/chapter/10.1007/978-3-642-15152-1_3
+% "An Insider Threat Prediction Model" \in{Figure}[figure:threatprediction] \cite[authoryear][Kandias2010]
+% http://ieeexplore.ieee.org/abstract/document/4085956/
+% "Game Theoretic Approach to Threat Prediction and Situation Awareness" \cite[authoryear][4085956]
+% http://onlinelibrary.wiley.com/doi/10.1002/cplx.20001/full
+% "Attack scenario graphs for computer network threat analysis and prediction" \cite[authoryear][CPLX:CPLX20001]
+% https://link.springer.com/chapter/10.1007/978-3-642-26001-8_1
+% "A Novel Threat Prediction Framework for Network Security" \cite[authoryear][Chien2012]
 \stopsection
 
-% Total number of words per section: /400
+% Total number of words per section: 298/400
 
 \blank[line]
 
-This chapter has looked in-depth at the literature available in regards to the papers research question on proactive threat detection methods with the use case of connected cars. In the next chapter the design of the project, including the experiments and case study can be found. \par
+This chapter has looked in-depth at the literature available in regards to the papers research question on proactive threat detection methods with the use case of connected cars and critically evaluated the content. In the next chapter the design of the project, including the experiments and case study can be found. \par
 
 \stopchapter
 
 % The hypothesis or research question and research aim should be the natural conclusion of the literature review.
 % Why your chosen question is worth asking (and answering).
 
-% Total number of words: 2000/3000
+% Total number of words: 2076/3000
 
 \stopcomponent
