@@ -22,12 +22,12 @@
 % You should make it clear what you have done, but you should also include rationales for the approaches and techniques used, as well as a discussion of any ideas that have been rejected.
 
 Any practical or significant work that has been done is going to be described and discussed in this chapter, which includes the requirements, design and planning phases. \par
-experiments (case study) \par
-This chapter is looking at the design of the project. \par
+A detailed illustration of the experimental case study will be given along the whole design of the project. Looking at the supporting software utilised, the requirements, construction and usage will be explained. Each of the tests will be validated and the data collection for such testing shown. \par
 
 \blank[line]
 
-Recursive Bayesian estimation:
+The main idea of the work is based on the probabilistic Recursive Bayesian estimation (also known as Bayes filter) \footnote{\goto{Wikipedia: wikipedia.org/wiki/Recursive Bayesian estimation}[url(https://en.wikipedia.org/wiki/Recursive_Bayesian_estimation)]} technique which will be referred to in all instances. \par
+Looking at the future states, the probability of the current given state in relation of the very previous state is conditionally independent and expressed with the following formula: \par
 
 \placenamedformula[formula:bayesian]{Recursive Bayesian estimation}
 \definereferenceformat[eqref][left=(,right=)]
@@ -37,17 +37,21 @@ Recursive Bayesian estimation:
 p(\bf{x}_k|\bf{x}_{k-1},\bf{x}_{k-2},\dots,\bf{x}_0) = p(\bf{x}_k|\bf{x}_{k-1})
 \stopformula
 
+Where the probability distribution of the states at the \infull{HMM} (HMM) is written as: \par
+
 \placenamedformula[formula:bayesian]{Recursive Bayesian filter}
 \startformula
-p(\bf{z}_k|\bf{x}_k,\bf{x}_{k-1},\dots,\bf{x}_{0}) = p(\bf{z}_k|\bf{x}_{k})
+% p(\bf{z}_k|\bf{x}_k,\bf{x}_{k-1},\dots,\bf{x}_{0}) = p(\bf{z}_k|\bf{x}_{k})
+p(\bf{x}_0,\dots,\bf{x}_k,\bf{z}_1,\dots,\bf{z}_k) = p(\bf{x}_0)\prod_{i=1}^k p(\bf{z}_i|\bf{x}_i)p(\bf{x}_i|\bf{x}_{i-1})
 \stopformula
 
-% picture from Bayesian Kalman from Wikipedia
-% \startplacefigure[title={Kalman Filter \\ \tfx © Wikipedia},list={Kalman},reference=figure:cps]
-\startplacefigure[title={Kalman Filter},list={Kalman},reference=figure:cps]
+The following figure illustrates the flow of a Bayesian Network within a HMM: \par
+
+% \startplacefigure[title={Kalman Filter \\ \tfx © Wikipedia},list={Kalman},reference=figure:kalman]
+\startplacefigure[title={Hidden Markov model},list={Markov},reference=figure:markov]
 % \externalfigure[https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/HMM_Kalman_Filter_Derivation.svg/466px-HMM_Kalman_Filter_Derivation.svg.png][width=50mm]
 \scale[scale=500]{
-\startFLOWchart[kalman]
+\startFLOWchart[markov]
 \startFLOWcell
  \name{bay0}
  \location{1,1}
@@ -88,19 +92,20 @@ p(\bf{z}_k|\bf{x}_k,\bf{x}_{k-1},\dots,\bf{x}_{0}) = p(\bf{z}_k|\bf{x}_{k})
  \shape{0}
 \stopFLOWcell
 \stopFLOWchart
-\FLOWchart[kalman]
+\FLOWchart[markov]
 }
 \stopplacefigure
-https://en.wikipedia.org/wiki/Recursive_Bayesian_estimation \par
-
-This formula, see: \in{Equation}{.}[formula:bayesian]. \par
 
 \startsection[title=Experimental Work]
 % Definition of experimental variables and other requirements; Design of experiments; Implementation; Collection of Results
 
+% requirements analysis, software design, construction, installation, experimental work
+% testing and/or data collection approach
+% make it clear what you have done, but you should also include rationales for the approaches and techniques used, as well as a discussion of any ideas that have been rejected
+
 detailed version of experiments \par
 Experiments \par
-Tools: pymc, stan, pybayes, comp site \par
+Considered Tools: pymc, stan, pybayes, comp site ; choices, alternatives, reasons for choices made \par
 Literature: Automobile blackbox, Air blackbox, Bayes in Security (Darktrace), Tesla \par
 Risk: Threat Prevention \par
 Threats: Hijacking, Pilot Error \par
@@ -125,6 +130,8 @@ data science \par
 
 \startsection[title={Estimation Model},reference=section:model]
 We will look at three models for Bayesian estimation: Kalman filter, Markov process. \par
+
+This formula, see: \in{Equation}{.}[formula:bayesian]. \par
 
 Density \par
 Model \par
@@ -175,10 +182,10 @@ similar requirements to convince the community \par
 
 \blank[line]
 
-In this chapter we have looked at the design of the project. The next chapter is the results collected and analysis. \par
+Detailed design descriptions were given in this chapter and the use case taken as an example in the paper was elaborated upon and justified. Closely tied to this is the following chapter, which has taken these design discussions as a base and will give accounts to the results found and the analysis throughout the work that has been done. \par
 
 \stopchapter
 
-% Total number of words: 2000
+% Total number of words: 218/2000
 
 \stopcomponent

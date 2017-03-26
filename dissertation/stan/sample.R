@@ -25,7 +25,7 @@ y_norm<-rnorm(100,X%*%betas,sigma)
 new_X<-model.matrix(~x1*x2,expand.grid(x1=seq(min(dat$x1),max(dat$x1),length=20),x2=c(min(dat$x2),mean(dat$x2),max(dat$x2))))
 
 #the location of the model files
-setwd("stan")
+setwd("/home/reviczky/Documents/test")
 
 #the model
 m_norm<-stan(file="sample.stan",data = list(N=100,N2=60,K=4,y=y_norm,X=X,new_X=new_X),pars = c("beta","sigma","y_pred"))
@@ -50,15 +50,16 @@ pred<-apply(new_y[[1]],2,quantile,probs=c(0.025,0.5,0.975)) #the median line wit
 
 #plot
 #plot(dat$x1,y_norm,pch=16)
-plot(dat$x1,y_norm,pch="+")
-#lines(new_x$x1[1:20],pred[2,1:20],col="red",lwd=3)
+plot(dat$x1,y_norm,pch="+",xlab="Speed",ylab="Geolocation")
+#plot(dat$x1,y_norm,pch=16,xlab="Speed",ylab="Geolocation")
+lines(new_x$x1[1:20],pred[2,1:20],col="red",lwd=3)
 lines(new_x$x1[1:20],pred[2,21:40],col="orange",lwd=3)
-#lines(new_x$x1[1:20],pred[2,41:60],col="blue",lwd=3)
-#lines(new_x$x1[1:20],pred[1,1:20],col="red",lwd=1,lty=2)
+lines(new_x$x1[1:20],pred[2,41:60],col="blue",lwd=3)
+lines(new_x$x1[1:20],pred[1,1:20],col="red",lwd=1,lty=2)
 lines(new_x$x1[1:20],pred[1,21:40],col="orange",lwd=1,lty=2)
-#lines(new_x$x1[1:20],pred[1,41:60],col="blue",lwd=1,lty=2)
-#lines(new_x$x1[1:20],pred[3,1:20],col="red",lwd=1,lty=2)
+lines(new_x$x1[1:20],pred[1,41:60],col="blue",lwd=1,lty=2)
+lines(new_x$x1[1:20],pred[3,1:20],col="red",lwd=1,lty=2)
 lines(new_x$x1[1:20],pred[3,21:40],col="orange",lwd=1,lty=2)
-#lines(new_x$x1[1:20],pred[3,41:60],col="blue",lwd=1,lty=2)
-legend("topright",legend=c("Mean"),lty=1,col=c("orange"),bty = "n",title = "Tesla crash")
-#legend("topright",legend=c("Min","Mean","Max"),lty=1,col=c("red","orange","blue"),bty = "n",title = "Effect of x2 value onnthe regression")
+lines(new_x$x1[1:20],pred[3,41:60],col="blue",lwd=1,lty=2)
+#legend("topright",legend=c("Baseline"),lty=1,col=c("orange"),bty = "n",title = "Cyber Anomaly")
+legend("topright",legend=c("Minimum","Baseline","Maximum"),lty=1,col=c("red","orange","blue"),bty = "n",title = "Cyber Anomaly")

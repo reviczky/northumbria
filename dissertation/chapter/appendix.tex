@@ -141,7 +141,7 @@ Regular VoIP meetings every fortnight (Sundays 6pm, 1 hour) \par
 \startsection[title=Pictures]
 {
 \setupcaptions[prefix=yes,way=bysection,prefixconnector={.P.},location={left}]
-\startplacefigure[location=place,reference={picture:1},title={Picture Tesla},style={cap}]
+\startplacefigure[location=place,reference={picture:1},title={Connected Car with \\ Sensors (Tesla Model X)},style={cap}]
 \startframed[frame=off,strut=no,offset=0mm]
 \mirror{\externalfigure[tesla-x][height=25mm]}
 \stopframed
@@ -153,17 +153,17 @@ Regular VoIP meetings every fortnight (Sundays 6pm, 1 hour) \par
 \startsection[title=Charts]
 {
 \setupcaptions[prefix=yes,way=bysection,prefixconnector={.C.},location={left}]
-\startplacefigure[location=place,reference={chart:rstan},title={RStan Bayesian Estimation Graph},style={cap}]
+\startplacefigure[location=place,reference={chart:rstan},title={RStan Bayesian Estimation: Distribution Graph},style={cap}]
 \startframed[frame=off,strut=no,offset=0mm,width=80mm]
-\externalfigure[rstan][height=50mm]
+\externalfigure[baseline][height=50mm]
 \stopframed
 \stopplacefigure
 %\placefigure[place]{RStan}{\externalfigure[rstan][height=60mm]}
 
-\startplacefigure[location=place,reference={chart:2},title={RStan Bayesian Estimation Filter},style={cap}]
+\startplacefigure[location=place,reference={chart:2},title={RStan Bayesian Estimation: Filter},style={cap}]
 %\processRfile{sample.R}
 \startframed[frame=off,strut=no,offset=0mm,width=80mm]
-\externalfigure[Rplots][height=50mm]
+\externalfigure[deviation][height=50mm]
 \stopframed
 \stopplacefigure
 
@@ -178,7 +178,7 @@ Regular VoIP meetings every fortnight (Sundays 6pm, 1 hour) \par
 \startsection[title=Tables]
 {
 \setupcaptions[prefix=yes,way=bysection,prefixconnector={.T.},location={left}]
-\startplacetable[location=place,reference={table:ads},title={Table ADS-B},style={cap}]
+\startplacetable[location=place,reference={table:ads},title={Automatic \\ Dependent Surveillance: \\ Sample Log},style={cap}]
 \defineseparatedlist[CSV][separator=comma,left=\startxcell,right=\stopxcell,first=\startxrow,last=\stopxrow,before=\startxtablebody,after=\stopxtablebody]
 \setupxtable[align=flushright,align=middle]
 \startxtable[split=yes,foregroundstyle=\ss,bodyfont=8pt]
@@ -232,13 +232,13 @@ Thu 01:33:01,33.27 29.09,SE 147,0,37000,0
 \startsection[title=Design Diagrams]
 {
 \setupcaptions[prefix=yes,way=bysection,prefixconnector={.D.},location={left}]
-\startplacefigure[location=place,reference={diagram:1},title={Diagram},style={cap}]
+\startplacefigure[location=place,reference={diagram:1},title={Anomality Threshold},style={cap}]
 \startframed[frame=off,strut=no,offset=0mm]
 \startSTEPchart
-\cell {CPS}
-\cell {Route 1} \texts{$+5 \%$}{$-5 \%$}
-\cell {Route 2} \texts{$+5 \%$}{$-5 \%$}
-\cell {Route 3} \texts{$+5 \%$}{$-5 \%$}
+\cell {CPS Systems}
+\cell {Route 1} \texts{$$+5 \%$$}{$$-5 \%$$}
+\cell {Route 2} \texts{$$+5 \%$$}{$$-5 \%$$}
+\cell {Route 3} \texts{$$+5 \%$$}{$$-5 \%$$}
 \cell {Route 4}
 \stopSTEPchart
 \stopframed
@@ -281,11 +281,11 @@ new_x<-data.frame(x1=new_X[,2],x2=rep(c("min","mean","max"),each=20))
 new_y<-extract(m_norm,pars="y_pred")
 pred<-apply(new_y[[1]],2,quantile,probs=c(0.025,0.5,0.975))
 
-plot(dat$x1,y_norm,pch="+")
+plot(dat$x1,y_norm,pch="+",xlab="Speed",ylab="Geolocation")
 lines(new_x$x1[1:20],pred[2,21:40],col="orange",lwd=3)
 lines(new_x$x1[1:20],pred[1,21:40],col="orange",lwd=1,lty=2)
 lines(new_x$x1[1:20],pred[3,21:40],col="orange",lwd=1,lty=2)
-legend("topright",legend=c("mean"),lty=1,col=c("orange"),bty = "n",title = "connected car routes")
+legend("topright",legend=c("Baseline"),lty=1,col=c("orange"),bty = "n",title = "Cyber Anomaly")
 \stopcode
 \hairline
 \stopsection
