@@ -1,6 +1,10 @@
 \startcomponent design
 \product dissertation
 
+\usemodule[chart]
+\setupFLOWcharts[nx=4,ny=2,dx=2\bodyfontsize,dy=2\bodyfontsize,maxwidth=\textwidth,height=3\lineheight]
+\setupFLOWshapes[framecolor=black,background=color,backgroundcolor=white]
+
 \setuphead[chapter][textstyle={\tfd\sc}]
 \startchapter[title=Design,reference=chapter:design]
 
@@ -39,8 +43,53 @@ p(\bf{z}_k|\bf{x}_k,\bf{x}_{k-1},\dots,\bf{x}_{0}) = p(\bf{z}_k|\bf{x}_{k})
 \stopformula
 
 % picture from Bayesian Kalman from Wikipedia
-\startplacefigure[title={Kalman Filter \\ \tfx © Wikipedia},list={Kalman},reference=figure:cps]
- \externalfigure[https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/HMM_Kalman_Filter_Derivation.svg/466px-HMM_Kalman_Filter_Derivation.svg.png][width=50mm]
+% \startplacefigure[title={Kalman Filter \\ \tfx © Wikipedia},list={Kalman},reference=figure:cps]
+\startplacefigure[title={Kalman Filter},list={Kalman},reference=figure:cps]
+% \externalfigure[https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/HMM_Kalman_Filter_Derivation.svg/466px-HMM_Kalman_Filter_Derivation.svg.png][width=50mm]
+\scale[scale=500]{
+\startFLOWchart[kalman]
+\startFLOWcell
+ \name{bay0}
+ \location{1,1}
+ \shape{0}
+ \connection[rl]{bay1}
+\stopFLOWcell
+\startFLOWcell
+ \name{bay1}
+ \location{2,1}
+ \shape{35}
+ \text{$$x_{k-1}$$}
+ \connection[rl]{bay2}
+ \connection[bt]{bay3}
+\stopFLOWcell
+\startFLOWcell
+ \name{bay2}
+ \location{3,1}
+ \shape{35}
+ \text{$$x_k$$}
+ \connection[bt]{bay4}
+ \connection[rl]{bay99}
+\stopFLOWcell
+\startFLOWcell
+ \name{bay3}
+ \location{2,2}
+ \shape{24}
+ \text{$$z_{k-1}$$}
+\stopFLOWcell
+\startFLOWcell
+ \name{bay4}
+ \location{3,2}
+ \shape{24}
+ \text{$$z_k$$}
+\stopFLOWcell
+\startFLOWcell
+ \name{bay99}
+ \location{4,1}
+ \shape{0}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[kalman]
+}
 \stopplacefigure
 https://en.wikipedia.org/wiki/Recursive_Bayesian_estimation \par
 
@@ -75,6 +124,8 @@ data science \par
 % Total number of words per section: 250
 
 \startsection[title={Estimation Model},reference=section:model]
+We will look at three models for Bayesian estimation: Kalman filter, Markov process. \par
+
 Density \par
 Model \par
 Behavioural algorithm \par
