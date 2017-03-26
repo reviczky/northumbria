@@ -17,6 +17,8 @@
 % Your testing and/or data collection approach should be included in this section although the results from this form part of the next section.
 % You should make it clear what you have done, but you should also include rationales for the approaches and techniques used, as well as a discussion of any ideas that have been rejected.
 
+Any practical or significant work that has been done is going to be described and discussed in this chapter, which includes the requirements, design and planning phases. \par
+experiments (case study) \par
 This chapter is looking at the design of the project. \par
 
 \blank[line]
@@ -40,13 +42,15 @@ p(\bf{z}_k|\bf{x}_k,\bf{x}_{k-1},\dots,\bf{x}_{0}) = p(\bf{z}_k|\bf{x}_{k})
 \startplacefigure[title={Kalman Filter \\ \tfx © Wikipedia},list={Kalman},reference=figure:cps]
  \externalfigure[https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/HMM_Kalman_Filter_Derivation.svg/466px-HMM_Kalman_Filter_Derivation.svg.png][width=50mm]
 \stopplacefigure
+https://en.wikipedia.org/wiki/Recursive_Bayesian_estimation \par
 
 This formula, see: \in{Equation}{.}[formula:bayesian]. \par
-% MathWorld Bayesian Entry
-http://mathworld.wolfram.com/MarkovChain.html
-\par
 
-\startsection[title=Experiments]
+\startsection[title=Experimental Work]
+% Definition of experimental variables and other requirements; Design of experiments; Implementation; Collection of Results
+
+detailed version of experiments \par
+Experiments \par
 Tools: pymc, stan, pybayes, comp site \par
 Literature: Automobile blackbox, Air blackbox, Bayes in Security (Darktrace), Tesla \par
 Risk: Threat Prevention \par
@@ -60,46 +64,63 @@ Links: \par
 \goto{ShinyStanDemo}[url(https://jsg2201.shinyapps.io/ShinyStanDemo/)] \\
 \stopsection
 
-% Total number of words per section: 200
+% Total number of words per section: 250
 
-\startsection[title=Graphs and Tables]
-The following Graphs, Figures and Tables: \par
-\stopsection
-
-% Total number of words per section: 200
-
-\startsection[title=Planning]
-Air blaxbox / car blackbox \par
+\startsection[title={Data Collection}]
 Planning \par
+Air blaxbox / car blackbox \par
 data science \par
 \stopsection
 
-% Total number of words per section: 200
+% Total number of words per section: 250
 
-\startsection[title=Events]
-Events \par
-\stopsection
-
-% Total number of words per section: 200
-
-\startsection[title=Model,reference=section:model]
+\startsection[title={Estimation Model},reference=section:model]
+Density \par
 Model \par
 Behavioural algorithm \par
+looking into a model \par
+
+% MathWorld Bayesian Entry
+http://mathworld.wolfram.com/KalmanFilter.html \par
+http://mathworld.wolfram.com/MarkovProcess.html \par
+
+\placenamedformula[formula:markov]{Markov process}
+\startformula
+P(x(t_n) <= x_n | x(t_{(n-1)}),\dots,x(t_1)) = P(x(t_n) <= x_n | x(t_{(n-1)}))
+\stopformula
+\placenamedformula[formula:markov2]{Markov process 2}
+\startformula
+P(x(t_n) <= x_n | x(t)\ for\ all\ t <= t_{(n-1)}) = P(x(t_n) <= x_n | x(t_{(n-1)}))
+\stopformula
 \stopsection
 
-% Total number of words per section: 200
+% Total number of words per section: 250
 
-\startsection[title=Case Study]
+\startsection[title={Correlation Graphs}]
+The following Graphs, Figures and Tables: \par
+\stopsection
+
+% Total number of words per section: 250
+
+\startsection[title=Case Study: Connected Cars]
 Case study: connected cars. \par
 \stopsection
 
-% Total number of words per section: 200
+% Total number of words per section: 250
 
-\startsection[title=Similar Requirements for Community]
-Community for connected cars. \par
+\startsection[title=Particular Events]
+Particular events \par
+Events \par
 \stopsection
 
-% Total number of words per section: 200
+% Total number of words per section: 250
+
+\startsection[title=Similar Requirements for the Community]
+Community for connected cars. \par
+similar requirements to convince the community \par
+\stopsection
+
+% Total number of words per section: 250
 
 \blank[line]
 
