@@ -29,7 +29,7 @@ A detailed illustration of the experimental case study will be given along the w
 The main idea of the work is based on the probabilistic Recursive Bayesian estimation (also known as Bayes filter) \footnote{\goto{Wikipedia: wikipedia.org/wiki/Recursive Bayesian estimation}[url(https://en.wikipedia.org/wiki/Recursive_Bayesian_estimation)]} technique which will be referred to in all instances. \par
 Looking at the future states, the probability of the current given state in relation of the very previous state is conditionally independent and expressed with the following formula: \par
 
-\placenamedformula[formula:markov]{Markov assumption}
+\placenamedformula[formula:markov]{Markov Assumption}
 \definereferenceformat[eqref][left=(,right=)]
 %\setupnumber[formula][way=bysection]
 \setupformulas[location=left]
@@ -39,7 +39,7 @@ p(\bf{x}_k|\bf{x}_{k-1},\bf{x}_{k-2},\dots,\bf{x}_0) = p(\bf{x}_k|\bf{x}_{k-1})
 
 Where the probability distribution of the states at the \infull{HMM} (HMM) is written as: \par
 
-\placenamedformula[formula:hmm]{Hidden Markov model (HMM)}
+\placenamedformula[formula:hmm]{Hidden Markov Model (HMM)}
 \startformula
 % p(\bf{z}_k|\bf{x}_k,\bf{x}_{k-1},\dots,\bf{x}_{0}) = p(\bf{z}_k|\bf{x}_{k})
 p(\bf{x}_0,\dots,\bf{x}_k,\bf{z}_1,\dots,\bf{z}_k) = p(\bf{x}_0)\prod_{i=1}^k p(\bf{z}_i|\bf{x}_i)p(\bf{x}_i|\bf{x}_{i-1})
@@ -48,7 +48,7 @@ p(\bf{x}_0,\dots,\bf{x}_k,\bf{z}_1,\dots,\bf{z}_k) = p(\bf{x}_0)\prod_{i=1}^k p(
 The following figure illustrates the flow of a Bayesian Network within a HMM: \par
 
 % \startplacefigure[title={Kalman Filter \\ \tfx © Wikipedia},list={Kalman},reference=figure:kalman]
-\startplacefigure[title={Hidden Markov model},list={Markov},reference=figure:markov]
+\startplacefigure[title={Hidden Markov Model},list={Hidden Markov Model},reference=figure:markov]
 % \externalfigure[https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/HMM_Kalman_Filter_Derivation.svg/466px-HMM_Kalman_Filter_Derivation.svg.png][width=50mm]
 \scale[scale=500]{
 \startFLOWchart[markov]
@@ -117,7 +117,7 @@ Links: \par
 "Probabilistic Programming and Bayesian Methods for Hackers" \cite[authoryear][Davidson-Pilon:2015:BMH:2851115] \footnote{\goto{camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers}[url(http://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter1_Introduction/Ch1_Introduction_PyMC3.ipynb)]} \\
 % \goto{Probabilistic}[url(http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)] \\
 "Bayesian regression with STAN: Part 1 normal regression" \footnote{\goto{r-bloggers.com/bayesian-regression-with-stan-part-1-normal-regression}[url(https://www.r-bloggers.com/bayesian-regression-with-stan-part-1-normal-regression/)]} \\
-\startplacefigure[title={Pairwise correlation},list={Correlation},reference=figure:correlation]
+\startplacefigure[title={Pairwise Correlation},list={Pairwise Correlation},reference=figure:correlation]
  \externalfigure[https://i0.wp.com/datascienceplus.com/wp-content/uploads/2016/01/stan_norm2.png][width=75mm]
 \stopplacefigure
 "ShinyStan" \footnote{\goto{jsg2201.shinyapps.io/ShinyStanDemo}[url(https://jsg2201.shinyapps.io/ShinyStanDemo/)]} \\
@@ -139,7 +139,7 @@ Planning and data collection consisted of two essential parts that needs to be d
 \stopitemize
 
 Secondly, once the data types have been defined, the creation of a database from these metrics have been based on the established format used for broadcasting aeroplanes in the aviation industry via ADB-S, see full \in{Table}[table:ads]. \par
-\startplacefigure[title={ADS-B CSV database},list={ADS-B CSV},reference=figure:ads_csv]
+\startplacefigure[title={ADS-B CSV Database},list={ADS-B CSV Database},reference=figure:ads_csv]
 % http://cdn-misc.pinkfroot.com/3C6618.csv
 \starttyping
 adshex,lat,lon,mtime,altitude,heading,speed,vertrate,flightno
@@ -179,7 +179,7 @@ These sequential Bayesian filtering methods, which are extensively used in robot
 Plotting density functions with these models is to enable comparisons through correlation for behavioural patterns (algorithms) this project is interested in analysing. \par
 The following Bayesian estimation equational expressions are used in libraries for the plotting of the use cases in this project: \par
 
-\placenamedformula[formula:markov]{Markov process}
+\placenamedformula[formula:markov]{Markov Process}
 \startformula
 P(x(t_n) <= x_n | x(t_{(n-1)}),\dots,x(t_1)) = P(x(t_n) <= x_n | x(t_{(n-1)}))
 \stopformula
@@ -189,7 +189,7 @@ A detailed explanation of the formula is available on the reference work MathWor
 
 Further, looking at the Kalman filter \footnote{\goto{mathworld.wolfram.com/KalmanFilter.html}[url(http://mathworld.wolfram.com/KalmanFilter.html)]} to optimise imprecise linear or near-linear data is expressed in this formula: \par
 
-\placenamedformula[formula:markov2]{Markov process 2}
+\placenamedformula[formula:markov2]{Markov Process Stochastic}
 \startformula
 P(x(t_n) <= x_n | x(t)\ for\ all\ t <= t_{(n-1)}) = P(x(t_n) <= x_n | x(t_{(n-1)}))
 \stopformula
@@ -200,17 +200,44 @@ Lastly, looking at probabilistic models using Bayesian methodology in programmin
 % Total number of words per section: 260/250
 
 \startsection[title={Correlation Graphs}]
+Utilising the formulas in the previous section (\in{Section}[section:model]) \par
+
+\startcolumns[n=2,rule=on]
+\startplacefigure[title={Convergence of Expected Values \tfx © Cam Davidson-Pilon},list={Convergence of Expected Values},reference=figure:convergence]
+ % http://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter4_TheGreatestTheoremNeverTold/Ch4_LawOfLargeNumbers_PyMC2.ipynb
+ \externalfigure[http://i.imgur.com/aGFa1XV.png][width=85mm]
+\stopplacefigure
+\column
+\blank[line] \ 
+\startplacefigure[title={Empirical Returns \\ \tfx © Cam Davidson-Pilon},list={Empirical Returns},reference=figure:empirical]
+ % http://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter5_LossFunctions/Ch5_LossFunctions_PyMC2.ipynb
+ \externalfigure[http://i.imgur.com/Nl1jPMN.png][width=75mm]
+\stopplacefigure
+\stopcolumns
+
 Profiling, Patterns \par
 The following Graphs, Figures and Tables: \par
+more in the appendix, see \in{Chart}[chart:rstan] and \in{Chart}[chart:deviation] \par
 \stopsection
 
 % Total number of words per section: 250
 
 \startsection[title=Case Study: Connected Cars]
-This paper is proving the problem statement on hand of a case study example of autonomous connected cars. \par
+This paper is proving the problem statement and theory on proactive threat detection by the means of a case study with autonomous connected cars. \par
+The specific experiments for the two chosen routes are described in the methodology (\in{Section}[section:experiments]). \par
+Route 1 is taken with the scenario of a connected car on the "Autobahn" in Germany, whereas the second example is in contrast with the driving side being on the left in the United Kingdom. This way, the results should be not biased or skewed towards patterns that would not be supportive of the theory. \par
+Sensors readings were oriented to the ones seen in the semi-autonomous vehicles found in the likes of Tesla and BMW (see \in{Appendix}[appendix:figures] \in{Figure}[figure:tesla]). Sampling on the movements of available routes is also of advantage, as there is a very good set for comparison of machine learning and profile based behavioural analysis. \par
+The advantage of an example scenario with connected cars instead of, for example, connected planes or drones is that with vehicles on the road it is also possible to analyse human behaviour in contrast of programmed system movement. \par
+The threat modeling on connected cars is represented in this figure: \par
+
+\startplacefigure[title={Connected Car Threat Modeling \\ © Guardtime},list={Threat Modeling},reference=figure:threatmodel]
+ \externalfigure[http://f.edicy.com/0000/0036/0235/photos/car_diagram_large.jpg][width=85mm]
+\stopplacefigure
+
+Organisation like the Automotive Cyber Security \footnote{\goto{automotivecybersecurity.iqpc.com}[url(https://automotivecybersecurity.iqpc.com/)]} and the Cyber Secure Car \footnote{\goto{cybersecurecar.com}[url(https://www.cybersecurecar.com/europe/)]} enables to engage with the community to advance and present the discussions around cyber threat and resilience findings this paper has presented and can bridge the gap between research and industry. \par
 \stopsection
 
-% Total number of words per section: 250
+% Total number of words per section: 238/250
 
 \startsection[title=Particular Events]
 Particular events \par
