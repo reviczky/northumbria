@@ -29,7 +29,7 @@ A detailed illustration of the experimental case study will be given along the w
 The main idea of the work is based on the probabilistic Recursive Bayesian estimation (also known as Bayes filter) \footnote{\goto{Wikipedia: wikipedia.org/wiki/Recursive Bayesian estimation}[url(https://en.wikipedia.org/wiki/Recursive_Bayesian_estimation)]} technique which will be referred to in all instances. \par
 Looking at the future states, the probability of the current given state in relation of the very previous state is conditionally independent and expressed with the following formula: \par
 
-\placenamedformula[formula:bayesian]{Recursive Bayesian estimation}
+\placenamedformula[formula:markov]{Markov assumption}
 \definereferenceformat[eqref][left=(,right=)]
 %\setupnumber[formula][way=bysection]
 \setupformulas[location=left]
@@ -39,7 +39,7 @@ p(\bf{x}_k|\bf{x}_{k-1},\bf{x}_{k-2},\dots,\bf{x}_0) = p(\bf{x}_k|\bf{x}_{k-1})
 
 Where the probability distribution of the states at the \infull{HMM} (HMM) is written as: \par
 
-\placenamedformula[formula:bayesian]{Recursive Bayesian filter}
+\placenamedformula[formula:hmm]{Hidden Markov model (HMM)}
 \startformula
 % p(\bf{z}_k|\bf{x}_k,\bf{x}_{k-1},\dots,\bf{x}_{0}) = p(\bf{z}_k|\bf{x}_{k})
 p(\bf{x}_0,\dots,\bf{x}_k,\bf{z}_1,\dots,\bf{z}_k) = p(\bf{x}_0)\prod_{i=1}^k p(\bf{z}_i|\bf{x}_i)p(\bf{x}_i|\bf{x}_{i-1})
@@ -125,7 +125,7 @@ Links: \par
 
 % Total number of words per section: 250
 
-\startsection[title={Data Collection}]
+\startsection[title={Data Collection},reference=section:datacollection]
 
 Planning and data collection consisted of two essential parts that needs to be defined before forward processing is possible. Firstly, a collection of sensor readings that could make up the schematics of the open data \footnote{\goto{opendatahandbook.org}[url(http://opendatahandbook.org/)]}. In that regards the following readings have been defined: \par
 
@@ -157,36 +157,47 @@ With the data at hand, the application of modern data science to analyse the dat
 % Total number of words per section: 274/250
 
 \startsection[title={Estimation Model},reference=section:model]
-We will look at three models for Bayesian estimation: Kalman filter, Markov process. \par
+The aim of the project (\in{Section}[section:aim]) was to chose the right model for predicting future states in order to deduce anomaly behaviour. The literature review (\in{Chapter}[chapter:literature]) highlighted a variety of mathematical models that could be applied on the side of existing models currently used in the transportation industry. With the proposal on settling with Bayesian estimation techniques the focus in this section is on recursive Bayesian estimation (or in short Bayes filter). \par
+The following three applications are available for Bayesian estimation on general probabilistic methods: \par
 
-This formula, see: \in{Equation}{.}[formula:bayesian]. \par
+\startitemize[joinedup,nowhite]
+\sym{»} Kalman filter
+\sym{»} Markov process
+\sym{»} \infull{HMM} (HMM), see \in{Formula}{.}[formula:hmm]
 
-Density \par
-Model \par
-Behavioural algorithm \par
-looking into a model \par
+\stopitemize
 
-Recursive Bayesian estimation or Bayes filter; general probabilistic approach for estimating an unknown probability density function recursively over time using incoming measurements and a mathematical process model \par
-Applications (Kalman filter, Markov process, Hidden Markov model (HMM)) \par
-Sequential Bayesian filtering (filtering, smoothing, prediction) \par
-extensively used in control and robotics \par
-references in bib \par
+Estimating unknown future states (through incoming metrics) via recursive density functions allow the usage of three types of mathematical models: \par
 
-% MathWorld Bayesian Entry
-http://mathworld.wolfram.com/KalmanFilter.html \par
-http://mathworld.wolfram.com/MarkovProcess.html \par
+\startitemize[joinedup,nowhite]
+\sym{»} filtering
+\sym{»} smoothing
+\sym{»} prediction
+\stopitemize
+
+These sequential Bayesian filtering methods, which are extensively used in robotics and other embedded control devices are prefect to by applied on the data collected in the previous section (\in{Section}[section:datacollection]) in order to perform prediction analysis. \par
+Plotting density functions with these models is to enable comparisons through correlation for behavioural patterns (algorithms) this project is interested in analysing. \par
+The following Bayesian estimation equational expressions are used in libraries for the plotting of the use cases in this project: \par
 
 \placenamedformula[formula:markov]{Markov process}
 \startformula
 P(x(t_n) <= x_n | x(t_{(n-1)}),\dots,x(t_1)) = P(x(t_n) <= x_n | x(t_{(n-1)}))
 \stopformula
+
+% MathWorld Bayesian Entry
+A detailed explanation of the formula is available on the reference work MathWorld \footnote{\goto{mathworld.wolfram.com/MarkovProcess.html}[url(http://mathworld.wolfram.com/MarkovProcess.html)]}. \par
+
+Further, looking at the Kalman filter \footnote{\goto{mathworld.wolfram.com/KalmanFilter.html}[url(http://mathworld.wolfram.com/KalmanFilter.html)]} to optimise imprecise linear or near-linear data is expressed in this formula: \par
+
 \placenamedformula[formula:markov2]{Markov process 2}
 \startformula
 P(x(t_n) <= x_n | x(t)\ for\ all\ t <= t_{(n-1)}) = P(x(t_n) <= x_n | x(t_{(n-1)}))
 \stopformula
+
+Lastly, looking at probabilistic models using Bayesian methodology in programming for a unifying framework \cite[authoryear][diard:hal-00019254] several filtering and smoothing algorithms \cite[authoryear][Srkk:2013:BFS:2534502] will be incorporated into the method used in this project. \par
 \stopsection
 
-% Total number of words per section: 250
+% Total number of words per section: 260/250
 
 \startsection[title={Correlation Graphs}]
 Profiling, Patterns \par
@@ -196,7 +207,7 @@ The following Graphs, Figures and Tables: \par
 % Total number of words per section: 250
 
 \startsection[title=Case Study: Connected Cars]
-Case study: connected cars. \par
+This paper is proving the problem statement on hand of a case study example of autonomous connected cars. \par
 \stopsection
 
 % Total number of words per section: 250
