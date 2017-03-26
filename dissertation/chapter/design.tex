@@ -126,12 +126,35 @@ Links: \par
 % Total number of words per section: 250
 
 \startsection[title={Data Collection}]
-Planning \par
-Air blaxbox / car blackbox \par
-data science \par
+
+Planning and data collection consisted of two essential parts that needs to be defined before forward processing is possible. Firstly, a collection of sensor readings that could make up the schematics of the open data \footnote{\goto{opendatahandbook.org}[url(http://opendatahandbook.org/)]}. In that regards the following readings have been defined: \par
+
+\startitemize[joinedup,nowhite]
+\sym{»} Speed metrics (m/s) through air pressure
+\sym{»} Geolocation (longitude and latitude) via GPS positioning
+\sym{»} Elevation (altitude) via GPS positioning
+\sym{»} Orientation (cardinal direction) via gyroscopes
+\sym{»} UTC date-stamps via the \infull{NTP} (NTP)
+\sym{»} IPv6 addresses for unique identification of systems (see The Internet Society \footnote{\goto{internetsociety.org/ipv6-frequently-asked-questions}[url(https://www.internetsociety.org/ipv6-frequently-asked-questions\#seventeen)]})
+\stopitemize
+
+Secondly, once the data types have been defined, the creation of a database from these metrics have been based on the established format used for broadcasting aeroplanes in the aviation industry via ADB-S, see full \in{Table}[table:ads]. \par
+\startplacefigure[title={ADS-B CSV database},list={ADS-B CSV},reference=figure:ads_csv]
+% http://cdn-misc.pinkfroot.com/3C6618.csv
+\starttyping
+adshex,lat,lon,mtime,altitude,heading,speed,vertrate,flightno
+3C6618,44.1141,6.32636,1427189963,10275,26.3,409.2,-2560,4U9525
+3C6618,44.0445,6.28003,1427189923,12300,26.6,412.8,-3008,4U9525
+3C6618,44.0196,6.26355,1427189908,13000,26.1,429.8,-3520,4U9525
+3C6618,43.9671,6.22835,1427189879,14700,26.5,428,-3456,4U9525
+\stoptyping
+\stopplacefigure
+Collecting a sample set of data so that the experiments could be analysed for correlation and anomaly detection, two routes have been created (\in{Section}[section:experiments]), based on real route data but artificial motion patterns to avoid ethical conflicts on personal data and safety. The full table is available on github.com \footnote{\goto{github.com/reviczky/northumbria/tree/master/dissertation/database}[url(https://github.com/reviczky/northumbria/tree/master/dissertation/database/)]}. \par
+Having established the data sources and the data types it should be noted that the local collection of cached data is important to run on-the-fly data analysis on the big data as well as for redundancy, error correction and not least forensics (for legal reasons). This could be achieved with data recorders, also commonly known as black boxes for connected cars, but a central data collection service needs to be considered as well, especially when thinking about ITS. \par
+With the data at hand, the application of modern data science to analyse the data will play a vital role for this project. \par
 \stopsection
 
-% Total number of words per section: 250
+% Total number of words per section: 274/250
 
 \startsection[title={Estimation Model},reference=section:model]
 We will look at three models for Bayesian estimation: Kalman filter, Markov process. \par
@@ -142,6 +165,12 @@ Density \par
 Model \par
 Behavioural algorithm \par
 looking into a model \par
+
+Recursive Bayesian estimation or Bayes filter; general probabilistic approach for estimating an unknown probability density function recursively over time using incoming measurements and a mathematical process model \par
+Applications (Kalman filter, Markov process, Hidden Markov model (HMM)) \par
+Sequential Bayesian filtering (filtering, smoothing, prediction) \par
+extensively used in control and robotics \par
+references in bib \par
 
 % MathWorld Bayesian Entry
 http://mathworld.wolfram.com/KalmanFilter.html \par
@@ -160,6 +189,7 @@ P(x(t_n) <= x_n | x(t)\ for\ all\ t <= t_{(n-1)}) = P(x(t_n) <= x_n | x(t_{(n-1)
 % Total number of words per section: 250
 
 \startsection[title={Correlation Graphs}]
+Profiling, Patterns \par
 The following Graphs, Figures and Tables: \par
 \stopsection
 
