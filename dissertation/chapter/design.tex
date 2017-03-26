@@ -103,6 +103,9 @@ The following figure illustrates the flow of a Bayesian Network within a HMM: \p
 % testing and/or data collection approach
 % make it clear what you have done, but you should also include rationales for the approaches and techniques used, as well as a discussion of any ideas that have been rejected
 
+This the the detailed course of action the research took for the experiments conducted. \par
+
+Tools that have been used include: list? \par
 detailed version of experiments \par
 Experiments \par
 Considered Tools: pymc, stan, pybayes, comp site ; choices, alternatives, reasons for choices made \par
@@ -200,7 +203,8 @@ Lastly, looking at probabilistic models using Bayesian methodology in programmin
 % Total number of words per section: 260/250
 
 \startsection[title={Correlation Graphs}]
-Utilising the formulas in the previous section (\in{Section}[section:model]) \par
+Utilising the estimation formulas in the previous section (\in{Section}[section:model]) to the specific scenarios introduced at the beginning of this paper (\in{Section}[section:experiments]) correlation analysis can visually represent the baseline and anomalies for the routes taken. \par
+The first correlation the experiment will focus on is whether there is a convergence for the expected route taken in terms of future states and how much the deviation of from the baseline this convergence is off in percentage terms. This is represented in the first correlation graph (\in{Figure}[figure:correlation]) below. \par
 
 \startcolumns[n=2,rule=on]
 \startplacefigure[title={Convergence of Expected Values \tfx © Cam Davidson-Pilon},list={Convergence of Expected Values},reference=figure:convergence]
@@ -215,12 +219,13 @@ Utilising the formulas in the previous section (\in{Section}[section:model]) \pa
 \stopplacefigure
 \stopcolumns
 
-Profiling, Patterns \par
-The following Graphs, Figures and Tables: \par
-more in the appendix, see \in{Chart}[chart:rstan] and \in{Chart}[chart:deviation] \par
+The very next aspect on correlating events is how well the distribution of routes taken will make up a picture on profiling based behavioural analysis. This is shown above in the correlation graph for empirical returns (\in{Figure}[figure:empirical]). \par
+The full plotting and results for the scenarios of the connected cars can be found in the Appendix part of the paper (see \in{Chart}[chart:rstan] and \in{Chart}[chart:deviation]). \par
+One of the subjects of the paper's theory is the creation of motion profiles, divided into behavioural groups of drivers or common systems (think about goods vehicles versus taxis). Each of the correlation graphs building a picture of the profiles the driving group has in common. Even though there is no need to actually define these profiles, as grouping them is enough for applying estimation techniques, but further research could be conducted on the results shown here for the specific group behaviours. \par
+Collectively looking at the patterns these correlation graphs create, the deviation function becomes clearer. It has been shown through the analytical work, that this deviation can be ring-fenced to a 5\% margin with the estimation techniques using Bayes filters. A representative chart is shown in the Appendix \in{Chart}[diagram:flowchart]. \par
 \stopsection
 
-% Total number of words per section: 250
+% Total number of words per section: 284/250
 
 \startsection[title=Case Study: Connected Cars]
 This paper is proving the problem statement and theory on proactive threat detection by the means of a case study with autonomous connected cars. \par
