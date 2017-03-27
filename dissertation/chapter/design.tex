@@ -103,30 +103,40 @@ The following figure illustrates the flow of a Bayesian Network within a HMM: \p
 % testing and/or data collection approach
 % make it clear what you have done, but you should also include rationales for the approaches and techniques used, as well as a discussion of any ideas that have been rejected
 
-This the the detailed course of action the research took for the experiments conducted. \par
+This is the detailed course of action the research took for the experiments conducted. \par
 
-Tools that have been used include: list? \par
-detailed version of experiments \par
-Experiments \par
-Considered Tools: pymc, stan, pybayes, comp site ; choices, alternatives, reasons for choices made \par
-Literature: Automobile blackbox, Air blackbox, Bayes in Security (Darktrace), Tesla \par
-Risk: Threat Prevention \par
-Threats: Hijacking, Pilot Error \par
-Links: \par
-"Tesla Model S lässt sich von fern kapern" \goto{Tesla Model S}[url(http://www.heise.de/newsticker/meldung/Tesla-Model-S-laesst-sich-von-fern-kapern-3327510.html)] \\
-"A weakly informative default prior distribution for logistic and other regression models" \cite[authoryear][gelman2008] \footnote{\goto{stat.columbia.edu/~gelman/research/published/priors11.pdf}[url(http://www.stat.columbia.edu/~gelman/research/published/priors11.pdf)]} \\
-% \goto{CamDavidsonPilon}[url(http://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter6_Priorities/Chapter6.ipynb)] \\
+The software catalogue for tools used in the experimental work consist of the following open source applications and libraries: \par
+\startitemize[joinedup,nowhite]
+\sym{»} PyMC (version 2 and 3) \endash\ {\it is a python module that implements Bayesian statistical models and fitting algorithms, including Markov chain Monte Carlo}
+\sym{»} Stan \endash\ {\it statistical modeling, data analysis, and prediction in the social, biological, and physical sciences, engineering, and business}
+\sym{»} PyBayes \endash\ {\it Python library for recursive Bayesian estimation (Bayesian filtering)}
+\stopitemize
+
+Frameworks and tools that have been used include: \par
+
+\startitemize[joinedup,nowhite]
+\sym{»} RStudio (IDE) \endash {\it Open source and enterprise-ready professional software for R} / R language via the R Project for Statistical Computing / GNU Compiler Collection
+\sym{»} Python Programming Language
+\stopitemize
+
+The entire source code for this project is available on the \goto{github.com/reviczky}[url(https://github.com/reviczky/northumbria)] site with the source code part licensed under the GPLv2, so that every part of these experiments can be re-constructed. \par
+Choices made for these tools to support the experiments were based on the availability under open source license \footnote{\goto{opensource.org/osd-annotated}[url(https://opensource.org/osd-annotated)]} in order to have scientific peer-review. There are many alternatives, as shown in the critical review of the literature on the subject, but is irrelevant, as any tool that can prove the theory will suffice. \par
+Contemporary commercial approaches have been looked at from Tesla (MobileEye) \footnote{\goto{heise.de/newsticker/meldung/Tesla-Model-S-laesst-sich-von-fern-kapern-3327510.html}[url(http://www.heise.de/newsticker/meldung/Tesla-Model-S-laesst-sich-von-fern-kapern-3327510.html)]} as well as Darktrace (Enterprise Immune System), but given the nature of those being proprietary and patented, the input was merely to put this research into perspective of the current technologies. \par
+
 % "Bayesian Methods for Hackers" \cite[authoryear][Davidson-Pilon:2015:BMH:2851115] \footnote{\goto{Getting our priorities straight}[url(http://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter6_Priorities/Ch6_Priors_PyMC3.ipynb)]} \\
-"Probabilistic Programming and Bayesian Methods for Hackers" \cite[authoryear][Davidson-Pilon:2015:BMH:2851115] \footnote{\goto{camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers}[url(http://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter1_Introduction/Ch1_Introduction_PyMC3.ipynb)]} \\
 % \goto{Probabilistic}[url(http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)] \\
-"Bayesian regression with STAN: Part 1 normal regression" \footnote{\goto{r-bloggers.com/bayesian-regression-with-stan-part-1-normal-regression}[url(https://www.r-bloggers.com/bayesian-regression-with-stan-part-1-normal-regression/)]} \\
+% \goto{CamDavidsonPilon}[url(http://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter6_Priorities/Chapter6.ipynb)] \\
+One of the best resources to get an overview of the tools and their utilisation for the experiments can be found in the "Probabilistic Programming and Bayesian Methods for Hackers" \cite[authoryear][Davidson-Pilon:2015:BMH:2851115] \footnote{\goto{camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers}[url(http://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter1_Introduction/Ch1_Introduction_PyMC3.ipynb)]}. \par
+Normal regression with Bayesian estimation using \WORD{stan} is described in the article "Bayesian regression with \WORD{stan}" \footnote{\goto{r-bloggers.com/bayesian-regression-with-stan-part-1-normal-regression}[url(https://www.r-bloggers.com/bayesian-regression-with-stan-part-1-normal-regression/)]}, which is used for the experiments described in \in{Section}[section:casestudy]. \par
+Other regression models have been looked at with prior distribution for logistics \cite[authoryear][gelman2008] \footnote{\goto{stat.columbia.edu/~gelman/research/published/priors11.pdf}[url(http://www.stat.columbia.edu/~gelman/research/published/priors11.pdf)]}, but have been ultimately rejected based on the non-specific nature of the model. \par
+By using the ShinyStan \footnote{\goto{jsg2201.shinyapps.io/ShinyStanDemo}[url(https://jsg2201.shinyapps.io/ShinyStanDemo/)]} \infull{SaaS} (SaaS) solution to plot the beta functions for density correlation it is possible to do a pairwise correlation as seen in this figure: \par
+
 \startplacefigure[title={Pairwise Correlation},list={Pairwise Correlation},reference=figure:correlation]
  \externalfigure[https://i0.wp.com/datascienceplus.com/wp-content/uploads/2016/01/stan_norm2.png][width=75mm]
 \stopplacefigure
-"ShinyStan" \footnote{\goto{jsg2201.shinyapps.io/ShinyStanDemo}[url(https://jsg2201.shinyapps.io/ShinyStanDemo/)]} \\
 \stopsection
 
-% Total number of words per section: 250
+% Total number of words per section: 298/250
 
 \startsection[title={Data Collection},reference=section:datacollection]
 
@@ -227,7 +237,7 @@ Collectively looking at the patterns these correlation graphs create, the deviat
 
 % Total number of words per section: 284/250
 
-\startsection[title=Case Study: Connected Cars]
+\startsection[title={Case Study: Connected Cars},reference=section:casestudy]
 This paper is proving the problem statement and theory on proactive threat detection by the means of a case study with autonomous connected cars. \par
 The specific experiments for the two chosen routes are described in the methodology (\in{Section}[section:experiments]). \par
 Route 1 is taken with the scenario of a connected car on the "Autobahn" in Germany, whereas the second example is in contrast with the driving side being on the left in the United Kingdom. This way, the results should be not biased or skewed towards patterns that would not be supportive of the theory. \par
@@ -247,6 +257,8 @@ Organisation like the Automotive Cyber Security \footnote{\goto{automotivecybers
 \startsection[title=Particular Events]
 Particular events \par
 Events \par
+Risk: Threat Prevention \par
+Threats: Hijacking, Pilot Error \par
 \stopsection
 
 % Total number of words per section: 250
