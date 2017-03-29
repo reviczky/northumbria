@@ -28,7 +28,7 @@ Analysing the data is the most logical continuing from the results gathered as t
 
 Primarily, the techniques for addressing the results is presented next. \par
 
-\startsection[title=Techniques]
+\startsection[title=Techniques Used]
 Two techniques will be used to address the results in this chapter. Firstly, the analytical approach that is presented with the data and the analysis of the data. The second technique will be a reasoned evaluation of the findings itself. \par
 In relation to the data being used for analysis, the database with the collected geodata from the sensors of the system for the particular routes in the experiment via the \infull{ADS-B} can be seen in the \in{Chart}{.}[table:ads]. \par
 With the statistical data analysis, also the main subject of this paper, a comparison has been presented by using the same data-set to feed into the old machine learning technique described in \in{Section}[section:existingmodels] as well as the behavioural model this paper explained in detail (see \in{Section}[section:model]). Further comparisons have been shown between the different applications of the Bayesian estimation techniques (see \in{Appendix}[section:charts]). \par
@@ -42,24 +42,37 @@ The improvements have been tied to metrics that can be compared with in terms of
 
 \startsection[title={Comparison of the Results},reference=section:resultscomparison]
 Comparing the results from the data in the experiments taken, it can be deduced that indeed the threshold of anomalies can be narrowed down to a 5\% margin for deviations from the baseline. \par
+The baseline for comparison is primarily the average function of genuine routes marked as known-good and the correlation to this line with the added correction of errors. It has been shown that the behavioural prediction creates a function that is better aligned to this baseline as well as reducing the error correction to a smaller deviation threshold. \par
+Further, the Bayes filter applications have been compared with each other as well. Depending on the scenario the sequential Bayesian filtering produced the best outcomes. The comparisons are attached to the Appendix section at the end of this paper. \par
+It has been shown that overall with the same inputs of selected routes and the application of different methods for data analysis, the results on detecting anomaly behaviour differ with their outcome quite extensively. \par
+The examples are shown here: \par
 \stopsection
 
-% Total number of words per section: 33/350
+% Total number of words per section: 163/350
 
 \startsection[title=Reflection]
 In reflection of the project with the conducted case study of connected cars it has been a success in showing a novel approach on big data analysis for motion patterns in routes taken. \par
+By looking at the current methods of machine learning for a discovery type exploration of terrains with either using artificial intelligence to deduce course of action or known-good/known-bad data feeding to navigate around the landscape. Although appropriate for navigating around pristine routes or for rescue missions, this falls short for addressing threats proactively. \par
+In sharp contrast, with the shown technique of predicting future states in motion patterns through correlation of historical data on the routes, instant analysis is possible to determine steering instructions for the selected routes. \par
+The two specific scenarios used in this paper validate the difference between discovery type machine learning and real-time correlation of anomalies through Bayesian estimation techniques. \par
+Proving the assumption that behavioural analysis will provide results to address cyber threats instantly and with high precision, specific data types were chosen as described in \in{Section}[section:datacollection]. Although the chosen data perfectly illustrated the results on the estimation techniques, the general idea for predictive modeling can be used on a variety of data-sets and through different type of transportation systems. \par
+By choosing one specific example of cyber threat through remote exploitation described as hijacking, the representative risks have been selected. Further threat scenarios would underline the suitability of profile based analysis. \par
+Looking ahead of benefiting on this research by taking these findings as an input for creating reactive based behaviour a whole new set of requirements will open up. \par
 \stopsection
 
-% Total number of words per section: 36/350
+% Total number of words per section: 265/350
 
 \startsection[title=Evaluation]
-To evaluate the findings in the correlation of baseline behaviour presented in the design \in{Chapter}[chapter:design] the following method is used. \par
-These scenarios highlight the difference between discovery machine learning and real-time correlation of anomalies. \par
-Results, Analysis and Evaluation; mean time to hijack. \par
-Validating the results. \par
+To evaluate the findings in correlation of the baseline behaviour presented in the design (see \in{Chapter}[chapter:design]) the following method is used. \par
+Metrics were chosen to look at the effectiveness on improving the detection algorithms via a time dimension and precision. These metrics do not depend on the data types the examples chosen. \par
+Validating the results was done through showing that improvement was done through metrics of time-frame and precision. \par
+Looking at the mean time to hijack and the possible reaction times gained for cyber defence and cyber resilience. \par
+In summary it has been shown that effective behaviour prediction enhances threat leads and detection. \par
+Comparing the results and findings with the current models, it can be concluded that the hypothesis (which does not differ from the contemporary methods) was proven. \par
+To close, the evaluation of the Results, Analysis and Evaluation is \par
 \stopsection
 
-% Total number of words per section: 21/350
+% Total number of words per section: 141/350
 
 \startsection[title=Contribution to the Community]
 The paper's contribution to the community is measured against the current peer-reviewed articles on the topic of cyber threats against connected cars. \par
@@ -70,13 +83,13 @@ The following 3 published journals, in the order of importance, have been chosen
 \sym{»} {\it "Connected cars – the next targe tfor hackers"} -- \cite[authoryear][Ring201511]
 \stopitemize
 The main paper being the first one, describing the attack vectors in automated vehicles and how to defend against those. The other two publications are covering the current signature based techniques used in connected cars in order to present a solution to the cyber problem. They also highlight the fact that security is bolted onto the design of these systems and thus making it an attractive target. \par
-To put this paper into perspective in terms of the contribution to the community, it will compare the presented novel idea of using estimation techniques for anomaly detection against the methods described in the publications above. \par
+To put this paper into perspective in terms of the contribution to the community, it will compare the presented novel idea of using estimation techniques for anomaly detection against the methods described in the publications above. The outcome of this comparison is an increased window to react to cyber threats and a precision of 5\% deviation from the norm which has been shown. \par
 The framework around the solution together with the threat landscape will stay the same and only the data analysis will be exchanged for the methods of predictive modeling. \par
 Dealing with cyber threats through this novel aspect of future state behavioural analysis the gains will materialise in the ability to detect anomalies in real-time which could not be achieved before for the chosen scenarios. \par
 Comparing and contrasting the presented estimation techniques to the machine learning approach, summarised in the selected articles, the main contribution to the community will be further submitted for a peer-review. \par
 \stopsection
 
-% Total number of words per section: 240/350
+% Total number of words per section: 267/350
 
 \blank[line]
 
