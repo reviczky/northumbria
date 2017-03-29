@@ -248,7 +248,7 @@ Thu 01:33:01,33.27 29.09,SE 147,0,37000,0
 \stopchapter
 
 \startchapter[title={Appendix: Source Code},reference=appendix:code]
-\startsection[title=Routes anomality with Bayesian filtering (R Language)]
+\startsection[title={Routes anomality with Bayesian filtering (R Language)}]
 
 \setuptyping[option=color]
 \setuplinenumbering[location=text]
@@ -286,6 +286,224 @@ lines(new_x$x1[1:20],pred[2,21:40],col="orange",lwd=3)
 lines(new_x$x1[1:20],pred[1,21:40],col="orange",lwd=1,lty=2)
 lines(new_x$x1[1:20],pred[3,21:40],col="orange",lwd=1,lty=2)
 legend("topright",legend=c("Baseline"),lty=1,col=c("orange"),bty = "n",title = "Cyber Anomaly")
+\stopcode
+\hairline
+\stopsection
+
+\page[yes]
+
+\startsection[title={Bayesian Estimation Supersedes the T-Test (PyMC3)}]
+
+\setuptyping[option=color]
+\setuplinenumbering[location=text]
+\defineframedtext[framedcode][frame=off,strut=yes,offset=2mm,width=\textwidth,align=right]
+\definetyping[code][numbering=line,bodyfont=small,before={\startframedcode},after={\stopframedcode}]
+
+%\hairline
+\framedtext[leftframe=off,rightframe=off,width=max,offset=0mm,align=middle]{\ss bayesian_supersedes.py}
+%\hairline
+\startcode
+%matplotlib inline
+import numpy as np
+import pymc3 as pm
+import pandas as pd
+import seaborn as sns
+sns.set(color_codes=True)
+
+np.random.seed(20170329)
+
+known_good = (101,100,102,104,102,97,105,105,98,101,100,123,105,103,100,95,102,
+              106,109,102,82,102,100,102,102,101,102,102,103,103,97,97,103,101,
+              97,104,96,103,124,101,101,100,101,101,104,100,101)
+known_bad  = (99,101,100,101,102,100,97,101,104,101,102,102,100,105,88,101,100,
+              104,100,100,100,101,102,103,97,101,101,100,101,99,101,100,100,101,
+              100,99,101,100,102,99,100,99)
+
+y1 = np.array(known_good)
+y2 = np.array(known_bad)
+y  = pd.DataFrame(dict(value=np.r_[y1, y2], group = 
+     np.r_[['known_good']*len(known_good), ['known_bad']*len(known_bad)]))
+
+y.hist('value', by='group');
+\stopcode
+\hairline
+\stopsection
+
+\page[yes]
+
+\startsection[title={Optimal Bayesian solution (PyBayes)}]
+
+\setuptyping[option=color]
+\setuplinenumbering[location=text]
+\defineframedtext[framedcode][frame=off,strut=yes,offset=2mm,width=\textwidth,align=right]
+\definetyping[code][numbering=line,bodyfont=small,before={\startframedcode},after={\stopframedcode}]
+
+%\hairline
+\framedtext[leftframe=off,rightframe=off,width=max,offset=0mm,align=middle]{\ss bayesian_kalman.py}
+%\hairline
+\startcode
+filter.bayes(yt)
+log_likelihood = filter.evidence_log(yt)
+
+# initialise control-less Kalman filter:
+kf = pb.KalmanFilter(A=np.array([[1.]]),
+C=np.array([[1.]]),
+Q=np.array([[0.7]]), R=np.array([[0.3]]),
+state_pdf=pb.GaussPdf(...))
+\stopcode
+\hairline
+
+\blank[line]
+
+%\hairline
+\framedtext[leftframe=off,rightframe=off,width=max,offset=0mm,align=middle]{\ss bayesian_filter.py}
+%\hairline
+\startcode
+from copy import copy, deepcopy
+import numpy as np
+import pybayes as pb
+from support import PbTestCase
+
+class TestKalmanFilter(PbTestCase):
+  """Kalman filter"""
+  def setUp(self):
+    # synthetic parameters
+    self.setup_1 = {
+      "A":np.array([[1, 2], [3, 4]]),
+      "B":np.array([[1, 2, 3], [4, 5, 6]]),
+      "C":np.array([[1, 2], [3, 4], [5, 6], [7, 8]]),
+      "D":np.array([[1, 2, 3], [5, 6, 7], [9, 1, 2], [2, 3, 4]]),
+      "Q":np.array([[2, 3], [4, 5]]),
+      "R":np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 1, 2, 3], [2, 3, 4, 5]]),
+      "state_pdf":pb.GaussPdf(np.array([1, 2]), np.array([[1, 0], [0, 2]]))
+    }
+    self.setup_2 = {
+      "A":np.array([[1.0, -0.5],[1.0, 0.0]]),
+      "B":np.array([[1.0],[0.1]]),
+      "C":np.array([[1.0, 0.0]]),
+      "D":np.array([[0.1]]),
+      "Q":np.array([[0.2, 0.0],[0.0, 0.2]]),
+      "R":np.array([[0.01]]),
+      "state_pdf":pb.GaussPdf(np.array([0.0, 0.0]),
+        np.array([[200.0, 0.0],[0.0, 200.0]]))
+    }
+
+  def test_init(self):
+    k = pb.KalmanFilter(**self.setup_1)
+    self.assertEqual(type(k), pb.KalmanFilter)
+    l = pb.KalmanFilter(**self.setup_2)
+    self.assertEqual(type(l), pb.KalmanFilter)
+\stopcode
+\hairline
+
+\page[yes]
+
+%\hairline
+\framedtext[leftframe=off,rightframe=off,width=max,offset=0mm,align=middle]{\ss bayesian_filter.py (continued)}
+%\hairline
+\startcode[continue]
+  def test_invalid_init(self):
+    args = ["A", "B", "C", "D", "Q", "R", "state_pdf"]
+
+    # invalid type:
+    for arg in args:
+      setup = self.setup_1.copy()
+      setup[arg] = 125.65
+      self.assertRaises(TypeError, pb.KalmanFilter, **setup)
+
+    # invalid dimension
+    del args[6]
+    for arg in args:
+      setup = self.setup_1.copy()
+      setup[arg] = np.array([[1],[2]])
+      self.assertRaises(ValueError, pb.KalmanFilter, **setup)
+    gauss = pb.GaussPdf(np.array([1]), np.array([[1]]))
+    setup = self.setup_1.copy()
+    setup['state_pdf'] = gauss
+    self.assertRaises(ValueError, pb.KalmanFilter, **setup)
+
+  def test_bayes(self):
+    k = pb.KalmanFilter(**self.setup_2)
+    y = np.array([[4.1], [-0.2], [1.4], [-2.1]])
+    u = np.array([[4.8], [-0.3], [1.1], [-1.8]])
+    exp_mu = np.array([
+      [ 3.62004716, -0.46320771],
+      [-0.16638519,  3.58787721],
+      [ 1.21108425,  0.0224309 ],
+      [-1.87141692,  0.98517451]
+    ])
+    for i in range(4):
+      k.bayes(y[i], u[i])
+      mu = k.posterior().mu
+      self.assertApproxEqual(mu, exp_mu[i])
+  def test_copy(self):
+    """Copying KF to check if it works as expected"""
+    o = pb.KalmanFilter(**self.setup_1)
+    c = copy(o)
+    self.assertEqual(type(c), type(o))
+
+    self.assertTrue(id(o) != id(c))
+    self.assertTrue(id(o.A) == id(c.A))
+    self.assertTrue(id(o.B) == id(c.B))
+    self.assertTrue(id(o.C) == id(c.C))
+    self.assertTrue(id(o.D) == id(c.D))
+    self.assertTrue(id(o.Q) == id(c.Q))
+    self.assertTrue(id(o.R) == id(c.R))
+    self.assertTrue(id(o.n) == id(c.n))
+    self.assertTrue(id(o.k) == id(c.k))
+    self.assertTrue(id(o.j) == id(c.j))
+    self.assertTrue(id(o.P) == id(c.P))
+    self.assertTrue(id(o.S) == id(c.S))
+\stopcode
+\hairline
+
+\page[yes]
+
+%\hairline
+\framedtext[leftframe=off,rightframe=off,width=max,offset=0mm,align=middle]{\ss bayesian_filter.py (continued)}
+%\hairline
+\startcode[continue]
+  def test_deepcopy(self):
+    """Deep copying KF to check if it works as expected"""
+    o = pb.KalmanFilter(**self.setup_2)
+    c = deepcopy(o)
+    self.assertEqual(type(c), type(o))
+
+    self.assertTrue(id(o) != id(c))
+    for (a, b) in
+      [(o.A, c.A), (o.B, c.B), (o.C, c.C), (o.D, c.D), (o.Q, c.Q),(o.R, c.R)]:
+      self.assertArraysEqualNotSame(a, b)
+    # n, k, j do not need to be different as they are immutable
+    self.assertEqual(o.n, c.n)
+    self.assertEqual(o.k, c.k)
+    self.assertEqual(o.j, c.j)
+    self.assertTrue(id(o.P) != id(c.P))
+    self.assertArraysEqualNotSame(o.P.mu, c.P.mu)
+    self.assertArraysEqualNotSame(o.P.R, c.P.R)
+    self.assertTrue(id(o.S) != id(c.S))
+
+class testParticleFilter(PbTestCase):
+  """Particle filter"""
+  def setUp(self):
+    init_pdf = pb.UniPdf(np.array([-5.]), np.array([5.]))
+    p_xt_xtp = pb.MLinGaussCPdf(np.array([[2.]]), np.array([[1.]]),
+      np.array([0.]))
+    p_yt_xt = pb.MLinGaussCPdf(np.array([[1.]]), np.array([[1.]]),
+      np.array([0.]))
+
+    self.pf = pb.ParticleFilter(20, init_pdf, p_xt_xtp, p_yt_xt)
+
+  def test_init(self):
+    self.assertEqual(type(self.pf), pb.ParticleFilter)
+
+  def test_bayes(self):
+    # verify that PF gives appropriate results
+    np.set_printoptions(linewidth=120, precision=2, suppress=True)
+    for i in range(20):
+      self.pf.bayes(np.array([i], dtype=float))
+      pdf = self.pf.posterior()
+      print "observation, mean:", i, pdf.mean()[0]
+      print "particles, mean:", pdf.particles.view().squeeze()
 \stopcode
 \hairline
 \stopsection
