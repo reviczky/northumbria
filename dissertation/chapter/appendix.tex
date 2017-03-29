@@ -146,7 +146,17 @@ Regular VoIP meetings every fortnight (Sundays 6pm, 1 hour) \par
 \mirror{\externalfigure[tesla-x][height=25mm]}
 \stopframed
 \stopplacefigure
+
 %\placefigure[left][picture:2]{Picture Model X}{\externalfigure[tesla-x][width=50mm]}
+
+\startplacefigure[location=place,reference={figure:bmw},title={Connected Car with \\ Sensors (BMW i3)},list={Connected Car with Sensors (BMW i3)},style={cap}]
+\startframed[frame=off,strut=no,offset=0mm]
+\mirror{\externalfigure[http://www.bmw.com.hr/_common/shared/newvehicles/i/i3/2013/showroom/technical-data/blueprint-profil-front-top-rear.jpg][width=80mm]}
+\stopframed
+\stopplacefigure
+
+% http://www.bmw.com.hr/_common/shared/newvehicles/i/i3/2013/showroom/technical-data/thumb-profil-front-top-rear.jpg
+% http://www.bmw.com.hr/_common/shared/newvehicles/i/i3/2013/showroom/technical-data/blueprint-profil-front-top-rear.jpg
 }
 \stopsection
 
@@ -160,10 +170,22 @@ Regular VoIP meetings every fortnight (Sundays 6pm, 1 hour) \par
 \stopplacefigure
 %\placefigure[place]{RStan}{\externalfigure[rstan][height=60mm]}
 
+\startplacefigure[location=place,reference={chart:pymc3},title={PyMC3 Bayesian Distribution},style={cap}]
+\startframed[frame=off,strut=no,offset=0mm,width=90mm]
+\externalfigure[https://pymc-devs.github.io/pymc3/_images/notebooks_getting_started_5_0.png][width=75mm]
+\stopframed
+\stopplacefigure
+
+\startplacefigure[location=place,reference={chart:pybayes},title={PyBayes Bayesian Estimation: Baseline},style={cap}]
+\startframed[frame=off,strut=no,offset=0mm,width=90mm]
+\externalfigure[https://pymc-devs.github.io/pymc3/_images/notebooks_getting_started_42_1.png][width=75mm]
+\stopframed
+\stopplacefigure
+
 \startplacefigure[location=place,reference={chart:deviation},title={RStan Bayesian Estimation: Filter},style={cap}]
 %\processRfile{sample.R}
 \startframed[frame=off,strut=no,offset=0mm,width=80mm]
-\externalfigure[deviation][height=50mm]
+\externalfigure[deviation][height=75mm]
 \stopframed
 \stopplacefigure
 
@@ -184,7 +206,7 @@ Regular VoIP meetings every fortnight (Sundays 6pm, 1 hour) \par
 \startxtable[split=yes,foregroundstyle=\ss,bodyfont=8pt]
 \startxtablehead[background=color,backgroundcolor=gray]
 \startxrow
- \startxcell[width=25mm] Time \stopxcell
+ \startxcell[width=26.5mm] Time \stopxcell
  \startxcell Position \stopxcell
  \startxcell Orientation \stopxcell
  \startxcell Groundspeed \stopxcell
@@ -196,21 +218,53 @@ Regular VoIP meetings every fortnight (Sundays 6pm, 1 hour) \par
 % https://pbs.twimg.com/media/CiytDdDU4AII8h_.jpg:large
 % Time,Position,Orientation,Groundspeed,Altitude,Reporting
 \startCSV
-Thu 01:18:41,34.87 27.54,SE 138,520,37000,0
-Thu 01:19:11,34.81 27.59,SE 138,520,37000,0
-Thu 01:19:41,34.76 27.65,SE 138,520,37000,0
-Thu 01:20:11,34.70 27.71,SE 138,519,37000,0
-Thu 01:20:41,34.65 27.77,SE 138,521,37000,0
-Thu 01:21:50,34.52 27.90,SE 139,521,37000,0
-Thu 01:22:49,34.47 27.96,SE 139,528,37000,0
-Thu 01:28:10,33.82 28.63,SE 139,527,37000,0
-Thu 01:28:46,33.77 28.68,SE 139,529,37000,0
-Thu 01:29:21,33.69 28.77,SE 136,533,37000,0
-Thu 01:32:01,33.39 29.00,SE 147,0,37000,0
-Thu 01:33:01,33.27 29.09,SE 147,0,37000,0
+Thu 01:18:41,34.87 27.54,SE 138,520,37000,ADB-B
+Thu 01:19:11,34.81 27.59,SE 138,520,37000,ADB-B
+Thu 01:19:41,34.76 27.65,SE 138,520,37000,ADB-B
+Thu 01:20:11,34.70 27.71,SE 138,519,37000,ADB-B
+Thu 01:20:41,34.65 27.77,SE 138,521,37000,ADB-B
+Thu 01:21:50,34.52 27.90,SE 139,521,37000,ADB-B
+Thu 01:22:49,34.47 27.96,SE 139,528,37000,ADB-B
+Thu 01:28:10,33.82 28.63,SE 139,527,37000,ADB-B
+Thu 01:28:46,33.77 28.68,SE 139,529,37000,ADB-B
+Thu 01:29:21,33.69 28.77,SE 136,533,37000,ADB-B
+Thu 01:32:01,33.39 29.00,SE 147,0,37000,ADB-B
+Thu 01:33:01,33.27 29.09,SE 147,0,37000,ADB-B
 \stopCSV
 \stopxtable
 \stopplacetable
+
+\startplacetable[location=place,reference={table:csm},title={Car Sharing \\ Module: Sample Log},list={Car Sharing Module: Sample Log},style={cap}]
+\defineseparatedlist[CSV][separator=comma,left=\startxcell,right=\stopxcell,first=\startxrow,last=\stopxrow,before=\startxtablebody,after=\stopxtablebody]
+\setupxtable[align=flushright,align=middle]
+\startxtable[split=yes,foregroundstyle=\ss,bodyfont=8pt]
+\startxtablehead[background=color,backgroundcolor=gray]
+\startxrow
+ \startxcell[width=28mm] ID \stopxcell
+ \startxcell Time \stopxcell
+ \startxcell Position \stopxcell
+ \startxcell Elevation \stopxcell
+ \startxcell Speed \stopxcell
+ \startxcell Reporting \stopxcell
+\stopxrow
+\stopxtablehead
+% http://i.imgur.com/Pkk38yU.png
+% https://pbs.twimg.com/media/CiytDdDU4AII8h_.jpg:large
+% Time,Position,Orientation,Groundspeed,Altitude,Reporting
+\startCSV
+2017:0db8:85a3:7334,Sun 2017-03-11,47.82 12.54,456,9,CSM
+2017:0db8:85a3:7334,Sun 2017-03-11,48.24 12.53,455,11,CSM
+2017:0db8:85a3:7334,Sun 2017-03-11,48.23 12.52,435,10,CSM
+2017:0db8:85a3:7334,Sun 2017-03-11,48.13 12.58,509,9,CSM
+2017:0db8:85a3:7334,Sun 2017-03-11,48.24 12.53,449,7,CSM
+\stopCSV
+\stopxtable
+\stopplacetable
+
+%\startplacetable[location=place,reference={table:gpx},title={GPX Database},list={GPX Database},style={cap},saveinlist=no]
+\reference[table:gpx]{GPX Database}%
+\WORD{\bf TABLE B.3.T.3} \hspace[big] \WORD{GPX Database} \hfill Full database table available at: \\ \startalignment[left] \goto{2017-03-11_14625862_tour-11-03-2017-16-31_export.gpx}[url(https://github.com/reviczky/northumbria/blob/master/dissertation/database/2017-03-11_14625862_tour-11-03-2017-16-31_export.gpx?raw=true)] \stopalignment \par
+%\stopplacetable
 
 %\startplacetable[location=place,reference={table:2},title={Table}]
 %\startxtable

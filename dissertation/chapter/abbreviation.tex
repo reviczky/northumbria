@@ -8,16 +8,18 @@
 \page[yes]
 
 \setuplist[table,figure,formula][style=ss]
-\setuphead[chapter,section][textstyle={\tfd\sc}]
-\startsection[title=List of Tables]
+%\setuphead[chapter,section][textstyle={\tfd\sc}]
+\setuphead[chapter][textstyle={\tfd\sc}]
+\setuphead[section][textstyle={\tfd\sc},after=,before=]
+\startsection[title={List of Tables}]
 \placelist[table][criterium=all,width=4.5em]
 \stopsection
 
-\startsection[title=List of Figures]
+\startsection[title={List of Figures}]
 \placelist[figure][criterium=all,width=4.5em]
 \stopchapter
 
-\startsection[title=List of Formulas]
+\startsection[title={List of Formulas}]
 \placelist[formula][criterium=all,width=4.5em]
 \stopchapter
 
