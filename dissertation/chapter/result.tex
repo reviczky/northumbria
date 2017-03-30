@@ -41,14 +41,20 @@ The improvements have been tied to metrics that can be compared with, in terms o
 % Total number of words per section: 332/350
 
 \startsection[title={Comparison of the Results},reference=section:resultscomparison]
-Comparing the results from the data in the experiments taken, it can be deduced that indeed the threshold of anomalies can be narrowed down to a 5\% margin for deviations from the baseline. \par
-The baseline for comparison is primarily the average function of genuine routes marked as known-good and the correlation to this line with the added correction of errors. It has been shown that the behavioural prediction creates a function that is better aligned to this baseline as well as it reduces the error correction to a smaller deviation threshold. \par
-Further, the Bayes filter applications have been compared with each other as well. Depending on the scenario the sequential Bayesian filtering produced the best outcomes. The comparisons are attached to the Appendix section at the end of this paper. \par
-It has been shown that overall with the same inputs of selected routes and the application of different methods for data analysis, the results on detecting anomaly behaviour differ with their outcome quite extensively. \par
-The examples are shown here: \par
+Comparing the results with the data taken from the experiments, it can be deduced, that indeed the threshold of anomalies can be narrowed down to a 5\% margin for deviations from the baseline. \par
+The comparisons in the plots, as shown in the examples of the Bayesian filters is as follows: \par
+\startitemize[joinedup,nowhite]
+\sym{»} Bayes filter plot with RStan: \\ \in{Chart}[chart:rstan] with a deviation prediction of {\bf 90\%} outside the {\bf 5\%} threshold
+\sym{»} Bayesian sampling with PyMC3: \\ \in{Chart}[chart:pymc3] with a correlation of {\bf 87\%} inside the {\bf 5\%} threshold
+\sym{»} Bayesian distribution and smoothing with PyBayes: \\ \in{Chart}[chart:pybayes] showing the mean function to compare against
+\sym{»} Bayesian prediction with RStan: \\ \in{Chart}[chart:deviation] comparing three probabilistic functions to align the threshold
+\stopitemize
+The baseline for comparison is primarily the average function of genuine routes marked as known-good and the correlation to this line with the added correction of errors. It has been shown, that the behavioural prediction creates a function that is better aligned to this baseline, as well as, that it reduces the error correction to a smaller deviation threshold. \par
+Further, the applications of the Bayes filter have also been compared with each other. Depending on the scenario, the sequential Bayesian filtering produced the best outcomes. All of the comparisons are attached to the Appendix section, at the end of this paper. \par
+It has been consequently shown, that overall, with the same input of selected routes and the application of different methods for data analysis, the results on detecting anomaly behaviour differ in their outcome quite extensively. \par
 \stopsection
 
-% Total number of words per section: 164/350
+% Total number of words per section: 247/350
 
 \startsection[title=Reflection]
 In reflection of the project with the conducted case study of connected cars it has been a success in showing a novel approach on big data analysis for motion patterns in routes taken. \par
