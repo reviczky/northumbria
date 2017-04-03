@@ -6,8 +6,8 @@
 \setupinteraction
 [
   state=start,
-  color=darkolivegreen,
-  title={Viva: Proactive threat detection of cyber-physical systems using Bayesian estimation: connected cars as a case study},
+  color=northumbria,
+  title={Proactive threat detection of cyber-physical systems using Bayesian estimation: connected cars as a case study},
   author={Adam Reviczky},
   subtitle={Viva},
   keyword={northumbria},
@@ -18,6 +18,18 @@
 \definefontfeature[default][default][protrusion=quality,expansion=quality]
 \setupalign[hz,hanging]
 \setupbodyfont[palatino,12pt]
+
+\setuplayout
+[
+  backspace=18mm,
+  cutspace=18mm,
+  width=174mm,
+  topspace=5mm,
+  bottomspace=5mm,
+  header=16mm,
+  footer=13mm,
+  height=287mm,
+]
 
 \setuppagenumbering[location=]
 
@@ -78,7 +90,7 @@ currentpicture := currentpicture scaled \MPvar{width};
 
 \setuphead[subject][alternative=middle,textstyle={\ssb}]
 \startsubject[title={Viva voce}]
-% You (with the help of your supervisor) will arrange a viva at which the product will be demonstrated and the project can be discussed. You, your supervisor and second marker will be present at the viva. You should expect to spend about 10 minutes explaining the work that you have done and the key findings and about 10 minutes demonstrating any software product you have created. You should then answer any questions that your supervisor and second marker have. These questions may cover:
+% You should expect to spend about 10 minutes explaining the work that you have done and the key findings and about 10 minutes demonstrating any software product you have created. You should then answer any questions that your supervisor and second marker have. These questions may cover:
 % Technical details on the construction and function of the product
 % The research process
 % The conclusions from the research
@@ -97,7 +109,7 @@ currentpicture := currentpicture scaled \MPvar{width};
 \startsubsubject[title={MSc Title}]
 {\bf%
 \startquotation[middle]
-Title: Proactive threat detection of cyber-physical systems using Bayesian estimation: connected cars as a case study
+Proactive threat detection of cyber-physical systems using Bayesian estimation: connected cars as a case study
 \stopquotation
 }
 \stopsubsubject
@@ -106,38 +118,103 @@ Title: Proactive threat detection of cyber-physical systems using Bayesian estim
 % 9-10: An outstanding presentation was delivered, which explained the nature of the research and provided valuable and thoughtful insight into innovative research.
 
 \startitemize[joinedup,nowhite]
-\sym{»} malaysian airline example
-\sym{»} hijacking kids from school on connected cars
+\sym{»} Example of Malaysian Airline vanishing (radar, deviation from course)
+\sym{»} Connected Cars relevance: Hijacking kids from school ride
 \stopitemize
 \stopsubsubject
 
 \startsubsubject[title=\Words{Table of contents}]
-High level outline of the dissertation:
+High-level outline of the dissertation: \par
+\blank[line]
 \startitemize[joinedup,nowhite]
 \sym{»} Abstract
-\sym{»} 1) Introduction
-\sym{»} 2) Methodology
-\sym{»} 3) Critical Review of the Literature
-\sym{»} 4) Design
-\sym{»} 5) Results Collected and Analysis
-\sym{»} 6) Discussion
-\sym{»} 7) Conclusion & Suggestions for Further Study
+\sym{»} 1: Introduction
+ \startitemize
+  \item Problem Statement
+  \item Aim / Objectives (define connected cars; create scenarios; compare density functions; algorithms for profiling&behaviour; validation of signatures; demonstrating the improvements; suggest fail-safe actions; propose warning system)
+  \item Key Findings and Contribution
+ \stopitemize
+\sym{»} 2: Methodology
+ \startitemize
+  \item Research Question: \startquote How can cyber resilience be improved proactively to predict cyber threats in real time on connected cars in such a way as to counter cyber-attacks? \stopquote
+  \item Research Design: quantitative data research (numerical data collection, CSV)
+  \item Data Analysis: Stan (R based) and PyMC (Python based)
+  \item Experiments 1 & 2
+ \stopitemize
+\sym{»} 3: Critical Review of the Literature
+ \startitemize
+  \item Usability Study / Existing Models on Data Analysis: current machine learning solutions
+  \item Data Capturing: ADS-B, aviation industry and CSM (car-sharing module)
+  \item Behavioural Profiling: Profile grouping and Behavioural Analysis (mostly network logs)
+  \item Anomaly Detection: AI (machine learning), signatures, estimation techniques - deviation from norm
+  \item Threat Prediction: definition of cyber threat, attack vectors (hijacking, damage, espionage, terror)
+ \stopitemize
+\sym{»} 4: Design
+ Sequential Bayesian Filtering
+ \startitemize
+  \item Experimental Work: RStan simulation on the experiments
+  \item Data Collection: speed, geolocation, elevation, orientation, date-stamp, ID
+  \item Estimation Model: Bayes filters (filtering, smoothing, prediction)
+  \item Correlation Graphs: mean and deviation functions (comparison)
+  \item Case Study and Particular Events: connected cars with sensors on a hijacking scenario
+  \item Similar Requirements for the Community: Hooking in to the "Automotive Cyber Security", "Automotive Grade Linux", "Automotive Cyber Security", "Alliance of Automobile Manufacturers"
+ \stopitemize
+\sym{»} 5: Results Collected and Analysis
+ \startitemize
+  \item Techniques Used: Analytical (data analysis); reasoned evaluation
+  \item Comparison of the Results: 5\% threshold
+  \item Reflection on the Work Done: sensors, prediction, examples
+  \item (Results) Evaluation: Improvements on "time to detect" and precision "deviation threshold"
+  \item Contribution to the Community: main publication \startquote Potential Cyberattacks on Automated Vehicles \stopquote
+ \stopitemize
+\sym{»} 6: Discussion
+ \startitemize
+  \item Project Evaluation: Objectives met; techniques used & missed
+  \item Correlation Effectiveness: false-positives
+  \item Ethical Considerations: automated actions from results (collisions)
+  \item Addressing the Problem Statement: proactive approach; built-in security
+  \item Review of Objectives: details
+  \item Reflection on Work Done: extensive work on applying estimation techniques
+  \item Mapping of the Results: in regards to the objectives
+  \item Further Work: warning system; tracking system; re-active solutions; ITS (Intelligent Transportation Systems)
+ \stopitemize
+\sym{»} 7: Conclusion & Suggestions for Further Study
 \sym{»} Appendix
+ \startitemize
+  \item Timetable/Deadlines; Project Plan; Supervisor Meetings
+  \item detailed Figures/Diagrams and Charts; Tables (CSV, database); Source Code(s)
+  \item Project Log; Risk Assessment & Ethical Form
+\stopitemize
 \stopitemize
 \stopsubsubject
 
 \startsubsubject[title={Closing}]
-Summary \par
+Demonstration of a novel, innovative approach on cyber resilience on examples of autonomous connected cars. \par
 \stopsubsubject
 
-\startsubsubject[title={Q & A}]
+\startsubsubject[title={Questions & Answers}]
 % 9-10: Your answers demonstrated a deep and insightful understanding of research processes and you were able to discuss original research findings.
 
-Question 1: \startquote Technical details on the construction and function of the product \stopquote \par
-Question 2: \startquote The research process \stopquote \par
-Question 3: \startquote The conclusions from the research \stopquote \par
-Question 4: \startquote The aim and context of the research \stopquote \par
-Question 5: \startquote Your evaluation of the research \stopquote \par
+Question {\switchtobodyfont[xits]①}: \startquote \it Technical details on the construction and function of the product \stopquote \par
+\startitemize[joinedup,nowhite]
+\sym{»} open source Bayesian libraries
+\stopitemize
+Question {\switchtobodyfont[xits]②}: \startquote \it The research process \stopquote \par
+\startitemize[joinedup,nowhite]
+\sym{»} justification and applicability of the problem; reading literature; looking at existing solutions; coming up with a solution
+\stopitemize
+Question {\switchtobodyfont[xits]③}: \startquote \it The conclusions from the research \stopquote \par
+\startitemize[joinedup,nowhite]
+\sym{»} improvements achieved through predictions; new approach on cyber threats
+\stopitemize
+Question {\switchtobodyfont[xits]④}: \startquote \it The aim and context of the research \stopquote \par
+\startitemize[joinedup,nowhite]
+\sym{»} draft publication in work for peer-review on behaviour analysis
+\stopitemize
+Question {\switchtobodyfont[xits]⑤}: \startquote \it Your evaluation of the research \stopquote \par
+\startitemize[joinedup,nowhite]
+\sym{»} insightful; deep-dive; expanded my horizon in terms of tools and techniques on research
+\stopitemize
 \stopsubsubject
 
 \stopsubject
