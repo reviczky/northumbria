@@ -78,21 +78,67 @@ currentpicture := currentpicture scaled \MPvar{width};
 
 \setuphead[subject][alternative=middle,textstyle={\ssb}]
 \startsubject[title={Viva voce}]
+% You (with the help of your supervisor) will arrange a viva at which the product will be demonstrated and the project can be discussed. You, your supervisor and second marker will be present at the viva. You should expect to spend about 10 minutes explaining the work that you have done and the key findings and about 10 minutes demonstrating any software product you have created. You should then answer any questions that your supervisor and second marker have. These questions may cover:
+% Technical details on the construction and function of the product
+% The research process
+% The conclusions from the research
+% The aim and context of the research
+% Your evaluation of the research
+
+% At the viva, you are normally allowed about 20 minutes to give a broad outline of your work and to demonstrate your product. On rare occasions, the product may be a detailed design or other non-software product. If this is the case, you should do a walk through the product. Both your supervisor and second marker will then ask questions to determine the level of your understanding. Typically, each marker will ask three questions, although follow-up question may be needed to extract the information needed to assess you. These questions should include at least one question on the following issues:
+% The function and structure of the product, either in whole or covering a specific detail.
+% The research process.
+% The context of the research and/or the potential value of the conclusions.
+% Unless the markers need to address concerns about possible misconduct, the viva will normally last no more than 30 minutes. After the viva, the markers should collaboratively establish a mark for the following criteria:
+
 \define\studentname{Adam Reviczky}
 \define\studentnumber{14044980}
 
+\startsubsubject[title={MSc Title}]
 {\bf%
 \startquotation[middle]
 Title: Proactive threat detection of cyber-physical systems using Bayesian estimation: connected cars as a case study
 \stopquotation
 }
+\stopsubsubject
 
-\blank[line]
+\startsubsubject[title={Introduction}]
+% 9-10: An outstanding presentation was delivered, which explained the nature of the research and provided valuable and thoughtful insight into innovative research.
 
 \startitemize[joinedup,nowhite]
 \sym{»} malaysian airline example
 \sym{»} hijacking kids from school on connected cars
-\sym{»} outline of the dissertation
 \stopitemize
+\stopsubsubject
+
+\startsubsubject[title=\Words{Table of contents}]
+High level outline of the dissertation:
+\startitemize[joinedup,nowhite]
+\sym{»} Abstract
+\sym{»} 1) Introduction
+\sym{»} 2) Methodology
+\sym{»} 3) Critical Review of the Literature
+\sym{»} 4) Design
+\sym{»} 5) Results Collected and Analysis
+\sym{»} 6) Discussion
+\sym{»} 7) Conclusion & Suggestions for Further Study
+\sym{»} Appendix
+\stopitemize
+\stopsubsubject
+
+\startsubsubject[title={Closing}]
+Summary \par
+\stopsubsubject
+
+\startsubsubject[title={Q & A}]
+% 9-10: Your answers demonstrated a deep and insightful understanding of research processes and you were able to discuss original research findings.
+
+Question 1: \startquote Technical details on the construction and function of the product \stopquote \par
+Question 2: \startquote The research process \stopquote \par
+Question 3: \startquote The conclusions from the research \stopquote \par
+Question 4: \startquote The aim and context of the research \stopquote \par
+Question 5: \startquote Your evaluation of the research \stopquote \par
+\stopsubsubject
+
 \stopsubject
 \stoptext
